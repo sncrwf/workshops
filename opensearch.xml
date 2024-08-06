@@ -4,8 +4,8 @@
   <ShortName>Workshop Creator Workflows</ShortName>
   <Description>Search Workshop Creator Workflows</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://sncrwf.github.io/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://sncrwf.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://sncrwf.github.io/opensearch.xml" />
-  <moz:SearchForm>https://sncrwf.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://sncrwf.github.io/workshops/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://sncrwf.github.io/workshops/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://sncrwf.github.io/workshops/opensearch.xml" />
+  <moz:SearchForm>https://sncrwf.github.io/workshops/</moz:SearchForm>
 </OpenSearchDescription>
