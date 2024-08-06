@@ -6,10 +6,6 @@ name: PDFs Build and Deploy
 
 # Controls when the action will run.  
 on:
-  push:
-    branches: [ "source" ]
-  pull_request:
-    branches: [ "source" ]
   # Allows you to run the workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -42,13 +38,22 @@ jobs:
       - name: Install
         run: npm install docs-to-pdf
 
-      - name: Build Telework Lab PDF
+      - name: Build Telework Lab 101 PDF
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "telework-vancouver-101.pdf"
+
+      - name: Build Telework Lab 201 PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-201_vancouver/Introduction/Overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 2" --outputPDFFilename "telework-vancouver-201.pdf"
+
+      - name: Build Collaborate PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/collaborate-vancouver/0.0-get_started/intro" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Colabore para Acelerar" --outputPDFFilename "collaborate-vancouver.pdf"
+
+      - name: Build SpokeGen PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "IHub - Gerador de Spokes" --outputPDFFilename "spokegen.pdf"
 
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: result
+          name: Lab-Guides-PDF
           # The output filename can be specified with --output option
-          path: telework-vancouver-101.pdf
+          path: ./*.pdf
           if-no-files-found: error
