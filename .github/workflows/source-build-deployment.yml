@@ -1,19 +1,19 @@
 name: Source build and deploy to gh-pages
 
-on:
-  push:
-    branches:
-    - source
-  # paths:
-  # - '*'
-  # Do not run if only the PDF files were updated
-  # - '!/pdfs/collaborate-lab.pdf'
-  # - '!/pdfs/travel-request-lab.pdf'
-  # Review gh actions docs if you want to further define triggers, paths, etc
-  # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+# This is a basic workflow to help you get started with Actions
 
-  # Allows you to run the workflow manually from the Actions tab
-# workflow_dispatch:
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "source" branch
+  push:
+    branches: [ "source" ]
+  pull_request:
+    branches: [ "source" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
