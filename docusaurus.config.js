@@ -255,7 +255,7 @@ const config = {
       navbar: {
         title: "",
         logo: {
-          alt: "Creator Workshop Lab Guides",
+          alt: "Workshop Creator Workflows",
           src: "img/servicenow-logo.png",
           srcDark: "img/servicenow-logo_dark.png",
           href: "/",
