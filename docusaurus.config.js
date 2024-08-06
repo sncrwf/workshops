@@ -11,10 +11,10 @@ const config = {
   tagline: "Pronto para aprender algo novo?",
   url: "https://sncrwf.github.io",
   trailingSlash: false,
-  baseUrl: "/", // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: "/workshops/", // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: "img/favicon.ico",
   organizationName: "sncrwf", // GitHub pages deployment config.
-  projectName: "crwf-workshops",
+  projectName: "workshops",
 
   staticDirectories: ["static"],
 

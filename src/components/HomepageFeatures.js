@@ -75,7 +75,7 @@ const FeatureList = [
     icon: faCog,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇺🇸 Inglês</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
+      <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
@@ -87,7 +87,7 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇺🇸 Inglês</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
+      <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
       </>
     ),
     to: '/labs/spokegen/overview',
