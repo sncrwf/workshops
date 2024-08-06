@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faDiagramProject, faHouseLaptop, faHouseUser, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from '@fortawesome/free-solid-svg-icons';
@@ -48,7 +48,7 @@ const FeatureList = [
 
   {
     title: 'Gestão de Casos de Teletrabalho',
-    icon: faFileCode,
+    icon: faHouseUser,
     description: (
       <>
       <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.
@@ -60,7 +60,7 @@ const FeatureList = [
 
   {
     title: 'Gestão de Casos de Teletrabalho',
-    icon: faFileCode,
+    icon: faHouseUser,
     description: (
       <>
       <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.
@@ -72,7 +72,7 @@ const FeatureList = [
 
   {
     title: 'Colabore para Acelerar',
-    icon: faCog,
+    icon: faPeopleGroup,
     description: (
       <>
       <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
@@ -84,7 +84,7 @@ const FeatureList = [
 
   {
     title: 'IHub: Gerador de Spokes',
-    icon: faFileCode,
+    icon: faDiagramProject,
     description: (
       <>
       <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
