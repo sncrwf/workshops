@@ -40,13 +40,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4.0.0
 
-      - name: Install Prince
-        run: |
-          curl https://www.princexml.com/download/prince-15.1-linux-generic-x86_64.tar.gz -O
-          tar zxf prince-15.1-linux-generic-x86_64.tar.gz
-          cd prince-15.1-linux-generic-x86_64
-          yes "" | sudo ./install.sh
-
 #     - name: Make directories
 #       run: |
 #         mkdir -p build/labs/collaborate/

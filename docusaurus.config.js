@@ -249,7 +249,7 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
       image: "img/creatorworkflowsnow.github.io.png",
       navbar: {
