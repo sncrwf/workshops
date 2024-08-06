@@ -6,12 +6,6 @@ name: PDFs Build and Deploy
 
 # Controls when the action will run.  
 on:
-  # Only run after pages-build-deployment is completed. This is the final push to make the site live. 
-  workflow_run:
-    workflows: ["pages-build-deployment"]
-    types:
-      - completed
-
   # Allows you to run the workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -55,7 +49,7 @@ jobs:
       #   run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
 
       - name: Build Telework Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/telework-vancouver-101' -u 'https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview' --output 'lab-guide.pdf'
+        run: npx mr-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "telework-vancouver-101.pdf"
 
       - name: Create New Branch and Commit PDFs
         run: |
@@ -65,6 +59,6 @@ jobs:
           current_time=$(date +"%Y-%m-%d-%H-%M-%S")
           # Use the current date and time in the branch name
           git checkout -b "new-pdf-branch"
-          git add lab-guide.pdf
+          git add telework-vancouver-101.pdf
           git commit -m "Add generated PDFs"
           git push origin "new-pdf-branch"
