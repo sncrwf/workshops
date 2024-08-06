@@ -106,23 +106,6 @@ const config = {
     ],
 
     /*
-     * Telework Utah
-     */
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/telework-utah",
-        id: "teleworkutah",
-        routeBasePath: "labs/telework-utah",
-        sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-    /*
      * EWF+CrWF: Dept Svc
      */
 
@@ -154,21 +137,6 @@ const config = {
       },
     ],
 
-    /*
-     * COMPLAINT MGMT UTAH
-     */
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/complaint-utah",
-        id: "complaintutah",
-        routeBasePath: "labs/complaint-utah",
-        sidebarPath: require.resolve("./labs/complaint-utah/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
 
     /*
      * THE FOLLOWING SECTIONS ARE NOT CURRENTLY IN USE.
@@ -193,19 +161,6 @@ const config = {
         id: "logistics",
         routeBasePath: "labs/logistics",
         sidebarPath: require.resolve("./labs/logistics/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/example-lab",
-        id: "examplelab",
-        routeBasePath: "labs/example-lab",
-        sidebarPath: require.resolve("./labs/example-lab/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
         breadcrumbs: false,
       },
     ],
@@ -332,10 +287,6 @@ const config = {
               {
                 label: "Developer Glossary",
                 href: "https://developer.servicenow.com/dev.do#!/guides/vancouver/now-platform/glossary/developer-glossary",
-              },
-              {
-                label: "Example Lab Guide",
-                href: "/labs/example-lab/overview",
               },
               {
                 label: "CSM-VA-Utah",
