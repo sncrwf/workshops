@@ -1,7 +1,7 @@
 ---
 id: lab-guide-pdf
-title: Download Lab Guide PDF
+title: Baixar Guia do Laboratório em PDF
 draft: false
 ---
 
-[Click here to download Lab Guide PDF](./downloads/lab-guide.pdf)
+[Clique aqui para baixar o Guia do Laboratório de Solicitação de Viagem em PDF](./downloads/lab-guide.pdf)
