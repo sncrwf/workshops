@@ -62,7 +62,7 @@ jobs:
       #   run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
 
       - name: Build Telework Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/telework-vancouver-101' -u 'https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview' --output './labs/telework-vancouver-101/downloads/lab-guide-2.pdf'
+        run: npx docusaurus-prince-pdf -d './labs/telework-vancouver-101' -u 'https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview' --output 'lab-guide.pdf'
 
       - name: Create New Branch and Commit PDFs
         run: |
@@ -75,12 +75,3 @@ jobs:
           git add ./labs/telework-vancouver-101/downloads/lab-guide-2.pdf
           git commit -m "Add generated PDFs"
           git push origin "new-pdf-branch"
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: source
-          branch: "new-pdf-branch"
-          title: "Add generated PDFs"
-          body: "This PR adds the newly generated PDFs."
