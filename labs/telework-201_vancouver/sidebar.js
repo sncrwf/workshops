@@ -5,7 +5,7 @@ const sidebars = {
     teleworkvancouver: [
         {
             type: 'category',
-            label: 'Introduction',
+            label: 'Introdução',
             items: [
                 'Introduction/vancouver',
                 'Introduction/Overview',
@@ -15,7 +15,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '1. Flow',
+            label: '1. Fluxo de Trabalho',
             items: [
                 'Flow/Create-People-Finder-Spoke',
                 'Flow/Create-Decision-Table',
@@ -24,7 +24,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '2. Smarter Forms',
+            label: '2. Formulários Inteligentes',
             items: [
                 'Smarter-Forms/Playbook',
                 'Smarter-Forms/Record-Producer',
@@ -41,7 +41,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '4. Bonus',
+            label: '4. Bônus',
             items: [
                 'Governance/Securely-Expand',
             ],

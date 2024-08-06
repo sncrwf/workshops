@@ -1,20 +1,18 @@
 ---
 id: lab-goals
-title: "2. Lab Goals"
+title: "2. Metas do Laboratório"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Today's Goals
+## Metas de Hoje
 
-In today's lab, you will be granted access to your own temporary ServiceNow instance to use for the duration of the day. 
+No laboratório de hoje, você terá acesso à sua própria instância temporária do ServiceNow para usar durante o dia.
 
-Our goals for this workshop are to allow you to:
+Nossas metas para este workshop são permitir que você:
 
-1. Gain valuable experience through hands-on exercises with **App Engine Studio**.
+1. Ganhe experiência valiosa por meio de exercícios práticos com o **App Engine Studio**.
 
+2. Converta um caso de uso do mundo real com gargalos de processo em um fluxo de trabalho simplificado e integrado à empresa.
 
-2. Convert a real-world use case with process bottlenecks to a streamline, cross enterprise workflow.
-
-
-3. Take back to your organization the knowledge of how you can make your world of work better.
+3. Leve para sua organização o conhecimento de como você pode melhorar seu ambiente de trabalho.

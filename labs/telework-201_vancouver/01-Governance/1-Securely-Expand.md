@@ -3,219 +3,214 @@ title: "1. Securely Expand"
 sidebar_label: "1. Securely Expand"
 hide_table_of_contents: true
 ---
-# Overview
+# Visão Geral
 
-Amanda has successfully rolled out her application to her team, and it's caught the attention of another team who also wishes to use it. A primary condition is to maintain the privacy of records across the two teams.
+Amanda implementou com sucesso seu aplicativo para sua equipe, e ele chamou a atenção de outra equipe que também deseja usá-lo. Uma condição principal é manter a privacidade dos registros entre as duas equipes.
 
-In this exercise, we will compartamentalize telework cases for the users in the Development department and for the users in the Customer support team.  
+Neste exercício, vamos compartimentalizar os casos de teletrabalho para os usuários do departamento de Desenvolvimento e para os usuários da equipe de Suporte ao Cliente.  
 
-We'll configure this by defining:
+Vamos configurar isso definindo:
 
->1. One fulfiller role for each team: Fulfiller_Development and Fulfiller_Customer_Support 
+>1. Um papel de "fulfiller" para cada equipe: Fulfiller_Development e Fulfiller_Customer_Support 
 
+>2. Em seguida, definiremos controles de acesso específicos para cada um.
 
->2. Then we'll define specific access controls for each.
+>3. No final, uma equipe terá visibilidade apenas sobre solicitações dos usuários do departamento de Desenvolvimento, enquanto a outra equipe terá acesso apenas às solicitações dos usuários do departamento de Suporte ao Cliente. 
 
+Isso garantirá que ambas as equipes possam usar o aplicativo mantendo a separação e privacidade necessárias dos dados.
 
->3. In the end, one team will have visibility only over requests from users in the Development department while the other team will have access only to requests from the users in the Customer support department. 
+Vamos começar.
 
-This will ensure both teams can use the app while maintaining the necessary separation and privacy of data.
+Desenvolvedores cidadãos como Amanda precisam de privilégios especiais para configurar controles de acesso, então Amanda vai solicitar...
 
-Let's get started. 
+## Ajuda dos Administradores do App Engine
 
-Citizen developers like Amanda need special privileges to configure access controls so Amanda is going to request...
+1.	Conecte-se como Admin
 
+2. Elevar para Security Admin
 
-## Help from App Engine Admins
-
-1.	Logged in as Admin
-
-
-2. Elevate to Security Admin
-
-    | Steps                                                 | 
+    | Passos                                              | 
     |---------------------------------------|------------------------|
-    |<span className="large-number">➊</span>| In the top right, click the **Avatar**  |
-    |<span className="large-number">➋</span>| Select **Elevate role**    |
-    |<span className="large-number">➌</span>| Check [✔] security_admin   |
-    |<span className="large-number">➍</span>| Click <span className="button-purple">Update</span>.   |
+    |<span className="large-number">➊</span>| No canto superior direito, clique no **Avatar**  |
+    |<span className="large-number">➋</span>| Selecione **Elevate role**    |
+    |<span className="large-number">➌</span>| Marque [✔] security_admin   |
+    |<span className="large-number">➍</span>| Clique em <span className="button-purple">Update</span>.   |
 
     ![](./images/segment_01_Elevate_Security_Admin.png)
 
 
-3. Go to **App Engine Studio > Security**
+3. Vá para **App Engine Studio > Security**
 
-    | **Steps**                                                 | 
+    | **Passos**                                              | 
     |---------------------------------------|------------------------|
-    |<span className="large-number">➊</span>| In AES, click **More**  |
-    |<span className="large-number">➋</span>| Click **Security**    |
-    |<span className="large-number">➌</span>| Click **Add**   |
+    |<span className="large-number">➊</span>| No AES, clique em **More**  |
+    |<span className="large-number">➋</span>| Clique em **Security**    |
+    |<span className="large-number">➌</span>| Clique em **Add**   |
 
     ![](./images/segment_02_AES_Go_to_Security.png)
 
 :::info
-When Amanda created the app it was only for one team and having only one user role was enough.
-Now that we need to open the application to another team we need to have more specific roles to ensure proper security.
+Quando Amanda criou o aplicativo, ele era apenas para uma equipe e ter um único papel de usuário era suficiente.
+Agora que precisamos abrir o aplicativo para outra equipe, precisamos de papéis mais específicos para garantir a segurança adequada.
 :::
 
 
-4. Create role **Fulfiller_Development**
+4. Crie o papel **Fulfiller_Development**
 
-    | **Steps**                                                 | 
+    | **Passos**                                              | 
     |---------------------------------------|------------------------|
-    |<span className="large-number">➊</span>| Click **build a new role**  |
-    |<span className="large-number">➋</span>| Click <span className="button-purple">Continue</span>.   |
+    |<span className="large-number">➊</span>| Clique em **build a new role**  |
+    |<span className="large-number">➋</span>| Clique em <span className="button-purple">Continue</span>.   |
 
     ![](./images/segment_03_AES_Create_Role_01.png)
 
 
 
-5. Give the role a name and description.
+5. Dê um nome e descrição ao papel.
 
-    | **Steps**                                             | 
+    | **Passos**                                             | 
     |-------------|-----------------------------------------|
-    | Name        | Fulfiller_Development                   |
-    | Description | Fulfiller in the Development department |
+    | Nome        | Fulfiller_Development                   |
+    | Descrição   | Fulfiller no departamento de Desenvolvimento |
 
     ![](./images/segment_03_AES_Create_Role_02.png)
 
 
-6. Give the role the desired permissions
+6. Dê ao papel as permissões desejadas
 
     ![](./images/segment_03_AES_Create_Role_03_Permission.png)
 
-7. **Success**
+7. **Sucesso**
 
-    Click <span className="button-purple">Done</span>.
+    Clique em <span className="button-purple">Done</span>.
 
     ![](./images/segment_03_AES_Create_Role_04_Success.png)
 
 
-7. Repeat the steps 4 to 7 to create the role ** Fulfiller_Customer_Support **
+7. Repita os passos 4 a 7 para criar o papel **Fulfiller_Customer_Support**
 
-    | **Steps**                                                  | 
+    | **Passos**                                                  | 
     |-------------|----------------------------------------------|
-    | Name        | Fulfiller_Customer_Support                   |
-    | Description | Fulfiller in the Customer Support department |
+    | Nome        | Fulfiller_Customer_Support                   |
+    | Descrição   | Fulfiller no departamento de Suporte ao Cliente |
 
 
-8. You should see the two new roles in the app
+8. Você deve ver os dois novos papéis no aplicativo
 
     ![](./images/segment_03_AES_Create_Role_05_Result.png)
 
 
-## Refine the access controls 
+## Refinar os controles de acesso 
 
-1. **Navigate to the Access Control List (ACL)**
+1. **Navegar até a Lista de Controle de Acesso (ACL)**
     ![](./images/segment_04_ACL_01_Go_to_ACL.png)
 
 
-2. **Filter the list of records**
+2. **Filtrar a lista de registros**
 
-    | **Filter**                                      | 
+    | **Filtro**                                     | 
     |-------------|---------------------------------|
-    |<span className="large-number">➊</span>| Set the filter as shown below |
-    |<span className="large-number">➋</span>| Click **Run**    |
-    |<span className="large-number">➌</span>| Click on the **Updated by** to get the admin ACL at the top   |
-    |<span className="large-number">➍</span>| Open the first record  |
+    |<span className="large-number">➊</span>| Defina o filtro conforme mostrado abaixo |
+    |<span className="large-number">➋</span>| Clique em **Run**    |
+    |<span className="large-number">➌</span>| Clique em **Updated by** para obter o ACL do administrador no topo   |
+    |<span className="large-number">➍</span>| Abra o primeiro registro  |
 
     ![](./images/segment_04_ACL_02_Filter_ACLs.png)
 
 
-3. Review the ACL 
+3. Revise o ACL 
 
-4. Define the condition: Opened by someone in the Development department
+4. Defina a condição: Aberto por alguém no departamento de Desenvolvimento
 
-    1. We click on the condition field, scroll down to select **Show related fields**
+    1. Clique no campo de condição, role para baixo para selecionar **Show related fields**
 
         ![](./images/segment_04_ACL_03_Condition_01.png)
 
-    2. Select "Opened by ⟹ User fields"
+    2. Selecione "Opened by ⟹ User fields"
 
         ![](./images/segment_04_ACL_03_Condition_02.png)
 
-    3. Click again on the field and we can now see the fields inside the Opened by
+    3. Clique novamente no campo e agora podemos ver os campos dentro do Opened by
 
         ![](./images/segment_04_ACL_03_Condition_03.png)
 
-    4. Scroll down and select **department**
+    4. Role para baixo e selecione **department**
 
         ![](./images/segment_04_ACL_03_Condition_04.png)
     
-    5. Click again on the field and then select **Opened by Department**
+    5. Clique novamente no campo e depois selecione **Opened by Department**
 
         ![](./images/segment_04_ACL_03_Condition_05.png)
 
-    6. Finally set the condition value to **Development**
+    6. Finalmente defina o valor da condição como **Development**
 
         ![](./images/segment_04_ACL_03_Condition_06.png)
 
-    7. Save the record
+    7. Salve o registro
 
         ![](./images/segment_04_ACL_03_Condition_07_Save_ACL.png)
 
-    8. Notice ServiceNow has generated a description
+    8. Observe que o ServiceNow gerou uma descrição
 
         ![](./images/segment_04_ACL_03_Condition_08.png)
 
-    9. To secure the data access let's review the other ACL our work 
+    9. Para garantir o acesso aos dados, vamos revisar os outros ACL do nosso trabalho 
 
-        We need to delete any ACL that does not have any restriction
+        Precisamos excluir qualquer ACL que não tenha nenhuma restrição
 
         ![](./images/segment_04_ACL_03_Delete_ACL_with_no_restriction.png)
 
          
-## Assign the role to Abel
+## Atribuir o papel a Abel
 
-### Open user Abel
+### Abrir o usuário Abel
 
-1. Go to the list of users
+1. Vá para a lista de usuários
 
-    | Steps                                                 | 
+    | Passos                                              | 
     |---------------------------------------|------------------------|
-    |<span className="large-number">➊</span>| Click the **All** menu  | 
-    |<span className="large-number">➋</span>| Search for **Users**    |
-    |<span className="large-number">➌</span>| Click on **Users**      |
+    |<span className="large-number">➊</span>| Clique no menu **All**  | 
+    |<span className="large-number">➋</span>| Pesquise por **Users**    |
+    |<span className="large-number">➌</span>| Clique em **Users**      |
 
     ![](./images/06-Create-new-user-1.png)
 
 
-2. Open the user **Abel**
+2. Abra o usuário **Abel**
 
     ![](./images/segment_04_Assign_Role_01.png)
 
 
-3. Click **Edit** Roles
+3. Clique em **Edit** Roles
 
     ![](./images/segment_04_Assign_Role_02.png)
 
 
-4. Grant Abel the telework user role
+4. Conceda a Abel o papel de usuário de teletrabalho
 
     ![](./images/segment_04_Assign_Role_03.png)
 
 
-## Let's test
+## Vamos testar
 
-1. Go to App Engine Studio
+1. Vá para o App Engine Studio
 
 
-2. Preview the Telework case table
+2. Visualize a tabela de casos de teletrabalho
 
     ![](./images/segment_04_Test_01.png)
 
 
-3. Notice we can see all the records
+3. Observe que podemos ver todos os registros
 
     ![](./images/segment_04_Test_02.png)
 
 
-4. Go back to the admin view & Impersonate **Abel**
+4. Volte para a visão de admin e Importe **Abel**
 
     ![](./images/segment_04_Test_03.png)
 
 
-5. Go back to the Telework case list and Notice we can see all the records
+5. Volte para a lista de casos de teletrabalho e observe que podemos ver todos os registros
 
     ![](./images/segment_04_Test_04.png)
-

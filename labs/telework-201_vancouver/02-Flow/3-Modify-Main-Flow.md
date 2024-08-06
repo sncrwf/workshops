@@ -1,252 +1,248 @@
 ---
-title: "Modify Telework Case Approval Flow" 
-sidebar_label: "3. Modify Telework Case Approval Flow"
+title: "Modificar Fluxo de Aprovação de Caso de Teletrabalho"
+sidebar_label: "3. Modificar Fluxo de Aprovação de Caso de Teletrabalho"
 hide_table_of_contents: false
 ---
-# Modify the Telework Case Approval Flow
+# Modificar o Fluxo de Aprovação de Caso de Teletrabalho
 
-Now that we have created the People Finder Spoke and our Auto Approval Decision Table, let's modify the Telework Case Approval Flow to allow auto-approval for those that were pre-certified or have requested 3 days or less for Situational Telework.
+Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovação Automática, vamos modificar o Fluxo de Aprovação de Caso de Teletrabalho para permitir a aprovação automática para aqueles que foram pré-certificados ou solicitaram 3 dias ou menos para Teletrabalho Situacional.
 
-## Open the Telework Case Approval Flow and add our changes
+## Abrir o Fluxo de Aprovação de Caso de Teletrabalho e adicionar nossas mudanças
 
-1. Return to the App Home tab in App Engine Studio.  
+1. Volte para a aba Home do App no App Engine Studio.  
 ![](./images/04-03-01-AppHome.png)
 
-
-2. Open the Telework Case Approval flow by clicking on the row under Logic and Automation.  
+2. Abra o fluxo de Aprovação de Caso de Teletrabalho clicando na linha em Logic and Automation.  
 ![](./images/04-03-02-selectmainflow.png)
 
-
-3. Toggle the Flow Designer view to Tree View.  
+3. Altere a visualização do Flow Designer para Tree View.  
 ![](./images/04-03-03-toggleview.png)
 
-4. First, we want to add a Flow Variable to store the status of auto approval.
+4. Primeiro, queremos adicionar uma Variável de Fluxo para armazenar o status de aprovação automática.
 
-   >1. Click the <span className="button-white-purple-border">...</span> button next to the Save button on the top-left of your screen.
+   >1. Clique no botão <span className="button-white-purple-border">...</span> ao lado do botão Save no canto superior esquerdo da sua tela.
 
-   >2. Select "Flow Variables" from the drop-down.  
+   >2. Selecione "Flow Variables" no menu suspenso.  
 ![](./images/04-03-04-flowvariables.png)
 
-5. Click the plus sign ⨁ to add a variable.  
+5. Clique no sinal de mais ⨁ para adicionar uma variável.  
 ![](./images/04-03-05-addflowvariable.png)
 
-6. Set up the flow variable.
+6. Configure a variável de fluxo.
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Label |Approved
-   |<span className="large-number">➋</span>|Name |approved
-   |<span className="large-number">❸</span>|Type | True/False
-   |<span className="large-number">❹</span>|Click on the 🆇 button to close.  
+   | |Nome do Campo              | Valor do Campo
+   |-|---------------------------| --------------
+   |<span className="large-number">➊</span>|Rótulo | Approved
+   |<span className="large-number">➋</span>|Nome | approved
+   |<span className="large-number">❸</span>|Tipo | True/False
+   |<span className="large-number">❹</span>|Clique no botão 🆇 para fechar.  
 ![](./images/04-03-06-populateflowvariable.png)
 
-7. Before our first step, we want to call the People Finder Spoke. Hover above the "Ask for Approval" step and click the plus sign ⨁.  
+7. Antes do nosso primeiro passo, queremos chamar o People Finder Spoke. Passe o mouse acima do passo "Ask for Approval" e clique no sinal de mais ⨁.  
 ![](./images/04-03-07-addspoke.png)
 
-8. Add the People Finder Spoke
+8. Adicione o People Finder Spoke
 
-   >1. Select "Action" as the step type.
+   >1. Selecione "Action" como o tipo de passo.
 
-   >2. Search for "people finder".
+   >2. Procure por "people finder".
 
-   >3. Select the "GET /user" action.  
+   >3. Selecione a ação "GET /user".  
 ![](./images/04-03-08-addspokeaction.png)
 
-9. Click the data pill picker for email.  
+9. Clique no seletor de dados para e-mail.  
 ![](./images/04-03-09-dotwalkspoke.png)
 
-10. Dot-walk to the email address of the person that opened the request.
+10. Navegue até o endereço de e-mail da pessoa que abriu a solicitação.
 
-   >1. Click "Trigger - Record Ceated"
+   >1. Clique em "Trigger - Record Created"
 
-   >2. Click the blue arrow next to the "Telework Case" record to drill down.
+   >2. Clique na seta azul ao lado do registro "Telework Case" para detalhar.
 
-   >3. Click the blue arrow next to "Opened by".
+   >3. Clique na seta azul ao lado de "Opened by".
 
-   >4. Click on "Email" to set the value.  
+   >4. Clique em "Email" para definir o valor.  
 ![](./images/04-03-10-dotwalkspoke.png)
 
-11. Click the <span className="button-purple">Done</span> button.  
+11. Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-11-donespoke.png)
 
-12. Next, we want to use the decision table we built. Hover in-between steps 2 and 3 and click the plus sign ⨁.  
+12. Em seguida, queremos usar a tabela de decisão que construímos. Passe o mouse entre os passos 2 e 3 e clique no sinal de mais ⨁.  
 ![](./images/04-03-12-adddecision.png)
 
-13. Add the Telework Auto Approval Decision Table.
+13. Adicione a Tabela de Decisão de Aprovação Automática de Teletrabalho.
 
-   >1. Select "Flow Logic" as the step type.
+   >1. Selecione "Flow Logic" como o tipo de passo.
 
-   >2. Select "Make a decision" from the list.  
+   >2. Selecione "Make a decision" na lista.  
 ![](./images/04-03-13-adddecision.png)
 
-14. Setup the decision step.
+14. Configure o passo de decisão.
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Decision Label |Check auto approve conditions
-   |<span className="large-number">➋</span>|Decision Table |Telework Auto Approval
-   |<span className="large-number">❸</span>|Execution | First decision that matches
-   |<span className="large-number">❹</span>|Use Branches | Un-check
-   |<span className="large-number">❺</span>|Telework Request | Drag and drop <span className="button-white-purple-border-black">Telework Case Record</span> data pill   
-   |<span className="large-number">❻</span>|Click on the <span className="button-purple">Done</span> button.  
+   | |Nome do Campo              | Valor do Campo
+   |-|---------------------------| --------------
+   |<span className="large-number">➊</span>|Rótulo da Decisão | Check auto approve conditions
+   |<span className="large-number">➋</span>|Tabela de Decisão | Telework Auto Approval
+   |<span className="large-number">❸</span>|Execução | Primeira decisão que corresponder
+   |<span className="large-number">❹</span>|Usar Branches | Desmarcar
+   |<span className="large-number">❺</span>|Solicitação de Teletrabalho | Arraste e solte o dado <span className="button-white-purple-border-black">Telework Case Record</span>   
+   |<span className="large-number">❻</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-14-setdecision.png)
 
-15. Now, we have to check if either auto-approve condition has been met. Hover in-between steps 3 and 4 and click the plus sign ⨁.  
+15. Agora, precisamos verificar se qualquer condição de aprovação automática foi atendida. Passe o mouse entre os passos 3 e 4 e clique no sinal de mais ⨁.  
 ![](./images/04-03-17-checkautoapprovemet.png)
 
-16. Add the if condition.
+16. Adicione a condição if.
 
-   >1. Select "Flow Logic" as the step type.
+   >1. Selecione "Flow Logic" como o tipo de passo.
 
-   >2. Select "If" from the list.  
+   >2. Selecione "If" na lista.  
 ![](./images/04-03-18-addifstep.png)
 
-17. Setup the if condition.
+17. Configure a condição if.
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Condition Label |If auto approve conditions are met
-   |<span className="large-number">➋</span>|Condition 1 |Dot-walk (see step 18 below)
-   |<span className="large-number">❸</span>|Operator | is
-   |<span className="large-number">❹</span>|Value | Y
-   |<span className="large-number">❺</span>|Click on the <span className="button-white-maroon-border">or</span> button.
-   |<span className="large-number">❻</span>|Condition 2 | Dot-walk (see step 19 below)
-   |<span className="large-number">❼</span>|Operator | is
-   |<span className="large-number">❽</span>|Value |True
-   |<span className="large-number">❾</span>|Click on the <span className="button-purple">Done</span> button.  
+   | |Nome do Campo              | Valor do Campo
+   |-|---------------------------| --------------
+   |<span className="large-number">➊</span>|Rótulo da Condição | If auto approve conditions are met
+   |<span className="large-number">➋</span>|Condição 1 | Navegar (ver passo 18 abaixo)
+   |<span className="large-number">❸</span>|Operador | is
+   |<span className="large-number">❹</span>|Valor | Y
+   |<span className="large-number">❺</span>|Clique no botão <span className="button-white-maroon-border">or</span>.
+   |<span className="large-number">❻</span>|Condição 2 | Navegar (ver passo 19 abaixo)
+   |<span className="large-number">❼</span>|Operador | is
+   |<span className="large-number">❽</span>|Valor | True
+   |<span className="large-number">❾</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-19-setupifcond.png)
 
-18. Dot-walk Condition 1 (step 2 above)
+18. Navegar na Condição 1 (passo 2 acima)
 
-   >1. Click "2 - GET /User"
+   >1. Clique em "2 - GET /User"
 
-   >2. Click the blue arrow next to the "output" object to drill down.
+   >2. Clique na seta azul ao lado do objeto "output" para detalhar.
 
-   >3. Click on "telework-certified" to set the value.  
+   >3. Clique em "telework-certified" para definir o valor.  
 ![](./images/04-03-20-dotwalkpeoplefinder.png)
 
-19. Dot-walk Condition 2 (step 2 above)
+19. Navegar na Condição 2 (passo 2 acima)
 
-   >1. Click "3 - Make A Decision"
+   >1. Clique em "3 - Make A Decision"
 
-   >2. Click the blue arrow next to the "Decision Table Multiple Result Record" record to drill down.
+   >2. Clique na seta azul ao lado do registro "Decision Table Multiple Result Record" para detalhar.
 
-   >3. Click the blue arrow next to the "Result elements" glide_var to drill down.
+   >3. Clique na seta azul ao lado do glide_var "Result elements" para detalhar.
 
-   >4. Click on "Auto Approved" to set the value.  
+   >4. Clique em "Auto Approved" para definir o valor.  
 ![](./images/04-03-21-dotwalkautoapprove.png)
 
-20. Let's set the Approved value to true.
+20. Vamos definir o valor de Approved para verdadeiro.
 
-   >1. Select "Flow Logic" as the step type.
+   >1. Selecione "Flow Logic" como o tipo de ação.
 
-   >2. Select "Set Flow Variables" from the list.  
+   >2. Selecione "Set Flow Variables" na lista.  
 ![](./images/04-03-22-setflowvariables.png)
 
-21.  To add a flow variable to set, click the plus sign ⨁.  
+21. Para adicionar uma variável de fluxo para definir, clique no sinal de mais ⨁.  
 ![](./images/04-03-23-setflowvariables.png)
 
-22. Set the Approved flow variable to true.
+22. Defina a variável de fluxo Approved para verdadeiro.
 
-   >1. Select "Approved | True/False" from the drop-down.
+   >1. Selecione "Approved | True/False" no menu suspenso.
 
-   >2. Check the data box for true.
+   >2. Marque a caixa de dados para true.
 
-   >3. Click the <span className="button-purple">Done</span> button.  
+   >3. Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-24-setflowvariables.png)
 
-23. Now let's add the flow logic for when our condition is not met. Hover above step 6 and click the plus sign ⨁.  
+23. Agora, vamos adicionar a lógica de fluxo para quando nossa condição não for atendida. Passe o mouse acima do passo 6 e clique no sinal de mais ⨁.  
 ![](./images/04-03-25-addelse.png)
 
-24. Add the else condition.
+24. Adicione a condição else.
 
-   >1. Select "Flow Logic" as the step type.
+   >1. Selecione "Flow Logic" como o tipo de passo.
 
-   >2. Select "Else" from the list.  
+   >2. Selecione "Else" na lista.  
 ![](./images/04-03-26-addelse.png)
 
-25. Move the ask for approval action.
+25. Mova a ação de solicitação de aprovação.
 
-   >1. Hover next to step 7 until you see and cross-shape and the text appears "Drag to reorder steps".
+   >1. Passe o mouse ao lado do passo 7 até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Drag step 7 onto the plus sign ⨁ under step 6.
+   >2. Arraste o passo 7 para o sinal de mais ⨁ abaixo do passo 6.
 ![](./images/04-03-27-askforapproval.png)
 
-26. Move the if condition for then manager approves.
+26. Mova a condição if para a aprovação do gerente.
 
-   >1. Hover next to step 8 until you see and cross-shape and the text appears "Drag to reorder steps".
+   >1. Passe o mouse ao lado do passo 8 até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Drag step 8 onto the plus sign ⨁ under step 7.
+   >2. Arraste o passo 8 para o sinal de mais ⨁ abaixo do passo 7.
 ![](./images/04-03-30-checkforapproval.png)
 
-27. Now let's set the flow variable when the manager approves. Hover above step 9 and click the plus sign ⨁.
+27. Agora, defina a variável de fluxo quando o gerente aprovar. Passe o mouse acima do passo 9 e clique no sinal de mais ⨁.  
 ![](./images/04-03-32-setflowvariables.png)
 
-28. Set the Approval flow variable to true.
+28. Defina a variável de fluxo de Aprovação para verdadeiro.
 
-   >1. Select "Flow Logic" as the action type.
+   >1. Selecione "Flow Logic" como o tipo de ação.
 
-   >2. Select "Set Flow Variables" from the list.  
+   >2. Selecione "Set Flow Variables" na lista.  
 ![](./images/04-03-33-setflowvariables.png)
 
-29. To add a flow variable to set, click the plus sign ⨁.  
+29. Para adicionar uma variável de fluxo para definir, clique no sinal de mais ⨁.  
 ![](./images/04-03-29-setflowvariables.png)
 
-30. Set the Approved flow variable to true.
+30. Defina a variável Approved para verdadeiro.
 
-   >1. Drag and drop the <span className="button-white-purple-border-black">Approved</span> flow variable from the data pills on the right side of the screen into the Name field.
+   >1. Arraste e solte a variável de fluxo <span className="button-white-purple-border-black">Approved</span> dos dados à direita da tela para o campo Nome.
 
-   >2. Check the data box for true.
+   >2. Marque a caixa de dados para true.
 
-   >3. Click the <span className="button-purple">Done</span> button.  
+   >3. Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-34-setflowvariables.png)
 
-31. Let's return to our mainline logic and add a new step.  
+31. Vamos retornar à nossa lógica principal e adicionar um novo passo.  
 ![](./images/04-03-31-addnewstep.png)
 
-32. Add the if condition.
+32. Adicione a condição if.
 
-   >1. Select "Flow Logic" as the step type.
+   >1. Selecione "Flow Logic" como o tipo de passo.
 
-   >2. Select "If" from the list.  
+   >2. Selecione "If" na lista.  
 ![](./images/04-03-32-addifstep.png)
 
-33. Setup the if condition.
+33. Configure a condição if.
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Condition Label | If all approve conditions are met
-   |<span className="large-number">➋</span>|Condition 1 | Drag and drop <span className="button-white-purple-border-black">Approved</span> data pill
-   |<span className="large-number">❸</span>|Operator | is
-   |<span className="large-number">❹</span>|Value | True
-   |<span className="large-number">❺</span>|Click on the <span className="button-purple">Done</span> button.  
+   | |Nome do Campo              | Valor do Campo
+   |-|---------------------------| --------------
+   |<span className="large-number">➊</span>|Rótulo da Condição | If all approve conditions are met
+   |<span className="large-number">➋</span>|Condição 1 | Arraste e solte o dado <span className="button-white-purple-border-black">Approved</span>
+   |<span className="large-number">❸</span>|Operador | is
+   |<span className="large-number">❹</span>|Valor | True
+   |<span className="large-number">❺</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-33-setupifcond.png)
 
-34. Delete the step placeholder under step 12.
+34. Exclua o espaço reservado de passo abaixo do passo 12.  
 ![](./images/04-03-34-deletestep.png)
 
-35. Move the Create Task step.
+35. Mova o passo de Criar Tarefa.
 
-   >1. Hover next to step 10 until you see and cross-shape and the text appears "Drag to reorder steps".
+   >1. Passe o mouse ao lado do passo 10 até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Drag step 10 onto the plus sign ⨁ under the then condition in step 12.
+   >2. Arraste o passo 10 para o sinal de mais ⨁ abaixo da condição então no passo 12.  
 ![](./images/04-03-35-movecreatetask.png)
 
-36. Move the Send Email step.
+36. Mova o passo de Enviar E-mail.
 
-   >1. Hover next to the new step 10 until you see and cross-shape and the text appears "Drag to reorder steps".
+   >1. Passe o mouse ao lado do novo passo 10 até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Drag step 10 onto the plus sign ⨁ under the new step 12 (Create Task).
+   >2. Arraste o passo 10 para o sinal de mais ⨁ abaixo do novo passo 12 (Criar Tarefa).  
 ![](./images/04-03-36-moveemail.png)
 
-39. Save the changes to the Main flow by clicking the <span className="button-purple">Save</span> button.  
+39. Salve as alterações no fluxo Principal clicando no botão <span className="button-purple">Save</span>.  
 ![](./images/04-03-39-saveflow.png)
 
-40. Activate the Main flow by clicking the <span className="button-white-purple-border-black">Activate</span> button.  
+40. Ative o fluxo Principal clicando no botão <span className="button-white-purple-border-black">Activate</span>.  
 ![](./images/04-03-40-activateflow.png)
 
-## Bonus
+## Bônus
 
-Do you remeber hot to test your flow from the previous lab? Test your work using what you've learned!
-
-
+Lembra como testar seu fluxo do laboratório anterior? Teste seu trabalho usando o que você aprendeu!

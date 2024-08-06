@@ -8,7 +8,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: 'Telework Case Management',
+            label: 'Gestão de Casos de Teletrabalho',
             items: [
                 '0.0-introduction/app-engine-overview',
                 '0.0-introduction/lab-goals',
@@ -20,7 +20,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: '1. Build the Foundation',
+            label: '1. Construir a Fundação',
             items: [
                 '1.0-Build-the-Foundation/overview',
                 '1.0-Build-the-Foundation/review-input-data',
@@ -34,7 +34,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: '2. User Experience',
+            label: '2. Experiência do Usuário',
             items: [
                 '2.0-The-User-Experience/overview',
                 '2.0-The-User-Experience/create-record-producer',
@@ -47,7 +47,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: '3. Automate Work',
+            label: '3. Automatizar o Trabalho',
             items: [
                 '3.0-Automate-Work/overview',
                 '3.0-Automate-Work/create-workflow',
@@ -58,7 +58,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: '4. Manage the Work',
+            label: '4. Gerenciar o Trabalho',
             items: [
                 '4.0-Manage-Work/overview',
                 '4.0-Manage-Work/create',
@@ -71,7 +71,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: 'Conclusion',
+            label: 'Conclusão',
             items: [
                 '5.0-conclusion/lab-review',
                 '5.0-conclusion/resources',
@@ -79,7 +79,7 @@ const sidebars = {
             ],
         },
 
-        'changelog',
+        'CHANGELOG',
         'lab-guide-pdf',
         {
             type: 'link',

@@ -5,168 +5,168 @@ hide_table_of_contents: false
 ---
 # Create People Finder Spoke
 
-A spoke is a scoped application containing Flow Designer content dedicated to a particular application or record type. This includes integrations that connect external systems or services with the ServiceNow platform. By leveraging spokes, organizations can extend the capabilities of their ServiceNow instance and integrate it with a wide range of external tools and services, enhancing automation, collaboration, and efficiency across their IT operations and business processes.
+Um *spoke* é um aplicativo escopado contendo conteúdo do Flow Designer dedicado a um aplicativo ou tipo de registro específico. Isso inclui integrações que conectam sistemas ou serviços externos com a plataforma ServiceNow. Ao utilizar *spokes*, as organizações podem estender as capacidades de sua instância ServiceNow e integrá-la com uma ampla gama de ferramentas e serviços externos, melhorando a automação, colaboração e eficiência em suas operações de TI e processos de negócios.
 
-[Click here to learn more about Spokes.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spokes.html)
+[Clique aqui para saber mais sobre Spokes.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spokes.html)
 
-Spoke Generator allows users to create custom spokes for integrating ServiceNow with external systems or services. It provides a graphical interface and a set of tools to streamline the process of building, configuring, and deploying spokes tailored to specific integration scenarios.
+O Spoke Generator permite aos usuários criar *spokes* personalizados para integrar o ServiceNow com sistemas ou serviços externos. Ele fornece uma interface gráfica e um conjunto de ferramentas para simplificar o processo de construção, configuração e implantação de *spokes* adaptados a cenários específicos de integração.
 
-[Click here to learn more about Spoke Generator.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spoke-builder.html)
+[Clique aqui para saber mais sobre Spoke Generator.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spoke-builder.html)
 
-We will create a re-usble integration to the finance department's People Finder Open API, so that we can access this data in our Main flow.
+Vamos criar uma integração reutilizável com a API Open de People Finder do departamento financeiro, para que possamos acessar esses dados em nosso fluxo principal.
 
-## Open Flow Designer to use Spoke Generator to create the People Finder Integration
+## Abrir o Flow Designer para usar o Spoke Generator para criar a Integração People Finder
 
-1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).  
+1. Vá para a guia com a Página Inicial do Admin do ServiceNow (seu título pode ser diferente).  
 ![](./images/04-1-return-to-admin-page.png)
 
-2. Open Flow Desginer from the All Menu
+2. Abra o Flow Designer no menu All
 
-   >1. Click the **All** menu
+   >1. Clique no menu **All**
     
-   >2. Search for "flow designer" 
+   >2. Procure por "flow designer"
     
-   >3. Click on: Process Automation > Flow Designer  
+   >3. Clique em: Process Automation > Flow Designer  
 ![](./images/04-2-flow-designer.png)
 
-3. Create New Spoke
+3. Crie um Novo Spoke
 
-   >1. Click <span className="button-purple">Create new ▼</span>
-
-   >2. Click "Spoke"  
+   >1. Clique em <span className="button-purple">Create new ▼</span>
+   
+   >2. Clique em "Spoke"  
 ![](./images//04-3-create-spoke.png)
 
-4. Setup General Information for the Spoke (💡 double-click to select, copy & paste into the form).
+4. Configure as Informações Gerais para o Spoke (💡 clique duas vezes para selecionar, copiar e colar no formulário).
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Drag and drop the icon in the telework_lab files folder we downloaded earlier | people_finder.png
-   |<span className="large-number">➋</span>|Spoke Name (App scope name will auto-populate) | People Finder
-   |<span className="large-number">➌</span>|Description | API to find people in a remote system
-   |<span className="large-number">➍</span>|Click on the <span className="button-purple">Create and continue</span> button.  
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
+   |<span className="large-number">➊</span>|Arraste e solte o ícone na pasta de arquivos telework_lab que baixamos anteriormente | people_finder.png
+   |<span className="large-number">➋</span>|Nome do Spoke (o nome do escopo do aplicativo será preenchido automaticamente) | People Finder
+   |<span className="large-number">➌</span>|Descrição | API para encontrar pessoas em um sistema remoto
+   |<span className="large-number">➍</span>|Clique no botão <span className="button-purple">Create and continue</span>.  
 ![](./images/04-4-spoke-general-info.png)
 
-5. Specify how we want to build our Spoke
+5. Especifique como queremos construir nosso Spoke
 
-   >1. Select OpenAPI Specification
+   >1. Selecione OpenAPI Specification
 
-   >2. Click <span className="button-purple">Continue</span>
+   >2. Clique em <span className="button-purple">Continue</span>
 ![](./images/04-5-how-build-spoke.png)
 
-6. For the OpenAPI source, click <span className="button-white-grey-border">Import new</span>  
+6. Para a origem OpenAPI, clique em <span className="button-white-grey-border">Import new</span>  
 ![](./images/04-6-openapi-import-new.png)
 
-7. Fill the user form with the following values (💡 double-click to select, copy & paste into the form).
+7. Preencha o formulário com os seguintes valores (💡 clique duas vezes para selecionar, copiar e colar no formulário).
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Import method    | Import from URL
-   |<span className="large-number">➋</span>|OpenAPI URL | https://low-code.guide/api-specs.json
-   |<span className="large-number">➌</span>|Click on the <span className="button-purple">Import</span> button.  
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
+   |<span className="large-number">➊</span>|Método de importação | Import from URL
+   |<span className="large-number">➋</span>|URL OpenAPI | https://low-code.guide/api-specs.json
+   |<span className="large-number">➌</span>|Clique no botão <span className="button-purple">Import</span>.  
 ![](./images/04-7-import-new-openapi.png)
 
-8. For the Connection alias, click <span className="button-white-grey-border">Create new</span>  
+8. Para o alias de conexão, clique em <span className="button-white-grey-border">Create new</span>  
 ![](./images/04-8-connection-alias-create-new.png)
 
-9. Fill the user form with the following values (💡 double-click to select, copy & paste into the form).
+9. Preencha o formulário com os seguintes valores (💡 clique duas vezes para selecionar, copiar e colar no formulário).
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Connection alias name | People Finder
-   |<span className="large-number">➋</span>|Authentication Configuration Template | API Key Template
-   |<span className="large-number">➌</span>|Click on the <span className="button-purple">Create</span> button.  
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
+   |<span className="large-number">➊</span>|Nome do alias de conexão | People Finder
+   |<span className="large-number">➋</span>|Template de Configuração de Autenticação | API Key Template
+   |<span className="large-number">➌</span>|Clique no botão <span className="button-purple">Create</span>.  
 ![](./images/04-9-create-new-connection-alias.png)
 
-10. To continue, click the <span className="button-purple">Generate operations</span> button  
+10. Para continuar, clique no botão <span className="button-purple">Generate operations</span>  
 ![](./images/04-10-generate-operations.png)
 
-11. Select the actions you want to create
+11. Selecione as ações que deseja criar
 
-   >1. Select all actions
+   >1. Selecione todas as ações
 
-   >2. Click the <span className="button-purple">Publish(1) | ▼</span> button  
+   >2. Clique no botão <span className="button-purple">Publish(1) | ▼</span>  
 ![](./images/04-11-actions-to-create.png)
 
-12. Click the "GET /user" link to view the action we just created  
+12. Clique no link "GET /user" para visualizar a ação que acabamos de criar  
 ![](./images/04-12-get-user-action.png)
 
-13. Before we can test and use our spoke, we need to set the Base URL for the Connection.
+13. Antes de podermos testar e usar nosso spoke, precisamos definir a URL Base para a Conexão.
 
-   >Click to expand the OpenAPI step  
+   >Clique para expandir a etapa OpenAPI  
 ![](./images/04-13-expand-openapi-step.png)
 
-14. Click the plus sign next to the Connection Alias  
+14. Clique no sinal de mais ao lado do Alias de Conexão  
 ![](./images/04-14-connection-alias.png)
 
-15. Set up the HTTPs(s) Connection (💡 double-click to select, copy & paste into the form).
+15. Configure a Conexão HTTPs(s) (💡 clique duas vezes para selecionar, copiar e colar no formulário).
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Name | People Finder
-   |<span className="large-number">➋</span>|Connection alias | x_snc_people_finde.People_Finder
-   |<span className="large-number">➌</span>|Connection URL | https://low-code.guide/api
-   |<span className="large-number">➍</span>|Click on the <span className="button-white-purple-border-square">Submit</span> button.  
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
+   |<span className="large-number">➊</span>|Nome | People Finder
+   |<span className="large-number">➋</span>|Alias de conexão | x_snc_people_finde.People_Finder
+   |<span className="large-number">➌</span>|URL de Conexão | https://low-code.guide/api
+   |<span className="large-number">➍</span>|Clique no botão <span className="button-white-purple-border-square">Submit</span>.  
 ![](./images/04-15-https-connection.png)
 
-16. The Base URL should now be populated.
+16. A URL Base agora deve estar preenchida.
 
-   >Click on the <span className="button-white-black-border-black">Test</span> button  
+   >Clique no botão <span className="button-white-black-border-black">Test</span>  
 ![](./images/04-16-test-action.png)
 
-17. Test the action with David Loo's email (💡 double-click to select, copy & paste into the form).
+17. Teste a ação com o e-mail de David Loo (💡 clique duas vezes para selecionar, copiar e colar no formulário).
 
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
    |<span className="large-number">➊</span>|email | david.loo@example.com
-   |<span className="large-number">➋</span>|Click on the <span className="button-purple">Run Test</span> button.  
+   |<span className="large-number">➋</span>|Clique no botão <span className="button-purple">Run Test</span>.  
 ![](./images/04-17-test-actio-modal.png)
 
-18. When the test completes, click the link to view the execution results  
+18. Quando o teste for concluído, clique no link para visualizar os resultados da execução  
 ![](./images/04-18-test-action-complete.png)
 
-19. Click on the RUNTIME VALUE link  
+19. Clique no link RUNTIME VALUE  
 ![](./images/04-19-test-output.png)
 
-20. Review the JSON results. We can switch to the Formatted view.
+20. Revise os resultados JSON. Podemos alternar para a visualização formatada.
 
-   >Click <span className="button-white-purple-border">Formatted</span> toggle.
+   >Clique no botão <span className="button-white-purple-border">Formatted</span>.
 ![](./images/04-20-action-json-new.png)
 
-21. Expand the output.
+21. Expanda a saída.
 ![](./images/04-21-expand-output.png)
 
-22. Review the Formatted JSON results.
+22. Revise os resultados JSON Formatados.
 
-   > 1. Note the <b>telework-certified</b> value.
+   > 1. Observe o valor <b>telework-certified</b>.
 
-   > 2. Click <span className="button-white-purple-border">Close</span>
+   > 2. Clique no botão <span className="button-white-purple-border">Close</span>
    ![](./images/04-22-formatted-json.png)
 
-23. Close the Execution Details tab  
+23. Feche a guia Detalhes da Execução  
 ![](./images/04-21-close-execution-details.png)
 
-24. Close the Test Action model by clicking the <span className="button-white-purple-border">Cancel</span> button  
+24. Feche o modal de Teste da Ação clicando no botão <span className="button-white-purple-border">Cancel</span>  
 ![](./images/04-22-close-test-action.png)
 
-25. Save the GET /user spoke action
+25. Salve a ação GET /user do spoke
 
-   >Click the <span className="button-purple">Save</span> button  
+   >Clique no botão <span className="button-purple">Save</span>  
 ![](./images/04-23-save-action.png)
 
-26. Now, we publish the spoke, so it will be available to call from our Main Flow.
+26. Agora, publicamos o spoke para que ele esteja disponível para ser chamado de nosso Fluxo Principal.
 
-   >Click the <span className="button-white-purple-border">Publish</span> button  
+   >Clique no botão <span className="button-white-purple-border">Publish</span>  
 ![](./images/04-24-publish-action.png)
 
-27. Confirm publication of the action
+27. Confirme a publicação da ação
 
-   >Click the <span className="button-purple">Publish</span> button   
+   >Clique no botão <span className="button-purple">Publish</span>   
 ![](./images/04-25-confirm-publish-action.png)
 
-## Bonus: Explore Spoke Generator More
+## Bônus: Explore Mais o Spoke Generator
 
-Open a new browser tab or window and explore the following:
+Abra uma nova aba ou janela do navegador e explore o seguinte:
 https://developer.opentext.com/imservices/products/contentstorageservice/apis/contentstorage
 
-On your own, create a new spoke using the following OpenAPI spec:
+Por conta própria, crie um novo spoke usando o seguinte OpenAPI spec:
 https://raw.githubusercontent.com/deflant/opentext-content-storage-swagger/main/opentext-content-storage-swagger.yaml

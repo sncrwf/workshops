@@ -1,18 +1,17 @@
 ---
 id: resources
-title: Supplemental Resources
+title: Recursos Suplementares
 hide_table_of_contents: true
 draft: false
 ---
 
-In addition to this Lab Guide and the resources discussed in the live workshop, the following resources are always available to help with this, or any other ServiceNow activities.
+Além deste Guia do Laboratório e dos recursos discutidos no workshop ao vivo, os seguintes recursos estão sempre disponíveis para ajudar com esta ou qualquer outra atividade no ServiceNow.
 
-- Get a free Personal Development instance and more free training on:
+- Obtenha uma instância de Desenvolvimento Pessoal gratuita e mais treinamentos gratuitos em:
   - [https://developer.servicenow.com/](https://developer.servicenow.com/)
-- Online community forums
+- Fóruns da comunidade online
   - [https://community.servicenow.com/](https://community.servicenow.com/)
-- Online training and certification (Many additional free trainings, some are for a fee)
+- Treinamento e certificação online (muitos treinamentos adicionais gratuitos, alguns são pagos)
   - [https://nowlearning.service-now.com/](https://nowlearning.service-now.com/)
-- Customer Success Center
+- Centro de Sucesso do Cliente
   - [https://www.servicenow.com/success.html](https://www.servicenow.com/success.html)
-

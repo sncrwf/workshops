@@ -1,23 +1,23 @@
 ---
-title: We Value Your Feedback!
-sidebar_label: "Survey"
+title: Valorizamos Seu Feedback!
+sidebar_label: "Pesquisa"
 hide_table_of_contents: true
 ---
-# We Value Your Feedback!
+# Valorizamos Seu Feedback!
 
-## Help Us Improve Your Learning Experience
+## Ajude-nos a Melhorar Sua Experiência de Aprendizado
 
-As we wrap up our Telework 201 workshop, we would greatly appreciate your input. Your feedback is vital in shaping future workshops to better meet your needs and expectations. We invite you to take a few moments to complete our post-workshop survey.
+Enquanto encerramos nosso workshop Telework 201, agradeceríamos muito o seu retorno. Seu feedback é vital para moldar futuros workshops de forma a atender melhor às suas necessidades e expectativas. Convidamos você a dedicar alguns minutos para completar nossa pesquisa pós-workshop.
 
-### **Why Your Feedback Matters:**
-- **Enhance Workshop Quality**: Your insights help us understand what works well and what can be improved, ensuring that future workshops are even more engaging and effective.
-- **Tailor Content to Your Needs**: Your suggestions play a crucial role in helping us tailor our content to better suit your learning preferences and professional requirements.
-- **Foster a Community of Learning**: By sharing your thoughts, you contribute to a community that values growth, innovation, and collaborative learning.
+### **Por que Seu Feedback é Importante:**
+- **Melhorar a Qualidade do Workshop**: Seus insights nos ajudam a entender o que funciona bem e o que pode ser aprimorado, garantindo que futuros workshops sejam ainda mais envolventes e eficazes.
+- **Adaptar o Conteúdo às Suas Necessidades**: Suas sugestões desempenham um papel crucial em nos ajudar a ajustar nosso conteúdo para atender melhor às suas preferências de aprendizado e requisitos profissionais.
+- **Fomentar uma Comunidade de Aprendizado**: Ao compartilhar seus pensamentos, você contribui para uma comunidade que valoriza o crescimento, a inovação e o aprendizado colaborativo.
 
-### Confidential and Anonymous: 
-Your responses will be kept confidential and anonymous. We are interested in your honest opinions, whether they are positive or negative.
+### Confidencial e Anônimo:
+Suas respostas serão mantidas em sigilo e anonimato. Estamos interessados em suas opiniões sinceras, sejam elas positivas ou negativas.
 
-Click on the link below to access the survey. It should take no more than **5 minutes** to complete.
+Clique no link abaixo para acessar a pesquisa. Não deve levar mais do que **5 minutos** para completar.
 
 <div style={{
  marginLeft: '20px', width: '200px', 
@@ -28,8 +28,8 @@ Click on the link below to access the survey. It should take no more than **5 mi
  textAlign: 'center',
  fontWeight: 'bold' }}>
 <a href="https://201workshop.service-now.com/esc?id=public_survey&type_id=7a4dd33893ea71506f42b0f97bba1097" style={{ fontSize: '20px', color: '#1d1d1d', textDecoration: 'none', fontWeight: 'bold' }}>
-Start the Survey
+Iniciar a Pesquisa
 </a>
  </div>
 <br/>
-Thank you for taking the time to help us enhance the Telework 201 workshop experience.
+Obrigado por dedicar seu tempo para ajudar a aprimorar a experiência do workshop Telework 201.

@@ -1,518 +1,552 @@
 ---
-title: "Add a playbook" 
-sidebar_label: "1. Add a playbook"
+title: "Adicionar um playbook"
+sidebar_label: "1. Adicionar um playbook"
 hide_table_of_contents: false
 ---
-# Adding a playbook to the workspace
+# Adicionando um Playbook ao Espaço de Trabalho
 
-Amandas team is growing and the workspace that she uses to manage and report on telework cases is now used by more of her direct reports. She has noticed some of the direct reports aren't always aware of what to validate on the requests and Amanda would like a way for anyone who views the Telework Cases to be guided through what to look for, ensure the process is followed and all cases are treated equally.  
+A equipe da Amanda está crescendo e o espaço de trabalho que ela usa para gerenciar e relatar casos de teletrabalho agora é utilizado por mais de seus subordinados diretos. Ela notou que alguns desses subordinados nem sempre sabem o que validar nas solicitações e Amanda gostaria de ter uma forma de guiar quem visualiza os Casos de Teletrabalho sobre o que procurar, garantir que o processo seja seguido e que todos os casos sejam tratados igualmente.
 
-The solution for this is to implement a playbook into the workspace.  
+A solução para isso é implementar um playbook no espaço de trabalho.
 
+Os Playbooks permitem que os usuários do espaço de trabalho interajam com um fluxo de trabalho empresarial em tempo real, diretamente no Workspace. Os agentes podem usar o Playbook para atualizar registros, fazer upload de anexos e concluir tarefas em várias atividades do fluxo de trabalho.
+[Clique aqui para mais informações](https://docs.servicenow.com/en-US/bundle/vancouver-build-workflows/page/administer/workspace/concept/playbook-ui.html)
 
-Playbooks allow workspace users to interact with a business workflow in real time from within Workspace. Agents can use Playbook to update records, upload attachments, and complete tasks across multiple workflow activities.  
-[Click Here for More Info](https://docs.servicenow.com/en-US/bundle/vancouver-build-workflows/page/administer/workspace/concept/playbook-ui.html)  
-
-
-Example of a playbook in a workspace:
+Exemplo de um playbook em um espaço de trabalho:
 ![](./Playbook%20Images/example%20of%20a%20playbook%20in%20a%20workspace.jpg)
 
-
-## Steps to Adding a Playbook
+## Etapas para Adicionar um Playbook
 
 |   | 
-    |-------------|---------------------------------|
-    |<span className="large-number">➊</span>| Design your playbook in Process Automation Designer |
-    |<span className="large-number">➋</span>| Test and Publish your playbook  |
-    |<span className="large-number">➌</span>| Add playbook to your workspace in workspace builder  |
-    |<span className="large-number">➍</span>| If you want to change the order of where the tab appears, use UI Builder |
+|-------------|---------------------------------|
+|<span className="large-number">➊</span>| Desenhe seu playbook no Process Automation Designer |
+|<span className="large-number">➋</span>| Teste e Publique seu playbook |
+|<span className="large-number">➌</span>| Adicione o playbook ao seu espaço de trabalho no Workspace Builder |
+|<span className="large-number">➍</span>| Se necessário, ajuste a ordem das abas usando o UI Builder |
+
+## Vamos Começar
+
+### 1. Desenhe Seu Playbook no Process Automation Designer
+
+1. Vá para 'All'
+2. Digite 'Process Automation Designer'
+3. Clique em 'Process Automation Designer' (isso abrirá em uma nova aba do navegador)
+
+   ![](./Playbook%20Images/go%20to%20all%20and%20click%20on%20process%20automation%20designer.jpg)
+
+   Você será direcionado para a visualização de lista do Process Automation Designer, mostrando todos os processos concluídos.
+
+2. Clique em 'Criar um novo processo'
+
+   ![](./Playbook%20Images/PAD%20click%20on%20new%20process.jpg)
+
+3. Dê ao seu processo um rótulo e uma descrição:
+   - **Rótulo:** Playbook de Casos de Teletrabalho
+   - **Descrição:** Usado para garantir a completude dos casos de teletrabalho, acionado quando um caso é criado
+   - Clique em 'Selecionar um Gatilho'
+
+   ![](./Playbook%20Images/name%20your%20process%20and%20select%20trigger.jpg)
+
+   :::info
+   Isso será muito parecido com o Flow Designer – nos bastidores, os fluxos são acionados e usados enquanto montamos nosso processo.
+   :::
+
+4. Selecione um gatilho:
+   - **Escolha:** "Defina suas próprias condições para quando seu processo é executado"
+   - **Escolha:** "Criação de Registro"
+   - Clique em 'Definir sua condição de gatilho'
+
+   ![](./Playbook%20Images/select%20a%20trigger%201.jpg)![](./Playbook%20Images/select%20a%20trigger%202.jpg)
+
+5. Escolha sua tabela e condições (nenhuma condição específica sobre os tipos de registros é necessária, mas é uma opção):
+   - **Tabela:** Caso de Teletrabalho
+   - Clique em "Ir para Designer"
+
+   ![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)
+
+   Mude para a 'Visualização de Quadro'
+
+   ![](./Playbook%20Images/switch%20to%20board%20view.png)
+
+   Você deve ver a seguinte página:
+
+   ![](./Playbook%20Images/Telework%20Case%20STAGE%201.png)
+
+### 2. Adicionar Estágios
+
+1. **Adicionando o Primeiro Estágio:**
+   - Clique em <span className="button-purple">+ Adicionar Estágio</span>
+   - **Rótulo:** Completude da Solicitação
+   - **Descrição:** Garantir que todas as informações estejam fornecidas
+   - **Quando iniciar:** Quando o processo começa
+   - Clique em 'Salvar e Fechar'
+
+2. **Adicionando o Segundo Estágio:**
+   - Clique em <span className="button-purple">+ Adicionar Estágio</span> (ao lado do estágio que você criou)
+   - **Rótulo:** Finalizando Solicitação
+   - **Descrição:** Garantir que todas as aprovações e tarefas tenham sido criadas e concluídas
+   - **Quando iniciar:** Após estágios específicos
+   - Clique em 'Salvar e Fechar'
+
+   Sua tela deve se parecer com isso:
+
+   ![](./Playbook%20Images/Telework%20Case%20Stage%202.png)
+
+### 3. Adicionar Atividades
+
+Na Coluna 1, Completude da Solicitação, vamos adicionar as seguintes atividades:
+
+1. **Atividade 1:** Verifique se o `opened_by` tem um gerente, se o campo motivo está preenchido e defina a prioridade.
+2. **Atividade 2:** Verifique se o `opened_by` já possui casos de teletrabalho submetidos.
+3. **Atividade 3:** Forneça ao usuário do espaço de trabalho o artigo de conhecimento sobre diretrizes de teletrabalho, se ele quiser anexá-lo.
+
+#### Adicionando Atividade 1
+
+1. Clique em <span className="button-purple">+ Adicionar Atividade</span>
+
+   **Faça uma Pausa**: Explore a Tela de Atividade
+   - 'Pesquisar Atividades'
+   - 'Criar uma nova atividade' – [Saiba mais](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-activity-definition.html)
+
+   As caixas foram destacadas com cores para diferenciá-las. Em sua instância, não haverá cores ao redor de cada seção:
+   - **Caixa Vermelha:** Atividades agrupadas
+   - **Caixa Roxa:** Atividades dentro de cada atividade agrupada
+   - **Caixa Verde:** Informações necessárias para o funcionamento da atividade
+
+   ![](./Playbook%20Images/Add%20activity%20screen.jpg)
+
+   Mais informações: [Clique Aqui](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-process-definition.html)
+
+2. **De volta ao Laboratório e Adicionando a Atividade 1:**
+   - **Escolha:** Atividades Comuns
+   - **Selecione:** Formulário de Usuário
+
+   ![](./Playbook%20Images/Telework%20Stage%202-5.jpg)
+
+   No lado direito, você encontrará as propriedades da atividade. É aqui que você fornece as informações necessárias para a atividade funcionar.
+
+3. Preencha o formulário (Editar Propriedades da Atividade):
+   - **Rótulo:** Revisar Formulário
+   - **Descrição:** Verificar se o solicitante tem um gerente, se o campo motivo está preenchido e se a prioridade está definida no nível correto.
+   - Clique na aba 'Automação' (NÃO clique em 'Salvar e Fechar')
+
+   ![](./Playbook%20Images/Telework%20Case%20Stage%203.png)
 
 
-## Let's get started
+## Adicionando o Primeiro Estágio
 
-# Design your playbook in Process Automation Designer
+| Passos | 
+|-------------|---------------------------------|
+| Clique | <span className="button-purple">+ Adicionar Estágio</span>  |
+| Rótulo | Completude da Solicitação |
+| Descrição | Garantir que todas as informações sejam fornecidas |
+| Quando iniciar | Quando o processo começa |
+| Clique | 'Salvar e Fechar' |
 
-1. 
-  |   | 
-    |-------------|---------------------------------|
-    |<span className="large-number">➊</span>| Go to 'All' |
-    |<span className="large-number">➋</span>| Type in 'Process Automation Designer' |
-    |<span className="large-number">➌</span>| Click on 'Process Automation Designer' (this will open up in a new tab in your browser) |
+## Adicionando o Segundo Estágio
 
-  ![](./Playbook%20Images/go%20to%20all%20and%20click%20on%20process%20automation%20designer.jpg)
+| Passos | 
+|-------------|---------------------------------|
+| Clique | <span className="button-purple">+ Adicionar Estágio</span> (ao lado do estágio que você criou)  |
+| Rótulo | Finalizando Solicitação |
+| Descrição | Garantir que todas as aprovações e tarefas tenham sido criadas e concluídas |
+| Quando iniciar | Após estágios específicos |
+| Clique | 'Salvar e Fechar' |
 
+Sua tela deve se parecer com isto:
 
-  You are now in the Process Automation Designer list view showing you all the processes that have been completed.
+![](./Playbook%20Images/Telework%20Case%20Stage%202.png)
 
-2. Click on 'Create a new process'
+## Na Coluna 1, Completude da Solicitação, vamos adicionar 3 atividades  
 
-  ![](./Playbook%20Images/PAD%20click%20on%20new%20process.jpg)
-
-
-3.  Give your process a label and description 
-  (**note: your application name should be the name of your Telework Case Management application, might be different than the one in the screenshot**)  
-
-    | **Steps**   | 
-    |-------------|---------------------------------|
-    | Label | Telework Case Playbook |
-    | Description | used to ensure completeness of telework cases, triggered when case is created  |
-    | Click | Select a Trigger  |  
-
-  ![](./Playbook%20Images/name%20your%20process%20and%20select%20trigger.jpg)
-
-:::info
-This is going to feel a lot like flow designer – in the background, flows are being triggered and used as we put together our process.
-:::  
-
-
-4.  Select a trigger  
-
-    | Steps | 
-    |-------------|---------------------------------|
-    |<span className="large-number">➊</span>| Choose the first option, "Define your own conditions for when your process runs" |
-    |<span className="large-number">➋</span>| Choose "Record Create" |
-    |<span className="large-number">➌</span>| Click on 'Set your trigger condition' |
-
-
-  ![](./Playbook%20Images/select%20a%20trigger%201.jpg)![](./Playbook%20Images/select%20a%20trigger%202.jpg)  
-
-
-5. Finally, choose your table and conditions – we aren't going to have any conditions on types of records but that is an option.  
-
-    | **Steps**   | 
-    |-------------|---------------------------------|
-    | Table | Telework Case |
-    | Click | "Go to Designer"  |  
-    
-    ![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)  
-    
-    Switch to 'Board View'
-
-  ![](./Playbook%20Images/switch%20to%20board%20view.png)  
-
-
-You should now be on this page:
-
-![](./Playbook%20Images/Telework%20Case%20STAGE%201.png)  
-
-
-## Next we will add 2 stages
-
-1. Adding the First Stage
-
-    | Steps | 
-    |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Stage</span>  |
-    | Label | Completeness of Request |
-    | Description | ensure all the information is provided |
-    | When to start | When process starts |
-    | Click | 'Save and close' |
-
-
-2. Adding the Second Stage
-
-    | Steps | 
-    |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Stage</span> (next to the stage you created)  |
-    | Label | Finalizing Request |
-    | Description | ensure all approvals and tasks have been created and completed |
-    | When to start | After specific stages |
-    | Click | 'Save and close' |
-
-Your screen should now look like this:
-
-![](./Playbook%20Images/Telework%20Case%20Stage%202.png)  
-
-## In Column 1, Completeness of Request, we are going to add 3 activities  
-
- | Completeness of Request | 
-    |-------------|---------------------------------|
-    | Activity &nbsp;<span className="large-number">➊</span>| Check the opened\_by has a manager, the reason field is filled out and set the priority |
-    | Activity &nbsp;<span className="large-number">➋</span>| See if the opened\_by has any telework cases already submitted |
-    | Activity &nbsp;<span className="large-number">➌</span>| Give the workspace user the telework guidelines knowledge article if they want to attach it |
+| Completude da Solicitação | 
+|-------------|---------------------------------|
+| Atividade &nbsp;<span className="large-number">➊</span>| Verifique se o `opened_by` tem um gerente, se o campo motivo está preenchido e defina a prioridade |
+| Atividade &nbsp;<span className="large-number">➋</span>| Veja se o `opened_by` já possui casos de teletrabalho submetidos |
+| Atividade &nbsp;<span className="large-number">➌</span>| Forneça ao usuário do espaço de trabalho o artigo de conhecimento sobre diretrizes de teletrabalho, se quiser anexá-lo |
 
 <br/>
-**Completeness of Request – Activity <span className="large-number">➊</span>**
+**Completude da Solicitação – Atividade <span className="large-number">➊</span>**
 <br/>
 <br/>
 
 1.  
     |  | 
     |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Activity</span>  |
+    | Clique | <span className="button-purple">+ Adicionar Atividade</span>  |
 
+## **Faça uma Pausa**: Explore a Tela de Atividade
 
-## \*\*Take A Break\*\* Explore the Activity Screen
+- 'Pesquisar Atividades'
+- 'Criar uma nova atividade' – para saber mais sobre isso, [vá aqui](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-activity-definition.html)
 
-- 'Search Activities'
-- 'Create a new activity' – to learn more about this, [go here](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-activity-definition.html)
+_(as caixas foram destacadas com cores para diferenciá-las. Em sua instância, não haverá cores ao redor de cada seção)_
 
-_(the boxes have been outlined with color to differentiate them. In your instance, there will not be color around each section)_
+- Caixa Vermelha: Essas são suas atividades agrupadas; no Flow Designer, seriam seus 'spokes'
+- Caixa Roxa: Em cada Atividade Agrupada, estão as atividades que você pode atribuir ao seu processo. Essas podem incluir atividades interativas e não interativas.
+- Caixa Verde: Para cada atividade, esta caixa destaca as informações necessárias para que a atividade funcione.
 
-- Red box: These are your bundled activities; in flow designer these would be your 'spokes'
-- Purple box: In each Bundled activity, are the activities you can assign to your process. These can include interactive and non-interactive activities.
-- Green box: For each activity, this box outlines what necessary info is needed for the activity to work.
 ![](./Playbook%20Images/Add%20activity%20screen.jpg)
 
-More Info, [Click Here](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-process-definition.html)
+Mais informações: [Clique Aqui](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-process-definition.html)
 
-## \*\*Back to Lab and Adding Activity 1\*\*
+## **De Volta ao Laboratório e Adicionando a Atividade 1**
 
-Note: We'll be using the 'Common Activities' bundle. Feel free to see what is under 'Global' and 'Process Automation Content' for ideas on what else you can add to a playbook.
+Nota: Estaremos usando o pacote 'Atividades Comuns'. Sinta-se à vontade para ver o que há em 'Global' e 'Conteúdo de Automação de Processos' para ideias sobre o que mais você pode adicionar a um playbook.
 
 2.  
-    | Choose | 
+    | Escolha | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span>| Common Activities |
-    | <span className="large-number">➋</span>| User Form |
+    | <span className="large-number">➊</span>| Atividades Comuns |
+    | <span className="large-number">➋</span>| Formulário de Usuário |
 
-  You should now be here:
+   Você deve estar aqui:
 
-  ![](./Playbook%20Images/Telework%20Stage%202-5.jpg)  
+   ![](./Playbook%20Images/Telework%20Stage%202-5.jpg)  
 
 <br/>
-On the right hand side, is the activity properties. This is where we give the necessary info for the activity to work.
+No lado direito, estão as propriedades da atividade. É aqui que você fornece as informações necessárias para a atividade funcionar.
 <br/>
 <br/>
 
-3. Fill out the form (Edit activity properties):
+3. Preencha o formulário (Editar propriedades da atividade):
 
-  | Choose | 
+  | Escolha | 
     |-------------|---------------------------------|
-    | Label | Review Form |
-    | Description | Check the requestor has a manager, the reason field is filled out and the priority is set to correct level. |
-    | Click | 'Automation' TAB (DO NOT click on 'Save and Close') |
+    | Rótulo | Revisar Formulário |
+    | Descrição | Verificar se o solicitante tem um gerente, se o campo motivo está preenchido e se a prioridade está definida no nível correto. |
+    | Clique | Aba 'Automação' (NÃO clique em 'Salvar e Fechar') |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%203.png)  
 
 <br/>
 <br/>
 
+4. Esta atividade possui algumas entradas necessárias:
 
-4. This activity has some inputs it needs
-
-    | Choose | 
+    | Escolha | 
     |-------------|---------------------------------|
-    | Table | Telework Case |
-    | Record | use the data pill picker to choose the trigger record, just like in flow designer |
-    | Form Fields | **must type in string field:** opened\_by,justification,priority |
-    | Click | <span className="button-purple">Save and close</span> |
+    | Tabela | Caso de Teletrabalho |
+    | Registro | use o seletor de dados para escolher o registro de gatilho, assim como no Flow Designer |
+    | Campos do Formulário | **deve digitar no campo de string:** opened_by,justification,priority |
+    | Clique | <span className="button-purple">Salvar e Fechar</span> |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%204.jpg)  
 
-Before we go any further, let's test this out so you can see how this all will look to the workspace user.
+Antes de prosseguir, vamos testar isso para você ver como tudo isso parecerá para o usuário do espaço de trabalho.
 
-Click on 'Test' in upper right corner near activate: <span className="button-purple">Test</span>
+Clique em 'Testar' no canto superior direito perto de ativar: <span className="button-purple">Testar</span>
 
 1. 
-    | TEST | 
+    | TESTE | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Choose Telework Case record – the pictures below will be using TEL0001002 |
-    | <span className="large-number">➋</span> | Click <span className="button-purple">Run Test</span> |
+    | <span className="large-number">➊</span> | Escolha o registro de Caso de Teletrabalho – as imagens abaixo usarão TEL0001002 |
+    | <span className="large-number">➋</span> | Clique em <span className="button-purple">Executar Teste</span> |
 
   ![](./Playbook%20Images/Run%20Test.jpg)
 
-2. Choose the 'Playbook preview' – click on: View (it will open in a new browser tab)  
+2. Escolha a 'Visualização do Playbook' – clique em: Visualizar (abrirá em uma nova aba do navegador)  
   ![](./Playbook%20Images/Run%20Test%20Choose%20View.jpg)
 
-  Give this screen a moment to load – when it's done, it should look like this:
+  Dê um momento para esta tela carregar – quando terminar, deve se parecer com isto:
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%207.jpg)  
 
-3. Try adding something for 'Justification' then 'Update' then 'Mark Complete'  
+3. Tente adicionar algo para 'Justificativa' e depois 'Atualizar' e 'Marcar como Completo'  
 
-4. In the bottom right corner is a 'cog' – you can open this up and try some of the extra settings. These can be configured in the experience tab for your playbook (not doing in this lab).
+4. No canto inferior direito há um 'engrenagem' – você pode abrir isso e experimentar algumas das configurações extras. Essas podem ser configuradas na aba de experiência para o seu playbook (não faremos isso neste laboratório).
 
-5. If everything looks good, you can close this browser tab then click <span className="button-purple">Done</span> and you should be back to your playbook designer here:
+5. Se tudo estiver correto, você pode fechar esta aba do navegador e clicar em <span className="button-purple">Concluído</span> e você deve estar de volta ao designer de playbooks aqui:
 
-  ![](./Playbook%20Images/Telework%20Case%20Stage%206.jpg)  
+  ![](./Playbook%20Images/Telework%20Case%20Stage%206.jpg)
 
 
 <br/>
-**Completeness of Request – Activity <span className="large-number">➋</span>**
+**Completude da Solicitação – Atividade <span className="large-number">➋</span>**
 <br/>
 <br/>
 
-After the workspace user has reviewed the form, we would like them to see a list of any telework cases that have already been opened by the requestor. That will be our next activity – adding a list of telework cases opened by the requestor.
+Após o usuário do espaço de trabalho revisar o formulário, gostaríamos que ele visse uma lista de quaisquer casos de teletrabalho que já foram abertos pelo solicitante. Essa será nossa próxima atividade – adicionar uma lista de casos de teletrabalho abertos pelo solicitante.
 
 1.  
-    | Underneath 'Review Form'  | 
+    | Abaixo de 'Revisar Formulário'  | 
     |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Activity</span>  |
+    | Clique | <span className="button-purple">+ Adicionar Atividade</span>  |
 
 2.  
-    | Choose | 
+    | Escolha | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Process Automation Content |
-    | <span className="large-number">➋</span> | Show list of records |
+    | <span className="large-number">➊</span> | Conteúdo de Automação de Processos |
+    | <span className="large-number">➋</span> | Mostrar lista de registros |
 
   ![](./Playbook%20Images/2nd%20Activity%20pick%20activity.jpg)
 
-3. In the 'Edit activity properties' on the right hand side
+3. Na 'Editar propriedades da atividade' no lado direito
 
   |   | 
     |-------------|---------------------------------|
-    | Label | Requestors Telework Case |
-    | Description | If the requestor has submitted any other telework case requests, they will be listed below |
-    | Click | <span className="button-purple">UI Layout</span> |
+    | Rótulo | Casos de Teletrabalho do Solicitante |
+    | Descrição | Se o solicitante enviou outros pedidos de casos de teletrabalho, eles serão listados abaixo |
+    | Clique | <span className="button-purple">Layout de UI</span> |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%209.jpg)  
 
-4. Fill out the 'UI Layout' tab  
+4. Preencha a aba 'Layout de UI'
 
   |   |   
     |-------------|---------------------------------|
-    | List Title | Requestors Case |
-    | Table | Telework Case |
-    | Columns | Number,state,created,opened\_by |
-    | Click  | 'Add Condition' next to 'List Query' |
+    | Título da Lista | Caso do Solicitante |
+    | Tabela | Caso de Teletrabalho |
+    | Colunas | Número, estado, criado, opened_by |
+    | Clique  | 'Adicionar Condição' ao lado de 'Consulta da Lista' |
 
-  Condition: opened\_by  is  opened\_by            
+  Condição: opened_by é opened_by            
   <br/>
-  'Add Condition' will look like this (then click <span className="button-purple">Modify</span> ):
+  'Adicionar Condição' deve se parecer com isto (então clique em <span className="button-purple">Modificar</span> ):
   
   ![](./Playbook%20Images/2nd%20Activity%20is%20opened%20by.jpg)
   
-  **Before** clicking on 'Save and close' your form will look like this:
+  **Antes** de clicar em 'Salvar e Fechar', seu formulário deve se parecer com isto:
   
   ![](./Playbook%20Images/Telework%20Case%20Stage%208.jpg)  
 
 5.  
   |  | 
     |-------------|---------------------------------|
-    | Click | <span className="button-purple">Save and Close</span> |
+    | Clique | <span className="button-purple">Salvar e Fechar</span> |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%2010.jpg)  
 
 
 <br/>
-**Completeness of Request – Activity <span className="large-number">➌</span>**
+**Completude da Solicitação – Atividade <span className="large-number">➌</span>**
 <br/>
 <br/>
 
-The last activity in this lane will be to show the workspace user the knowledge article on telework guidelines – many have asked to have this handy in case they need it at during the process or to attach for the requestor to review.
+A última atividade nesta coluna será mostrar ao usuário do espaço de trabalho o artigo de conhecimento sobre diretrizes de teletrabalho – muitos pediram para ter isso à mão caso precisem durante o processo ou para anexar para o solicitante revisar.
 
 1.  
-    | Underneath 'Requestors Telework Cases'  | 
+    | Abaixo de 'Casos de Teletrabalho do Solicitante'  | 
     |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Activity</span>  |
+    | Clique | <span className="button-purple">+ Adicionar Atividade</span>  |
 
 2.  
-    | Choose | 
+    | Escolha | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Common Activities |
-    | <span className="large-number">➋</span> | Show Knowledge Article |
+    | <span className="large-number">➊</span> | Atividades Comuns |
+    | <span className="large-number">➋</span> | Mostrar Artigo de Conhecimento |
 
   ![](./Playbook%20Images/3rd%20Activity%20Show%20KA.jpg)
 
-3. In the 'Edit activity properties' on the right hand side
+3. Na 'Editar propriedades da atividade' no lado direito
 
   |   | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span>  Label | Show Telework Guidelines KA |
-    | <span className="large-number">➋</span>  Description | This will give the requestor the telework guidelines knowledge article so they can use it if needed in the process |
-    | <span className="large-number">➌</span>  Start rule | When stage starts (we want this to be available right away) |
-    | <span className="large-number">➍</span>  Click | Automation Tab (next to details tab) |
+    | <span className="large-number">➊</span>  Rótulo | Mostrar Diretrizes de Teletrabalho KA |
+    | <span className="large-number">➋</span>  Descrição | Isso fornecerá ao solicitante o artigo de conhecimento sobre diretrizes de teletrabalho para que eles possam usá-lo se necessário no processo |
+    | <span className="large-number">➌</span>  Regra de Início | Quando o estágio começa (queremos que isso esteja disponível imediatamente) |
+    | <span className="large-number">➍</span>  Clique | Aba de Automação (ao lado da aba de detalhes) |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%2011.jpg)  
 
-4. Fill out the 'Automation' tab
+4. Preencha a aba 'Automação'
 
   |   | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> Title | Telework Guidelines |
-    | <span className="large-number">➋</span> Knowledge Article | KB0050185 |
-    | <span className="large-number">➌</span> Click | <span className="button-purple">Save and Close</span> |
+    | <span className="large-number">➊</span> Título | Diretrizes de Teletrabalho |
+    | <span className="large-number">➋</span> Artigo de Conhecimento | KB0050185 |
+    | <span className="large-number">➌</span> Clique | <span className="button-purple">Salvar e Fechar</span> |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%2012.jpg)  
 
 
-Super – your process should look like this now:
+Ótimo – seu processo deve se parecer com isto agora:
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2013.jpg)
 
 ##
-**If you have an error regarding an 'end connection' for step 2**  
-- Go to 'Diagram View'  
-- Connect Activity 1.2 to Stage 2  
-- It should look like this:  
+**Se você tiver um erro relacionado a uma 'conexão de fim' para o passo 2**  
+- Vá para 'Visão de Diagrama'  
+- Conecte a Atividade 1.2 ao Estágio 2  
+- Deve se parecer com isto:  
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2014.jpg)  
-- then go back to Board view  
+- Então volte para a visão de Quadro  
 
-## Feel free to take a break and test out your process like we did earlier
+## Sinta-se à vontade para fazer uma pausa e testar seu processo como fizemos anteriormente
 
 <br/>
 <br/>
 
-For the second column, 'Finalizing Request' stage, we will be adding just one activity.
+Para a segunda coluna, o estágio 'Finalizando Solicitação', adicionaremos apenas uma atividade.
 
-1. Under the 'Finalizing Request' column  
+1. Sob a coluna 'Finalizando Solicitação'  
 
     |  | 
     |-------------|---------------------------------|
-    | Click | <span className="button-purple">+ Add Activity</span>  |
+    | Clique | <span className="button-purple">+ Adicionar Atividade</span>  |
 
 2.  
-    | Choose | 
+    | Escolha | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Common Activities |
-    | <span className="large-number">➋</span> | Instructions |
+    | <span className="large-number">➊</span> | Atividades Comuns |
+    | <span className="large-number">➋</span> | Instruções |
 
-3. In the 'Edit activity properties' on the right hand side  
+3. Na 'Editar propriedades da atividade' no lado direito  
 
     |   | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> Label | Check for approval and IT Task |
-    | <span className="large-number">➋</span> Description | ensure approval was done and the IT Task was assigned to the right group |
-    | <span className="large-number">➌</span> Start rule | When stage starts |
-    | <span className="large-number">➍</span> Click | <span className="button-purple">Save and Close</span> |
+    | <span className="large-number">➊</span> Rótulo | Verificar Aprovação e Tarefa de TI |
+    | <span className="large-number">➋</span> Descrição | garantir que a aprovação foi feita e que a Tarefa de TI foi atribuída ao grupo certo |
+    | <span className="large-number">➌</span> Regra de Início | Quando o estágio começa |
+    | <span className="large-number">➍</span> Clique | <span className="button-purple">Salvar e Fechar</span> |
 
-That's it! If you look under the 'Automation' tab it automatically puts the description as your instruction. Your form should look like this:
+É isso aí! Se você olhar na aba 'Automação', ela automaticamente coloca a descrição como sua instrução. Seu formulário deve se parecer com isto:
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2015.jpg)  
 
-Now, you're all set with version one of your Playbook! It's time to click on <span className="button-purple">Activate</span>
+Agora, você está pronto com a versão um do seu Playbook! É hora de clicar em <span className="button-purple">Ativar</span>
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2016.jpg)  
 
-- What else would you add to the process?
+- O que mais você adicionaria ao processo?
 
-- Did you notice an activity for manager approval? Some great activities are already in there, out of the box!
+- Notou alguma atividade para aprovação de gerente? Algumas ótimas atividades já estão lá, de fábrica!
 ##
 
 <br/>
 
-Now that we have published the playbook, we need to add the playbook to our workspace in app engine studio.
+Agora que publicamos o playbook, precisamos adicionar o playbook ao nosso espaço de trabalho no app engine studio.
 <br/>
+
 
 1.    
     |  | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Open 'App Engine Studio' |
-    | <span className="large-number">➋</span> | Open your 'Telework Case Management' application |  
+    | <span className="large-number">➊</span> | Abra 'App Engine Studio' |
+    | <span className="large-number">➋</span> | Abra seu aplicativo 'Gerenciamento de Casos de Teletrabalho' |  
 
-  You should now be here:  
+  Agora você deve estar aqui:  
   ![](./Playbook%20Images/App%20Engine%20Studio%20Telework%20Case.jpg)
 
-2. Edit the 'Telework' workspace
+2. Edite o espaço de trabalho 'Telework'
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%2017.jpg)  
 
-  (if 'Get Started' pops up, go ahead and click on that)
+  (se 'Começar' aparecer, clique nele)
 
-
-You should now be in the workspace builder, your screen should look something like this (some of the reports may differ)
+Você deve estar no construtor de espaço de trabalho, sua tela deve se parecer com isto (alguns dos relatórios podem ser diferentes)
 
 ![](./Playbook%20Images/workspace%20builder.jpg)
 
-2.  At the top of the page:  
+2.  No topo da página:  
 
     |  | 
     |-------------|---------------------------------|
-    | Click | 'Record pages' |
-    | Choose | 'Telework Case Record Page' |
+    | Clique | 'Páginas de Registro' |
+    | Escolha | 'Página de Registro de Caso de Teletrabalho' |
 
   ![](./Playbook%20Images/switch%20to%20record%20view%20on%20workspace.jpg)
 
-3.  On the left hand side, choose 'Record details' on the left navigation bar
+3.  No lado esquerdo, escolha 'Detalhes do Registro' na barra de navegação esquerda
 
   ![](./Playbook%20Images/choose%20record%20details.jpg)
 
-4.  On the far right side, is the Record details configuration pane   
+4.  No lado direito, está o painel de configuração de Detalhes do Registro   
 
     |  | 
     |-------------|---------------------------------|
-    | Click on | + Add playbook |
+    | Clique em | + Adicionar playbook |
 
   ![](./Playbook%20Images/add%20a%20playbook.jpg)
 
-5. Enter in these fields:  
+5. Preencha os campos:
 
     |  | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> Tab name | Telework Playbook |
-    | <span className="large-number">➋</span> Playbook experience | Global Playbook Experience |
-    | <span className="large-number">➌</span> Click | <span className="button-purple">Add</span> |
+    | <span className="large-number">➊</span> Nome da Aba | Playbook de Teletrabalho |
+    | <span className="large-number">➋</span> Experiência de Playbook | Experiência de Playbook Global |
+    | <span className="large-number">➌</span> Clique | <span className="button-purple">Adicionar</span> |
 
   ![](./Playbook%20Images/Add%20a%20playbook%20fields.jpg)
 
 
 ##
-So, what is a playbook experience?
+Então, o que é uma experiência de playbook?
 
-After creating your process in the process automation designer, you can either use the out of the box experience "Global Playbook Experience" which is great if you used all out of the box activities and like the way it looks in the workspace.
+Após criar seu processo no designer de automação de processos, você pode usar a experiência padrão "Experiência de Playbook Global", que é ótima se você usou todas as atividades padrão e gosta da aparência delas no espaço de trabalho.
 
-The other option is you can create your own experiences and components which can give you even more flexibility for the user to work. You can even use UI Builder to create new components and further create the exact experience your workers need.
+A outra opção é criar suas próprias experiências e componentes, o que pode oferecer ainda mais flexibilidade para o usuário trabalhar. Você pode até usar o UI Builder para criar novos componentes e criar a experiência exata que seus trabalhadores precisam.
 
-For more on using playbook experiences, there are a lot of resources – here are a couple:
+Para mais informações sobre o uso de experiências de playbook, há muitos recursos – aqui estão alguns:
 
-- [Playbook Experiences – docs page](https://docs.servicenow.com/en-US/bundle/vancouver-platform-user-interface/page/administer/workspace/concept/set-up-playbook.html)
-- [Platform Academy Session #21 Video](https://www.youtube.com/watch?v=mQKrlf3iyNg)
+- [Experiências de Playbook – página de docs](https://docs.servicenow.com/en-US/bundle/vancouver-platform-user-interface/page/administer/workspace/concept/set-up-playbook.html)
+- [Vídeo da Plataforma Academy Sessão #21](https://www.youtube.com/watch?v=mQKrlf3iyNg)
 ##
 
 
-Now that you have added the playbook to the workspace, take note of how it's showing up as a tab on the record page at the very end, the last tab.   
-Let's move it to the very beginning. This is how it looks now – go ahead and click on the link in the upper right 'open in UI Builder' (and if there's a pop up, continue to UI Builder)
+Agora que você adicionou o playbook ao espaço de trabalho, observe como ele está aparecendo como uma aba na página de registro, no final, a última aba.   
+Vamos movê-lo para o início. Assim está agora – clique no link no canto superior direito 'abrir no UI Builder' (e se houver um pop-up, continue para o UI Builder)
 
 ![](./Playbook%20Images/Telework%20playbook%20move%20to%20first.jpg)
 
-Now that you're in UI Builder – it takes a minute to load. Soon, you will see the pages and sections on the left.
+Agora que você está no UI Builder – pode levar um minuto para carregar. Em breve, você verá as páginas e seções à esquerda.
 
-1. On the left go to: (these should already be expanded)  
+1. À esquerda vá para: (esses já devem estar expandidos)  
 
->Body  
->>- Resizable panes
-  >>>- Left
-    >>>>- Click on "Main Tab"
+>Corpo  
+>>- Painéis redimensionáveis
+  >>>- Esquerda
+    >>>>- Clique em "Aba Principal"
 
   ![](./Playbook%20Images/Step%201%20UIB.jpg)
 
-2. On the right side pane of UI Builder  
-  Drag the Telework Playbook tab so it's on top of the Details tab.  
+2. No painel direito do UI Builder  
+  Arraste a aba Telework Playbook para que fique acima da aba Detalhes.  
 
   ![](./Playbook%20Images/UIB%202.jpg)  
 
-  It should look like this and then Click <span className="button-purple">Save</span>:
+  Deve se parecer com isto e então clique em <span className="button-purple">Salvar</span>:
 
   ![](./Playbook%20Images/UIB%203.jpg)
 
-### You're done! When the 'Save' button in the upper right is greyed out, you're good to close this tab and now we'll test in your workspace.
+### Pronto! Quando o botão 'Salvar' no canto superior direito estiver desativado, você pode fechar esta aba e agora testaremos em seu espaço de trabalho.
 
 ##
 
-Go back to the platform view and under workspaces, find 'Telework':
+Volte para a visualização da plataforma e, sob espaços de trabalho, encontre 'Telework':
 
 ![](./Playbook%20Images/find%20telework%20workspace%20for%20test.jpg)
 
-The playbook runs when a new Telework case is created, so we'll need to do that in order to see our playbook in action.
+O playbook é executado quando um novo Caso de Teletrabalho é criado, então precisaremos fazer isso para ver nosso playbook em ação.
 
-1. When the workspace opens:  
+1. Quando o espaço de trabalho abrir:
 
   |  | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> | Choose 'List' Menu on far left |
-    | <span className="large-number">➋</span> | Choose 'New' | 
+    | <span className="large-number">➊</span> | Escolha o Menu 'Lista' no lado esquerdo |
+    | <span className="large-number">➋</span> | Escolha 'Novo' | 
 
   ![](./Playbook%20Images/Open%20new%20case%20step%201%20and%202.jpg)
 
 
-2. Fill in the fields:  
+2. Preencha os campos:
 
   |  | 
     |-------------|---------------------------------|
-    | Arrangement | Remote |
-    | Justification | Dependent Care |
-    | Click | <span className="button-purple">Save</span> |
+    | Arranjo | Remoto |
+    | Justificativa | Cuidados Dependentes |
+    | Clique | <span className="button-purple">Salvar</span> |
 
-  (if it doesn't show up right away, refresh browser – this might happen the first time you run it)
+  (se não aparecer imediatamente, atualize o navegador – isso pode acontecer na primeira vez que você executá-lo)
 
-Here's your playbook 
+Aqui está o seu playbook 
 
-- Walk through it and check out the experience –  
-- What would you do differently?  
-- What else would be helpful?  
+- Passe por ele e verifique a experiência –  
+- O que você faria diferente?  
+- O que mais seria útil?  
 
-Congrats!  
+Parabéns!
 
 ![](./Playbook%20Images/Final%20Playbook%20in%20Workspace.jpg)
+

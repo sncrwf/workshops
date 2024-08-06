@@ -1,16 +1,16 @@
 ---
 id: lab-review
-title: Lab Review
+title: Revisão do Laboratório
 hide_table_of_contents: true
 draft: false
 ---
 
-In this lab, we built, implemented, and tested an application using the fundamental parts of an application: Data, User Experience, and Automation.
+Neste laboratório, construímos, implementamos e testamos um aplicativo usando as partes fundamentais de um aplicativo: Dados, Experiência do Usuário e Automação.
 
-The team managing the work will be more efficient and the users will get what they need faster.
+A equipe que gerencia o trabalho será mais eficiente e os usuários receberão o que precisam mais rapidamente.
 
-Of course, the examples in these exercises are just the beginning when it comes to the power of leveraging App Engine.
+Claro, os exemplos nestes exercícios são apenas o começo quando se trata do poder de aproveitar o App Engine.
 
-The possibilities are limited only by your imagination as a Creator. If you can dream it, you can workflow it on the Now Platform.
+As possibilidades são limitadas apenas pela sua imaginação como Criador. Se você pode sonhar, você pode criar o fluxo de trabalho na Now Platform.
 
-Here are some resources to help you continue your journey on the ServiceNow platform
+Aqui estão alguns recursos para ajudá-lo a continuar sua jornada na plataforma ServiceNow.

@@ -47,11 +47,11 @@ export default HomepageFeatures;
 const FeatureList = [
 
   {
-    title: 'Telework Case Management',
+    title: 'Gestão de Casos de Teletrabalho',
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver-101/0.0-introduction/app-engine-overview',
@@ -59,11 +59,11 @@ const FeatureList = [
   },
 
   {
-    title: 'Telework Case Management',
+    title: 'Gestão de Casos de Teletrabalho',
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 2 - </strong>Dive deeper into the use case by exploring more advanced features.
+      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.
       </>
     ),
     to: '/labs/telework-201_vancouver/Introduction/Overview',
@@ -71,11 +71,11 @@ const FeatureList = [
   },
 
   {
-    title: 'Collaborate to Accelerate',
+    title: 'Colabore para Acelerar',
     icon: faCog,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn to govern low-code applications with App Engine Management Center. 
+      <div class="button-homepage-vancouver">🇺🇸 Inglês</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
@@ -83,122 +83,15 @@ const FeatureList = [
   },
 
   {
-    title: 'IHub: Spoke Generator',
+    title: 'IHub: Gerador de Spokes',
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn about the newest Integration Hub feature: Spoke Generator. 
+      <div class="button-homepage-vancouver">🇺🇸 Inglês</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
       </>
     ),
     to: '/labs/spokegen/overview',
     target: '_self',
-  },
-
-  /*
-  {
-    title: 'Telework Case Management',
-    icon: faFileCode,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
-      </>
-    ),
-    //to: "/docs/telework-utah/Introduction/",
-    //to: "https://low-code.guide/docs/Telework/Introduction",
-    to: '/labs/telework-utah/0.0-introduction/overview',
-    target: '_self',
-  },
-  */
-
-  {
-    title: 'EWF+CrWF',
-    icon: faUsers,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Create new Departmental Services and publish them to the enterprise using Employee Center.
-      </>
-    ),
-    to: 'labs/deptsvc/lab-introduction/',
-    target: '_self',
-  },
-
-  /*
-  {
-    title: 'Collaborate to Accelerate',
-    icon: faCog,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to govern low-code applications with App Engine Management Center. 
-      </>
-    ),
-    to: '/labs/collaborate-utah/get_started/intro',
-    target: '_self',
-  },
-  */
-
-  {
-    title: 'Travel Request',
-    icon: faPlane,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Create a Travel Request application using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
-      </>
-    ),
-    to: '/labs/travelrequest/introduction',
-    target: '_self',
-  },
-
-  /*
-  {
-    title: 'Logistics',
-    icon: faTruck,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Empower Joe Shipman to revolutionize logistics with ServiceNow, driving efficiency and data integration.
-      </>
-    ),
-    to: '/labs/logistics/get_started/overview',
-    target: '_self',
-  },
-  */
-
-  {
-    title: 'Complaints Management',
-    icon: faHeadset,
-    description: (
-      <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
-      </>
-    ),
-    to: '/labs/complaint-utah/overview/',
-    target: '_self',
-  },
-/*
-  {
-    title: 'Complaints Management',
-    icon: faHeadset,
-    description: (
-      <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
-      </>
-    ),
-    to: '/labs/complaint-vancouver/overview/',
-    target: '_self',
-  },
-*/
-
-/*
-  {
-    title: 'Automation Engine',
-    icon: faRobot,
-    description: (
-      <>
-      <div class="button-homepage-tokyo">🗼 TOKYO</div><br/>Get hands-on experience with products such as Automation Center, Document Intelligence, Integration Hub, and RPA Hub.
-      </>
-    ),
-    to: "https://creatorworkflowsnow.github.io/lab_autoengine",
-    target: '_self',
-  },
- */
+  }
 
 ];

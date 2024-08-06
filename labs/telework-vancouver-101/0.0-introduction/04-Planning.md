@@ -1,44 +1,37 @@
 ---
 id: planning
-title: "4. Planning"
+title: "4. Planejamento"
 hide_table_of_contents: true
 draft: false
 ---
 
-Before Amanda embarks on her Citizen Developer journey on ServiceNow's App Engine, she wants to make sure she is well-prepared. 
+Antes de Amanda iniciar sua jornada como Desenvolvedora Cidadã na App Engine da ServiceNow, ela quer se certificar de que está bem preparada.
 
-Here's a checklist the I.T Department gave her to help guide her through the necessary steps:
+Aqui está uma lista de verificação que o Departamento de TI forneceu para ajudá-la a seguir os passos necessários:
 
 :::info
-Remember, this is a fictitious scenario, but the guidance below is very much like the type of guidance you are likely to receive at your company before building your own app for the first time. 
+Lembre-se, este é um cenário fictício, mas a orientação abaixo é muito semelhante ao tipo de orientação que você provavelmente receberá em sua empresa antes de construir seu próprio aplicativo pela primeira vez.
 :::
 
-## 💡 Prework to Start Your Citizen Developer Journey on ServiceNow
+## 💡 Preparação para Iniciar Sua Jornada como Desenvolvedora Cidadã na ServiceNow
 
-1. **List Your Data:** Start by making a list of the data you'll need to track. For example, think about the categories of work you want to manage.
+1. **Liste Seus Dados:** Comece fazendo uma lista dos dados que você precisará acompanhar. Por exemplo, pense nas categorias de trabalho que deseja gerenciar.
 
+2. **Busque Ajuda:** Se você tiver alguma dúvida ou precisar de assistência, entre em contato com o grupo interno do MS Teams "TransformNow".
 
-2. **Seek Help:** If you have any questions or need assistance, reach out to the internal MS Teams group "TransformNow". 
+3. **Transição de Dados:** Se você estiver usando uma planilha para gerenciar seus dados, faça uma cópia e mantenha apenas os dados essenciais. Veja a seção "Não Fazer" para dados que a ServiceNow gerenciará para você.
 
+4. **Produtor de Registro:** Utilize um produtor de registro para criar um formulário rapidamente e reutilizar qualquer conjunto de perguntas relevantes.
 
-3. **Data Transition:** If you're currently using a spreadsheet to manage your data, make a copy and keep only the data that is essential. See the "Don'ts" section for data that ServiceNow will manage for you.
+5. **Gerenciamento de Tarefas:** Se seus colaboradores precisam criar e gerenciar tarefas relacionadas aos casos, adicione a lista relacionada "Tarefa→Pai" ao seu formulário. Saiba mais na **[documentação](https://docs.servicenow.com/csh?topicname=add-embedded-lists-form.html&version=latest)**.
 
+6. **Recurso Educacional:** Reserve um tempo para concluir o curso NowLearning **[Introdução ao App Engine Studio para Desenvolvedores Cidadãos](https://nowlearning.servicenow.com/lxp/en/app-engine/app-enginename?id=learning_course_prev&course_id=9f7c9a16874cb9d8f40fc95d0ebb35f8)**.
 
-4. **Record Producer:** Utilize a record producer to create a form quickly and reuse any relevant question sets.
+## Não Fazer
+Aqui estão algumas coisas que você deve evitar ao começar sua jornada como Desenvolvedora Cidadã:
 
+1. **Dados Não Manipulados:** Você não precisa criar ou importar os seguintes dados, pois a ServiceNow os gerenciará para você:<br/><br/>
+   * Dados de rastreamento de aprovação, como status de aprovação e datas.<br/><br/>
+   * Datas relacionadas ao caso, como datas de submissão.<br/>
 
-5. **Task Management:** If your case workers need to create and manage tasks related to cases, add the related list "Task→Parent" to your form. Learn more in the **[documentation](https://docs.servicenow.com/csh?topicname=add-embedded-lists-form.html&version=latest)**.
-
-
-6. **Educational Resource:** Take time to complete the NowLearning course **[Introduction to App Engine Studio for Citizen Developers](https://nowlearning.servicenow.com/lxp/en/app-engine/app-enginename?id=learning_course_prev&course_id=9f7c9a16874cb9d8f40fc95d0ebb35f8)**.
-
-
-## Don'ts
-Here are a few things you should avoid doing as you start your Citizen Developer journey:
-
-1. **Hands-Off Data:** You don't need to create or import the following data, as ServiceNow will handle it for you:<br/><br/>
-   * Approval tracking data, such as approval status and dates.<br/><br/>
-   * Dates related to the case, such as submission dates.<br/>
-
-
-Amanda has already prepared a list of the key data her team is tracking, and she's excited to get started. 
+Amanda já preparou uma lista dos dados-chave que sua equipe está acompanhando e está animada para começar.

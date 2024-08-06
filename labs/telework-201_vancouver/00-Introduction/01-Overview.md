@@ -1,22 +1,22 @@
 ---
-title: "Lab Overview"
-sidebar_label: "1. Lab Overview"
+title: "Visão Geral do Laboratório"
+sidebar_label: "1. Visão Geral do Laboratório"
 hide_table_of_contents: true
 ---
 
-# Overview
+# Visão Geral
 
-## Introduction
+## Introdução
 
-In this session, we will build upon our previous Low-Code App Engine Innovation Workshop to explore additional capabilities of the ServiceNow platform. This exercise aims to empower you with advanced developer techniques, transforming the way you perceive and utilize process applications. Whether you have attended our previous workshops or you're familiar with the basics and eager to amplify your skills, this workshop is tailor-made for you.
+Nesta sessão, vamos ampliar nosso Workshop de Inovação em Low-Code App Engine anterior para explorar capacidades adicionais da plataforma ServiceNow. Este exercício tem como objetivo capacitar você com técnicas avançadas de desenvolvimento, transformando a forma como você percebe e utiliza aplicativos de processo. Se você participou dos nossos workshops anteriores ou está familiarizado com os conceitos básicos e ansioso para aprimorar suas habilidades, este workshop é feito sob medida para você.
 
-## Throughout the lab, you will focus on:
-- **Flow Designer**: Learning easy integration techniques.
-- **Form Intelligence**: Enhance the request form  to be more intelligent.
-- **Portal Branding**: Improving user experience.
+## Durante o laboratório, você se concentrará em:
+- **Flow Designer**: Aprender técnicas de integração fáceis.
+- **Form Intelligence**: Melhorar o formulário de solicitação para torná-lo mais inteligente.
+- **Portal Branding**: Melhorar a experiência do usuário.
 
-## Bonus:
-- **App Security**: Making it accessible only to the right people.
-- **Brainstorming**: Discussing new ways to enhance your apps.
+## Bônus:
+- **Segurança do Aplicativo**: Torná-lo acessível apenas às pessoas certas.
+- **Brainstorming**: Discutir novas maneiras de aprimorar seus aplicativos.
 
-_Let's level up to the next level of application development!_
+_Vamos avançar para o próximo nível de desenvolvimento de aplicativos!_

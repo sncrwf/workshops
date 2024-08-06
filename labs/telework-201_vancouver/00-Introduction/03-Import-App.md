@@ -1,128 +1,125 @@
 ---
-title: "Import the Telework Application" 
-sidebar_label: "3. Import the application"
+title: "Importar o Aplicativo de Teletrabalho" 
+sidebar_label: "3. Importar o aplicativo"
 hide_table_of_contents: true
 ---
 
 
-In this exercise, we will learn how to import an existing scoped application using an Update Set, or xml file.  This application was created in the 101 lab, Telework Case Management.
+Neste exercício, aprenderemos como importar um aplicativo com escopo existente usando um Update Set ou um arquivo XML. Este aplicativo foi criado no laboratório 101, Gerenciamento de Casos de Teletrabalho.
 
 
-## Steps to Importing Application  
+## Passos para Importar o Aplicativo  
 
->1. Go to 'Retrieved Update Sets'  
+>1. Vá para 'Retrieved Update Sets'  
 
+>2. Role até 'Related Links' e clique em 'Import Update Set from XML'  
 
->2. Scroll to 'Releated links' and click on 'Import Update Set from XML'  
+>3. Faça o Upload do Update Set  
 
->3. Upload Update Set  
+>4. Encontre o registro que você acabou de importar: Estado = 'Loaded'  
 
->4. Find the record you just imported: State = 'Loaded'  
+>5. Visualizar Update Set  
 
->5. Preview Update Set 
+>6. Aceitar/Pular Atualizações Remotas  
 
->6. Accept/Skip Remote Updates  
-
->7. Commit Update Set  
+>7. Confirmar Update Set  
     
-## Here are those steps in detail: 
+## Aqui estão esses passos em detalhes: 
 
-# Step 1 - Go to 'Retrieved Update Sets'  
+# Passo 1 - Vá para 'Retrieved Update Sets'  
 
->1. Go to All  
+>1. Vá para All  
 
->2. Then under 'System Update Sets' go to: **Retrieved Update Sets**  
+>2. Em seguida, sob 'System Update Sets', vá para: **Retrieved Update Sets**  
 ![](./images/Step%201.png)  
 
 
-# Step 2 - Import Update Set
+# Passo 2 - Importar Update Set
 
->1. Scroll to the bottom of the list
+>1. Role até o final da lista
 
->2. Click on related link: **Import Update Set from XML**
+>2. Clique no link relacionado: **Import Update Set from XML**
 ![](./images/Step%202.png)  
 
 
-# Step 3 - Upload Update Set  
+# Passo 3 - Fazer o Upload do Update Set  
 
->1. Click on 'Choose File'
+>1. Clique em 'Choose File'
 
->2. Find and choose the file you downloaded earlier "Telework Case Management...xml"
+>2. Encontre e escolha o arquivo que você baixou anteriormente "Telework Case Management...xml"
 ![](./images/Step%203_Choose_Telework.png)  
 
 
-
->3. Click on 'Upload'
+>3. Clique em 'Upload'
 ![](./images/Step%203.png)  
 
 
-# Step 4 - Find record State = 'Loaded'
+# Passo 4 - Encontrar o registro Estado = 'Loaded'
 
->1. Right click on 'Committed' (any record)
+>1. Clique com o botão direito em 'Committed' (qualquer registro)
 
->2. Choose "Filter Out"  
+>2. Escolha "Filter Out"  
 ![](./images/Step%204.png)  
 
->3. Click on retrieved update set "Telework Case Management..."  
+>3. Clique no update set recuperado "Telework Case Management..."  
 ![](./images/Step%205.png)  
 
 
-# Step 5 - Preview Update Set  
+# Passo 5 - Visualizar Update Set  
 
->1. Click on 'Preview Update Set'  
+>1. Clique em 'Preview Update Set'  
 ![](./images/Step%206.png)  
 
->2. Watch the bar progress...until 100%
+>2. Acompanhe a barra de progresso...até 100%
 
->3. Click on 'Close' (there can be errors, so it's ok if it says 'Failed')  
+>3. Clique em 'Close' (podem haver erros, então está ok se disser 'Failed')  
 ![](./images/Step%207.png)  
 
 
-# Step 6:  if there are errors. If no errors, go to Step 7  
+# Passo 6: Se houver erros. Se não houver erros, vá para o Passo 7  
 
-**For more information regarding update sets and use of the different options, here are some helpful links:**
+**Para mais informações sobre update sets e uso das diferentes opções, aqui estão alguns links úteis:**
 
 [ServiceNow Update Sets](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/system-update-sets/concept/system-update-sets.html)  
-[Update Set Super Guide](https://www.servicenowelite.com/blog/2016/8/7/update-sets)  
+[Guia Completo de Update Sets](https://www.servicenowelite.com/blog/2016/8/7/update-sets)  
 
->1. Scroll to the related lists
+>1. Role até as listas relacionadas
 
->2. Select 'All' records under 'Update Set Preview Problems'
+>2. Selecione 'All' os registros em 'Update Set Preview Problems'
 
->3. Expand 'Actions on selected rows' option box
+>3. Expanda a caixa de opções 'Actions on selected rows'
 
->4. Click on 'Accept Remote Update'
+>4. Clique em 'Accept Remote Update'
 
 ![](./images/Step_08_New.png)
 
 
 
-# Step 7 - Commit Update Set    
+# Passo 7 - Confirmar Update Set    
 
->1. Click on 'Commit Update Set'
+>1. Clique em 'Commit Update Set'
 ![](./images/Step%209.png)  
 
 
-
->2. Click on **Close**
+>2. Clique em **Close**
 ![](./images/Step_10_Close_Commit_UpdateSet.png)  
 
 
->3. You should now see the application has been successfully imported:  
+>3. Agora você deve ver que o aplicativo foi importado com sucesso:  
 ![](./images/Step%2010.png)  
 
 
-# Step 8 - Open App Engine Studio    
+# Passo 8 - Abrir o App Engine Studio    
 
->1. Click on the ServiceNow logo to go to the home page
+>1. Clique no logotipo do ServiceNow para ir para a página inicial
 ![](./images/Step_11_Click_on_ServiceNow_logo.png)  
 
->2. Click the button **Click here to open App Engine Studio**
+>2. Clique no botão **Click here to open App Engine Studio**
 ![](./images/Step_12_Click_on_Open_Studio.png)  
 
 
-**Congratulations!**
+**Parabéns!**
 
-You have completed importing the Telework Case Management application.
+Você concluiu a importação do aplicativo de Gerenciamento de Casos de Teletrabalho.
 
-Continue into App Engine Studio to find your application - Telework Case Management.
+Continue no App Engine Studio para encontrar seu aplicativo - Gerenciamento de Casos de Teletrabalho.

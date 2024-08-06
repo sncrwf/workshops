@@ -1,16 +1,14 @@
 ---
-title: "Smarter Forms" 
-sidebar_label: "3. Smarter Forms"
+title: "Formulários Inteligentes" 
+sidebar_label: "3. Formulários Inteligentes"
 hide_table_of_contents: true
 ---
-## Purpose
+## Propósito
 
-Amandas team is growing and so is the backlog for what the requestors would like in the Telework Case management application.
-There are two things that need to be addressed:
+A equipe da Amanda está crescendo, assim como o backlog de solicitações para a aplicação de gerenciamento de casos de teletrabalho. Há duas coisas que precisam ser abordadas:
 
-First of all, Amanda needs to be able to allow anyone on her team to work on a telework case but right now, not everyone knows what to do when they log in - what should they look for?  How does the process progress?  For this issue, Amanda would like to implement 'Playbooks' into the workspace to guide the fulfillers through the process.
+Primeiramente, Amanda precisa permitir que qualquer pessoa da equipe trabalhe em um caso de teletrabalho, mas atualmente, nem todos sabem o que fazer ao fazer login - o que eles devem procurar? Como o processo progride? Para resolver esse problema, Amanda gostaria de implementar 'Playbooks' no workspace para orientar os responsáveis pelo atendimento durante o processo.
 
-The second backlog item they need to implement is having the requestor double check who their manager is.  Right now, if there's no manager on the sys_user table, then the workflow stops and Amanda has to correct the issue.  To mitigate this, Amanda would like to add a 'Manager' question for verification on the record producer and have it auto-populate with the manager on file for ease of use.
+O segundo item do backlog que precisa ser implementado é fazer com que o solicitante verifique novamente quem é seu gerente. Atualmente, se não há um gerente na tabela sys_user, o fluxo de trabalho para e Amanda precisa corrigir o problema. Para mitigar isso, Amanda gostaria de adicionar uma pergunta 'Manager' para verificação no record producer e tê-la auto-preenchida com o gerente cadastrado para facilitar o uso.
 
-In this section of the lab, we'll be using Process Automation Designer, UI Builder, and Dev Studio.
- 
+Nesta seção do laboratório, usaremos o Process Automation Designer, o UI Builder e o Dev Studio.

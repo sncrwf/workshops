@@ -1,17 +1,17 @@
 ---
 id: takeoff
-title: "5. Takeoff Checklist 🚀"
+title: "5. Lista de Verificação para Decolagem 🚀"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Let's make sure you have everything you need to get started.
+## Vamos garantir que você tenha tudo o que precisa para começar.
 
-Before beginning the lab exercies, you should have the following:
+Antes de iniciar os exercícios do laboratório, você deve ter o seguinte:
 
-- [ ] A ServiceNow instance URL and credentials.
-- [ ] Download the lab files: **[Telework_Lab_Files.zip](../downloads/Telework_Lab_Files.zip)**
-- [ ] Extract the lab files archive and check that you have the following files:
-   - [ ] File 1: `App_Logo.png`
-   - [ ] File 2: `Form_Annotation.docx`
-   - [ ] File 3: `Telework_Data.xlsx`
+- [ ] Uma URL e credenciais da instância ServiceNow.
+- [ ] Baixe os arquivos do laboratório: **[Telework_Lab_Files.zip](../downloads/Telework_Lab_Files.zip)**
+- [ ] Extraia o arquivo do laboratório e verifique se você tem os seguintes arquivos:
+   - [ ] Arquivo 1: `App_Logo.png`
+   - [ ] Arquivo 2: `Form_Annotation.docx`
+   - [ ] Arquivo 3: `Telework_Data.xlsx`

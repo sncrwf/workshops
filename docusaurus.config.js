@@ -7,14 +7,14 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Creator Workshop Lab Guides",
-  tagline: "Ready to learn something new?",
-  url: "https://creatorworkflowsnow.github.io",
+  title: "Workshop Creator Workflows",
+  tagline: "Pronto para aprender algo novo?",
+  url: "https://sncrwf.github.io",
   trailingSlash: false,
   baseUrl: "/", // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: "img/favicon.ico",
-  organizationName: "creatorworkflowsnow", // GitHub pages deployment config.
-  projectName: "creatorworkflowsnow.github.io",
+  organizationName: "sncrwf", // GitHub pages deployment config.
+  projectName: "crwf-workshops",
 
   staticDirectories: ["static"],
 

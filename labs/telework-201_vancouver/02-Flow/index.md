@@ -1,24 +1,23 @@
 ---
-title: "Flow: Overview" 
-sidebar_label: "2. Flow"
-pagination_label: "Flow" 
+title: "Fluxo: Visão Geral" 
+sidebar_label: "2. Fluxo"
+pagination_label: "Fluxo" 
 ---
 
-## Purpose
+## Objetivo
 
-In this exercise, we will learn how to implemenent an integration using **Spoke Generator**, how to create a **Decision Table** and how to leverage them in our main flow to add straigh-through proccesing.
+Neste exercício, aprenderemos a implementar uma integração usando o **Spoke Generator**, criar uma **Tabela de Decisão** e como utilizá-las em nosso fluxo principal para adicionar processamento direto.
 
-Amanda has learned the finance department has pre-certified employees for telework. In the case of transfers, requests for telework should be automatically approved. This data has not been transferred to the ServiceNow instance, but the finance department has published an OpenAPI that can be used to look-up employee data based on their email address.
+Amanda descobriu que o departamento financeiro pré-certificou funcionários para teletrabalho. No caso de transferências, as solicitações de teletrabalho devem ser automaticamente aprovadas. Esses dados não foram transferidos para a instância do ServiceNow, mas o departamento financeiro publicou uma OpenAPI que pode ser usada para consultar os dados dos funcionários com base no endereço de e-mail deles.
 
-Managers have also informed Amanda that when employees apply for 3 days or less of situational telework, the requests can be automatically approved.
+Os gerentes também informaram a Amanda que, quando os funcionários solicitam 3 dias ou menos de teletrabalho situacional, as solicitações podem ser automaticamente aprovadas.
 
-## In this part of the exercise, we will:
+## Nesta parte do exercício, faremos:
 
-- Create a re-usable integration to the finance department using **Spoke Generator**.
-- Create a **Decision Table** to check if the telework request can be automatically approved.
-- Modify our Main Flow to by-pass manager approval if the employee was pre-certified for telework.
+- Criar uma integração reutilizável com o departamento financeiro usando o **Spoke Generator**.
+- Criar uma **Tabela de Decisão** para verificar se a solicitação de teletrabalho pode ser aprovada automaticamente.
+- Modificar nosso Fluxo Principal para dispensar a aprovação do gerente se o funcionário foi pré-certificado para teletrabalho.
 
-# Notes 
+# Observações
 
  - 
- 
