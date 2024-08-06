@@ -31,6 +31,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/setup-node@v3.8.1
+        with:
+          node-version: 20
+          cache: npm
+
       - name: Build Telework Lab PDF
         run: npx mr-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "./telework-vancouver-101.pdf"
 
