@@ -51,14 +51,22 @@ jobs:
       - name: Build Telework Lab PDF
         run: npx mr-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "telework-vancouver-101.pdf"
 
-      - name: Create New Branch and Commit PDFs
-        run: |
-          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
-          git config --local user.name "${{ secrets.GIT_USER_NAME }}"
-          # Get the current date and time
-          current_time=$(date +"%Y-%m-%d-%H-%M-%S")
-          # Use the current date and time in the branch name
-          git checkout -b "new-pdf-branch"
-          git add telework-vancouver-101.pdf
-          git commit -m "Add generated PDFs"
-          git push origin "new-pdf-branch"
+      # - name: Create New Branch and Commit PDFs
+      #   run: |
+      #     git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
+      #     git config --local user.name "${{ secrets.GIT_USER_NAME }}"
+      #     # Get the current date and time
+      #     current_time=$(date +"%Y-%m-%d-%H-%M-%S")
+      #     # Use the current date and time in the branch name
+      #     git checkout -b "new-pdf-branch"
+      #     git add telework-vancouver-101.pdf
+      #     git commit -m "Add generated PDFs"
+      #     git push origin "new-pdf-branch"
+
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: result
+          # The output filename can be specified with --output option
+          path: telework-vancouver-101.pdf
+          if-no-files-found: error
