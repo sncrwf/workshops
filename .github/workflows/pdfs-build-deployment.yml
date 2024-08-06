@@ -52,17 +52,17 @@ jobs:
 #         mkdir -p build/labs/collaborate/
 #         mkdir -p build/labs/travelrequest/
 
-      - name: Build Collaborate Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/collaborate/downloads' -u 'https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/' --output './labs/collaborate/downloads/collaborate-lab.pdf'
+      # - name: Build Collaborate Lab PDF
+      #   run: npx docusaurus-prince-pdf -d './labs/collaborate/downloads' -u 'https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/' --output './labs/collaborate/downloads/collaborate-lab.pdf'
 
-      - name: Build Travel Request Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output './labs/travelrequest/downloads/travelrequest-lab.pdf'
+      # - name: Build Travel Request Lab PDF
+      #   run: npx docusaurus-prince-pdf -d './labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output './labs/travelrequest/downloads/travelrequest-lab.pdf'
 
-      - name: Build Dept Services Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
+      # - name: Build Dept Services Lab PDF
+      #   run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
 
       - name: Build Telework Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/telework-utah/downloads' -u 'https://creatorworkflowsnow.github.io/labs/telework-utah/0.0-introduction/overview' --output './labs/telework-utah/downloads/telework-utah-lab.pdf'
+        run: npx docusaurus-prince-pdf -d './labs/telework-vancouver-101' -u 'https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview' --output './labs/telework-vancouver-101/downloads/lab-guide.pdf'
 
       - name: Create New Branch and Commit PDFs
         run: |
