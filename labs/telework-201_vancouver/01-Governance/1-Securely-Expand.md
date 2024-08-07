@@ -70,8 +70,8 @@ Agora que precisamos abrir o aplicativo para outra equipe, precisamos de papéis
 
     | **Passos**                                             | 
     |-------------|-----------------------------------------|
-    | Nome        | Fulfiller_Development                   |
-    | Descrição   | Fulfiller no departamento de Desenvolvimento |
+    | Name        | Fulfiller_Development                   |
+    | Description | Fulfiller in the Development department |
 
     ![](./images/segment_03_AES_Create_Role_02.png)
 
@@ -91,8 +91,9 @@ Agora que precisamos abrir o aplicativo para outra equipe, precisamos de papéis
 
     | **Passos**                                                  | 
     |-------------|----------------------------------------------|
-    | Nome        | Fulfiller_Customer_Support                   |
-    | Descrição   | Fulfiller no departamento de Suporte ao Cliente |
+    | Name        | Fulfiller_Customer_Support                   |
+    | Description | Fulfiller in the Customer Support department |
+
 
 
 8. Você deve ver os dois novos papéis no aplicativo

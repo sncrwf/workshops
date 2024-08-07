@@ -32,10 +32,10 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo | Approved
-   |<span className="large-number">➋</span>|Nome | approved
-   |<span className="large-number">❸</span>|Tipo | True/False
-   |<span className="large-number">❹</span>|Clique no botão 🆇 para fechar.  
+   |<span className="large-number">➊</span>|Label |Approved
+   |<span className="large-number">➋</span>|Name |approved
+   |<span className="large-number">❸</span>|Type | True/False
+   |<span className="large-number">❹</span>|Salve a variável.  
 ![](./images/04-03-06-populateflowvariable.png)
 
 7. Antes do nosso primeiro passo, queremos chamar o People Finder Spoke. Passe o mouse acima do passo "Ask for Approval" e clique no sinal de mais ⨁.  
@@ -81,11 +81,11 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Decisão | Check auto approve conditions
-   |<span className="large-number">➋</span>|Tabela de Decisão | Telework Auto Approval
-   |<span className="large-number">❸</span>|Execução | Primeira decisão que corresponder
-   |<span className="large-number">❹</span>|Usar Branches | Desmarcar
-   |<span className="large-number">❺</span>|Solicitação de Teletrabalho | Arraste e solte o dado <span className="button-white-purple-border-black">Telework Case Record</span>   
+   |<span className="large-number">➊</span>|Decision Label |Check auto approve conditions
+   |<span className="large-number">➋</span>|Decision Table |Telework Auto Approval
+   |<span className="large-number">❸</span>|Execution | First decision that matches
+   |<span className="large-number">❹</span>|Use Branches | Un-check
+   |<span className="large-number">❺</span>|Telework Request | Drag and drop <span className="button-white-purple-border-black">Telework Case Record</span> data pill   
    |<span className="large-number">❻</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-14-setdecision.png)
 
@@ -103,14 +103,14 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Condição | If auto approve conditions are met
-   |<span className="large-number">➋</span>|Condição 1 | Navegar (ver passo 18 abaixo)
-   |<span className="large-number">❸</span>|Operador | is
-   |<span className="large-number">❹</span>|Valor | Y
-   |<span className="large-number">❺</span>|Clique no botão <span className="button-white-maroon-border">or</span>.
-   |<span className="large-number">❻</span>|Condição 2 | Navegar (ver passo 19 abaixo)
-   |<span className="large-number">❼</span>|Operador | is
-   |<span className="large-number">❽</span>|Valor | True
+   |<span className="large-number">➊</span>|Condition Label |If auto approve conditions are met
+   |<span className="large-number">➋</span>|Condition 1 | Dot-walk (veja passo 18 abaixo)
+   |<span className="large-number">❸</span>|Operator | is
+   |<span className="large-number">❹</span>|Value | Y
+   |<span className="large-number">❺</span>|Click on the <span className="button-white-maroon-border">or</span> button.
+   |<span className="large-number">❻</span>|Condition 2 | Dot-walk (veja passo 19 abaixo)
+   |<span className="large-number">❼</span>|Operator | is
+   |<span className="large-number">❽</span>|Value |True
    |<span className="large-number">❾</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-19-setupifcond.png)
 
@@ -153,7 +153,7 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
    >3. Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-24-setflowvariables.png)
 
-23. Agora, vamos adicionar a lógica de fluxo para quando nossa condição não for atendida. Passe o mouse acima do passo 6 e clique no sinal de mais ⨁.  
+23. Agora, vamos adicionar a lógica de fluxo para quando nossa condição não for atendida. Passe o mouse acima do 'Ask for Approval' e clique no sinal de mais ⨁.  
 ![](./images/04-03-25-addelse.png)
 
 24. Adicione a condição else.
@@ -165,32 +165,32 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
 
 25. Mova a ação de solicitação de aprovação.
 
-   >1. Passe o mouse ao lado do passo 7 até ver uma forma de cruz e o texto "Drag to reorder steps".
+   >1. Passe o mouse ao lado do passo 'Ask for Approval' até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Arraste o passo 7 para o sinal de mais ⨁ abaixo do passo 6.
+   >2. Arraste para o sinal de mais ⨁ abaixo do 'Else'.
 ![](./images/04-03-27-askforapproval.png)
 
-26. Mova a condição if para a aprovação do gerente.
+1.  Mova a condição if para a aprovação do gerente.
 
-   >1. Passe o mouse ao lado do passo 8 até ver uma forma de cruz e o texto "Drag to reorder steps".
+   >1. Passe o mouse ao lado do 'If' até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Arraste o passo 8 para o sinal de mais ⨁ abaixo do passo 7.
+   >2. Arraste o 'If' para o sinal de mais ⨁ abaixo do passo 'Ask for Approval'.
 ![](./images/04-03-30-checkforapproval.png)
 
-27. Agora, defina a variável de fluxo quando o gerente aprovar. Passe o mouse acima do passo 9 e clique no sinal de mais ⨁.  
+1.  Agora, defina a variável de fluxo quando o gerente aprovar. Passe o mouse acima do passo 'Create Task' e clique no sinal de mais ⨁.  
 ![](./images/04-03-32-setflowvariables.png)
 
-28. Defina a variável de fluxo de Aprovação para verdadeiro.
+1.  Defina a variável de fluxo de Aprovação para verdadeiro.
 
    >1. Selecione "Flow Logic" como o tipo de ação.
 
    >2. Selecione "Set Flow Variables" na lista.  
 ![](./images/04-03-33-setflowvariables.png)
 
-29. Para adicionar uma variável de fluxo para definir, clique no sinal de mais ⨁.  
+1.  Para adicionar uma variável de fluxo para definir, clique no sinal de mais ⨁.  
 ![](./images/04-03-29-setflowvariables.png)
 
-30. Defina a variável Approved para verdadeiro.
+1.  Defina a variável Approved para verdadeiro.
 
    >1. Arraste e solte a variável de fluxo <span className="button-white-purple-border-black">Approved</span> dos dados à direita da tela para o campo Nome.
 
@@ -199,48 +199,48 @@ Agora que criamos o People Finder Spoke e nossa Tabela de Decisão de Aprovaçã
    >3. Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-34-setflowvariables.png)
 
-31. Vamos retornar à nossa lógica principal e adicionar um novo passo.  
+1.  Vamos retornar à nossa lógica principal e adicionar um novo passo.  
 ![](./images/04-03-31-addnewstep.png)
 
-32. Adicione a condição if.
+1.  Adicione a condição if.
 
    >1. Selecione "Flow Logic" como o tipo de passo.
 
    >2. Selecione "If" na lista.  
 ![](./images/04-03-32-addifstep.png)
 
-33. Configure a condição if.
+1.  Configure a condição if.
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Condição | If all approve conditions are met
-   |<span className="large-number">➋</span>|Condição 1 | Arraste e solte o dado <span className="button-white-purple-border-black">Approved</span>
-   |<span className="large-number">❸</span>|Operador | is
-   |<span className="large-number">❹</span>|Valor | True
+   |<span className="large-number">➊</span>|Condition Label | If all approve conditions are met
+   |<span className="large-number">➋</span>|Condition 1 | Drag and drop <span className="button-white-purple-border-black">Approved</span> data pill
+   |<span className="large-number">❸</span>|Operator | is
+   |<span className="large-number">❹</span>|Value | True
    |<span className="large-number">❺</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-03-33-setupifcond.png)
 
-34. Exclua o espaço reservado de passo abaixo do passo 12.  
+1.  Exclua o espaço reservado de passo abaixo no (x).  
 ![](./images/04-03-34-deletestep.png)
 
-35. Mova o passo de Criar Tarefa.
+1.  Mova o passo de Criar Tarefa.
 
-   >1. Passe o mouse ao lado do passo 10 até ver uma forma de cruz e o texto "Drag to reorder steps".
+   >1. Passe o mouse ao lado do passo 'Create Task' até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Arraste o passo 10 para o sinal de mais ⨁ abaixo da condição então no passo 12.  
+   >2. Arraste o 'Create Task' para o sinal de mais ⨁ abaixo da condição 'Then'.  
 ![](./images/04-03-35-movecreatetask.png)
 
-36. Mova o passo de Enviar E-mail.
+1.  Mova o passo de Enviar E-mail.
 
-   >1. Passe o mouse ao lado do novo passo 10 até ver uma forma de cruz e o texto "Drag to reorder steps".
+   >1. Passe o mouse ao lado do novo passo 'Send Email' até ver uma forma de cruz e o texto "Drag to reorder steps".
 
-   >2. Arraste o passo 10 para o sinal de mais ⨁ abaixo do novo passo 12 (Criar Tarefa).  
+   >2. Arraste o passo 'Send Email' para o sinal de mais ⨁ abaixo do novo passo 'Create Taks'.  
 ![](./images/04-03-36-moveemail.png)
 
-39. Salve as alterações no fluxo Principal clicando no botão <span className="button-purple">Save</span>.  
+1.  Salve as alterações no fluxo Principal clicando no botão <span className="button-purple">Save</span>.  
 ![](./images/04-03-39-saveflow.png)
 
-40. Ative o fluxo Principal clicando no botão <span className="button-white-purple-border-black">Activate</span>.  
+1.  Ative o fluxo Principal clicando no botão <span className="button-white-purple-border-black">Activate</span>.  
 ![](./images/04-03-40-activateflow.png)
 
 ## Bônus

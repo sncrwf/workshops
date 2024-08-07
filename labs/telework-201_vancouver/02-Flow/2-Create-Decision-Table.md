@@ -32,8 +32,8 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Nome | Telework Auto Approval
-   |<span className="large-number">➋</span>|Acessível a partir de | Apenas este escopo de aplicação
+   |<span className="large-number">➊</span>|Name | Telework Auto Approval
+   |<span className="large-number">➋</span>|Accessible from | This application scope only
    |<span className="large-number">➌</span>|Clique no botão <span className="button-purple">Continue</span>.  
 ![](./images/04-02-06-setupdecisiontable.png)
 
@@ -47,9 +47,9 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo | Telework Case
-   |<span className="large-number">➋</span>|Tipo | Reference
-   |<span className="large-number">➌</span>|Tabela | Telework Case  
+   |<span className="large-number">➊</span>|Label | Telework Case
+   |<span className="large-number">➋</span>|Type | Reference
+   |<span className="large-number">➌</span>|Table | Telework Case  
 ![](./images/04-02-09-populateinputs.png)
 
 10. Na linha de Input que você acabou de criar, clique em <span className="button-white-purple-border">Add condition column</span>.  
@@ -59,11 +59,11 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Coluna de Condição | Arrangement
-   |<span className="large-number">➋</span>|Descrição | Tipo de Arranjo
-   |<span className="large-number">❸</span>|Dados a Avaliar | Field
-   |<span className="large-number">❹</span>|Campo | Telework Case.arrangement
-   |<span className="large-number">❺</span>|Operador Padrão | is
+   |<span className="large-number">➊</span>|Condition Column Label | Arrangement
+   |<span className="large-number">➋</span>|Description | Type of Arrangement
+   |<span className="large-number">❸</span>|Data to Evaluate | Field
+   |<span className="large-number">❹</span>|Field | Telework Case.arrangement
+   |<span className="large-number">❺</span>|Default operator | is
    |<span className="large-number">❻</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-02-13-newconditioncolumnform.png)
 
@@ -78,12 +78,12 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Coluna de Condição | Days per Week
-   |<span className="large-number">➋</span>|Descrição | Dias por Semana
+   |<span className="large-number">➊</span>|Condition Column Label | Days per Week
+   |<span className="large-number">➋</span>|Description | Days per Week
    |<span className="large-number">❸</span>|Input | Telework Request
-   |<span className="large-number">❹</span>|Dados a Avaliar | Field
-   |<span className="large-number">❺</span>|Campo | Telework Case.days_per_week
-   |<span className="large-number">❻</span>|Operador Padrão | less than or is
+   |<span className="large-number">❹</span>|Data to Evaluate | Field
+   |<span className="large-number">❺</span>|Field | Telework Case.days_per_week
+   |<span className="large-number">❻</span>|Default operator | less than or is
    |<span className="large-number">❼</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-02-15-newconditioncolumnform.png)
 
@@ -94,9 +94,9 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Rótulo da Coluna de Resultado | Auto Approved
-   |<span className="large-number">➋</span>|Descrição | É aprovado automaticamente para teletrabalho
-   |<span className="large-number">❸</span>|Tipo de Resultado | True/False
+   |<span className="large-number">➊</span>|Result Column Label | Auto Approved
+   |<span className="large-number">➋</span>|Description | Is telework auto approved
+   |<span className="large-number">❸</span>|Result Type | True/False
    |<span className="large-number">❹</span>|Clique no botão <span className="button-purple">Done</span>.  
 ![](./images/04-02-17-newresultcolumnform.png)
 
@@ -107,17 +107,17 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Operador | is
-   |<span className="large-number">➋</span>|Valor | Situational Telework  
+   |<span className="large-number">➊</span>|Operator | is
+   |<span className="large-number">➋</span>|Value | Situational Telework  
 ![](./images/04-02-19-populatearrangementcondition.png)
 
 18. Preencha a Condição de Número de Dias.
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Operador | less than or is
-   |<span className="large-number">➋</span>|Valor | 3
-   |<span className="large-number">❸</span>|Clique no valor na coluna Auto Approved (atualmente false).  
+   |<span className="large-number">➊</span>|Operator | less than or is
+   |<span className="large-number">➋</span>|Value | 3
+   |<span className="large-number">❸</span>|Click on the value in the Auto Approved column (currently false). 
 ![](./images/04-02-20-populatnumdayscondition.png)
 
 19. Altere o resultado para Aprovação Automática para verdadeiro.
@@ -142,8 +142,8 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Operador | greater than
-   |<span className="large-number">➋</span>|Valor | 3  
+   |<span className="large-number">➊</span>|Operator | greater than
+   |<span className="large-number">➋</span>|Value | 3
 ![](./images/04-02-24-populatenumdayscondition.png)
 
 23. Vamos adicionar outra linha de decisão clicando em <span className="text-purple-bold">⨁ Add new decision row</span>  
@@ -153,8 +153,8 @@ Vamos criar uma tabela de decisão para avaliar o tipo de arranjo e o número de
 
    | |Nome do Campo              | Valor do Campo
    |-|---------------------------| --------------
-   |<span className="large-number">➊</span>|Operador | is not
-   |<span className="large-number">➋</span>|Valor | Situational Telework  
+   |<span className="large-number">➊</span>|Operator | is not
+   |<span className="large-number">➋</span>|Value | Situational Telework  
 ![](./images/04-02-26-populatearrangementcondition.png)
 
 25. Vamos salvar nosso trabalho clicando no botão <span className="button-purple">Save</span>.  

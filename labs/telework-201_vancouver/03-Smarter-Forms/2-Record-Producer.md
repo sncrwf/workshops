@@ -88,7 +88,7 @@ Volte para sua página inicial do App para **Telework Case Management** e abra a
 
 Uma vez aberto, escolha:
 
-1. Perguntas
+1. Questions
 2. Exclua o Conjunto de Perguntas – 'Standard Employee Questions'
 ![](./Forms%20Images/Delete%20question%20set.jpg)  
 3. Após clicar no 'x', clique em 'Remove'
@@ -98,20 +98,22 @@ Em seguida, adicione a pergunta para descobrir para quem eles estão solicitando
 4. Insira uma nova pergunta
 
    |   | 
-     |-------------|---------------------------------|
-     | Clique | 'Insert New Question' |
-     | Tipo de Pergunta | Escolha |
-     | Subtipo de Pergunta | Referência |
-     | Mapear para um campo específico na tabela | Verdadeiro |
-     | Campo da Tabela | Requested For |
-     | Rótulo da Pergunta | Quem é este arranjo? |
+    |-------------|---------------------------------|
+    | Click | 'Insert New Question' |
+    | Question Type | Choice |
+    | Question subtype | Record Reference |
+    | Mape to a specific field on the table | True |
+    | Table field | Requested for |
+    | Question label | Who is this arrangement for? |
+    | Name | requested_for |
+
 
    ![](./Forms%20Images/Manager%20type.jpg) ![](./Forms%20Images/requested%20for%20details.jpg)  
 
    |   | 
      |-------------|---------------------------------|
      | Clique na aba | 'Continue to Additional details' |
-     | Tabela de Origem | Usuário (sys_user) *sem condições* |
+     | Tabela de Origem | User (sys_user) *sem condições* |
      | Clique | 'Insert question' (no canto inferior direito) |  
 
    ![](./Forms%20Images/source%20table%20user.jpg)  
@@ -127,21 +129,22 @@ Adicionaremos a pergunta do gerente a este formulário e a preencheremos com bas
 
 5. Em seguida, insira uma nova pergunta
 
-   |   | 
-     |-------------|---------------------------------|
-     | Clique | 'Insert New Question' |
-     | Tipo de Pergunta | Escolha |
-     | Subtipo de Pergunta | Referência |
-     | Mapear para um campo específico na tabela | Verdadeiro |
-     | Campo da Tabela | Manager |
-     | Rótulo da Pergunta | Manager |
+    |   | 
+    |-------------|---------------------------------|
+    | Click | 'Insert New Question' |
+    | Question Type | Choice |
+    | Question subtype | Record Reference |
+    | Mape to a specific field on the table | True |
+    | Table field | Manager |
+    | Question label | Manager |
+    | Name | manager
  
    ![](./Forms%20Images/Manager%20type.jpg)  ![](./Forms%20Images/manager%20details.jpg)  
 
    |   | 
      |-------------|---------------------------------|
      | Clique na aba | 'Continue to Additional details' |
-     | Tabela de Origem | Usuário (sys_user) *sem condições* |
+     | Tabela de Origem | User (sys_user) *sem condições* |
      | Clique na aba | 'Auto-populate' |  
   
    ![](./Forms%20Images/Manager%20table%20and%20auto%20populate.jpg)  
@@ -159,8 +162,9 @@ Adicionaremos a pergunta do gerente a este formulário e a preencheremos com bas
 
    | Preencha o formulário  | 
      |-------------|---------------------------------|
-     | Mostrar instruções | verdadeiro |
-     | Instruções | Se este for o gerente correto, não mude. Se estiver vazio ou o gerente estiver errado, por favor, altere. A aprovação do seu pedido de teletrabalho será enviada a essa pessoa. |
+    | Show instructions | true |
+    | Instructions | If this is the correct manager don't change. If it is empty or the wrong manager, please change. The approval for your telework request will go to this person. |
+ 
  
    ![](./Forms%20Images/manager%20annotation.jpg)  
 
@@ -294,17 +298,18 @@ Quase pronto, só falta fazer mais uma coisa:
 
 ## Agora, você pode testar e garantir que tudo está funcionando –
 
-> Abra o Service Portal  
-> Preencha o formulário Apply for Telework  
-> Se você alterar o campo 'Requested For', o gerente muda?  
-- Se o gerente estiver em branco, significa que a pessoa não tem um gerente listado
-- O restante do formulário funciona corretamente?
-- Envie
-> Vá para o workspace de Telework  
-> Verifique o novo formulário de teletrabalho  
-- O campo do gerente está correto?
-- O campo 'requested for' está correto?
-- Após a aprovação, o e-mail vai para a pessoa certa?
+1. Abra o Service Portal  
+2. Preencha o formulário Apply for Telework  
+3. Se você alterar o campo 'Requested For', o gerente muda? Tente inserir o David Loo
+   - David Loo reporta para Bud Richman, ele foi carregado automáticamente?
+   - Se o gerente estiver em branco, significa que a pessoa não tem um gerente listado
+4. O restante do formulário funciona corretamente?
+   - Envie
+5. Vá para o workspace de Telework  
+6. Verifique o novo formulário de teletrabalho  
+   - O campo do gerente está correto?
+   - O campo 'requested for' está correto?
+   - Após a aprovação, o e-mail vai para a pessoa certa?
 
 # É isso!!
 

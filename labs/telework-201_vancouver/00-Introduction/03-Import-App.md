@@ -10,7 +10,7 @@ Neste exercício, aprenderemos como importar um aplicativo com escopo existente 
 
 ## Passos para Importar o Aplicativo  
 
->1. Vá para 'Retrieved Update Sets'  
+>1. Vá para All > 'Retrieved Update Sets'  
 
 >2. Role até 'Related Links' e clique em 'Import Update Set from XML'  
 
