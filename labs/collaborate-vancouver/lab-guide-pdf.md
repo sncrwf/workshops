@@ -4,4 +4,4 @@ title: Baixar Guia do Laboratório em PDF
 draft: false
 ---
 
-[Clique aqui para baixar o Guia do Laboratório de Solicitação de Viagem em PDF](./downloads/lab-guide.pdf)
+[Clique aqui para baixar o Guia do Laboratório em PDF](https://github.com/sncrwf/workshops/releases/download/latest/collaborate-vancouver.pdf)
