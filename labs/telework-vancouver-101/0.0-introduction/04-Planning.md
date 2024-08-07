@@ -17,13 +17,13 @@ Lembre-se, este é um cenário fictício, mas a orientação abaixo é muito sem
 
 1. **Liste Seus Dados:** Comece fazendo uma lista dos dados que você precisará acompanhar. Por exemplo, pense nas categorias de trabalho que deseja gerenciar.
 
-2. **Busque Ajuda:** Se você tiver alguma dúvida ou precisar de assistência, entre em contato com o grupo interno do MS Teams "TransformNow".
+2. **Busque Ajuda:** Se você tiver alguma dúvida ou precisar de assistência, entre em contato com o seu instrutor.
 
 3. **Transição de Dados:** Se você estiver usando uma planilha para gerenciar seus dados, faça uma cópia e mantenha apenas os dados essenciais. Veja a seção "Não Fazer" para dados que a ServiceNow gerenciará para você.
 
-4. **Produtor de Registro:** Utilize um produtor de registro para criar um formulário rapidamente e reutilizar qualquer conjunto de perguntas relevantes.
+4. **Record Producer:** Utilize um produtor de registro (Record Producer) para criar um formulário rapidamente e reutilizar qualquer conjunto de perguntas relevantes.
 
-5. **Gerenciamento de Tarefas:** Se seus colaboradores precisam criar e gerenciar tarefas relacionadas aos casos, adicione a lista relacionada "Tarefa→Pai" ao seu formulário. Saiba mais na **[documentação](https://docs.servicenow.com/csh?topicname=add-embedded-lists-form.html&version=latest)**.
+5. **Gerenciamento de Tarefas:** Se seus colaboradores precisam criar e gerenciar tarefas relacionadas aos casos, adicione a lista relacionada "Task→Parent" ao seu formulário. Saiba mais na **[documentação](https://docs.servicenow.com/csh?topicname=add-embedded-lists-form.html&version=latest)**.
 
 6. **Recurso Educacional:** Reserve um tempo para concluir o curso NowLearning **[Introdução ao App Engine Studio para Desenvolvedores Cidadãos](https://nowlearning.servicenow.com/lxp/en/app-engine/app-enginename?id=learning_course_prev&course_id=9f7c9a16874cb9d8f40fc95d0ebb35f8)**.
 

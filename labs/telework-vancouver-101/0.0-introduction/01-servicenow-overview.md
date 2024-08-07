@@ -19,9 +19,11 @@ Na ServiceNow, acreditamos em não apenas entregar soluções, mas também em ca
 
 ## O que é a ServiceNow?
 
-Bem-vindo ao mundo da ServiceNow, onde a transformação digital encontra a eficiência sem costura. A ServiceNow é mais do que apenas uma empresa; é uma força revolucionária no mundo dos Aplicativos Empresariais. No coração de nossas soluções está a Now Platform, um robusto ecossistema em nuvem que tem impulsionado a inovação por quase duas décadas. Ao contrário de muitos provedores de nuvem, lidamos com tudo internamente, desde a gestão da infraestrutura até backups de dados e redundância de rede.
+Bem-vindo ao mundo da ServiceNow, onde a transformação digital encontra a eficiência. A ServiceNow é mais do que apenas uma empresa; é uma força revolucionária no mundo dos Aplicativos Empresariais. No coração de nossas soluções está a Now Platform, um robusto ecossistema em nuvem que tem impulsionado a inovação por quase duas décadas. Ao contrário de muitos provedores de nuvem, lidamos com tudo internamente, desde a gestão da infraestrutura até backups de dados e redundância de rede.
 
 A ServiceNow, a empresa, oferece uma ampla gama de aplicativos pré-construídos atendendo a TI, Atendimento ao Cliente, Recursos Humanos e muito mais, todos integrados de forma contínua com a Plataforma ServiceNow. Quando um cliente investe em um de nossos aplicativos, ele não adquire apenas uma solução, mas também se torna parte de nosso ecossistema. Chamamos o espaço de trabalho único de cada cliente dentro de nossa plataforma de "instância".
+
+Uma plataforma. Uma arquitetura. Um modelo de dados.
 
 ## Compreendendo os Papéis dos Usuários da ServiceNow
 
@@ -30,8 +32,8 @@ A ServiceNow é uma plataforma versátil com diversos papéis de usuário, cada 
 * **Solicitantes / Usuários Finais**
   * Esses usuários interagem com a ServiceNow para solicitar bens ou serviços, geralmente através de um portal amigável ou de um aplicativo móvel.
 
-* **Atendentes / Agentes**
-  * Atendentes, frequentemente chamados de agentes, são os usuários responsáveis por lidar e resolver tíquetes ou casos. Eles auxiliam os solicitantes em suas necessidades de serviço.
+* **Atendentes / Agentes / Fulfiller**
+  * Atendentes, frequentemente chamados de agentes ou fulfiller, são os usuários responsáveis por lidar e resolver tíquetes ou casos. Eles auxiliam os solicitantes em suas necessidades de serviço.
 
 * **Administrador da Plataforma / Administrador do Sistema**
   * Administradores da plataforma ou administradores do sistema desempenham um papel crucial na manutenção da estabilidade e segurança de uma instância da ServiceNow. Eles supervisionam o bem-estar geral da plataforma.
