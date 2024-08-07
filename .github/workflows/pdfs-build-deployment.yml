@@ -50,10 +50,22 @@ jobs:
       - name: Build SpokeGen PDF
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "IHub - Gerador de Spokes" --outputPDFFilename "spokegen.pdf"
 
-      - name: Upload results
-        uses: actions/upload-artifact@v3
+      # - name: Upload results
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Lab-Guides-PDF
+      #     # The output filename can be specified with --output option
+      #     path: ./*.pdf
+      #     if-no-files-found: error
+
+      - name: Release with Notes
+        uses: softprops/action-gh-release@v1
         with:
-          name: Lab-Guides-PDF
-          # The output filename can be specified with --output option
-          path: ./*.pdf
-          if-no-files-found: error
+          files: |
+            telework-vancouver-101.pdf
+            telework-vancouver-201.pdf
+            collaborate-vancouver.pdf
+            spokegen.pdf
+            
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
