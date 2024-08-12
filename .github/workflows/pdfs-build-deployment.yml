@@ -55,6 +55,10 @@ jobs:
       - name: Build SpokeGen PDF
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "IHub - Gerador de Spokes" --outputPDFFilename "spokegen.pdf"
 
+      - name: Build RPA PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/rpa/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "RPA" --outputPDFFilename "rpa.pdf"
+
+
       # - name: Upload results
       #   uses: actions/upload-artifact@v3
       #   with:
@@ -71,6 +75,7 @@ jobs:
             telework-vancouver-201.pdf
             collaborate-vancouver.pdf
             spokegen.pdf
+            rpa.pdf
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
