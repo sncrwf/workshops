@@ -1,98 +1,88 @@
 ---
 id: test-the-spoke
-title: "Test the Spoke"
+title: "Teste o Spoke"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Overview
+## Visão Geral
 
-In this activity, you will test the new spoke.
+Nesta atividade, você testará o novo spoke.
 
-## Instructions
+## Instruções
 
-1. It's time to test that Spoke Action! Click on the **Test** button 
+1. É hora de testar a Spoke Action! Clique no botão **Test** 
    ![Alt text](./images/2023-09-21_08-37-59.png)
 
+2. Você será solicitado a inserir algumas informações do usuário, **dateofbirth** (1), **firstname** (2), **lastname** (3). Por favor, use os seguintes valores:
+    * Depois clique em **Run Test** (4)
 
-2. You will be prompted to enter some user information, **dateofbirth** (1), **firstname** (2), **lastname** (3) please use those values below
-    * Then click **Run Test** (4)
-
-    | Field | Value |
-    |-------|-------|
-    | dateofbirth | 1984-01-25|
-    | firstname | Ashley |
-    | lastname | Burney |
+    | Campo        | Valor     |
+    |--------------|-----------|
+    | dateofbirth  | 1984-01-25|
+    | firstname    | Ashley    |
+    | lastname     | Burney    |
 
    ![Alt text](./images/2023-09-21_08-40-17.png)
 
-:::note
-Typically those values will be passed to the action via a Workflow. we are just testing the action manually right now.
-:::
+   :::note
+   Normalmente, esses valores serão passados para a ação via um Workflow. Estamos apenas testando a ação manualmente agora.
+   :::
 
-
-3. Once the Action has been executed, click on **Your test has finished running. View the Action execution details** (1) to inspect the response we have received from the external system.
+3. Após a execução da ação, clique em **Your test has finished running. View the Action execution details** (1) para inspecionar a resposta que recebemos do sistema externo.
    ![Alt text](./images/2023-09-21_08-42-26.png)
 
-
-4. On the **Execution Details** page, scroll down until you see the **ouput Data** section and click on the output detail (1)
+4. Na página **Execution Details**, role para baixo até ver a seção **ouput Data** e clique no detalhe da saída (1)
    ![Alt text](<./images/2023-09-21_08-52-31 (1).png>)
-   You should see a screen similar to this. Notice the response returned by the API. It contains the return code, message and additional user information. Our new Spoke Action works!
+   Você deve ver uma tela semelhante a esta. Observe a resposta retornada pela API. Ela contém o código de retorno, a mensagem e informações adicionais do usuário. Nossa nova Spoke Action funciona!
 
-
-5. Before you proceed to the next step,on your new Action please make sure to click "Save" (1) and then "Publish" (2) to ensure that the Action is saved and includes the update we added to the flow (changing the Connection Alias).
+5. Antes de prosseguir para a próxima etapa, em sua nova Ação, certifique-se de clicar em "Save" (1) e depois em "Publish" (2) para garantir que a Ação seja salva e inclua a atualização que adicionamos ao fluxo (alterando o Connection Alias).
    ![Alt text](./images/2023-10-06_13-31-13.png)
 
 
-### Now let's use that Spoke Action from a flow! 
+### Agora vamos usar essa Spoke Action em um fluxo!
 
-6. Click on the Home button to return to the main page of flow designer
+6. Clique no botão Home para retornar à página principal do Flow Designer
    ![Alt text](./images/2023-09-21_08-57-47.png)
 
 
-### In the following steps, we just want to show a builder can consume/use the new Spoke Action that we have created. 
+### Nos passos seguintes, queremos apenas mostrar como um construtor pode consumir/utilizar a nova Spoke Action que criamos.
 
-27. Click on **Create New** (1) then **Subflow** (2)
+27. Clique em **Create New** (1) e depois em **Subflow** (2)
    ![Alt text](./images/2023-09-21_08-59-08.png)
 
-
-28. Enter a **Subflow name** (put the name you want) and click **submit** (leave all other field with default values)
+28. Insira um **Subflow name** (coloque o nome que desejar) e clique em **submit** (deixe todos os outros campos com os valores padrão)
    :::note
-   Typically a builder would create a new flow or subflow in his own Application Scope, but for a quick test in a lab instance it doesn't matter we can save it in the Global scope.
+   Normalmente, um construtor criaria um novo fluxo ou subfluxo em seu próprio Application Scope, mas para um teste rápido em uma instância de laboratório, não importa, podemos salvá-lo no escopo Global.
    :::
    ![Alt text](./images/2023-09-21_09-02-25.png)
 
-
-29. A new tab will open for your new subflow, under **ACTIONS** Click **Add an Action, Flow Logic or Subflow** (1)
+29. Uma nova aba será aberta para o seu novo subfluxo, em **ACTIONS** clique em **Add an Action, Flow Logic or Subflow** (1)
    ![Alt text](./images/2023-09-21_09-05-10.png)
 
-
-30. Select Action then type **Visit**, this should display your new spoke **Visitor Access** (2), click on it then click the action **Check if a useer exists** (3)
+30. Selecione Ação e depois digite **Visit**, isso deve exibir seu novo spoke **Visitor Access** (2), clique nele e depois na ação **Check if a user exists** (3)
    ![Alt text](./images/2023-09-21_09-07-17.png)
 
+31. Agora podemos passar os valores para a ação. Aqui vamos definir valores manualmente apenas para fins de teste, normalmente buscaríamos um registro no ServiceNow e passariamos os valores desse registro para a ação. Vamos cobrir isso em detalhe na seção opcional do laboratório.
 
-31. Now we can pass the value to the action, here we are going to hardcode values just for test purposes, typically we would lookup a record in ServiceNow and pass values from that record to the action. We will cover that in detail in the optional section of the lab.
+   | Campo        | Valor     |
+   |--------------|-----------|
+   | dateofbirth  | 1984-01-25|
+   | firstname    | Ashley    |
+   | lastname     | Burney    |
 
-   | Field | Value |
-   |-------|-------|
-   | dateofbirth | 1984-01-25|
-   | firstname | Ashley |
-   | lastname | Burney |
-
-
-32. Using the values from the table above, set the **dateofbirth** (1). **firstname** (2). **lastname** (3) then click **Done** (4) and click the **Test** button. 
+32. Usando os valores da tabela acima, defina **dateofbirth** (1), **firstname** (2), **lastname** (3), depois clique em **Done** (4) e clique no botão **Test**. 
    ![Alt text](./images/2023-09-21_09-14-06.png)
-   Then click **Run Test** (1) 
+   Depois clique em **Run Test** (1) 
    ![Alt text](./images/2023-09-21_09-18-03.png)
 
-
-33. Click **Your Test has finished running, View the subflow exectution details** 
+33. Clique em **Your Test has finished running, View the subflow execution details** 
    ![Alt text](./images/2023-09-21_09-20-06.png)
 
-## Recap
+## Recapitulando
 
-In this lab, we've learned how to create a new Spoke using the Spoke Generator, allowing us to integrate ServiceNow with an external application featuring a usable API. In the optional section of this lab, we will delve into more advanced concepts of Flow Designer/Ihub and demonstrate how to employ the value retrieved from the Spoke action to update a record in ServiceNow.
+Neste laboratório, aprendemos como criar um novo Spoke usando o Spoke Generator, permitindo integrar o ServiceNow com um aplicativo externo que possui uma API utilizável. Na seção opcional deste laboratório, abordaremos conceitos mais avançados do Flow Designer/Ihub e demonstraremos como utilizar o valor recuperado da Spoke Action para atualizar um registro no ServiceNow.
 
 :::note
-With the Spoke Generator, you no longer need to manually configure the REST Step and JSON Parser Step; the Spoke action generated by the Spoke Generator handles this automatically for you.
+Com o Spoke Generator, você não precisa mais configurar manualmente o REST Step e o JSON Parser Step; a Spoke Action gerada pelo Spoke Generator lida com isso automaticamente para você.
 :::

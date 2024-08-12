@@ -1,30 +1,30 @@
 ---
 id: tips
-title: Tips and Tricks
+title: Dicas e Truques
 hide_table_of_contents: true
 sidebar_position: 5
 tags:
-- tips
+- dicas
 ---
 
-## Remember The Copy Button
+## Lembre-se do Botão de Copiar
 
-Look for the button to the right when you see a text box like below . Click the button to copy the value in the box. 
+Procure o botão à direita quando você ver uma caixa de texto como abaixo. Clique no botão para copiar o valor na caixa.
 
 ```
-Text to copy
+Texto para copiar
 ```
 
-## Username and Passwords
+## Nomes de Usuário e Senhas
 
-In some of the sections, you will be copying and pasting user credentials. 
+Em algumas das seções, você estará copiando e colando credenciais de usuário.
 
-You MUST use the values provided as that is the password that is already set for that account. 
+Você DEVE usar os valores fornecidos, pois essa é a senha que já está configurada para essa conta.
 
-If you do not use the provided username and password, you will get the following error:
+Se você não usar o nome de usuário e a senha fornecidos, você receberá o seguinte erro:
 
 ![relative](/img/lab-aemc/2023-07-31-12-39-48.png)
 
-## Scope: Global
+## Escopo: Global
 
-All activities will be performed in the Global scope unless otherwise specified. 
+Todas as atividades serão realizadas no escopo Global, a menos que especificado de outra forma.

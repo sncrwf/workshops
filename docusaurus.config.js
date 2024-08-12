@@ -106,6 +106,23 @@ const config = {
     ],
 
     /*
+     * IHUB: SPOKE GENERATOR
+     */
+
+        [
+          "@docusaurus/plugin-content-docs",
+          {
+            path: "labs/rpa",
+            id: "rpa",
+            routeBasePath: "labs/rpa",
+            sidebarPath: require.resolve("./labs/rpa/sidebar.js"),
+            showLastUpdateAuthor: false,
+            showLastUpdateTime: false,
+            breadcrumbs: false,
+          },
+        ],
+
+    /*
      * EWF+CrWF: Dept Svc
      */
 

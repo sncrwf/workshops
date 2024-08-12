@@ -1,44 +1,40 @@
 ---
 id: use-case
-title: "Use Case"
-pagination_label: "Use Case"
-sidebar_label: "Use Case"
+title: "Caso de Uso"
+pagination_label: "Caso de Uso"
+sidebar_label: "Caso de Uso"
 hide_table_of_contents: true
 draft: false
 ---
 
-ACME Inc. currently uses a third-party system for managing visitor access and authorization to their buildings, which is overseen by a Security and Property Management company. ACME Inc. aims to enhance the experience for both visitors and employees. They utilize ServiceNow and intend to automate the process of verifying visitor access and printing badges through ServiceNow workflows. ACME Inc. has developed a modernized experience using the ServiceNow platform, allowing visitors to independently check in via kiosks located at the reception of each building.
+A ACME Inc. atualmente utiliza um sistema de terceiros para gerenciar o acesso e a autorização de visitantes aos seus edifícios, que é supervisionado por uma empresa de Segurança e Gestão de Propriedades. A ACME Inc. visa melhorar a experiência tanto para visitantes quanto para funcionários. Eles utilizam o ServiceNow e pretendem automatizar o processo de verificação de acesso de visitantes e impressão de crachás através de fluxos de trabalho no ServiceNow. A ACME Inc. desenvolveu uma experiência modernizada usando a plataforma ServiceNow, permitindo que os visitantes façam o check-in de forma independente através de quiosques localizados na recepção de cada edifício.
 
-However, there are no pre-built integrations available for the Visitor Access application, which is hosted and managed externally to the ServiceNow Platform. As ServiceNow developers, our task is to create this integration (Spoke) so that we can retrieve information from this remote system through a workflow triggered when a visitor checks in at the kiosk.
+No entanto, não existem integrações pré-construídas disponíveis para o aplicativo de Acesso de Visitantes, que é hospedado e gerenciado externamente à Plataforma ServiceNow. Como desenvolvedores do ServiceNow, nossa tarefa é criar essa integração (Spoke) para que possamos recuperar informações desse sistema remoto através de um fluxo de trabalho acionado quando um visitante faz o check-in no quiosque.
 
-In this scenario, you had a meeting with the administrator of the third-party visitor access app who has supplied you with the following API documentation: [API Documentation Link](https://quentincloudsnow.github.io/userlookup/#/default/get_checkUser). You can click the link to gain an understanding of how this API functions.
+Nesse cenário, você teve uma reunião com o administrador do aplicativo de acesso de visitantes de terceiros, que forneceu a seguinte documentação da API: [Link para Documentação da API](https://quentincloudsnow.github.io/userlookup/#/default/get_checkUser). Você pode clicar no link para entender como essa API funciona.
 
-This API is relatively straightforward. As you can observe, it consists of only one API method, 'checkUser,' and this method necessitates three inputs."
+Essa API é relativamente simples. Como você pode observar, consiste em apenas um método de API, 'checkUser', e esse método requer três entradas:
 
-| Field | type |
-   |-------|-------|
-   | firstname | string |
-   | lastname | string |
-   | dateofbirth | YYY-MM-DD |
-   
+| Campo        | Tipo      |
+|--------------|-----------|
+| firstname    | string    |
+| lastname     | string    |
+| dateofbirth  | YYYY-MM-DD|
 
+Ao fornecer as informações do usuário, a API retornará uma mensagem indicando se um usuário existe ou não. Se o usuário existir, também fornecerá informações adicionais que você precisará utilizar dentro de um fluxo de trabalho no ServiceNow. Você pode consultar o exemplo de resposta retornado pela API para esclarecimento:
 
-By providing the user information, the API will return a message indicating whether a user exists or not. If the user does exist, it will also provide additional information that you will need to utilize within a ServiceNow workflow. You can refer to the example of the response returned by the API for clarification
-
- 
-      {
-      "code": "0",
-      "message": "User exists",
-      "user": {
-         "guest_title": "Guest",
-         "phone": "123-456-7890",
-         "host_name": "Jane Smith",
-         "host_id_number": "987654",
-         "host_email": "jane@example.com",
-         "guest_email": "john@example.com",
-         "building_location": "Building A",
-         "access_expiration": "2023-12-31"
-               }
-      }
-
-In the JSON response, you will receive a 'code' indicating success (0), a 'message' confirming the user's existence, and comprehensive 'user' information, which includes guest title, phone number, host name, host ID number, email addresses, building location, and access expiration date. If the user does not exist, you will receive a code 1. In our particular scenario, the user data obtained from the response will be utilized to print a badge for the visitor. (The badge printing process is addressed in another lab using our RPA Hub technology.)
+```json
+{
+  "code": "0",
+  "message": "User exists",
+  "user": {
+    "guest_title": "Guest",
+    "phone": "123-456-7890",
+    "host_name": "Jane Smith",
+    "host_id_number": "987654",
+    "host_email": "jane@example.com",
+    "guest_email": "john@example.com",
+    "building_location": "Building A",
+    "access_expiration": "2023-12-31"
+  }
+}

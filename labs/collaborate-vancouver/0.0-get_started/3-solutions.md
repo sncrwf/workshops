@@ -1,29 +1,26 @@
 ---
 id: solutions
-title: Solutions
+title: Soluções
 hide_table_of_contents: true
 sidebar_position: 3
 ---
 
-## ServiceNow no-code and low-code solutions
+## Soluções no-code e low-code da ServiceNow
 
-ServiceNow has the best tools and capabilities for you to build applications and keep step with the fast pace of your business. **ServiceNow leads the way in great no-code and low-code solutions!**
+A ServiceNow oferece as melhores ferramentas e capacidades para você construir aplicativos e acompanhar o ritmo acelerado do seu negócio. **A ServiceNow lidera o caminho em excelentes soluções no-code e low-code!**
 
-ServiceNow allows developers of all skill levels to share the same application within the same environment. For example, a citizen developer can quickly create the initial application, add some basic code, and then pass it to an IT developer to provide advanced capabilities without losing any work.
+A ServiceNow permite que desenvolvedores de todos os níveis de habilidade compartilhem o mesmo aplicativo dentro do mesmo ambiente. Por exemplo, um desenvolvedor cidadão pode criar rapidamente o aplicativo inicial, adicionar algum código básico e, em seguida, passá-lo para um desenvolvedor de TI para fornecer capacidades avançadas sem perder nenhum trabalho.
 
 ![](/img/lab-aemc/2023-09-06-16-27-07.png)
 
-Imagine the benefits when all types of developers are working together based on their strengths. Business process owners, or citizen developers, can start the application development project to target their exact needs on their time frame. If needed, an IT developer can leverage the initial application and apply their skills with more advanced capabilities, like expanded integrations or a more comprehensive user experience.
+Imagine os benefícios quando todos os tipos de desenvolvedores trabalham juntos com base em suas habilidades. Proprietários de processos de negócios, ou desenvolvedores cidadãos, podem iniciar o projeto de desenvolvimento de aplicativos para atender exatamente às suas necessidades no seu próprio ritmo. Se necessário, um desenvolvedor de TI pode aproveitar o aplicativo inicial e aplicar suas habilidades com capacidades mais avançadas, como integrações ampliadas ou uma experiência do usuário mais abrangente.
 
+## Você deve construir isso?
 
-## Should you build it?
+Antes de começar a planejar e construir um aplicativo, lembre-se de que apenas porque você pode construir um aplicativo não significa que você deve construí-lo. O principal objetivo de um aplicativo de negócios é resolver um problema de negócios ou atender a uma oportunidade de melhoria.
 
-Before you start planning and building an app remember that just because you can build an app does not mean you should build it. The main purpose of a business application is to solve a business problem or meet an improvement opportunity. 
-
-Most enterprise decision makers do not realize how much of day-to-day business relies upon custom applications, and many of those applications only partially support business needs or user expectations. Build effective applications that increase responsiveness, productivity, and user satisfaction.
+A maioria dos tomadores de decisão empresarial não percebe o quanto do dia a dia dos negócios depende de aplicativos personalizados, e muitos desses aplicativos apenas apoiam parcialmente as necessidades de negócios ou expectativas dos usuários. Construa aplicativos eficazes que aumentem a capacidade de resposta, a produtividade e a satisfação do usuário.
 
 ![](/img/lab-aemc/2023-09-06-16-54-18.png)
 
-
-
-## No one understands your business process better than you.<br/>Make it better and deliver transformation faster with ServiceNow.<br/>You are in the driver seat to build the future of work!
+## Ninguém entende seu processo de negócios melhor do que você.<br/>Melhore-o e entregue transformações mais rapidamente com a ServiceNow.<br/>Você está no controle para construir o futuro do trabalho!

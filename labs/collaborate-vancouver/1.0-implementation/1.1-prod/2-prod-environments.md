@@ -5,24 +5,25 @@ hide_table_of_contents: true
 draft: false
 ---
 
-#  Exercise: Create Environments
+# Exercício: Criar Ambientes
 
-##### Estimated Time to Complete: 10 minutes
+##### Tempo Estimado para Conclusão: 10 minutos
 
-## Overview 
+## Visão Geral
 
-**<a href="https://docs.servicenow.com/csh?topicname=config-pipeline-environments.html&version=latest" target="_blank">Environments ↗</a>** contain information about a ServiceNow instance and how to access it.
+[Ambientes ↗](https://docs.servicenow.com/csh?topicname=config-pipeline-environments.html&version=latest) contêm informações sobre uma instância do ServiceNow e como acessá-la.
 
-Next, you will create an Environment record for both "Production" and "Development" on the Controller instance where AEMC is installed
+A seguir, você criará um registro de Ambiente para "Produção" e "Desenvolvimento" na instância Controller onde o AEMC está instalado.
 
-### Before Exercise
+
+### Antes do Exercício
 ``` mermaid
 graph LR
     Production[Production Instance]
     style Production fill:#CCFFCC,stroke:#B0BAD3,stroke-width:2px,color:#333;
 ```
 
-### After Exercise
+### Depois do Exercício
 ``` mermaid
 graph TD
     subgraph Prod1["Production Instance"]
@@ -39,19 +40,17 @@ graph TD
     classDef envStyle fill:#F3F3F3,stroke:#B0BAD3,stroke-width:2px,color:#333;
 ```
 
-## Instructions
+## Instruções
 
-1. Log in to **Prod**.
+1. Faça login em **Prod**.
 
-
-2. Click **All** >> type **environment** >> click **Environments**
+2. Clique em **Todos** >> digite **environment** >> clique em **Environments**  
     ![relative](/img/lab-aemc/2023-06-30-15-17-33.png)
 
-
-3. Click **New** in the top-right.
+3. Clique em **New** no canto superior direito.  
     ![relative](/img/lab-aemc/2023-06-30-15-19-10.png)
 
-4. Complete the form as below.
+4. Preencha o formulário conforme abaixo.
 
     |Field | Value 
     |---|---
@@ -62,22 +61,18 @@ graph TD
     |**Is Controller?** | **UNCHECKED**
     |**Instance Id** | This will auto populate after clicking Validate. 
 
-
-5. Click **Validate**
+5. Clique em **Validate**  
     ![relative](/img/lab-aemc/2023-07-11-15-38-49.png)
 
-![relative](/img/lab-aemc/2023-07-11-15-14-18.png)
+    ![relative](/img/lab-aemc/2023-07-11-15-14-18.png)
 
-
-6. Click **Submit** to finish creating the environment record.
+6. Clique em **Submit** para finalizar a criação do registro de ambiente.  
     ![relative](/img/lab-aemc/2023-07-11-15-37-58.png)
 
-
-7. Click **New** in the top right.
+7. Clique em **New** no canto superior direito.  
     ![relative](/img/lab-aemc/2023-06-30-15-19-10.png)
 
-
-8. Complete the form as below.
+8. Preencha o formulário conforme abaixo.
 
     |Field | Value 
     |---|---
@@ -89,22 +84,20 @@ graph TD
     |**Instance Id** | This will auto populate after clicking Validate. 
 
 
-9. Click the "Validate" button. 
+9. Clique no botão "Validate".  
     ![relative](/img/lab-aemc/2023-07-11-15-38-49.png)
 
-![relative](/img/lab-aemc/2023-07-11-15-14-18.png)
+    ![relative](/img/lab-aemc/2023-07-11-15-14-18.png)
 
-
-10. Click **Submit** to finish creating the environment record.
+10. Clique em **Submit** para finalizar a criação do registro de ambiente.  
     ![relative](/img/lab-aemc/2023-07-11-15-37-58.png)
 
+## Lições Aprendidas
 
-## Lessons Learned
+Neste exercício, você:
 
-In this exercise, you have:
+- Compreendeu a função e a importância dos registros de Ambiente na plataforma ServiceNow.
 
-- Understood the function and importance of Environment records in the ServiceNow platform.
+- Adquiriu conhecimento sobre como validar esses registros de Ambiente.
 
-- Acquired the knowledge of validating these Environment records.
-
-- Successfully configured Environment records for both Development and Production instances in your Prod environment.
+- Configurou com sucesso os registros de Ambiente para as instâncias de Desenvolvimento e Produção em seu ambiente Prod.

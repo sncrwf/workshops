@@ -1,175 +1,140 @@
 ---
 id: optional-lab-section-1
-title: "Optional Lab: Section 1"
-pagination_label: "Optional Lab: Section 1"
-sidebar_label: "Section 1"
+title: "Laboratório Opcional: Seção 1"
+pagination_label: "Laboratório Opcional: Seção 1"
+sidebar_label: "Seção 1"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Overview
+## Visão Geral
 
-Handling integrations is often not as straightforward as this lab may suggest. In the previous section of the lab, the data was sent to the API in the same format as it was in ServiceNow. However, in this scenario, we are sending data to an API that expects the data to be in a specific format. In this optional lab, we will explore how to apply data transformation in Flow Designer before sending the data to the external API.
+Lidar com integrações muitas vezes não é tão simples quanto este laboratório pode sugerir. Na seção anterior do laboratório, os dados foram enviados para a API no mesmo formato que estavam no ServiceNow. No entanto, neste cenário, estamos enviando dados para uma API que espera que os dados estejam em um formato específico. Neste laboratório opcional, exploraremos como aplicar a transformação de dados no Flow Designer antes de enviar os dados para a API externa.
 
-## Instructions 
+## Instruções 
 
-1. On your instance, navigate to the **All** menu (1) and in the filter navigator (2), type "x_snc_visitoracc_0_visitors_list.do" and press enter to open that custom table.
+1. Em sua instância, vá até o menu **All** (1) e no filtro de navegação (2), digite "x_snc_visitoracc_0_visitors_list.do" e pressione Enter para abrir essa tabela personalizada.
    ![Alt text](./images///2023-09-21_12-01-25.png)
 
-In this use case, a custom table is utilized by a ServiceNow app developed by ACME Inc. When a visitor checks in at the reception of their building, they can scan their government ID. Using our DocIntel capability, a new record is generated in that table for the visitor. Information such as the First Name, Last Name, and Date of Birth of the visitor is then extracted from their government ID and stored in that table. In the following section, we will concentrate on creating the workflow that will take this data, transform it, and utilize it with the new spoke we created earlier in this lab.
+Neste caso de uso, uma tabela personalizada é utilizada por um aplicativo ServiceNow desenvolvido pela ACME Inc. Quando um visitante se registra na recepção do prédio, ele pode escanear seu documento de identidade. Usando nossa capacidade DocIntel, um novo registro é gerado nessa tabela para o visitante. Informações como o Primeiro Nome, Sobrenome e Data de Nascimento do visitante são então extraídas do documento de identidade e armazenadas nessa tabela. Na seção seguinte, nos concentraremos em criar o fluxo que pegará esses dados, os transformará e os utilizará com o novo spoke que criamos anteriormente neste laboratório.
 
-Please note the following details: Visitor First Name and Visitor Last Name values (1) are in uppercase. Additionally, observe the Date of Birth (2), which is in the MM/DD/YYYY format.
+Observe os seguintes detalhes: os valores de Primeiro Nome e Sobrenome do Visitante (1) estão em maiúsculas. Além disso, observe a Data de Nascimento (2), que está no formato MM/DD/YYYY.
 
 ![Alt text](./images///2023-09-21_12-27-20.png)
 
-The external API for which we previously created a new spoke action won't recognize those values in that format. The API expects the format to be Firstname, Lastname, and a date in the YYYY-MM-DD format.
+A API externa para a qual criamos anteriormente uma nova ação de spoke não reconhecerá esses valores nesse formato. A API espera o formato como Primeiro Nome, Sobrenome e uma data no formato YYYY-MM-DD.
 
-Now, let's create the workflow that will query the API to verify whether the user has the necessary authorization to access the building. We will utilize a Data Transform and our newly created Spoke Action for this purpose.
+Agora, vamos criar o fluxo que irá consultar a API para verificar se o usuário tem a autorização necessária para acessar o prédio. Usaremos um Data Transform e nossa nova Spoke Action para isso.
 
-
-2. Open Flow Designer 
+2. Abra o Flow Designer 
    ![Alt text](./images///2023-09-21_12-35-12.png)
 
 
-3. Click **Create new** (1) then **Flow** (2)
+3. Clique em **Create new** (1) e depois em **Flow** (2)
    ![Alt text](./images///2023-09-21_12-37-28.png)
 
 
-4. Type the value **Verify Access Request** on the  **Flow Name** field (1) then click **Submit** (2)
+4. Digite o valor **Verify Access Request** no campo **Flow Name** (1) e depois clique em **Submit** (2)
    ![Alt text](./images///2023-09-21_12-39-32.png)
 
 
-5. If you get this message, click **Skip tour** 
+5. Se você receber essa mensagem, clique em **Skip tour** 
    ![Alt text](./images///2023-09-21_12-41-26.png)
 
 
-6. Click **Add a trigger** (1) to set the condition to trigger that flow.
+6. Clique em **Add a trigger** (1) para definir a condição que acionará esse fluxo.
    ![Alt text](./images///2023-09-21_12-42-11.png)
 
 
-7. Select **Record** (1) then click **Updated** (2). 
+7. Selecione **Record** (1) e depois clique em **Updated** (2). 
    ![Alt text](./images///2023-09-21_12-43-19.png)
 
 
-8. Select the **visitors** (1) table from the list then click **Add Filters** (2) Set the condition as shown below
+8. Selecione a tabela **visitors** (1) da lista e clique em **Add Filters** (2). Defina a condição conforme mostrado abaixo
    ![Alt text](./images///2023-09-21_12-46-22.png)
 
 :::note
-With the condition we are setting above, the flow will be triggered as soon as DocIntel extracts data from the visitor's government ID and updates the visitor record associated with that visitor.
+Com a condição que estamos definindo acima, o fluxo será acionado assim que o DocIntel extrair dados do documento de identidade do visitante e atualizar o registro do visitante associado a esse visitante.
 :::
 
-Now we need to add to our flow the spoke action that we have created earlier in this lab.
+Agora precisamos adicionar ao nosso fluxo a ação de spoke que criamos anteriormente neste laboratório.
 
-9. Under the **Actions** section, click **Action** (1), type **visitor access** (2) then select **Visitor Access** from the **INSTALLED SPOKES** list (3) then click **Check if a use exists** (4) 
+9. Na seção **Actions**, clique em **Action** (1), digite **visitor access** (2) e depois selecione **Visitor Access** na lista de **INSTALLED SPOKES** (3) e clique em **Check if a user exists** (4) 
    ![Alt text](./images///2023-09-21_12-50-00.png)
 
 
-You should see a screen as shown below
+Você deve ver uma tela como a mostrada abaixo
 
 ![Alt text](./images///2023-09-21_12-52-53.png)
 
-We need to pass the data from the record to that Action step.
+Precisamos passar os dados do registro para essa etapa de Ação.
 
-10. Expand the Visitors Record secrtion in the data pill as shown below: 
+10. Expanda a seção Visitors Record nos data pills conforme mostrado abaixo: 
    ![Alt text](./images///2023-09-21_12-56-25.png)
 
 
-11. Then scroll down to see fields we need, **visitor dob**, **visitor lastname**, **visitor firstname**,
+11. Em seguida, role para baixo para ver os campos que precisamos: **visitor dob**, **visitor lastname**, **visitor firstname**.
 
 
-12. Grab those data fields and drop them to our action inputs as shown below:
+12. Pegue esses campos de dados e arraste-os para as entradas da nossa ação conforme mostrado abaixo:
 
 ![Alt text](./images///2023-09-21_13-02-10.png)
 
-Remember, the external API won't accept the format of that data. We need to apply some data transformation to send the data in the expected format. In Flow Designer, we can use 'Transforms' to dynamically modify the data in fields.
+Lembre-se, a API externa não aceitará o formato desses dados. Precisamos aplicar uma transformação de dados para enviar os dados no formato esperado. No Flow Designer, podemos usar 'Transforms' para modificar dinamicamente os dados nos campos.
 
-Let's begin with the formatting of the date of birth. Remember that in the ServiceNow record, the date format is MM/DD/YYYY, but we need to send it to the API in the format YYYY-MM-DD.
+Vamos começar com a formatação da data de nascimento. Lembre-se de que no registro do ServiceNow, o formato da data é MM/DD/YYYY, mas precisamos enviá-lo para a API no formato YYYY-MM-DD.
 
-13. If you click the value in the **dateofbirth** field, it will show a **fx** icon, click on it, then type **Replace** (2), then select **Replace String** (3), we that Transforms we can use a simple regular expression to match the string to replace.
-   Alt text](<./images///2023-09-21_13-08-32 (2).png>)
+13. Se você clicar no valor no campo **dateofbirth**, será exibido um ícone **fx**. Clique nele e depois digite **Replace** (2), em seguida, selecione **Replace String** (3). Com os Transforms, podemos usar uma expressão regular simples para corresponder à string a ser substituída.
+   
+   ![Alt text](./images///2023-09-21_13-08-32_2.png)
 
 
-14. On the **Regex** field (1) type this value **(\d{2})/(\d{2})/(\d{4})** and on the **Replace String** field (2) type this value **$3-$1-$2**
+14. No campo **Regex** (1) digite este valor **(\d{2})/(\d{2})/(\d{4})** e no campo **Replace String** (2) digite este valor **$3-$1-$2**
    ![Alt text](./images///2023-09-21_13-15-37.png)
 
-:::tip Additional reading if interested to learn more about Regular expression, otherwise skip this. 
+:::tip Leitura adicional, se você estiver interessado em aprender mais sobre expressões regulares, caso contrário, pule isso.
 
-The regex pattern `(\d{2})/(\d{2})/(\d{4})` is used to match and capture date strings in the format MM/DD/YYYY. 
+O padrão regex `(\d{2})/(\d{2})/(\d{4})` é usado para corresponder e capturar strings de data no formato MM/DD/YYYY. 
 
-Here's what each part of the pattern does:
+Aqui está o que cada parte do padrão faz:
 
-1. `(\d{2})`: This part captures two digits (0-9) and encloses them in parentheses to create a capturing group. It's used to match the month portion of the date (MM). `\d` represents any digit, and `{2}` specifies that exactly two digits must be matched.
-
-
-2. `/`: This part matches the forward slash character (/) literally. It's used to separate the month, day, and year portions of the date.
+1. `(\d{2})`: Esta parte captura dois dígitos (0-9) e os coloca entre parênteses para criar um grupo de captura. É usado para corresponder à parte do mês da data (MM). `\d` representa qualquer dígito, e `{2}` especifica que exatamente dois dígitos devem ser correspondidos.
 
 
-3. `(\d{2})`: Similar to the first part, this captures two digits (0-9) to match the day portion of the date (DD).
+2. `/`: Esta parte corresponde ao caractere barra (/) literalmente. É usado para separar as partes do mês, dia e ano da data.
 
 
-4. `/`: Another forward slash to separate the day and year.
+3. `(\d{2})`: Semelhante à primeira parte, isso captura dois dígitos (0-9) para corresponder à parte do dia da data (DD).
 
 
-5. `(\d{4})`: This captures four digits (0-9) to match the year portion of the date (YYYY).
+4. `/`: Outra barra para separar o dia e o ano.
 
-So, when you apply this regex pattern to a string, it will capture date strings in the format MM/DD/YYYY and store the month, day, and year portions as separate capturing groups, allowing you to extract and work with these components individually.
 
-In the replace string field we have typed **$3-$1-$2**
+5. `(\d{4})`: Isso captura quatro dígitos (0-9) para corresponder à parte do ano da data (YYYY).
 
-$3 refers to the contents of capturing group 3, which is the year "2023."
-$1 refers to the contents of capturing group 1, which is the month "12."
-$2 refers to the contents of capturing group 2, which is the day "31."
+Assim, quando você aplica esse padrão regex a uma string, ele captura strings de data no formato MM/DD/YYYY e armazena as partes do mês, dia e ano como grupos de captura separados, permitindo que você extraia e trabalhe com esses componentes individualmente.
 
-This allows us to format the date as desired, although there might be other ways to achieve this as well.
+No campo de string de substituição digitamos **$3-$1-$2**
+
+$3 refere-se ao conteúdo do grupo de captura 3, que é o ano "2023."
+$1 refere-se ao conteúdo do grupo de captura 1, que é o mês "12."
+$2 refere-se ao conteúdo do grupo de captura 2, que é o dia "31."
+
+Isso nos permite formatar a data como desejado, embora possa haver outras maneiras de conseguir isso também.
 
 :::
 
-Now, let's perform some data transformation for the First Name and Last Name fields. They arrive in uppercase from ServiceNow, but the external API expects these values with only the first letter of the first name and the first letter of the last name in uppercase. Therefore, we need to transform the data to make it compatible. We could potentially use existing Transforms to accomplish this, but we want to introduce another method for more advanced data transformation. You can use the inline script feature on the field to transform the data.
+Agora, vamos realizar uma transformação de dados para os campos Primeiro Nome e Sobrenome. Eles chegam em maiúsculas do ServiceNow, mas a API externa espera esses valores com apenas a primeira letra do primeiro nome e a primeira letra do sobrenome em maiúsculas. Portanto, precisamos transformar os dados para torná-los compatíveis. Podemos usar os Transforms existentes para isso, mas queremos introduzir outro método para uma transformação de dados mais avançada. Você pode usar o recurso de script inline no campo para transformar os dados.
 
-15. Beside the firstname field, click that Toggle Scripting icon as shown below 
+15. Ao lado do campo firstname, clique no ícone Toggle Scripting conforme mostrado abaixo 
    ![Alt text](./images///2023-09-21_13-26-47.png)
 
-   add this piece of code: 
+   adicione este código: 
       
       ```js
-      // Access the value you want to transform
-      var inputString = fd_data.trigger.current.visitor_firstname; // Replace 'your_field_name' with the actual field name
+      // Acesse o valor que você deseja transformar
+      var inputString = fd_data.trigger.current.visitor_firstname; // Substitua 'your_field_name' pelo nome real do campo
 
-      // Check if the inputString is not empty
+      // Verifique se o inputString não está vazio
       if (inputString) {
-         // Convert the string to lowercase, except the first character
-         var firstChar = inputString.charAt(0);
-         var restOfString = inputString.slice(1).toLowerCase();
-         var transformedString = firstChar + restOfString;
-         
-         // Return the transformed value
-         return transformedString;
-      } else {
-         // If the input is empty, return it as-is
-         return inputString;
-      }
-      ```
-
-
-16. On the **lastname** field add this piece of code
-
-      ```js
-      // Access the value you want to transform
-      var inputString = fd_data.trigger.current.visitor_lastname; // Replace 'your_field_name' with the actual field name
-
-      // Check if the inputString is not empty
-      if (inputString) {
-         // Convert the string to lowercase, except the first character
-         var firstChar = inputString.charAt(0);
-         var restOfString = inputString.slice(1).toLowerCase();
-         var transformedString = firstChar + restOfString;
-    
-         // Return the transformed value
-         return transformedString;
-      } else {
-         // If the input is empty, return it as-is
-         return inputString;
-      }
-      ```
-
-In summary, this script capitalizes the first letter of the input string while converting the rest of the string to lowercase. If the input is empty, it returns an empty string. This transformation ensures that the format matches the expectations of the external API endpoint."
+         // Converta a string para

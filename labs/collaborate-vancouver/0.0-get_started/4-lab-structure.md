@@ -1,18 +1,18 @@
 ---
 id: lab-structure
-title: Lab Structure
+title: Estrutura do Laboratório
 hide_table_of_contents: true
 sidebar_position: 4
 ---
 
-## Implementation
+## Implementação
 
-During this phase, we establish the bedrock by setting up and configuring the App Engine. These activities are conducted as one-time essentials, laying the foundation for an enriched development experience.
+Durante esta fase, estabelecemos a base configurando e ajustando o App Engine. Essas atividades são realizadas como essenciais únicas, criando a fundação para uma experiência de desenvolvimento enriquecida.
 
-## Simulation
+## Simulação
 
-Step into the shoes of various App Engine personas to gain comprehensive insights into how this dynamic tool is leveraged by different roles. This immersive experience enhances your understanding of the platform's versatility.
+Coloque-se no lugar das várias personas do App Engine para obter uma visão abrangente de como essa ferramenta dinâmica é utilizada por diferentes papéis. Esta experiência imersiva aprimora sua compreensão da versatilidade da plataforma.
 
-Embark on this transformative journey as we reshape enterprise app development, foster synergy, and empower innovation.
+Embarque nesta jornada transformadora enquanto remodelamos o desenvolvimento de aplicativos empresariais, promovemos sinergia e capacitamos a inovação.
 
-Your commitment to innovation begins here.
+Seu compromisso com a inovação começa aqui.

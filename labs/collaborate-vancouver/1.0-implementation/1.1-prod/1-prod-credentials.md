@@ -5,31 +5,31 @@ hide_table_of_contents: true
 draft: false
 ---
 
-# Exercise: Create Credential Alias
+# Exercício: Criar Apelido de Credencial
 
-##### Estimated Time to Complete: 5 minutes
+##### Tempo Estimado para Conclusão: 5 minutos
 
-## Overview 
+## Visão Geral
 
-A **<a href="https://docs.servicenow.com/csh?topicname=create-pipeline-credentials.html&version=latest" target="_blank">Credential Alias ↗</a>** is a username and password used by ServiceNow to log into a remote system. 
+Um **<a href="https://docs.servicenow.com/csh?topicname=create-pipeline-credentials.html&version=latest" target="_blank">Credential Alias ↗</a>** é um nome de usuário e senha usados pelo ServiceNow para acessar um sistema remoto.
 
-In this case, it will be used by the Controller instance (Prod) to access other ServiceNow Environments such as Dev, Test, QA, etc. 
+Neste caso, será usado pela instância Controladora (Prod) para acessar outros Ambientes ServiceNow como Dev, Test, QA, etc.
 
-You will create the Credential Alias with a user account that has already been created for you. 
+Você criará o Credential Alias com uma conta de usuário que já foi criada para você.
 
 
-### Before Exercise
+### Antes do Exercício
 ``` mermaid
 graph LR
-    subgraph Production[Production Instance]
+    subgraph Production[Instância de Produção]
     end
     style Production fill:#CCFFCC,stroke:#B0BAD3,stroke-width:2px,color:#333;
 ```
 
-### After Exercise
+### Após o Exercício
 ``` mermaid
 graph LR
-    subgraph Production["Production Instance"]
+    subgraph Production["Instância de Produção"]
         Credential("Credential Alias")
     end
     style Production fill:#CCFFCC,stroke:#B0BAD3,stroke-width:2px,color:#333;
@@ -37,70 +37,70 @@ graph LR
 ```
 
 
-## Instructions
+## Instruções
 
 :::caution
-For this exercise, the specific Application Scope is not critical - Global is acceptable. Always check with your Platform Administrator for any company policies around **<a href="https://docs.servicenow.com/csh?topicname=connection-alias.html&version=latest" target="_blank">Connection and Credential Aliases ↗</a>**.
+Para este exercício, o Escopo da Aplicação específico não é crítico - Global é aceitável. Sempre verifique com seu Administrador da Plataforma qualquer política da empresa sobre **<a href="https://docs.servicenow.com/csh?topicname=connection-alias.html&version=latest" target="_blank">Alias de Conexão e Credencial ↗</a>**.
 :::
 
 :::warning
-**Complete this section in PROD.**
+**Complete esta seção em PROD.**
 :::
 
-1. Log in to **PROD**.
+1. Faça login em **PROD**.
 
 
-2. Navigate to **All** >> type **Connection & Credential Aliases** >> click either **Connection & Credential Aliases**.
-    ![Navigate to Aliases](/img/lab-aemc/2023-07-11-15-10-23.png)
+2. Navegue para **Todos** >> digite **Connection & Credential Aliases** >> clique em **Connection & Credential Aliases** .
+    ![Navegue até Aliases](/img/lab-aemc/2023-07-11-15-10-23.png)
 
 
-3. Click **New** in the top-right to create a new Credential Alias record. 
-    ![Create Alias](/img/lab-aemc/2023-03-07-15-38-10.png)
+3. Clique em **New** no canto superior direito para criar um novo registro de Apelido de Credencial. 
+    ![Criar Alias](/img/lab-aemc/2023-03-07-15-38-10.png)
 
 
-4. Set **Type** to **Credential**. 
-    ![Set Type](/img/lab-aemc/2023-03-07-15-37-39.png) 
+4. Defina **Type** para **Credential**. 
+    ![Defina Tipo](/img/lab-aemc/2023-03-07-15-37-39.png) 
 
 
-5. Set **Name** to 'Pipeline Credentials' and click **Submit**.
+5. Defina **Name** para 'Pipeline Credentials' e clique em **Submit**.
 
     ```jsx title="Name"
     Pipeline Credentials
     ```
-    ![Set Name](/img/lab-aemc/2023-03-08-14-14-44.png)
-    ![Submit Name](/img/lab-aemc/2023-07-13-17-00-48.png)
+    ![Defina Nome](/img/lab-aemc/2023-03-08-14-14-44.png)
+    ![Envie Nome](/img/lab-aemc/2023-07-13-17-00-48.png)
 
 
-6. Click **Pipeline Credentials** to open the record. 
-    ![Open Record](/img/lab-aemc/2023-03-09-13-48-09.png) 
+6. Clique em **Pipeline Credentials** para abrir o registro. 
+    ![Abrir Registro](/img/lab-aemc/2023-03-09-13-48-09.png) 
 
 
-7. Navigate to the **Credentials** Related List and click **New** to add a credential. 
-    ![Add Credential](/img/lab-aemc/2023-07-31-12-28-54.png)
+7. Navegue até a Lista Relacionada **Credentials** e clique em **New** para adicionar uma credencial. 
+    ![Adicionar Credencial](/img/lab-aemc/2023-07-31-12-28-54.png)
 
 
-8. Select **Basic Auth Credentials**.
-    ![Select Basic Auth](/img/lab-aemc/2023-03-09-13-50-33.png)
+8. Selecione **Basic Auth Credentials**.
+    ![Selecione Autenticação Básica](/img/lab-aemc/2023-03-09-13-50-33.png)
 
 :::info
-You will now input credentials for AEMC to log into a ServiceNow instance. 
- 
-The password for this remote user account is pre-configured. 
- 
-Errors will occur if you do not use the specified password provided below. 
+Agora você inserirá as credenciais para que a AEMC faça login em uma instância do ServiceNow.
+
+A senha para esta conta de usuário remoto está pré-configurada.
+
+Ocorrerão erros se você não usar a senha especificada abaixo.
 :::
 
-9. On the **Basic Auth Credentials** form, fill in the following values and click **Submit**.
+9. No formulário **Credenciais de Autenticação Básica**, preencha os seguintes valores e clique em **Enviar**.
 
     :::info
-    Remember to use the copy button to copy the text below.
+    Lembre-se de usar o botão de copiar para copiar o texto abaixo.
     :::
 
     ```jsx title="Name"
-    Pipeline Service Account 
+    Pipeline Service Account
     ```
 
-    ```jsx title="Username"
+    ```jsx title="User name"
     svc_pipeline
     ```
 
@@ -108,16 +108,16 @@ Errors will occur if you do not use the specified password provided below.
     ILoveHyperAutomationTimes500!
     ```
 
-    ![Enter Credentials](/img/lab-aemc/2023-06-27-22-50-59.png)
+    ![Insira Credenciais](/img/lab-aemc/2023-06-27-22-50-59.png)
 
     :::note
-    The dots in the password field will be shorter after you save the password.  This is normal
+    Os pontos no campo de senha serão menores após você salvar a senha. Isso é normal.
     :::
 
-## Lessons Learned
+## Lições Aprendidas
 
-By completing this exercise, you have successfully achieved the following milestones:
+Ao completar este exercício, você alcançou os seguintes marcos:
 
-- Gained experience in creating and managing Connection & Credential Aliases in ServiceNow.
+- Adquiriu experiência em criar e gerenciar Aliases de Conexão e Credencial no ServiceNow.
 
-- Familiarized yourself with Basic Authentication Credentials setup.
+- Familiarizou-se com a configuração de Credenciais de Autenticação Básica.

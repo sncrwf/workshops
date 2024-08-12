@@ -4,75 +4,76 @@ title: 5. App Intake
 hide_table_of_contents: true
 draft: false
 ---
-# Exercise: App Intake - Catalog Item
 
-##### Estimated Time to Complete: 10 minutes
+# Exercício: App Intake - Catalog Item
 
-:::info
-**THIS SECTION IS OPTIONAL AND CAN SAFELY BE SKIPPED IF YOU ARE BEHIND.**
+##### Tempo Estimado para Conclusão: 10 minutos
 
-Skipping steps below will have not prevent you from completing the lab. 
+:::info  
+**ESTA SEÇÃO É OPCIONAL E PODE SER PULAR SE VOCÊ ESTIVER ATRASADO.**
+
+Pular os passos abaixo não impedirá você de concluir o laboratório.  
 :::
 
-## Overview
 
-Create a custom app intake experience for your organization by editing the fields and questions on the App Engine Studio (AES) App Intake form in Catalog Builder.
+## Visão Geral
 
-## Instructions
+Crie uma experiência personalizada de intake de aplicativo para sua organização editando os campos e perguntas no formulário de App Intake do App Engine Studio (AES) no Catalog Builder.
 
-1. Click the Globe in the top right of the page, type "**application intake**", and click **Application Intake**.
+## Instruções
+
+1. Clique no Globo no canto superior direito da página, digite "**application intake**" e clique em **Application Intake**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-19-21.png)
 
-2. Click **All**, type **maintain items**, and then click **Maintain Items**.
+2. Clique em **All**, digite **maintain items** e, em seguida, clique em **Maintain Items**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-02-07.png)
 
-3. In the **Name** column, type "**apply for**" and click **Apply for Citizen Development - V2**.
+3. Na coluna **Name**, digite "**apply for**" e clique em **Apply for Citizen Development - V2**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-03-52.png)
 
-4. Check the **Active** box, click the hamburger button, then click **Save**.
+4. Marque a caixa **Active**, clique no botão hamburger e, em seguida, clique em **Save**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-26-29.png)
 
-5. Remove "**- V2**" from the **Item name** field, click the hamburger button, then click **Save**.
+5. Remova "**- V2**" do campo **Item name**, clique no botão hamburger e, em seguida, clique em **Save**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-35-01.png)
 
-6. Scroll to the bottom of the page, click the **Variables** tab, and click **New**.
+6. Role até o final da página, clique na aba **Variables** e clique em **New**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-37-30.png)
 
-7. Set the **Order** field to '150'.
+7. Defina o campo **Order** como '150'.
 
 ![relative](/img/lab-aemc/2023-07-31-16-38-51.png)
 
-8. Type any question and press TAB.  (Example: "Is this part of the lab?)
+8. Digite qualquer pergunta e pressione TAB. (Exemplo: "Is this part of the lab?)
 
 ![relative](/img/lab-aemc/2023-07-31-16-39-52.png)
 
-9. After you press TAB, the system should automatically populate the **Name** field. 
+9. Após pressionar TAB, o sistema deve preencher automaticamente o campo **Name**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-41-03.png)
 
-10. Click **Submit**.
+10. Clique em **Submit**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-41-18.png)
 
-11. Click **Try it** to preview the Item.
+11. Clique em **Try it** para visualizar o Item.
 
 ![relative](/img/lab-aemc/2023-07-31-16-42-20.png)
 
-You should see your new question on the catalog item form.
+Você deverá ver sua nova pergunta no formulário do item do catálogo.
 
 ![relative](/img/lab-aemc/2023-07-31-16-42-57.png)
 
-## Lessons Learned
+## Lições Aprendidas
 
-In this process, we've learned how to customize the App Engine Studio (AES) App Intake form for a tailored experience. By creating and adding our variables, we can modify the form to ask pertinent questions specific to our organizational requirements. Additionally, we've learned the importance of properly ordering these variables to ensure a smooth intake process.
+Neste processo, aprendemos a personalizar o formulário de App Intake do App Engine Studio (AES) para uma experiência adaptada. Ao criar e adicionar nossas variáveis, podemos modificar o formulário para fazer perguntas pertinentes específicas aos requisitos da nossa organização. Além disso, aprendemos a importância de ordenar adequadamente essas variáveis para garantir um processo de intake suave.
 
-:::info
-For more information see **<a href="https://docs.servicenow.com/csh?topicname=customize-app-intake-form-catalog-builder.html&version=latest" target="_blank">Product Docs: Customize the App Intake form in Catalog Builder ↗</a>**
+:::info  
+Para mais informações, consulte **<a href="https://docs.servicenow.com/csh?topicname=customize-app-intake-form-catalog-builder.html&version=latest" target="_blank">Product Docs: Customize the App Intake form in Catalog Builder ↗</a>**  
 :::
-

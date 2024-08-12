@@ -1,18 +1,18 @@
 ---
 id: intro
-title: Collaborate to Accelerate
-sidebar_label: Introduction
+title: Colabore para Acelerar
+sidebar_label: Introdução
 sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-# Collaborate to Accelerate:<br/>Learn to govern applications with App Engine Management Center
+# Colabore para Acelerar:<br/>Aprenda a governar aplicativos com o App Engine Management Center
 
-## In this lab, you will learn:
+## Neste laboratório, você aprenderá:
 
-* How to setup App Engine Management Center for the first time
-* What is a Citizen Developer
-* How a Citizen Developer applies for access to App Engine Studio
-* How to manage developers in App Engine Management Center
-* How collaboration happens in App Engine Studio
-* How to deploy applications with App Engine 
+* Como configurar o App Engine Management Center pela primeira vez
+* O que é um Desenvolvedor Cidadão
+* Como um Desenvolvedor Cidadão solicita acesso ao App Engine Studio
+* Como gerenciar desenvolvedores no App Engine Management Center
+* Como a colaboração acontece no App Engine Studio
+* Como implantar aplicativos com o App Engine

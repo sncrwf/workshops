@@ -1,23 +1,22 @@
 ---
 id: overview
-title: "Integration Hub: Spoke Generator"
-pagination_label: "Overview"
-sidebar_label: "Overview"
+title: "Hub de Integração: Gerador de Spokes"
+pagination_label: "Visão Geral"
+sidebar_label: "Visão Geral"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Introduction
+## Introdução
 
-IntegrationHub is the central place on the platform for consuming, creating, and managing integrations on your ServiceNow instance. In the event that you are seeking to connect a workflow to an external system, but ServiceNow or ServiceNow technology partners do not offer an out-of-the-box integration (Spoke) for it, you can easily create your own. IntegrationHub provides numerous Action Steps to connect your workflow to external systems that use protocols such as REST, PowerShell, SSH, etc. In this lab, we will focus on REST integration.
+O IntegrationHub é o local central na plataforma para consumir, criar e gerenciar integrações na sua instância do ServiceNow. No caso de você estar buscando conectar um fluxo de trabalho a um sistema externo, mas o ServiceNow ou os parceiros tecnológicos do ServiceNow não oferecem uma integração pronta (Spoke) para isso, você pode facilmente criar a sua própria. O IntegrationHub fornece numerosos Passos de Ação para conectar seu fluxo de trabalho a sistemas externos que utilizam protocolos como REST, PowerShell, SSH, etc. Neste laboratório, focaremos na integração REST.
 
-## Goal 
+## Objetivo
 
-In this lab, we will showcase the new 'Spoke Generator' capability. This feature enables you to generate new spokes and spoke actions for third-party APIs that adhere to the OpenAPI specification. You will be using a provided YAML file.
+Neste laboratório, vamos mostrar a nova capacidade de "Gerador de Spokes". Esse recurso permite gerar novos spokes e ações de spoke para APIs de terceiros que seguem a especificação OpenAPI. Você usará um arquivo YAML fornecido.
 
 :::note
-A YAML file for OpenAPI specs is a user-friendly configuration file that defines the structure, endpoints, and details of a RESTful API. It makes it easier for developers to document and communicate the API's design. The spoke generator can automatically utilize this YAML file to create spoke actions.
+Um arquivo YAML para especificações OpenAPI é um arquivo de configuração amigável ao usuário que define a estrutura, endpoints e detalhes de uma API RESTful. Facilita para os desenvolvedores documentarem e comunicarem o design da API. O gerador de spoke pode utilizar automaticamente este arquivo YAML para criar ações de spoke.
 :::
 
-   
-This innovative feature, the "Spoke Generator," significantly reduces the time required to create a new integration.
+Este recurso inovador, o "Gerador de Spokes", reduz significativamente o tempo necessário para criar uma nova integração.

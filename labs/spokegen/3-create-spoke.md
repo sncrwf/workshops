@@ -1,106 +1,86 @@
 ---
 id: create-the-spoke
-title: "Create the Spoke"
+title: "Criar o Spoke"
 hide_table_of_contents: true
 draft: false
 ---
 
-## Overview
+## Visão Geral
 
-In this exercise, you will create a custom Integration Hub Spoke. 
+Neste exercício, você criará um Spoke personalizado no Integration Hub.
 
-## Instructions
+## Instruções
 
-1. Log in to your instance, then, on the main page, click **All** (1). Next, type **flow** (2) and click **Flow Designer** (3) to open the Flow Designer UI.
+1. Faça login na sua instância e, na página principal, clique em **All** (1). Em seguida, digite **flow** (2) e clique em **Flow Designer** (3) para abrir a interface do Flow Designer.
    ![Alt text](./images/2023-09-21_07-13-57.png)
 
-
-2. Once you are in the **Flow Designer** UI, to access the Spoke Generator, select **Create New** (1) (located on the right-hand side of the screen), and then click on **Spoke**.
+2. Uma vez na interface do **Flow Designer**, para acessar o Spoke Generator, selecione **Create New** (1) (localizado no lado direito da tela) e depois clique em **Spoke**.
    ![Alt text](./images/2023-09-21_07-19-21.png)
 
+3. O Spoke Generator solicitará as seguintes informações: uma imagem em miniatura (1) (você pode fazer upload de uma imagem em miniatura para servir como logo do seu Spoke; sinta-se à vontade para encontrar uma imagem gratuita no Google Imagens e fazer o upload aqui), um Nome do Spoke (2) e uma Descrição (4).
 
-3. The Spoke Generator will request the following information from you: a thumbnail image (1) (you can upload a thumbnail image to serve as your Spoke logo; feel free to find a free image on Google Images and upload it here), a Spoke Name (2), and a Description (4).
-
-   | Field | Value |
-   |-------|-------|
-   | Spoke Name | Visitor Access |
-   | App Scope Name | This field is generated automatically from the Spoke Name |
-   | Description | This spoke will be used to verify if visitor has been registered in the Visitor Access app |
+   | Campo         | Valor                                                        |
+   |---------------|--------------------------------------------------------------|
+   | Nome do Spoke | Visitor Access                                              |
+   | Nome do Escopo do App | Este campo é gerado automaticamente a partir do Nome do Spoke |
+   | Descrição     | Este spoke será usado para verificar se o visitante está registrado no aplicativo de Acesso de Visitantes |
    ![Alt text](./images/2023-09-21_07-27-27.png)
 
-
-4. Once you have set the value, click Create and Continue (1) as shown below:
+4. Depois de definir o valor, clique em **Create and Continue** (1) como mostrado abaixo:
    ![Alt text](./images/2023-09-21_07-33-06.png)
 
-
-5. On the next screen, you will be prompted to select the method you wish to use for creating your new spoke. We intend to utilize the OpenAPI Specification method, as we have been furnished with the YAML file that describes the API and adheres to the OPENAPI Specification.
-   * Select **OpenAPI Specification** (1) then click **Continue** (2)
+5. Na tela seguinte, você será solicitado a selecionar o método que deseja usar para criar seu novo spoke. Pretendemos utilizar o método OpenAPI Specification, já que temos o arquivo YAML que descreve a API e segue a Especificação OPENAPI.
+   * Selecione **OpenAPI Specification** (1) e clique em **Continue** (2)
    ![Alt text](./images/2023-09-21_07-34-48.png)
 
-
-6. On the next screen, **Visitor Access: Add operations**, this is where you can provide the YAML file. Click **Import New** (1), and then provide the url to the  YAML file, copy URL from the link here [Swagger YAML File](./swagger.yaml).
+6. Na próxima tela, **Visitor Access: Add operations**, você pode fornecer o arquivo YAML. Clique em **Import New** (1), e depois forneça a URL do arquivo YAML, copie a URL do link aqui [Swagger YAML File](./swagger.yaml).
    ![Alt text](./images/2023-09-21_07-39-25.png)
 
-
-7. Paste the URL copied in your clipboard in the previous step, then paste it in the **OpenAPI URL** field (1), then click **Import** (2) 
+7. Cole a URL copiada na etapa anterior no campo **OpenAPI URL** (1), e depois clique em **Import** (2)
    ![Alt text](./images/2023-09-21_07-42-47.png)
 
-
-8. Once the import is done you should see something similar to this:
+8. Após a importação, você deve ver algo semelhante a isto:
    ![Alt text](./images/2023-09-21_07-44-25.png)
 
-
-9. Then click on **Create New** next to the **Connection Alias field** (1) 
+9. Em seguida, clique em **Create New** ao lado do campo **Connection Alias** (1)
    ![Alt text](./images/2023-09-21_07-45-32.png)
    :::note
-   In ServiceNow, a Connection Alias is a configuration setting used to establish and oversee connections with external systems. It functions as an abstraction layer for connecting to external systems and streamlines the integration process within ServiceNow workflows and other components. Normally, when connecting ServiceNow to an external system, you must configure the URL of the endpoint (the third-party system) and specify how to authenticate with it. This is accomplished through Connection and Credentials settings in ServiceNow. In practice, it is essential to engage in discussions with the administrator of the remote system and coordinate with the security team before initiating this configuration.
+   No ServiceNow, um Connection Alias é uma configuração usada para estabelecer e gerenciar conexões com sistemas externos. Funciona como uma camada de abstração para conectar a sistemas externos e simplifica o processo de integração dentro dos fluxos de trabalho e outros componentes do ServiceNow. Normalmente, ao conectar o ServiceNow a um sistema externo, você deve configurar a URL do endpoint (o sistema de terceiros) e especificar como autenticar com ele. Isso é feito através das configurações de Conexão e Credenciais no ServiceNow. Na prática, é essencial discutir com o administrador do sistema remoto e coordenar com a equipe de segurança antes de iniciar essa configuração.
    :::
 
+10. No campo **Connection alias name** (1) digite **VisitorAppConnection** e mantenha o **Authentication Configuration Template** com o valor padrão **Api Key Template** (2), depois clique em **Create** (3)
+    ![Alt text](./images/2023-09-21_07-51-43.png)
 
-10. In the **Connection alias name** (1) type **VisitorAppConnection** and keep the **Authentication Configuration Template** with the default value **Api Key Template** (2), then click **Create** (3)
-   ![Alt text](./images/2023-09-21_07-51-43.png)
+11. Clique em **Generate operation** (1)
+    ![Alt text](./images/2023-09-21_07-56-49.png)
 
+12. O sistema solicitará que você selecione qual Spoke Action deseja criar, como mostrado abaixo:
+    ![Alt text](./images/2023-09-21_07-59-26.png)
+    :::note
+    Para este laboratório, estamos utilizando uma API muito básica projetada especificamente para fins de laboratório e educativos. Esta API consiste em apenas um método, por isso apenas uma ação está visível. Em cenários do mundo real, a maioria das aplicações comerciais que você tenta integrar terá dezenas ou até centenas de métodos em sua API. Você terá a opção de escolher os métodos que deseja utilizar do ServiceNow e criar Spoke Actions para eles.
+    :::
 
-11. Click **Generate operation** (1) 
-   ![Alt text](./images/2023-09-21_07-56-49.png)
+13. Selecione a Ação **Check if a user exists** (1) e depois clique em **Publish** (2)
+    ![Alt text](./images/2023-09-21_08-16-44.png)
 
+14. Clique na Spoke Action recém-criada **Check if a user exists** (1), isso abrirá o editor de Ação no Flow Designer para que possamos inspecioná-la
+    ![Alt text](./images/2023-09-21_08-21-50.png)
 
-12. The system will then prompt you to select which Spoke Action you want to create as shown below
-   ![Alt text](./images/2023-09-21_07-59-26.png)
-   :::note
-   For this lab, we are utilizing a very basic API designed explicitly for lab and educational purposes. This API consists of just one method, which is why only one action is visible. In real-world scenarios, most commercial applications you endeavor to integrate will have dozens or even hundreds of methods within their API. You will have the option to choose the methods you wish to utilize from ServiceNow and create Spoke Actions for them.
-   :::
+15. Observe a seção de Entrada da Ação, as Entradas para essa Spoke Action foram criadas automaticamente
+    ![Alt text](./images/2023-09-21_08-23-39.png)
 
+16. Clique no OpenAPI Step (1)
+    ![Alt text](./images/2023-09-21_08-24-59.png)
 
-13. Select the ** Check if a user exists** (1) Action then click **Publish** (2)
-   ![Alt text](./images/2023-09-21_08-16-44.png)
+17. Observe os inputs da etapa, eles estão usando as Entradas da Ação, então os valores das Entradas da Ação serão passados como parâmetros quando a chamada API for feita ao sistema externo.
+    ![Alt text](./images/2023-09-21_08-26-21.png)
 
+18. Precisamos atualizar o Connection Alias na seção de Detalhes da Conexão. Nós pré-criamos nesta instância de laboratório um registro de Conexão que aponta para o endpoint da API correto. Vamos usar este.
 
-14. Click the newly created Spoke Action **Check if a user exists** (1) this will open the Action editor in Flow designer so we can inspect it 
-   ![Alt text](./images/2023-09-21_08-21-50.png)
+19. Clique no campo **Connection Alias** (1) e selecione **VisitorAccess_ConnectionAlias** (2)
+    ![Alt text](./images/2023-09-21_08-30-48.png)
 
-
-15. Notice the Action Input section, the Inputs for that Spoke action was created automatically 
-   ![Alt text](./images/2023-09-21_08-23-39.png)
-
-
-16. Click the OpenAPI Step (1) 
-   ![Alt text](./images/2023-09-21_08-24-59.png)
-
-
-17. Notice the step inputs, they are using the Action inputs, so the values from the Action Inputs will be passed as parameters when the API Call is made to the external system.
-   ![Alt text](./images/2023-09-21_08-26-21.png)
-
-
-18. We need to update the Connection Alias in the Connection Details section. We have precreated in this lab instance a Connection record that point to the right API End point. We are going to use this one. 
-
-
-19. Click on the **Connection Alias field** (1) then select **VisitorAccess_ConnectionAlias** (2) 
-   ![Alt text](./images/2023-09-21_08-30-48.png)
-
-
-20. Notice the **Base URL** field was updated and displays the URL for the API End point. Those connection alias records are typically managed a by Security team or user with higher privileges.
-    * On the right hand-side notice the outputs available from the OpenAPI Step, expand the **user** (1) section as shown below:
+20. Observe que o campo **Base URL** foi atualizado e exibe a URL do endpoint da API. Esses registros de connection alias são normalmente gerenciados pela equipe de Segurança ou por usuários com privilégios mais elevados.
+    * No lado direito, observe os outputs disponíveis do OpenAPI Step, expanda a seção **user** (1) como mostrado abaixo:
     ![Alt text](./images/2023-09-21_08-35-00.png)
-    Those are all the values that we can retrieve from the external app and use in a ServiceNow Workflow.
-
+    Esses são todos os valores que podemos recuperar do aplicativo externo e usar em um Workflow do ServiceNow.

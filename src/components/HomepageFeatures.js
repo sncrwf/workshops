@@ -87,10 +87,22 @@ const FeatureList = [
     icon: faDiagramProject,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
+      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
       </>
     ),
     to: '/labs/spokegen/overview',
+    target: '_self',
+  },
+
+  {
+    title: 'RPA',
+    icon: faRobot,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/>Saiba mais sobre o processo de RPA da ServiceNow.
+      </>
+    ),
+    to: '/labs/rpa/introduction',
     target: '_self',
   }
 
