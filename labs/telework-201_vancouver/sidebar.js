@@ -47,9 +47,9 @@ const sidebars = {
             ],
         },
         'Conclusion/index',
-        'Survey',
         'CHANGELOG',
         'lab-guide-pdf',
+        'Survey',
     ],
 };
 

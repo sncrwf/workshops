@@ -1,45 +1,45 @@
 ---
 id: install-reqs
-title: Install Requirements
+title: Requisitos de Instalação
 hide_table_of_contents: true
 ---
 
-# Install Requirements
+# Requisitos de Instalação
 
-## How do I install App Engine Studio?
+## Como instalar o App Engine Studio?
 
-App Engine Management Center is only available on ServiceNow instances that have purchased stand-alone App Engine licensing. 
+O App Engine Management Center está disponível apenas em instâncias do ServiceNow que adquiriram licenciamento stand-alone do App Engine.
 
-This includes both Production and Subproduction instances, but does not extend to Personal Developer Instances (PDIs). 
+Isso inclui instâncias de Produção e Subprodução, mas não se estende a Instâncias de Desenvolvedor Pessoais (PDIs).
 
-Thus, this Lab is ideally suited for exploratory training and learning purposes.
+Portanto, este Laboratório é ideal para treinamento e aprendizado exploratórios.
 
-## Opt-in and manage entitlements
+## Optar e gerenciar direitos
 
-Before installing the application from the ServiceNow Store, verify the instance has valid ServiceNow entitlements.
+Antes de instalar a aplicação a partir da ServiceNow Store, verifique se a instância possui direitos válidos do ServiceNow.
 
-In the ServiceNow Store, use the search criteria to find App Engine Studio.
+Na ServiceNow Store, use os critérios de busca para encontrar o App Engine Studio.
 
 ![relative](/img/lab-aemc/2023-07-07-16-19-09.png)
 
-Click **Opt-in** and agree to the ServiceNow terms and conditions to verify entitlements.
+Clique em **Opt-in** e concorde com os termos e condições do ServiceNow para verificar os direitos.
 
-Click **Manage Entitlements** and set the ‘Entitlement Type’ value to **Entitle all Instances** (if you prefer to manually select which instances which will be affected, select Entitle Selected Instances).
+Clique em **Gerenciar Direitos** e defina o valor de ‘Tipo de Direito’ para **Conceder a todas as Instâncias** (se preferir selecionar manualmente quais instâncias serão afetadas, selecione Conceder a Instâncias Selecionadas).
 
-## Install the App Engine Studio application
+## Instalar a aplicação App Engine Studio
 
-To install the App Engine Studio application (***com.snc.app-engine-studio***), login to your **development** instance and navigate to **System Applications** >> **All Available Applications** >> **All**.
+Para instalar a aplicação App Engine Studio (***com.snc.app-engine-studio***), faça login em sua instância de **desenvolvimento** e navegue para **Aplicações do Sistema** >> **Todas as Aplicações Disponíveis** >> **Todas**.
 
-Use the search criteria to find the App Engine Studio application. Click **Install / Update All**.
+Use os critérios de busca para encontrar a aplicação App Engine Studio. Clique em **Instalar / Atualizar Tudo**.
 
 ![relative](/img/lab-aemc/2023-07-07-16-19-46.png)
 
-The App Engine Studio bundle will be installed in the development instance – including the App Engine Studio application and all dependent applications.
+O pacote do App Engine Studio será instalado na instância de desenvolvimento – incluindo a aplicação App Engine Studio e todas as aplicações dependentes.
 
-Repeat this process on all instances for cloning purposes.
+Repita esse processo em todas as instâncias para fins de clonagem.
 
 :::note
-For more information see 
-- **[Product Documentation: Install App Engine Studio](https://docs.servicenow.com/csh?topicname=install-aes.html)** 
-- **[ServiceNow Store: Install a ServiceNow Product](https://store.servicenow.com/%24appstore.do%23!/store/help?article=KB0030186)**
+Para mais informações, veja
+- **[Documentação do Produto: Instalar o App Engine Studio](https://docs.servicenow.com/csh?topicname=install-aes.html)**
+- **[ServiceNow Store: Instalar um Produto ServiceNow](https://store.servicenow.com/%24appstore.do%23!/store/help?article=KB0030186)**
 :::

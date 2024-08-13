@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 10 minutes**
+**Duration: 10 minutos**
 
 1. Under **Data**, click **Add**
 ![](images/2023-11-08-15-14-27.png)

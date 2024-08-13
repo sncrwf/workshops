@@ -1,28 +1,27 @@
 ---
 id: configure-integration
-title: 6. Configure Integration
+title: 6. Configurar Integração
 sidebar_position: 6
 ---
-# Exercise: Configure Integration
+# Exercício: Configurar Integração
 
-##### Estimated Time to Complete: 15 minutes
+##### Tempo Estimado de Conclusão: 15 minutos
 
 :::info
 **THIS SECTION IS OPTIONAL AND CAN SAFELY BE SKIPPED IF YOU ARE BEHIND.**
 
-Skipping steps below will have not prevent you from completing the lab.
+Skipping steps below will not prevent you from completing the lab.
 :::
 
 ## Overview
 
-In this section, Priya will go to **Dev** and work on Sydney's app.
+Nesta seção, Priya irá para **Dev** e trabalhará no aplicativo de Sydney.
 
-| Priya Bapat | Intgration Specialist
+| Priya Bapat | Integration Specialist
 |--|--
-| ![relative](/img/lab-aemc/Priya.png) | Priya has many years in IT building integrations on various Platforms. She recently completed some Integration training on ServiceNow and is ready to assist Sydney.
+| ![relative](/img/lab-aemc/Priya.png) | Priya tem muitos anos de experiência em TI construindo integrações em várias plataformas. Ela recentemente concluiu um treinamento de Integração no ServiceNow e está pronta para ajudar Sydney.
 
-
-After Jayne approved the Collaboration Request, Priya received an email that she is now a collaborator on the app.
+Após Jayne aprovar a Solicitação de Colaboração, Priya recebeu um e-mail informando que ela agora é uma colaboradora no aplicativo.
 
 :::info
 **SUBJECT:** You are now a collaborator
@@ -30,125 +29,124 @@ After Jayne approved the Collaboration Request, Priya received an email that she
 ![relative](/img/lab-aemc/2023-07-11-20-59-36.png)
 :::
 
-When Priya clicks the button in the email she is taken directly to App Engine Studio in Dev; however, we will simulate this.
+Quando Priya clica no botão do e-mail, ela é levada diretamente ao App Engine Studio em Dev; no entanto, simularemos isso.
 
 ## Instructions
 
 :::warning
-Complete this section in **DEV**.
+Complete esta seção em **DEV**.
 :::
 
-1. Log in to **Dev**.
+1. Faça login em **Dev**.
 
-
-2. In the top right, click the user avatar icon » **Impersonate another user**.
+2. No canto superior direito, clique no ícone do avatar do usuário » **Impersonate another user**.
 
 ![relative](/img/lab-aemc/2023-07-11-20-50-38.png)
 
-3. Type **Priya** and click **Priya Bapat** in the search results.
+3. Digite **Priya** e clique em **Priya Bapat** nos resultados da pesquisa.
 
 ![relative](/img/lab-aemc/2023-07-11-20-56-14.png)
 
-4. Click **Impersonate User**. 
+4. Clique em **Impersonate User**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-24.png)
 
-5. Click **All** » type ```app engine``` » click **App Engine Studio**
+5. Clique em **All** » digite ```app engine``` » clique em **App Engine Studio**
 
 ![relative](/img/lab-aemc/2023-07-11-17-18-49.png)
 
 :::caution
-This will open AES in a new browser tab.
+Isso abrirá o AES em uma nova aba do navegador.
 :::
 
-6. Click **My Apps** 
+6. Clique em **My Apps**
 
 ![relative](/img/lab-aemc/2023-07-11-21-26-37.png)
 
-7. Click on the **IT Time Off Request** app
+7. Clique no aplicativo **IT Time Off Request**
 
 ![relative](/img/lab-aemc/2023-07-11-21-27-20.png)
 
-8. Note some of the differences in Priya's experience versus Sydney's. She does not have access to the **Submit** button to request to deploy the app.  She also can not see or modify any of the **Experiences** in the app. 
+8. Note algumas das diferenças na experiência de Priya em comparação com a de Sydney. Ela não tem acesso ao botão **Submit** para solicitar a implantação do aplicativo. Ela também não pode ver ou modificar nenhuma das **Experiences** no aplicativo.
 
 ![relative](/img/lab-aemc/2023-07-11-21-29-13.png)
 
-9. Scroll down and click **+Add** next to **Logic and Automation**.
+9. Role para baixo e clique em **+Add** ao lado de **Logic and Automation**.
 
 ![relative](/img/lab-aemc/2023-07-11-21-31-14.png)
 
-10. Click **Flow**
+10. Clique em **Flow**
 
 ![relative](/img/lab-aemc/2023-07-11-21-31-35.png)
 
-11. Click **Build from scratch**
+11. Clique em **Build from scratch**
 
 ![relative](/img/lab-aemc/2023-07-11-21-31-59.png)
 
-12. Enter ```Send data to Workday``` in the **Name** field and click **Continue**
+12. Digite ```Send data to Workday``` no campo **Name** e clique em **Continue**
 
 ![relative](/img/lab-aemc/2023-07-11-21-34-10.png)
 
 ![relative](/img/lab-aemc/2023-07-11-21-34-43.png)
 
-13. Click **Edit this flow**
+13. Clique em **Edit this flow**
 
 ![relative](/img/lab-aemc/2023-07-11-21-35-23.png)
 
-14. Click **Add a trigger**
+14. Clique em **Add a trigger**
 
 ![relative](/img/lab-aemc/2023-07-11-21-36-31.png)
 
-15. Click **Updated**
+15. Clique em **Updated**
 
 ![relative](/img/lab-aemc/2023-07-11-21-37-01.png)
 
-16. In the **Table** field, type ```time off``` and click the **Time Off Request** table.
+16. No campo **Table**, digite ```time off``` e clique na tabela **Time Off Request**.
 
 ![relative](/img/lab-aemc/2023-07-11-21-37-53.png)
 
-17. Click **Add filters** next to **Condition**
+17. Clique em **Add filters** ao lado de **Condition**
 
 ![relative](/img/lab-aemc/2023-07-11-21-45-26.png)
 
-18. Configure a condition of **Active changes to false**
+18. Configure uma condição de **Active changes to false**
 
 ![relative](/img/lab-aemc/2023-07-11-21-47-04.png)
 
-19. Click **Done**
+19. Clique em **Done**
 
 ![relative](/img/lab-aemc/2023-07-11-21-38-16.png)
 
-20. Click **Add an Action, Flow Logic, or Subflow**
+20. Clique em **Add an Action, Flow Logic, or Subflow**
 
 ![relative](/img/lab-aemc/2023-07-11-21-38-51.png)
 
-21. Click **Action** >> type ```log``` >> click **Log**
+21. Clique em **Action** >> digite ```log``` >> clique em **Log**
 
 ![relative](/img/lab-aemc/2023-07-11-21-43-05.png)
 
-22. Type something in the **Message** field and click **Done**
+22. Digite algo no campo **Message** e clique em **Done**
 
 ![relative](/img/lab-aemc/2023-07-11-21-44-16.png)
 
-23. Click **Save** in the top-right
+23. Clique em **Save** no canto superior direito
 
 ![relative](/img/lab-aemc/2023-07-11-21-44-55.png)
 
 ![relative](/img/lab-aemc/2023-07-11-21-47-29.png)
 
-24. Click **Activate** >> **Activate**
+24. Clique em **Activate** >> **Activate**
 
 ![relative](/img/lab-aemc/2023-07-11-21-48-02.png)
 
 ![relative](/img/lab-aemc/2023-07-11-21-48-50.png)
 
-25. Click the **App Engine Studio** browser tab and return to the **Dev** platform view.
+25. Clique na aba do navegador do **App Engine Studio** e retorne à visualização da plataforma **Dev**.
 
 ![relative](/img/lab-aemc/2023-07-11-21-52-42.png)
 
-## Lessons Learned
+## Lições Aprendidas
 
-Priya has built an integration in the app. It is simplistic for the lab, but in a real world scenario she would build a more complex integration for Sydney. 
+Priya construiu uma integração no aplicativo. É simplista para o laboratório, mas em um cenário real, ela construiria uma integração mais complexa para Sydney.
 
-The app is now ready for Sydney to request it to be deployed. 
+O aplicativo agora está pronto para Sydney solicitar sua implantação.

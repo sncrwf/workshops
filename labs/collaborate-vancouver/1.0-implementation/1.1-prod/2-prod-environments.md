@@ -1,6 +1,6 @@
 ---
 id: environments
-title: 2. Environments
+title: 2. Ambientes
 hide_table_of_contents: true
 draft: false
 ---

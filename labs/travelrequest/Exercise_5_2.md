@@ -7,7 +7,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 5 minutes**
+**Duration: 5 minutos**
 
 1. Click the 3 line menu icon on the top left
 ![](images/extramenu.png)

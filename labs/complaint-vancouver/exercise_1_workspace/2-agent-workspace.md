@@ -36,7 +36,7 @@ draft: false
 ![](../images/2024-02-23-12-29-13.png)
 
 
-6.	On the list, we can see the case, which SLA is breached, stage, and by how many minutes/days alongside other information. Click on the case number to be taken to the case record.
+6.	On the list, we can see the case, which SLA is breached, stage, and by how many minutos/days alongside other information. Click on the case number to be taken to the case record.
 ![](../images/2024-02-23-12-28-35.png)
 
 

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 30 minutes**
+**Duration: 30 minutos**
 
 ## 2.1 Travel Request Table
 Create a table called "Travel Request". This is where we will capture the travel requests. 

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 15 minutes**
+**Duration: 15 minutos**
 
 In this bonus exercise, we will add the Action to a scheduled Flow to keep our Airport information up to date on a regular basis. 
 
@@ -134,7 +134,7 @@ In this bonus exercise, we will add the Action to a scheduled Flow to keep our A
 39. Click **Run Test**
 
 
-40. This will take a few minutes to run as we have 24 airports to update. Once done, click **Your test has finished running. View the flow execution details.**
+40. This will take a few minutos to run as we have 24 airports to update. Once done, click **Your test has finished running. View the flow execution details.**
 
 
 41. Review the execution, take some time to expand each step to understand what has happened in this flow

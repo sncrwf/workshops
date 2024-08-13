@@ -51,7 +51,7 @@ const FeatureList = [
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.
+      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver-101/0.0-introduction/app-engine-overview',
@@ -63,7 +63,7 @@ const FeatureList = [
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.
+      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.
       </>
     ),
     to: '/labs/telework-201_vancouver/Introduction/Overview',
@@ -75,7 +75,7 @@ const FeatureList = [
     icon: faPeopleGroup,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇺🇸 INGLÊS</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
+      <div class="button-homepage-vancouver">📊 App Engine Management Center (AEMC)</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
@@ -87,7 +87,7 @@ const FeatureList = [
     icon: faDiagramProject,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
+      <div class="button-homepage-vancouver">🧩 Integration Hub</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
       </>
     ),
     to: '/labs/spokegen/overview',
@@ -95,11 +95,11 @@ const FeatureList = [
   },
 
   {
-    title: 'RPA',
+    title: 'RPA Hub: Robotic Process Automation',
     icon: faRobot,
     description: (
       <>
-      <div class="button-homepage-vancouver">🇧🇷 PORTUGUÊS</div><br/>Saiba mais sobre o processo de RPA da ServiceNow.
+      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de RPA da ServiceNow.
       </>
     ),
     to: '/labs/rpa/introduction',

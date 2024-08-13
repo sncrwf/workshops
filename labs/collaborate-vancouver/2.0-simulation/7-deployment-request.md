@@ -1,82 +1,79 @@
 ---
 id: deployment-request
-title: 7. Deployment Request
+title: 7. Requisição de Deploy
 sidebar_position: 7
 ---
-# Exercise: Request Deployment
+# Exercício: Request Deployment
 
-##### Estimated Time to Complete: 5 minutes
+##### Tempo Estimado de Conclusão: 5 minutos
 
 ## Overview
 
-Sydney will click the **Submit** button in AES which will trigger a Deployment request to get created in AEMC on the Prod instance. 
+Sydney clicará no botão **Submit** no AES, o que acionará a criação de uma solicitação de Deployment no AEMC na instância Prod.
 
 ## Instructions
 
 :::warning
-Complete this section in **DEV**.
+Complete esta seção em **DEV**.
 :::
 
-1. Log in to **Dev**.
+1. Faça login em **Dev**.
 
-
-2. In the top right, click the user avatar icon » **Impersonate another user**.
+2. No canto superior direito, clique no ícone do avatar do usuário » **Impersonate another user**.
 
 ![relative](/img/lab-aemc/2023-07-11-21-59-51.png)
 
-3. Type **Sydney Carter** and click **Sydney Carter** in the search results.
+3. Digite **Sydney Carter** e clique em **Sydney Carter** nos resultados da pesquisa.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-01.png)
 
-4. Click **Impersonate User**. 
+4. Clique em **Impersonate User**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-24.png)
 
-5. Click **All** » type ```app engine``` » click **App Engine Studio**
+5. Clique em **All** » digite ```app engine``` » clique em **App Engine Studio**
 
 ![relative](/img/lab-aemc/2023-07-11-17-18-49.png)
 
 :::caution
-This will open AES in a new browser tab.
+Isso abrirá o AES em uma nova aba do navegador.
 :::
 
-6. Click the **IT Time Off Request** tile.
+6. Clique no tile **IT Time Off Request**.
 
 ![relative](/img/lab-aemc/2023-07-11-22-01-34.png)
 
 :::caution
-If the **Submit** button is grayed out in the next step, try refreshing the page. 
+Se o botão **Submit** estiver desativado na próxima etapa, tente atualizar a página.
 :::
 
-7. Click **Submit**.
+7. Clique em **Submit**.
 
 ![relative](/img/lab-aemc/2023-03-14-13-21-30.png)
 
-8. Click **Submit** in the pop-up. 
+8. Clique em **Submit** na janela pop-up.
 
 ![relative](/img/lab-aemc/2023-03-14-13-22-52.png)
 
-9. Scroll down.
+9. Role para baixo.
 
-
-10. In the **Release notes** field type **Created from template**.
+10. No campo **Release notes**, digite **Created from template**.
 
 ![relative](/img/lab-aemc/2023-03-14-13-23-47.png)
 
-11. Click **Continue**.
+11. Clique em **Continue**.
 
 ![relative](/img/lab-aemc/2023-03-14-13-24-23.png)
 
 ![relative](/img/lab-aemc/2023-03-14-13-24-30.png)
 
-12. Click **Close** in the bottom-right corner.
+12. Clique em **Close** no canto inferior direito.
 
 ![relative](/img/lab-aemc/2023-03-14-13-24-49.png)
 
 ![relative](/img/lab-aemc/2023-03-14-13-25-53.png)
 
-
-Sydney receives an email letting her know that her Deployment Request was submitted. 
+Sydney recebe um e-mail informando que sua Solicitação de Deployment foi submetida.
 
 :::info
 **SUBJECT:** IT Time Off Request is being reviewed by your admin
@@ -84,8 +81,8 @@ Sydney receives an email letting her know that her Deployment Request was submit
 ![relative](/img/lab-aemc/2023-07-11-22-05-08.png)
 :::
 
-## Lessons Learned
+## Lições Aprendidas
 
-Sydney was able to build an app and submit a request to deploy it. She did not need to learn about Update Sets. 
+Sydney conseguiu construir um aplicativo e enviar uma solicitação para implantá-lo. Ela não precisou aprender sobre Update Sets.
 
-She can continue to edit the app, but she will not be able to submit a new deployment request until the current one is resolved. 
+Ela pode continuar editando o aplicativo, mas não será capaz de enviar uma nova solicitação de deployment até que a atual seja resolvida.

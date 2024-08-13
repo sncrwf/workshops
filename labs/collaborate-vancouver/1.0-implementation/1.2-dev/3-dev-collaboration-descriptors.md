@@ -4,72 +4,72 @@ title: 3. Collaboration Descriptors
 hide_table_of_contents: true
 draft: false
 ---
-# Exercise: Collaboration Descriptors
+# Exercício: Collaboration Descriptors
 
-##### Estimated Time to Complete: 10 minutes
+##### Tempo Estimado de Conclusão: 10 minutos
 
 ## Overview
 
-People with admin privileges can manage the permissions of developers collaborating on an application.
+Pessoas com privilégios de administrador podem gerenciar as permissões dos desenvolvedores que colaboram em uma aplicação.
 
-You can use the predefined **<a href="https://docs.servicenow.com/csh?topicname=create-collaboration-descriptors.html&version=latest" target="_blank">Collaboration Descriptors ↗</a>** that are standard with activation, or create a custom collaboration descriptor. 
+Você pode usar os **<a href="https://docs.servicenow.com/csh?topicname=create-collaboration-descriptors.html&version=latest" target="_blank">Collaboration Descriptors ↗</a>** pré-definidos que são padrão com a ativação ou criar um descriptor de colaboração personalizado.
 
-By using a collaboration descriptor, you can assign, manage, and monitor delegated development permissions.
+Ao usar um collaboration descriptor, você pode atribuir, gerenciar e monitorar permissões de desenvolvimento delegadas.
 
-We will use collaboration descriptors during the Simulation exercises. 
+Usaremos collaboration descriptors durante os exercícios de simulação.
 
 | **Descriptors** | **Description**
 |--|--
-| Owner	| Owner of the application that manages other collaborators and can delete the application.
-| Editor | Standard descriptor to invite collaborators.
-| Integration Specialist | Non-standard (custom) descriptor created by the user.
+| Owner	| Proprietário da aplicação que gerencia outros colaboradores e pode excluir a aplicação.
+| Editor | Descriptor padrão para convidar colaboradores.
+| Integration Specialist | Descriptor não padrão (personalizado) criado pelo usuário.
 
 :::info
-**Integration Specialist** is a custom **<a href="https://docs.servicenow.com/csh?topicname=create-collaboration-descriptors.html&version=latest" target="_blank">Collaboration Descriptor ↗</a>** created for this lab. 
+**Integration Specialist** é um **<a href="https://docs.servicenow.com/csh?topicname=create-collaboration-descriptors.html&version=latest" target="_blank">Collaboration Descriptor ↗</a>** personalizado criado para este laboratório.
 :::
 
 ## Instructions
 
 :::caution
-For this exercise, the specific Application Scope is **critical** - Collaboration Descriptors go in Global.
+Para este exercício, o Escopo da Aplicação é **crítico** - Collaboration Descriptors devem ser criados no Global.
 :::
 
 :::warning
-Complete this section in **DEV**.
+Complete esta seção em **DEV**.
 :::
 
-1. Log in **DEV**.
+1. Faça login em **DEV**.
 
 
-2. Click **All** >> type **descriptor** >> click **Descriptors**.
+2. Clique em **All** >> digite **descriptor** >> clique em **Descriptors**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-32-53.png)
 
-3. Click **New**.
+3. Clique em **New**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-33-57.png)
 
-4. In the **Name** field, type 'Pro Developer', and click **Submit**
+4. No campo **Name**, digite 'Pro Developer' e clique em **Submit**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-35-31.png)
 
-5. Click the **Pro Developer** record to open it.
+5. Clique no registro **Pro Developer** para abri-lo.
 
 ![relative](/img/lab-aemc/2023-08-01-22-36-38.png)
 
-6. Click **Edit**
+6. Clique em **Edit**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-37-30.png)
 
-7. Click **All Metadata**
+7. Clique em **All Metadata**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-38-19.png)
 
-8. Scroll to the bottom, hold SHIFT, and click **Workflow**
+8. Role para baixo, segure SHIFT e clique em **Workflow**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-39-00.png)
 
-9. Click the **>** button to move the roles to the right side of the list collector and click **Save**
+9. Clique no botão **>** para mover os papéis para o lado direito da lista e clique em **Save**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-39-54.png)
 
@@ -77,21 +77,18 @@ Complete this section in **DEV**.
 
 ![relative](/img/lab-aemc/2023-08-01-22-41-50.png)
 
-## Lessons Learned
+## Lições Aprendidas
 
-Here are some important takeaways from this task:
+Aqui estão algumas lições importantes deste exercício:
 
-**Role of Collaboration Descriptors**
+**Papel dos Collaboration Descriptors**
 
-Collaboration descriptors play a critical role in assigning, managing, and monitoring delegated development permissions for each application or uniformly across multiple applications. Therefore, creating appropriate descriptors is essential to ensure efficient delegation of permissions.
+Collaboration descriptors desempenham um papel crítico na atribuição, gerenciamento e monitoramento de permissões de desenvolvimento delegadas para cada aplicação ou uniformemente em várias aplicações. Portanto, criar descritores apropriados é essencial para garantir uma delegação eficiente de permissões.
 
+**Foco no Escopo Global e Padrão**
 
-**Focus on Global Scope and Standard**
+É crucial criar collaboration descriptors no escopo global e defini-los como padrão para que eles sejam visíveis e utilizáveis no AES. Qualquer desvio dessa diretriz pode levar à não visibilidade ou não usabilidade dos collaboration descriptors no AES.
 
-It is crucial to create collaboration descriptors in the global scope and set them to standard for them to be visible and usable in AES. Any deviation from this guideline may lead to non-visibility or non-usability of the collaboration descriptors in AES.
+**Utilidade dos Descritores de Colaboração Personalizados**
 
-
-**Utility of Custom Collaboration Descriptors**
-
-The process allows for the creation of custom collaboration descriptors that cater to specific needs beyond the predefined collaboration descriptors that come with activation. This flexibility allows for more precise permission delegation depending on the roles and requirements of users and groups.
-
+O processo permite a criação de collaboration descriptors personalizados que atendem a necessidades específicas além dos descritores pré-definidos que vêm com a ativação. Esta flexibilidade permite uma delegação de permissões mais precisa dependendo dos papéis e requisitos dos usuários e grupos.

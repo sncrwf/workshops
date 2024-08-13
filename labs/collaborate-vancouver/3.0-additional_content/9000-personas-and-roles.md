@@ -1,63 +1,67 @@
 ---
 id: personas
-title: Personas & Roles
+title: Personas e Papéis
 hide_table_of_contents: true
 ---
 
-# Personas and Roles
+# Personas e Papéis
 
 :::caution
-This part of the lab is for information purposes only. No activity required.
+Esta parte do laboratório é apenas para fins informativos. Nenhuma atividade é necessária.
 :::
 
 ---
-# System Administrator
+# Administrador de Sistema
 
-## Responsibilities
+## Responsabilidades
 
-- Install and configure App Engine Studio and dependencies
-- Define environments and configure pipelines
-- Provision App Engine Studio administrator group access 
-- Upgrade the App Engine Studio application, when applicable
-- Define guardrails for which App Engine Studio Administrators can approve or reject application intake requests 
-- Collaborate with professional ServiceNow developers to create Instance Scan definitions for the platform
-- Collaborate with App Engine Studio Administrator(s) to resolve application conflicts that arise on the platform
+- Instalar e configurar o App Engine Studio e suas dependências
+- Definir ambientes e configurar pipelines
+- Provisionar acesso ao grupo de administradores do App Engine Studio
+- Atualizar o aplicativo App Engine Studio, quando aplicável
+- Definir regras para quais Administradores do App Engine Studio podem aprovar ou rejeitar solicitações de entrada de aplicativos
+- Colaborar com desenvolvedores profissionais do ServiceNow para criar definições de Verificação de Instância para a plataforma
+- Colaborar com o(s) Administrador(es) do App Engine Studio para resolver conflitos de aplicativos que surgem na plataforma
 
-### Role required: 
+### Papel necessário: 
 - admin
 
 ---
 
-# App Engine Studio Administrator
-## Responsibilities
-- Manage App Engine Studio processes and properties
-- Review and approve / reject submitted application requests, based on intake guardrails defined by system administrator
-- Provision App Engine Studio user access
-- Review submitted App Engine Studio applications 
-- Manage deployment requests 
-- Manage promotion of App Engine Studio applications across instances
-- Execute ATF tests / suites in testing instance
-- Ensure Instance Scan is run with proper definitions 
-- Collaborate with system administrator to resolve application conflicts that arise on the platform
+# Administrador do App Engine Studio
 
-### Role(s) required:
+## Responsabilidades
+
+- Gerenciar processos e propriedades do App Engine Studio
+- Revisar e aprovar / rejeitar solicitações de aplicativos enviadas, com base nas regras de entrada definidas pelo administrador do sistema
+- Provisionar acesso de usuários do App Engine Studio
+- Revisar aplicativos do App Engine Studio enviados
+- Gerenciar solicitações de implantação
+- Gerenciar a promoção de aplicativos do App Engine Studio entre instâncias
+- Executar testes / suítes ATF na instância de teste
+- Garantir que a Verificação de Instância seja executada com definições apropriadas
+- Colaborar com o administrador do sistema para resolver conflitos de aplicativos que surgem na plataforma
+
+### Papel(is) necessário(s):
 - sn_app_eng_studio.admin
 - atf_test_designer
 - scan_admin
 
 ---
 
-# Professional ServiceNow Developer
-## Responsibilities
-- Build and test applications in ServiceNow Studio and App Engine Studio
-- Collaborate with citizen developers, on an as-needed basis, to deliver applications in App Engine Studio, including:
-  - Ensure application development and organizational best practices are followed by citizen developers
-  - Assist in review and testing of submitted App Engine Studio applications
-- Build complex configurations involving UI Builder, Mobile App Builder, Flow Designer, or other builder tools
-- Create ATF tests / suites for applications
-- Collaborate with system administrator to create Instance Scan definitions for the platform
+# Desenvolvedor Profissional do ServiceNow
 
-### Role(s) required:
+## Responsabilidades
+
+- Construir e testar aplicativos no ServiceNow Studio e App Engine Studio
+- Colaborar com desenvolvedores cidadãos, conforme necessário, para entregar aplicativos no App Engine Studio, incluindo:
+  - Garantir que as melhores práticas de desenvolvimento de aplicativos e organizacionais sejam seguidas pelos desenvolvedores cidadãos
+  - Auxiliar na revisão e teste de aplicativos do App Engine Studio enviados
+- Construir configurações complexas envolvendo UI Builder, Mobile App Builder, Flow Designer ou outras ferramentas de construção
+- Criar testes / suítes ATF para aplicativos
+- Colaborar com o administrador do sistema para criar definições de Verificação de Instância para a plataforma
+
+### Papel(is) necessário(s):
 - delegated_developer
 - sn_app_eng_studio.user
 - atf_test_admin
@@ -65,17 +69,19 @@ This part of the lab is for information purposes only. No activity required.
 
 ---
 
-# Low-Code / Citizen Developer
-## Responsibilities
-- Submit requests for new custom applications to build in App Engine Studio
-- Understand ServiceNow and application development best practices
-- Build and test applications in App Engine Studio
-- Submit developed App Engine Studio applications for IT review
-- Maintain and modify the application during its lifecycle if determined during the intake process
+# Desenvolvedor Low-Code / Cidadão
 
-### Role required:
+## Responsabilidades
+
+- Enviar solicitações para novos aplicativos personalizados para construir no App Engine Studio
+- Compreender as melhores práticas de ServiceNow e desenvolvimento de aplicativos
+- Construir e testar aplicativos no App Engine Studio
+- Enviar aplicativos desenvolvidos do App Engine Studio para revisão de TI
+- Manter e modificar o aplicativo durante seu ciclo de vida, se determinado durante o processo de entrada
+
+### Papel necessário:
 - sn_app_eng_studio.user
 
 :::info
-In the Utah release, the ‘**App Engine Studio Users Limited**’ group was added to allow AES administrators to give developers assigned to the group the ability to collaborate on existing applications without being able to create new applications or access templates.
+Na versão Utah, o grupo ‘**App Engine Studio Users Limited**’ foi adicionado para permitir que os administradores do AES concedam aos desenvolvedores designados ao grupo a capacidade de colaborar em aplicativos existentes sem a possibilidade de criar novos aplicativos ou acessar templates.
 :::

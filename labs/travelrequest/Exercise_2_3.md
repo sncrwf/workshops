@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 5 minutes**
+**Duration: 5 minutos**
 
 1. If the **Travel request** tab is still open, click to navigate to it
 ![](images/returntreq.png)

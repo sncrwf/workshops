@@ -81,11 +81,7 @@ const sidebars = {
 
         'CHANGELOG',
         'lab-guide-pdf',
-        {
-            type: 'link',
-            label: 'Workshop Feedback Survey', 
-            href: 'https://forms.office.com/Pages/ResponsePage.aspx?id=cPHPi3mZHkmGg9jO0IULrZ-A1RrOMdlKmc9TUcQSHjVUQ1ZWNVpDWFJIOUZKTDQ2SVBZQTZHNDhZUS4u',
-        },
+        'Survey',
 
     ],
 };

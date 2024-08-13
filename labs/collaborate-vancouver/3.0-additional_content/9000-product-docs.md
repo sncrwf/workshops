@@ -1,22 +1,22 @@
 ---
 id: docs
-title: Product Documentation
+title: Documentação do Produto
 hide_table_of_contents: true
 ---
 
-# Product Documentation
+# Documentação do Produto
 
-##### [Docs: Building applications↗](https://docs.servicenow.com/csh?topicname=build-applications.html&version=latest)
+##### [Documentação: Construindo aplicativos↗](https://docs.servicenow.com/csh?topicname=build-applications.html&version=latest)
 
-Learn how to become an application developer using Now Platform low-code tools. Start with what you know and use a library of reusable components and published applications to modernize your legacy processes.
+Aprenda como se tornar um desenvolvedor de aplicativos usando as ferramentas de baixo código da Now Platform. Comece com o que você já conhece e use uma biblioteca de componentes reutilizáveis e aplicativos publicados para modernizar seus processos legados.
 
-  - [Learning about developing on the ServiceNow Now Platform↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/getting-started-with-building-applications.html)
-  - [Planning your application↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/planning-applications.html)
-  - [Developing your application↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/developing-applications.html)
-  - [Testing and debugging applications↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/testing-and-debugging-applications.html)
-  - [Deploying applications↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/deploying-applications.html)
-  - [Maintaining your application↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/maintaining-applications.html)
+  - [Aprendendo sobre desenvolvimento na ServiceNow Now Platform↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/getting-started-with-building-applications.html)
+  - [Planejando seu aplicativo↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/planning-applications.html)
+  - [Desenvolvendo seu aplicativo↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/developing-applications.html)
+  - [Testando e depurando aplicativos↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/testing-and-debugging-applications.html)
+  - [Implantando aplicativos↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/deploying-applications.html)
+  - [Mantendo seu aplicativo↗](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/custom-application/concept/maintaining-applications.html)
 
+##### [Documentação: Repositório de Aplicativos↗](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest)
 
-##### [Docs: Application Repository↗](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest)
-After you develop and test a custom application, you can make the application available to company instances by publishing it to the ServiceNow application repository...
+Após desenvolver e testar um aplicativo personalizado, você pode disponibilizá-lo para instâncias da empresa publicando-o no repositório de aplicativos da ServiceNow...

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 30 minutes**
+**Duration: 30 minutos**
 
 Within this exercise, we will be creating an approval workflow. Let's describe what we will be designing in a sentence: *Whenever a new travel request is raised, we will route the request to the requestor's manager for approval. Once approved, we will mark the status of the request as complete*
 

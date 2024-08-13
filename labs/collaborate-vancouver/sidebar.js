@@ -7,7 +7,7 @@ const sidebars = {
         'vancouver',
         {
             type: 'category',
-            label: 'Collaborate to Accelerate',
+            label: 'Colabore para Acelerar',
             items: [
                 '0.0-get_started/intro',
                 '0.0-get_started/common',
@@ -32,7 +32,7 @@ const sidebars = {
         
         {
             type: 'category',
-            label: '1. Implementation',
+            label: '1. Implementação',
             items: [
                 {
                     type: 'category',
@@ -62,7 +62,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: '2. Simulation',
+            label: '2. Simulação',
             items: [
                 '2.0-simulation/overview',
                 '2.0-simulation/intake',
@@ -79,7 +79,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: 'Extra Content',
+            label: 'Conteúdo Extra',
             items: [
                 '3.0-additional_content/aes-vs-studio',
                 '3.0-additional_content/cloning',
@@ -92,8 +92,8 @@ const sidebars = {
                 '3.0-additional_content/admin-guide',
             ],
         },
-
         'lab-guide-pdf',
+        'Survey',
     ],
 
 };

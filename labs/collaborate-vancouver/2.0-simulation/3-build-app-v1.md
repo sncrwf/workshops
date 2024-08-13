@@ -1,17 +1,17 @@
 ---
 id: build-app-from-template
-title: 3. Build app from template
+title: 3. Construir App via template
 sidebar_position: 3
 ---
-# Exercise: Build the app from template
+# Exercício: Construir App via template
 
-##### Estimated Time to Complete: 15 minutes
+##### Tempo Estimado de Conclusão: 15 minutos
 
 ## Overview
 
-In this section, Sydney will build her app using an app template
+Nesta seção, Sydney construirá seu aplicativo usando um modelo de aplicativo.
 
-After Jayne approved her request, she received an email that her app has been approved. 
+Após Jayne aprovar sua solicitação, ela recebeu um e-mail informando que seu aplicativo foi aprovado.
 
 :::info
 **SUBJECT:** Your app has been approved
@@ -19,66 +19,66 @@ After Jayne approved her request, she received an email that her app has been ap
 ![relative](/img/lab-aemc/2023-07-11-17-09-02.png)
 :::
 
-She clicks the button in the email to go to App Engine Studio, but we will simulate this.
+Ela clica no botão do e-mail para ir para o App Engine Studio, mas nós simularemos isso.
 
 ## Instructions
 
 :::warning
-Complete this section in **DEV**.
+Complete esta seção em **DEV**.
 :::
 
-1. Log in to **Dev**.
+1. Faça login em **Dev**.
 
-2. In the top right, click the **System Administrator** avatar >> **Impersonate user**.
+2. No canto superior direito, clique no avatar **System Administrator** >> **Impersonate user**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-31-53.png)
 
-3. Type **Sydney Carter** and click **Sydney Carter** in the search results.
+3. Digite **Sydney Carter** e clique em **Sydney Carter** nos resultados da busca.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-01.png)
 
-4. Click **Impersonate User**. 
+4. Clique em **Impersonate User**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-24.png)
 
-5. Click **All** » type **app engine** » click **App Engine Studio**
+5. Clique em **All** » digite **app engine** » clique em **App Engine Studio**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-18-49.png)
 
 :::caution
-This will open AES in a new browser tab.
+Isso abrirá o AES em uma nova aba do navegador.
 :::
 
-6. At top of page, click **Templates**.
+6. No topo da página, clique em **Templates**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-21-37.png)
 
-7. Move your mouse over **Time Off Template**.
+7. Passe o mouse sobre **Time Off Template**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-22-54.png)
 
-8. Click **Use template**.
+8. Clique em **Use template**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-23-17.png)
 
-9. Enter the name **IT Time Off Request** and click **Continue**
+9. Insira o nome **IT Time Off Request** e clique em **Continue**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-24-06.png)
 
-10. Go take a five minute break while the app builds from the template. This is a good time to stretch your legs, check your email, etc. 
+10. Vá fazer uma pausa de cinco minutos enquanto o aplicativo é construído a partir do modelo. Este é um bom momento para alongar as pernas, verificar seu e-mail, etc.
 
 ![relative](/img/lab-aemc/2023-07-11-17-27-07.png)
 
 ![relative](/img/lab-aemc/2023-03-14-13-12-36.png)
 
-11. Click **Go to app home**.
+11. Clique em **Go to app home**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-28-16.png)
 
 :::caution
-In this exercise, we are not exploring App Engine Studio; however, feel free to take a moment and explore the application that was built if you have time. 
+Neste exercício, não estamos explorando o App Engine Studio; no entanto, sinta-se à vontade para explorar o aplicativo que foi construído se tiver tempo.
 :::
 
-## Lessons Learned
+## Lições Aprendidas
 
-The template allowed Sydney to quickly build an app.  She can now customize it for her needs before requesting to have it deployed to Production. 
+O modelo permitiu que Sydney construísse rapidamente um aplicativo. Agora ela pode personalizá-lo para suas necessidades antes de solicitar o seu deploy para a Produção.

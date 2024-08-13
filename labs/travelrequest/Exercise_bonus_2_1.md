@@ -6,7 +6,7 @@ hide_table_of_contents: false
 draft: false
 ---
 
-**Duration: 30 minutes**
+**Duration: 30 minutos**
 
 :::caution
 **Pre-requisites: Bonus Exercise 1**

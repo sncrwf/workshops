@@ -3,13 +3,13 @@ id: deployment-approval
 title: 8. Deployment Approval
 sidebar_position: 8
 ---
-# Exercise: Approve and Deploy Sydney's App
+# Exercício: Approve and Deploy Sydney's App
 
-##### Estimated Time to Complete: 15 minutes
+##### Tempo Estimado de Conclusão: 15 minutos
 
 ## Overview
 
-When Sydney submitted the Deployment Request in App Engine Studio, it triggered an email to Jayne prompting her to take action.
+Quando Sydney submeteu a Solicitação de Deployment no App Engine Studio, isso acionou um e-mail para Jayne solicitando que ela tomasse uma ação.
 
 :::info
 **SUBJECT:** Deployment Request DEP0010002 Approval Request
@@ -18,89 +18,88 @@ When Sydney submitted the Deployment Request in App Engine Studio, it triggered 
 :::
 
 :::caution
-You should still have a browser tab for **Prod** opened to App Engine Management Center in which you are impersonating Jayne. 
+Você deve ainda ter uma aba do navegador aberta para **Prod** no App Engine Management Center, onde você está se passando por Jayne.
  
-If not, follow these quick instructions to be sure:
+Caso contrário, siga estas instruções rápidas para garantir:
  
-1. Click the avatar in the top-right, then click **Impersonate another user**.
+1. Clique no avatar no canto superior direito e depois clique em **Impersonate another user**.
  
-2. Type **Jayne Nigel** and click **Jayne Nigel**.
+2. Digite **Jayne Nigel** e clique em **Jayne Nigel**.
  
-3. Click **Impersonate user**.
+3. Clique em **Impersonate user**.
  
-4. Click **All** >> type **app engine management** >> click **App Engine Management Center**.
+4. Clique em **All** >> digite **app engine management** >> clique em **App Engine Management Center**.
  
-This will open AEMC in a new browser tab.
+Isso abrirá o AEMC em uma nova aba do navegador.
 :::
 
 ## Instructions
 
 :::warning
->This section is to be completed in your **Production** instance where AEMC is running. That is your controller instance. 
+>Esta seção deve ser completada na sua instância **Production** onde o AEMC está rodando. Essa é sua instância controladora.
 :::
 
-1. Click the **1** above **Deployment**.
+1. Clique no **1** acima de **Deployment**.
 
 ![relative](/img/lab-aemc/2023-07-11-22-12-55.png)
 
-2. Click the **DEP** ticket to open Sydney's Deployment Request. 
+2. Clique no ticket **DEP** para abrir a Solicitação de Deployment de Sydney.
 
 ![relative](/img/lab-aemc/2023-07-11-22-15-03.png)
 
-3. Click **Approve** in the top-right of the page. 
+3. Clique em **Approve** no canto superior direito da página.
 
 ![relative](/img/lab-aemc/2023-07-11-16-56-47.png)
 
 ![relative](/img/lab-aemc/2023-07-11-17-01-13.png)
 
-4. To check the status of the Deployment... Click the related list **Deployment Environment R..**
+4. Para verificar o status do Deployment... Clique na lista relacionada **Deployment Environment R..**
 
 ![relative](/img/lab-aemc/2023-07-11-22-17-50.png)
 
-5. Occasionally click the **Refresh** button to check on the progress. Once the app is deployed to the Prod environment a record will appear here. 
+5. Clique ocasionalmente no botão **Refresh** para verificar o progresso. Assim que o app for implantado no ambiente Prod, um registro aparecerá aqui.
 
 ![relative](/img/lab-aemc/2023-07-11-22-18-45.png)
 
 :::caution
-This is a good point to go take a five minute break or stretch. It can take several minutes or more for the app to deploy to the next environment.
+Este é um bom momento para fazer uma pausa de cinco minutos ou esticar as pernas. Pode levar vários minutos ou mais para que o app seja implantado no próximo ambiente.
 :::
 
-6. Eventually, you will see a record appear for your deployment. 
+6. Eventualmente, você verá um registro aparecer para o seu deployment.
 
 ![relative](/img/lab-aemc/2023-07-11-22-20-02.png)
 
-If **Has Error** is **false**, then the app deployed successfully to the next environment. 
+Se **Has Error** for **false**, então o app foi implantado com sucesso no próximo ambiente.
 
-## ***How can Jayne confirm if the app actually deployed?***
+## ***Como Jayne pode confirmar se o app foi realmente implantado?***
 
 :::caution
-As part of the automated setup for your lab instance, Jayne was granted the role ```sn_appclient.app_client_company_installer```.
+Como parte da configuração automatizada para sua instância de laboratório, Jayne recebeu o papel ```sn_appclient.app_client_company_installer```.
  
-This is a base Platform role that has existed for many years that allows a non-admin user to view apps in My Company Applications.
+Este é um papel base da Plataforma que existe há muitos anos e permite que um usuário não administrador veja aplicativos em My Company Applications.
  
-For more information see **[Product Docs: Instance-specific deployment user roles](https://docs.servicenow.com/csh?topicname=delegated_deployment_user_roles.html&version=latest)**
+Para mais informações, veja **[Product Docs: Instance-specific deployment user roles](https://docs.servicenow.com/csh?topicname=delegated_deployment_user_roles.html&version=latest)**
 :::
 
-17. Click **All** >> type 'My Company Applications' >> Click **My Company Applications**.
+17. Clique em **All** >> digite 'My Company Applications' >> Clique em **My Company Applications**.
 
 ![relative](/img/lab-aemc/2023-07-11-22-22-05.png)
 
 :::caution
-My Company Applications shows you the applications that have been published to your company's App Repo as well as what is installed on your current instance. 
+My Company Applications mostra os aplicativos que foram publicados no repositório da sua empresa, bem como o que está instalado na sua instância atual.
  
-For more information see **[Product docs: ServiceNow application repository](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest)**
+Para mais informações, veja **[Product docs: ServiceNow application repository](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest)**
 :::
 
-20. Click the **Installed** tab.
-*If the app does not appear in the list, then give it a few minutes to refresh.  There is an icon in the top-right that will stop spinning when the page is done loading.*
+20. Clique na aba **Installed**.
+*Se o app não aparecer na lista, aguarde alguns minutos para atualizar. Há um ícone no canto superior direito que parará de girar quando a página terminar de carregar.*
 
 ![relative](/img/lab-aemc/2023-07-11-22-23-47.png)
 
 ![relative](/img/lab-aemc/2023-07-12-08-29-21.png)
 
-## Lessons Learned
+## Lições Aprendidas
 
-You have made it!! You deployed an app with the click of a button!
+Você conseguiu!! Você implantou um app com um clique de botão!
 
-That completes the App Engine Governance Lab!
-
+Isso completa o Lab de Governança do App Engine!

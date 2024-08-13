@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 5 minutes**
+**Duration: 5 minutos**
 
 Before we begin, we will need to create our scoped application.  It will contain all of the tables, forms, flows, and other assets that make up our application. 
 

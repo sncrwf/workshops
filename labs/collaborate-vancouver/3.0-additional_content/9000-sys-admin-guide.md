@@ -1,15 +1,15 @@
 ---
 id: admin-guide
-title: App Engine System Administrator Guide
+title: Guia do Administrador - App Engine 
 hide_table_of_contents: true
 ---
 
-##### [NowCreate: App Engine Studio - System Administrator Guide on ↗ ](https://nowlearning.servicenow.com/nowcreate?id=nc_asset&asset_id=c9cf6e2b970e69d45b0b7ec11153af82)
+##### [NowCreate: Guia do Administrador do Sistema do App Engine Studio↗](https://nowlearning.servicenow.com/nowcreate?id=nc_asset&asset_id=c9cf6e2b970e69d45b0b7ec11153af82)
 
-41-page guide that provides system administrators guidance and insights in the installation, configuration, and management of the App Engine Studio (AES) application and processes.
+Guia de 41 páginas que fornece aos administradores do sistema orientações e insights sobre a instalação, configuração e gerenciamento do aplicativo e processos do App Engine Studio (AES).
 
-It also contains information about cloning configurations and considerations for App Engine. 
+Também contém informações sobre configurações de clonagem e considerações para o App Engine.
 
-Please consider taking the post-workshop survey, thanks!
+Por favor, considere responder à pesquisa pós-workshop, obrigado!
 
-##### [Post Lab Survey ↗](https://crewteam.service-now.com/esc?id=workshop_survey&type_id=ff8cc99e877d21106af8ec6e0ebb3546)
+##### [Pesquisa Pós-Laboratório ↗](https://crewteam.service-now.com/esc?id=workshop_survey&type_id=ff8cc99e877d21106af8ec6e0ebb3546)

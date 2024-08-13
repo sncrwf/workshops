@@ -5,58 +5,57 @@ hide_table_of_contents: true
 draft: false
 ---
 
-# Exercise: App Engine Admins
+# Exercício: App Engine Admins
 
-##### Estimated Time to Complete: 5 minutes
+##### Tempo Estimado de Conclusão: 5 minutos
 
 :::info
-**THIS SECTION IS OPTIONAL AND CAN SAFELY BE SKIPPED IF YOU ARE BEHIND.**
+**ESTA SEÇÃO É OPCIONAL E PODE SER PULADA SE VOCÊ ESTIVER ATRASADO.**
 
-Skipping steps below will have not prevent you from completing the lab.
+Pular as etapas abaixo não impedirá você de concluir o laboratório.
 :::
 
 ## Overview
 
-Add users to the App Engine Admin group in your production instance to give them administrative rights to App Engine Studio (AES). 
+Adicione usuários ao grupo App Engine Admin em sua instância de produção para conceder a eles direitos administrativos no App Engine Studio (AES). 
 
 ## Instructions
 
-1. Click **All**, type **groups**, and then click **Groups** in the **User Administration** section.
+1. Clique em **All**, digite **groups**, e depois clique em **Groups** na seção **User Administration**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-50-47.png)
 
-2. Open the App Engine Admins group.
+2. Abra o grupo App Engine Admins.
 
 ![relative](/img/lab-aemc/2023-07-31-16-52-16.png)
 
-3. Select the Group Members related list and select Edit.
+3. Selecione a lista relacionada Group Members e clique em Edit.
 
 ![relative](/img/lab-aemc/2023-07-31-16-53-32.png)
 
-4. Type "Fred Luddy" into the Collection box.
+4. Digite "Fred Luddy" na caixa Collection.
 
 ![relative](/img/lab-aemc/2023-07-31-16-54-17.png)
 
-5. Click Fred's name.
+5. Clique no nome de Fred.
 
 ![relative](/img/lab-aemc/2023-07-31-16-54-39.png)
 
-6. Click the **Add** button to move Fred to the right side. 
+6. Clique no botão **Add** para mover Fred para o lado direito.
 
 ![relative](/img/lab-aemc/2023-07-31-16-55-14.png)
 
-7. Click **Save**.
+7. Clique em **Save**.
 
 ![relative](/img/lab-aemc/2023-07-31-16-56-00.png)
 
 
-## Lessons Learned
+## Lições Aprendidas
 
-You have added users to the **App Engine Admin** group. 
+Você adicionou usuários ao grupo **App Engine Admin**. 
 
-They can review app- and deployment-related requests for approval or rejection.
+Eles podem revisar solicitações relacionadas a aplicativos e implantações para aprovação ou rejeição.
 
 :::info
-For more information see **<a href="https://docs.servicenow.com/csh?topicname=add-users-to-admin-grp.html&version=latest" target="_blank">Product Docs: Add users to the App Engine Admin group ↗</a>**
+Para mais informações, consulte **<a href="https://docs.servicenow.com/csh?topicname=add-users-to-admin-grp.html&version=latest" target="_blank">Product Docs: Add users to the App Engine Admin group ↗</a>**
 :::
-

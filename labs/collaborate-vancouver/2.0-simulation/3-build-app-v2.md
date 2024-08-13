@@ -1,26 +1,26 @@
 ---
 id: build-app-from-template-v2
-title: 3. Build the entire app 
+title: 3. Construir um App completo do zero
 sidebar_position: 3
 draft: true
 ---
-# Exercise: Build the entire app from scratch
+# Exercício: Construir um App completo do zero
 
 :::warning
-THIS SECTION IS UNDER CONSTRUCTION. 
+ESTA SEÇÃO ESTÁ EM CONSTRUÇÃO.
 
-SKIP THIS SECTION AND MOVE ON TO COLLABORATION REQUEST.
+PULE ESTA SEÇÃO E VÁ PARA O PEDIDO DE COLABORAÇÃO.
 
-[CLICK HERE TO CONTINUE TO COLLABORATION REQUEST](/docs/Simulation/collaboration-request/)
+[CLIQUE AQUI PARA CONTINUAR PARA O PEDIDO DE COLABORAÇÃO](/docs/Simulation/collaboration-request/)
 :::
 
-##### Estimated Time to Complete: 60 minutes
+##### Tempo Estimado de Conclusão: 60 minutos
 
 ## Overview
 
-In this section, Sydney will build her app. 
+Nesta seção, Sydney construirá seu aplicativo.
 
-After Jayne approved her request, she received an email that her app has been approved. 
+Após Jayne aprovar sua solicitação, ela recebeu um e-mail informando que seu aplicativo foi aprovado.
 
 :::info
 **SUBJECT:** Your app has been approved
@@ -28,40 +28,39 @@ After Jayne approved her request, she received an email that her app has been ap
 ![relative](/img/lab-aemc/2023-07-11-17-09-02.png)
 :::
 
-She clicks the button in the email to go to App Engine Studio, but we will simulate this.
+Ela clica no botão do e-mail para ir para o App Engine Studio, mas nós simularemos isso.
 
 ## Instructions
 
 :::warning
-Complete this section in **DEV**.
+Complete esta seção em **DEV**.
 :::
 
-1. Log in to **Dev**.
+1. Faça login em **Dev**.
 
-
-2. In the top right, click the **System Administrator** avatar >> **Impersonate user**.
+2. No canto superior direito, clique no avatar **System Administrator** >> **Impersonate user**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-31-53.png)
 
-3. Type **Sydney Carter** and click **Sydney Carter** in the search results.
+3. Digite **Sydney Carter** e clique em **Sydney Carter** nos resultados da busca.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-01.png)
 
-4. Click **Impersonate User**. 
+4. Clique em **Impersonate User**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-34-24.png)
 
-5. In the main ServiceNow browser window, select the Unified Navigation **All** menu from the header bar, then enter '**engine**' in the filter.
+5. Na janela principal do navegador do ServiceNow, selecione o menu Unified Navigation **All** da barra de cabeçalho, em seguida, digite '**engine**' no filtro.
 
-Select the **App Engine > App Engine Studio** module.
+Selecione o módulo **App Engine > App Engine Studio**.
 
 ![relative](/img/lab-aemc/2023-07-11-17-18-49.png)
 
 :::caution
-This will open AES in a new browser tab.
+Isso abrirá o AES em uma nova aba do navegador.
 :::
 
-6. Click <span className="button-purple">Create app</span>
+6. Clique em <span className="button-purple">Create app</span>.
 
 ![](/img/lab-aemc/2023-08-16-11-42-20.png)
 
@@ -69,21 +68,21 @@ This will open AES in a new browser tab.
 <div class="step-content">
   <div class="step-number">7</div>
   <div class="step-instructions">
-    <p>Fill in the application details:</p>
-    <p>Name: <strong>Safety</strong><br/>
-    <span>Description: <strong>This application allows users to log and track Safety Issues.</strong></span></p>
-    <p>Drag and drop or browse to upload logo: use the <strong>safetylogo.png</strong> file you downloaded in the previous <strong>Download activity resource files</strong> lesson.</p>
+    <p>Preencha os detalhes do aplicativo:</p>
+    <p>Nome: <strong>Safety</strong><br/>
+    <span>Descrição: <strong>Este aplicativo permite que os usuários registrem e acompanhem Problemas de Segurança.</strong></span></p>
+    <p>Arraste e solte ou navegue para enviar o logotipo: use o arquivo <strong>safetylogo.png</strong> que você baixou na lição anterior <strong>Download activity resource files</strong>.</p>
   </div>
 </div>
 
 ![](/img/lab-aemc/2023-08-16-11-47-41.png)
 
-8. Click <span className="button-purple">Continue</span>  to accept the default roles. 
+8. Clique em <span className="button-purple">Continue</span> para aceitar os papéis padrão.
 
 ![](/img/lab-aemc/2023-08-16-11-50-34.png)
 
-9. Click <span className="button-purple">Go to app dashboard</span>.
+9. Clique em <span className="button-purple">Go to app dashboard</span>.
 
-## Lessons Learned
+## Lições Aprendidas
 
-The template allowed Sydney to quickly build an app.  She can now customize it for her needs before requesting to have it deployed to Production. 
+O modelo permitiu que Sydney construísse rapidamente um aplicativo. Agora ela pode personalizá-lo para suas necessidades antes de solicitar o seu deploy para a Produção.

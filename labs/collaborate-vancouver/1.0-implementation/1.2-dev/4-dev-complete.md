@@ -1,10 +1,10 @@
 ---
 id: complete
-title: Implementation Complete
+title: Implementação Completa
 hide_table_of_contents: true
 draft: false
 ---
 
-That completes the Implementation activities for App Engine. 
+Isso conclui as atividades de Implementação para o App Engine.
 
-Next, you will simulate different users as they use App Engine. 
+A seguir, você simulará diferentes usuários enquanto utilizam o App Engine.

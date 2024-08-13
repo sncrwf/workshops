@@ -17,9 +17,9 @@ As a Citizen Developer, Joe can build applications on the company’s ServiceNow
 
 ## During this lab, you will work through the following exercises:
 
-- Build an Application (30 Minutes)
+- Build an Application (30 minutos)
 
-- Create a Workspace Experience (25 minutes)
+- Create a Workspace Experience (25 minutos)
 
 - Create an Integrated Business Process using Flow Designer and IntegrationHub (45 mins)
 

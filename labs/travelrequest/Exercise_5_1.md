@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 15 minutes**
+**Duration: 15 minutos**
 
 Congratulations on making it so far! 
 

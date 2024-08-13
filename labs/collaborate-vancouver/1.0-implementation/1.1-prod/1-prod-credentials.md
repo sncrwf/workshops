@@ -1,6 +1,6 @@
 ---
 id: credential
-title: 1. Credential Alias
+title: 1. Credenciais
 hide_table_of_contents: true
 draft: false
 ---

@@ -7,7 +7,7 @@ hide_table_of_contents: false
 draft: false
 ---
 
-**Duration: 30 minutes**
+**Duration: 30 minutos**
 
 ## 3.1: Add a Workspace
 Learn to create an interactive workspace for your users to process travel requests. 

@@ -7,6 +7,6 @@ draft: false
 
 # Prod Complete
 
-That completes the Prod section of the Implementation.
+Isso conclui a seção Prod da Implementação.
 
-Next, you will configure the Dev instance as part of Implementation. 
+Em seguida, você configurará a instância Dev como parte da Implementação.

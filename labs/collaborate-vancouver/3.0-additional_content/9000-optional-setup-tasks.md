@@ -1,133 +1,132 @@
 ---
 id: optional-tasks
-title: Optional Setup Tasks
+title: Tarefas Opcionais de Configuração
 ---
 
-# App Engine Studio Optional Setup Tasks to Consider
+# Tarefas Opcionais de Configuração do App Engine Studio
 
 :::caution
-This part of the lab is for information purposes only. No activity required.
+Esta parte do laboratório é apenas para fins informativos. Nenhuma atividade é necessária.
 :::
 
-As part of your App Engine Studio setup, you will want to potentially explore and configure the following:
+Como parte da configuração do App Engine Studio, você pode explorar e configurar o seguinte:
 
 ---
-## Connect spokes in Dev Environment
+## Conectar spokes no Ambiente de Desenvolvimento
 
 :::caution
-This step is not required as part of the initial App Engine Studio setup.
+Esta etapa não é necessária como parte da configuração inicial do App Engine Studio.
 :::
 
-A spoke is a scoped application that contains Flow Designer or Integration Hub actions or Subflows.
+Um spoke é uma aplicação escopo que contém ações ou Subflows do Flow Designer ou do Integration Hub.
 
-System Administrators can connect IntegrationHub spokes to App Engine Studio, allowing developers to integrate custom applications with third-party systems. For example – connecting the Slack spoke allows developers to post a message containing Incident details to a specific Slack channel each time a high-priority Incident is created.
+Os Administradores de Sistema podem conectar os spokes do IntegrationHub ao App Engine Studio, permitindo que os desenvolvedores integrem aplicações personalizadas com sistemas de terceiros. Por exemplo, conectar o spoke do Slack permite que os desenvolvedores publiquem uma mensagem contendo detalhes do Incidente em um canal específico do Slack toda vez que um Incidente de alta prioridade é criado.
 
-Many Integration Hub spokes are available, but not all need to be connected to App Engine Studio. Review some of the common spokes below and install them based on organizational needs.
+Muitos spokes do Integration Hub estão disponíveis, mas nem todos precisam ser conectados ao App Engine Studio. Revise alguns dos spokes comuns abaixo e instale-os com base nas necessidades organizacionais.
 
 <table class="myTable">
   <thead>
     <tr>
-      <th>Integration Hub Spoke</th>
-      <th>Installing this spoke provides developers</th>
+      <th>Spoke do Integration Hub</th>
+      <th>Instalar este spoke fornece aos desenvolvedores</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Microsoft Teams</td>
-      <td>Actions to support cross-functional communications and collaborations in Microsoft Teams.</td>
+      <td>Ações para suportar comunicações e colaborações interfuncionais no Microsoft Teams.</td>
     </tr>
     <tr>
       <td>Slack</td>
-      <td>Actions to automate the management of Slack channels, users, and software subscriptions.</td>
+      <td>Ações para automatizar a gestão de canais, usuários e assinaturas de software do Slack.</td>
     </tr>
     <tr>
       <td>Jira</td>
-      <td>Actions to automate tasks in Jira for managing users, issues, projects, and software development lifecycle.<br/>Synchronize data in ServiceNow with Jira to increase collaboration between ServiceNow users and DevOps teams.</td>
+      <td>Ações para automatizar tarefas no Jira para gerenciar usuários, problemas, projetos e o ciclo de vida do desenvolvimento de software.<br/>Sincronizar dados no ServiceNow com Jira para aumentar a colaboração entre usuários do ServiceNow e equipes de DevOps.</td>
     </tr>
     <tr>
       <td>Gmail</td>
-      <td>Actions to automate email and label management in Google Gmail.</td>
+      <td>Ações para automatizar a gestão de e-mails e etiquetas no Google Gmail.</td>
     </tr>
     <tr>
       <td>Azure AD</td>
-      <td>Actions to automate Microsoft Azure Active Directory tasks for user management, authentication, and group membership.</td>
+      <td>Ações para automatizar tarefas do Microsoft Azure Active Directory para gestão de usuários, autenticação e associação a grupos.</td>
     </tr>
     <tr>
       <td>Twitter</td>
-      <td>Actions to automate posting messages and media content to a corporate Twitter news feed.</td>
+      <td>Ações para automatizar a postagem de mensagens e conteúdo multimídia em um feed de notícias corporativo do Twitter.</td>
     </tr>
     <tr>
       <td>MS 365 Excel</td>
-      <td>Actions to automate worksheet, table, and cell management in Microsoft Excel.</td>
+      <td>Ações para automatizar a gestão de planilhas, tabelas e células no Microsoft Excel.</td>
     </tr>
   </tbody>
 </table>
 
-As your organization’s citizen development program matures and scales, additional spokes can be installed and connected based on application demand and use cases.
+À medida que o programa de desenvolvimento de cidadãos da sua organização amadurece e escala, spokes adicionais podem ser instalados e conectados com base na demanda de aplicações e casos de uso.
 
 :::note
-For more information on integrations with third-party systems, see **[Product Documentation: Integration Hub](https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest)**
+Para mais informações sobre integrações com sistemas de terceiros, consulte **[Documentação do Produto: Integration Hub](https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest)**
 :::
 
 ---
-## Review Flow Designer access settings 
+## Revisar as Configurações de Acesso ao Flow Designer
 
 :::caution
-This step is not required as part of the initial App Engine Studio setup.
+Esta etapa não é necessária como parte da configuração inicial do App Engine Studio.
 :::
 
-Review and update App Engine Studio developer access settings in the development environment to Flow Designer Resources and update as necessary.
+Revise e atualize as configurações de acesso dos desenvolvedores do App Engine Studio no ambiente de desenvolvimento para os Recursos do Flow Designer e atualize conforme necessário.
 
-Developers can leverage Flow Designer capabilities while creating logic and automation for custom applications.
+Os desenvolvedores podem aproveitar as capacidades do Flow Designer ao criar lógica e automação para aplicações personalizadas.
 
-Consider restricting developer access to Flow Designer Resources using content filtering for Flow Designer. This allows administrators to manage access to Flow Designer resources and specify which features App Engine Studio users can leverage while building applications.
+Considere restringir o acesso dos desenvolvedores aos Recursos do Flow Designer usando filtragem de conteúdo para o Flow Designer. Isso permite que os administradores gerenciem o acesso aos recursos do Flow Designer e especifiquem quais recursos os usuários do App Engine Studio podem utilizar ao construir aplicações.
 
 ![relative](/img/lab-aemc/2023-07-07-16-49-07.png)
 
-
-Flow Designer access from App Engine Studio can be updated later to provide developers with the editing capabilities that best suit their experience and needs.
+O acesso ao Flow Designer a partir do App Engine Studio pode ser atualizado posteriormente para fornecer aos desenvolvedores as capacidades de edição que melhor atendem à sua experiência e necessidades.
 
 :::note
-For more information on Flow Designer resources, see **[Product Documentation: Content Filtering for Flow Designer](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html&version=latest)**
+Para mais informações sobre recursos do Flow Designer, consulte **[Documentação do Produto: Filtragem de Conteúdo para Flow Designer](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html&version=latest)**
 :::
 
 ---
-## Review Service Catalog access settings
+## Revisar as Configurações de Acesso ao Catálogo de Serviços
 
 :::caution
-This step is not required as part of the initial App Engine Studio setup.
+Esta etapa não é necessária como parte da configuração inicial do App Engine Studio.
 :::
 
-Review App Engine Studio developer access in the development environment to the Catalog Builder tool’s catalog item templates and catalogs/categories and update access as necessary.
+Revise o acesso dos desenvolvedores do App Engine Studio no ambiente de desenvolvimento às templates de itens de catálogo e catálogos/categorias da Ferramenta de Criação de Catálogos e atualize o acesso conforme necessário.
 
-By default, App Engine Studio developers can leverage catalog templates to quickly create record producers or catalog items. Developers can also publish catalog items to any catalog. If you wish to limit access to templates or restrict publishing access to catalogs or categories, update the access accordingly in Catalog Builder.
+Por padrão, os desenvolvedores do App Engine Studio podem usar templates de catálogo para criar rapidamente produtores de registros ou itens de catálogo. Os desenvolvedores também podem publicar itens de catálogo em qualquer catálogo. Se você deseja limitar o acesso a templates ou restringir o acesso à publicação para catálogos ou categorias, atualize o acesso conforme necessário na Ferramenta de Criação de Catálogos.
 
 ![relative](/img/lab-aemc/2023-07-07-16-53-48.png)
 
-Catalog access from App Engine Studio can be updated at a later point to modify developer access to App Engine Studio catalogs, categories, and catalog templates.
+O acesso ao catálogo a partir do App Engine Studio pode ser atualizado posteriormente para modificar o acesso dos desenvolvedores aos catálogos, categorias e templates de catálogo do App Engine Studio.
 
-For more information on creating or editing catalog items, see **[Product Documentation: Catalog Builder](https://docs.servicenow.com/csh?topicname=catalog-builder.html&version=latest)**
+Para mais informações sobre a criação ou edição de itens de catálogo, consulte **[Documentação do Produto: Ferramenta de Criação de Catálogos](https://docs.servicenow.com/csh?topicname=catalog-builder.html&version=latest)**
 
 ---
 
-## Configure Instance Scan 
+## Configurar Instância de Verificação
 
 :::caution
-This step is not required as part of the initial App Engine Studio setup.
+Esta etapa não é necessária como parte da configuração inicial do App Engine Studio.
 :::
 
-Deploy custom applications with confidence by setting up Instance Scan definitions to monitor instance health throughout the deployment process. Instance scans interrogate your instance for configurations and health issues, allowing administrators an opportunity to address best practices and avoid similar configuration issues in the future.
+Implante aplicações personalizadas com confiança configurando definições de Verificação de Instância para monitorar a saúde da instância durante o processo de implantação. As verificações de instância interrogam sua instância quanto a configurações e problemas de saúde, permitindo que os administradores abordem as melhores práticas e evitem problemas de configuração semelhantes no futuro.
 
-Instance Scan definitions are executed automatically when App Engine Studio applications are promoted to the **Testing** instance. Instance Scan results will be logged in the Notes section of the Deployment Request record.
+As definições de Verificação de Instância são executadas automaticamente quando as aplicações do App Engine Studio são promovidas para a instância **Testing**. Os resultados da Verificação de Instância serão registrados na seção de Notas do registro de Solicitação de Implantação.
 
-The App Engine Studio application does not ship with any out-of-box Instance Scan definitions (however, a few Instance Scan definitions are installed with the Deployment Pipeline plugin to run basic performance checks).
+A aplicação App Engine Studio não é fornecida com definições de Verificação de Instância prontas para uso (no entanto, algumas definições de Verificação de Instância são instaladas com o plugin Deployment Pipeline para executar verificações básicas de desempenho).
 
-Work with professional ServiceNow developers to configure Instance Scan definitions and enforce best practices in your environments.
+Trabalhe com desenvolvedores profissionais do ServiceNow para configurar definições de Verificação de Instância e impor as melhores práticas em seus ambientes.
 
 ![relative](/img/lab-aemc/2023-07-07-16-56-31.png)
 
-**Enable and configure Instance Scan properties in your production instance if you plan to clone!**
+**Habilite e configure as propriedades de Verificação de Instância em sua instância de produção se você planeja clonar!**
 
 :::note
-For more information on managing instance health scans, see **[Product Documentation: Instance Scan](https://docs.servicenow.com/csh?topicname=hs-landing-page.html&version=latest)**
+Para mais informações sobre o gerenciamento de verificações de saúde da instância, consulte **[Documentação do Produto: Verificação de Instância](https://docs.servicenow.com/csh?topicname=hs-landing-page.html&version=latest)**
 :::

@@ -27,13 +27,9 @@ const sidebars = {
             ],
         },
 
-        {
-            type: 'link',
-            label: 'Workshop Feedback Survey', 
-            href: 'https://forms.office.com/r/KcNQR6ApJ3',
-        },
 
         'lab-guide-pdf',
+        'Survey',
 
 
     ],

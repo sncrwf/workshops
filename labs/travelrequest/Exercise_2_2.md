@@ -6,7 +6,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-**Duration: 10 minutes**
+**Duration: 10 minutos**
 
 1. Click the **App Home** tab to return to the main view
 ![](images/apphome.png)

@@ -1,24 +1,24 @@
 ---
 id: environment
-title: 2. Controller Environment
+title: 2. Ambiente Controller 
 hide_table_of_contents: true
 draft: false
 ---
 
-# Exercise: Create Controller Environment
+# Exercício: Criar Ambiente Controller 
 
-##### Estimated Time to Complete: 10 minutes
+##### Tempo Estimado de Conclusão: 10 minutos
 
 ## Overview
 
-Next up, you will add a "Controller" Environment record to your Dev instance.  
+Em seguida, você adicionará um registro de "Controller" Environment à sua instância Dev.
 
-It will contain the details for Dev to access the Controller Environment which is the Prod instance.
+Ele conterá os detalhes para que o Dev acesse o Controller Environment, que é a instância Prod.
 
-Production is considered the "Controller" Environment as that is where App Engine Management Center is installed and orchestrates activities from. 
-
+A Produção é considerada o "Controller" Environment, pois é onde o App Engine Management Center está instalado e orquestra as atividades.
 
 ### Before Exercise
+
 ``` mermaid
 graph LR
     Dev[Development Instance]
@@ -45,40 +45,40 @@ graph
 
 ## Instructions
 
-1. Log in **DEV**.
+1. Faça login em **DEV**.
 
 
-2. Click **All** >> type **environment** >> click **Environments** 
+2. Clique em **All** >> digite **environment** >> clique em **Environments** 
 
 ![relative](/img/lab-aemc/2023-07-05-09-45-11.png)
 
-3. Click **New** in the top-right.
+3. Clique em **New** no canto superior direito.
 
 ![relative](/img/lab-aemc/2023-06-30-15-19-10.png)
 
-4. Complete the form using the information below. 
+4. Complete o formulário usando as informações abaixo. 
 
-|Field | Value 
+|Campo | Valor 
 |:---|:---
 |**Name** | AEMC Controller 
 |**Instance Type**| Production 
 |**Prod Instance URL** | ![](/img/lab-aemc/2023-08-10-13-17-01.png)
 |**Instance credential** | Pipeline_Credentials 
-|**Is Controller?** | **CHECK THE BOX**
-|**Instance Id** | This will auto populate after clicking Validate.
+|**Is Controller?** | **MARQUE A CAIXA**
+|**Instance Id** | Isso será preenchido automaticamente após clicar em Validate.
 
-5. Click **Validate**.
+5. Clique em **Validate**.
 
 ![relative](/img/lab-aemc/2023-07-11-16-01-35.png)
 
 ![relative](/img/lab-aemc/2023-07-05-13-56-23.png)
 
-6. Click **Submit** to finish creating the **Prod** environment record.
+6. Clique em **Submit** para finalizar a criação do registro de **Prod** environment.
 
 ![relative](/img/lab-aemc/2023-07-11-15-59-53.png)
 
-## Lessons Learned
+## Lições Aprendidas
 
- **Importance of the Controller Environment**
+ **Importância do Controller Environment**
  
- Setting up the Controller Environment is crucial for the operation of the App Engine Management Center. This exercise emphasizes the vital role of the Production instance, as it's where AEMC is installed and from where it orchestrates activities.
+ Configurar o Controller Environment é crucial para a operação do App Engine Management Center. Este exercício enfatiza o papel vital da instância de Produção, pois é onde o AEMC está instalado e de onde ele orquestra as atividades.

@@ -1,32 +1,32 @@
 ---
 id: prepare-env
-title: Prepare Environments
+title: Preparar Ambientes
 hide_table_of_contents: true
 ---
 
-# Prepare Environments
+# Preparar Ambientes
 
-Before installing App Engine Studio, review all platform requirements and define an organizational instance strategy to prepare for successful installation and configuration.
+Antes de instalar o App Engine Studio, revise todos os requisitos da plataforma e defina uma estratégia de instância organizacional para preparar a instalação e configuração bem-sucedidas.
 
-## Review platform requirements
-- App Engine license required
-  - *Contact your ServiceNow Account Manager for additional information on App Engine, or see [ServiceNow App Engine](https://www.servicenow.com/products/now-platform-app-engine.html)*
-- Instances must be on the same release (Ex. Utah)
-- The admin role is required in all instances to install App Engine Studio and dependent applications from the ServiceNow Store
+## Revisar requisitos da plataforma
+- Licença do App Engine necessária
+  - *Entre em contato com o Gerente de Contas da ServiceNow para obter informações adicionais sobre o App Engine ou veja [ServiceNow App Engine](https://www.servicenow.com/products/now-platform-app-engine.html)*
+- As instâncias devem estar na mesma versão (por exemplo, Utah)
+- O papel de administrador é necessário em todas as instâncias para instalar o App Engine Studio e aplicativos dependentes a partir da ServiceNow Store
 
-## Define instance strategy
+## Definir estratégia de instância
 
-When defining the instance strategy for App Engine Studio, it is recommended to leverage one production instance and at least two sub-production instances – however, App Engine Studio can support any number of sub-production instances as part of an instance strategy.
+Ao definir a estratégia de instância para o App Engine Studio, é recomendável utilizar uma instância de produção e pelo menos duas instâncias de subprodução – no entanto, o App Engine Studio pode suportar qualquer número de instâncias de subprodução como parte de uma estratégia de instância.
 
-Applications are deployed to the production instance once developed and successfully tested in sub-production instances. One sub-production instance will serve as the development environment and the other as the test environment.
+Os aplicativos são implantados na instância de produção após serem desenvolvidos e testados com sucesso nas instâncias de subprodução. Uma instância de subprodução servirá como o ambiente de desenvolvimento e a outra como o ambiente de teste.
 
-If your organization uses sandbox or staging environments in addition to test and development, they can be incorporated into the instance strategy accordingly based on organizational needs.
+Se sua organização usa ambientes de sandbox ou staging além de teste e desenvolvimento, eles podem ser incorporados na estratégia de instância de acordo com as necessidades organizacionais.
 
 ![relative](/img/lab-aemc/2023-07-07-12-06-36.png)
-*Example instance strategy with one production instance and three sub-production instances*
+*Exemplo de estratégia de instância com uma instância de produção e três instâncias de subprodução*
 
-Sub-production instances that are most similarly configured to your production instance are the best candidates for test and stage environments. This way, administrators can more accurately find issues that may arise if the application is deployed to production.
+Instâncias de subprodução que estão mais semelhantes configuradas à sua instância de produção são os melhores candidatos para ambientes de teste e staging. Dessa forma, os administradores podem encontrar mais precisamente os problemas que podem surgir se o aplicativo for implantado na produção.
 
 :::note
-For more information see **[Product Docs: Instance Strategy for App Engine Studio](https://docs.servicenow.com/csh?topicname=aes-instance-strategy.html&version=latest)**
+Para mais informações, veja **[Documentação do Produto: Estratégia de Instância para App Engine Studio](https://docs.servicenow.com/csh?topicname=aes-instance-strategy.html&version=latest)**
 :::

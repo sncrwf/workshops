@@ -1,121 +1,119 @@
 ---
 id: intake-approval
-title: 2. Intake Approval
+title: 2. Aprovação de Intake
 sidebar_position: 2
 ---
-# Exercise: Intake Approval
+# Exercício: Aprovação de Intake
 
-##### Estimated Time to Complete: 10 minutes
+##### Tempo Estimado de Conclusão: 10 minutos
 
 ## Overview
 
 <details>
-  <summary><strong>App Engine Admin</strong> [<em>ap en-jin ad-min</em>]</summary>
-  Someone who has administrative responsibilities for configuring and managing App Engine applications on ServiceNow. An App Engine Admin oversees the deployment, scaling, and maintenance of applications while ensuring optimal performance and availability.
+  <summary><strong>App Engine Admin</strong></summary>
+  Alguém que tem responsabilidades administrativas para configurar e gerenciar aplicativos do App Engine no ServiceNow. Um App Engine Admin supervisiona o deploy, escalonamento e manutenção dos aplicativos, garantindo desempenho e disponibilidade ideais.
 </details>
 
 | Jayne Nigel| App Engine Admin
 |--|--|
-| ![](/img/lab-aemc/2023-08-30-15-42-07.png) | Jayne is familiar with many different software methodologies such as Agile and SAFe. She is familiar with Update Sets from her ServiceNow training, but she does not regularly work with them.
+| ![](/img/lab-aemc/2023-08-30-15-42-07.png) | Jayne está familiarizada com muitas metodologias de software, como Agile e SAFe. Ela conhece os Update Sets de seu treinamento no ServiceNow, mas não trabalha regularmente com eles.
 
-In this section, our **App Engine Admin** Jayne will review and approve Sydney's App Intake request. 
+Nesta seção, nossa **App Engine Admin** Jayne revisará e aprovará a solicitação de Intake de Sydney.
 
 ## Instructions
 
 :::warning
-Complete this section in **PROD**.
+Complete esta seção em **PROD**.
 :::
 
-1. Log in to **Prod**
+1. Faça login em **Prod**.
 
-
-2. Click the avatar in the top-right, then click **Impersonate another user**.
+2. Clique no avatar no canto superior direito e, em seguida, clique em **Impersonate another user**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-44-50.png)
 
-3. Type **Jayne Nigel** and click **Jayne Nigel**.
+3. Digite **Jayne Nigel** e clique em **Jayne Nigel**.
 
 ![relative](/img/lab-aemc/2023-03-14-12-45-21.png)
 
-4. Click **Impersonate user**.
+4. Clique em **Impersonate user**.
 
-
-5. Click **All** >> type **app engine management** >> click **App Engine Management Center**.
+5. Clique em **All** >> digite **app engine management** >> clique em **App Engine Management Center**.
 
 ![relative](/img/lab-aemc/2023-07-05-16-16-55.png)
 
 :::caution
-This will open AEMC in a new browser tab.
+Isso abrirá o AEMC em uma nova aba do navegador.
 :::
 
-6. In the **Pending requests to complete** widget, click the number **1** above **Intake** to open Sydney's request. 
+6. No widget **Pending requests to complete**, clique no número **1** acima de **Intake** para abrir a solicitação de Sydney.
 
 ![relative](/img/lab-aemc/2023-07-11-16-34-50.png)
 
-7. Click the **RITM** number to open Sydney's request.
+7. Clique no número **RITM** para abrir a solicitação de Sydney.
 
 ![relative](/img/lab-aemc/2023-07-11-16-36-33.png)
 
-8. Scroll down the left-hand side of the page in the **Details** section.
+8. Role para baixo no lado esquerdo da página na seção **Details**.
 
 ![relative](/img/lab-aemc/2023-07-11-16-39-06.png)
 
-9. In the **Administration** section of the form, click on the **Permission type** drop-down field.
+9. Na seção **Administration** do formulário, clique no campo suspenso **Permission type**.
 
 ![relative](/img/lab-aemc/2023-07-11-16-42-31.png)
 
-10. Click on **Create/edit applications (AES User Group)**
+10. Clique em **Create/edit applications (AES User Group)**
 
 ![relative](/img/lab-aemc/2023-07-11-16-44-56.png)
 
-11. Scroll to the top of the page and click **Save** in the top right. 
+11. Role para o topo da página e clique em **Save** no canto superior direito.
 
 ![relative](/img/lab-aemc/2023-07-11-16-46-15.png)
 
-12. Click on the **Catalog Tasks (1)** related list. 
+12. Clique na lista relacionada **Catalog Tasks (1)**.
 
 ![relative](/img/lab-aemc/2023-07-11-16-47-20.png)
 
-13. Click the **SCTASK** number to open the Catalog Task.
+13. Clique no número **SCTASK** para abrir a Tarefa de Catálogo.
 
 ![relative](/img/lab-aemc/2023-07-11-16-47-55.png)
 
-14. Click **Close Task** in the top-right.
+14. Clique em **Close Task** no canto superior direito.
 
 ![relative](/img/lab-aemc/2023-07-11-16-49-14.png)
 
-15. Click the **ⓘ** icon next to the **RITM** number to go back to the **RITM** record. 
+15. Clique no ícone **ⓘ** ao lado do número **RITM** para voltar ao registro **RITM**.
 
 ![relative](/img/lab-aemc/2023-07-11-16-54-30.png)
 
 :::caution
-If you do not see the **Approve** button in the next step, you may need to refresh the page.
+Se você não vir o botão **Approve** na próxima etapa, pode ser necessário atualizar a página.
 :::
 
-16. Click **Approve** in the top-right of the page. 
+16. Clique em **Approve** no canto superior direito da página.
 
 ![relative](/img/lab-aemc/2023-07-11-16-56-47.png)
 
 ![relative](/img/lab-aemc/2023-07-11-17-01-13.png)
 
-The Prod instance will configure Sydney's App Engine User access on the Dev environment.
- 
-In the real world, there might be more than one person to do the approval and more time may be taken to review the answers.
- 
-You may also want to require the person to undergo additional training before approving their access to build applications. 
+A instância Prod configurará o acesso de Sydney ao App Engine no ambiente Dev.
 
-## Lessons Learned
+No mundo real, pode haver mais de uma pessoa para fazer a aprovação e mais tempo pode ser necessário para revisar as respostas.
 
-During our journey through the 'Intake - Approval' process, several insightful takeaways emerged, all of which can prove helpful for future reference:
+Você também pode querer exigir que a pessoa passe por um treinamento adicional antes de aprovar seu acesso para criar aplicativos.
 
-**Role Clarification**
+## Lições Aprendidas
 
-The process shed light on the critical role that Jayne, the App Engine Admin, plays within the system. Her duties, while not labeled 'Platform Administrator' or assigned any 'admin' roles in any environment, are far-reaching. Her approvals initiate a sequence of automated procedures that are crucial for the smooth functioning of the system. This serves as a reminder that all roles, regardless of their titles, have significant responsibilities and impacts.
+Durante nossa jornada pelo processo 'Intake - Approval', surgiram vários insights úteis para futuras referências:
 
-**Approval Process**
+**Clarificação de Papéis**
 
-The impact of the approval process on subsequent actions (like triggering an automated email to Sydney) was an essential takeaway. This demonstrates the power of automated workflows in saving time and reducing manual errors.
+O processo destacou o papel crítico que Jayne, a App Engine Admin, desempenha dentro do sistema. Suas funções, embora não rotuladas como 'Platform Administrator' ou atribuídas a qualquer papel 'admin' em qualquer ambiente, são amplas. Suas aprovações iniciam uma sequência de procedimentos automatizados que são cruciais para o funcionamento suave do sistema. Isso serve como um lembrete de que todos os papéis, independentemente dos títulos, têm responsabilidades e impactos significativos.
 
-**Segregation of Duties**
+**Processo de Aprovação**
 
-Successfully completing this process without Jayne needing an 'admin' role showcases the 'Segregation of Duties' principle. It illustrates that high-level access (like the 'admin' role) isn't always required to complete significant tasks. This reduces potential security risks and promotes system integrity.
+O impacto do processo de aprovação nas ações subsequentes (como acionar um e-mail automático para Sydney) foi um aprendizado essencial. Isso demonstra o poder dos fluxos de trabalho automatizados em economizar tempo e reduzir erros manuais.
+
+**Segregação de Funções**
+
+Concluir com sucesso este processo sem que Jayne precise de um papel 'admin' demonstra o princípio da 'Segregação de Funções'. Isso ilustra que o acesso de alto nível (como o papel de 'admin') nem sempre é necessário para concluir tarefas significativas. Isso reduz riscos potenciais de segurança e promove a integridade do sistema.

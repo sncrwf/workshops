@@ -1,65 +1,61 @@
 ---
 id: collaboration-approval
-title: 5. Collaboration Approval
+title: 5. Aprovação de Colaboração
 sidebar_position: 5
 ---
-# Exercise: Collaboration Approval
+# Exercício: Aprovação de Colaboração
 
-##### Estimated Time to Complete: 5 minutes
+##### Tempo Estimado de Conclusão: 5 minutos
 
 ## Overview
 
-Jayne will need to approve Sydney's Collaboration request for Priya to assist her with the integrations in her app. 
+Jayne precisará aprovar a solicitação de colaboração de Sydney para que Priya possa ajudá-la com as integrações em seu aplicativo.
 
 ## Instructions 
 
 :::warning
-Complete this section in **PROD**.
+Complete esta seção em **PROD**.
 :::
 
 :::caution
-You should still have a browser tab for **Prod** opened to App Engine Management Center in which you are impersonating Jayne. 
- 
-If not, follow these quick instructions to be sure:
- 
-1. Click the avatar in the top-right, then click **Impersonate another user**.
+Você ainda deve ter uma aba do navegador para **Prod** aberta no App Engine Management Center onde você está se passando por Jayne. 
 
+Se não, siga estas instruções rápidas para garantir:
 
-2. Type **Jayne Nigel** and click **Jayne Nigel**.
- 
+1. Clique no avatar no canto superior direito, depois clique em **Impersonate another user**.
 
-3. Click **Impersonate user**.
- 
+2. Digite **Jayne Nigel** e clique em **Jayne Nigel**.
 
-4. Click **All** >> type **app engine management** >> click **App Engine Management Center**.
- 
-This will open AEMC in a new browser tab.
+3. Clique em **Impersonate user**.
+
+4. Clique em **All** >> digite **app engine management** >> clique em **App Engine Management Center**.
+
+Isso abrirá o AEMC em uma nova aba do navegador.
 :::
 
-1. Click **Overview** in App Engine Management Center
+1. Clique em **Overview** no App Engine Management Center
 
 ![relative](/img/lab-aemc/2023-07-11-20-33-36.png) 
 
-2. Click the **1** above **Collaboration**
+2. Clique no **1** acima de **Collaboration**
 
 ![relative](/img/lab-aemc/2023-07-11-20-33-05.png)
 
-3. Click the **DEV** ticket to open Sydney's Collaboration request.
+3. Clique no ticket **DEV** para abrir a solicitação de colaboração de Sydney.
 
 ![relative](/img/lab-aemc/2023-07-11-20-35-33.png)
 
-4. Click **Approve** in the top-right of the page. 
+4. Clique em **Approve** no canto superior direito da página.
 
 ![relative](/img/lab-aemc/2023-07-11-16-56-47.png)
 
 ![relative](/img/lab-aemc/2023-07-11-17-01-13.png)
 
-5. Click **Overview** to return to the main AEMC page.
+5. Clique em **Overview** para retornar à página principal do AEMC.
 
 ![relative](/img/lab-aemc/2023-07-11-20-38-56.png)
 
-
-After Jayne approved the Collaboration Request, Sydney received an email to inform her that the request was approved. 
+Após Jayne aprovar a Solicitação de Colaboração, Sydney recebeu um e-mail informando que a solicitação foi aprovada.
 
 :::info
 **SUBJECT:** Your collaborator request was approved
@@ -67,6 +63,6 @@ After Jayne approved the Collaboration Request, Sydney received an email to info
 ![relative](/img/lab-aemc/2023-07-11-21-05-07.png)
 :::
 
-## Lessons Learned
+## Lições Aprendidas
 
-**Great!!** Approving the request triggered AEMC to automatically provision Priya's access to work on the app with Sydney as an Integration Specialist.
+**Ótimo!!** Aprovar a solicitação fez com que o AEMC provisionasse automaticamente o acesso de Priya para trabalhar no aplicativo com Sydney como Integration Specialist.
