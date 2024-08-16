@@ -8,9 +8,9 @@ sidebar_position: 6
 ##### Tempo Estimado de Conclusão: 15 minutos
 
 :::info
-**THIS SECTION IS OPTIONAL AND CAN SAFELY BE SKIPPED IF YOU ARE BEHIND.**
+**ESTA SEÇÃO É OPCIONAL E PODE SER PULADA SE VOCÊ ESTIVER ATRASADO.**
 
-Skipping steps below will not prevent you from completing the lab.
+Pular as etapas abaixo não impedirá você de concluir o laboratório.
 :::
 
 ## Overview

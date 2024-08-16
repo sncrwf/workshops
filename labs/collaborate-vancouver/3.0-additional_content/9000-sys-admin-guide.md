@@ -9,7 +9,3 @@ hide_table_of_contents: true
 Guia de 41 páginas que fornece aos administradores do sistema orientações e insights sobre a instalação, configuração e gerenciamento do aplicativo e processos do App Engine Studio (AES).
 
 Também contém informações sobre configurações de clonagem e considerações para o App Engine.
-
-Por favor, considere responder à pesquisa pós-workshop, obrigado!
-
-##### [Pesquisa Pós-Laboratório ↗](https://crewteam.service-now.com/esc?id=workshop_survey&type_id=ff8cc99e877d21106af8ec6e0ebb3546)

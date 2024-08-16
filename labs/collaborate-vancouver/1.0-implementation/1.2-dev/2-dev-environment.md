@@ -17,7 +17,7 @@ Ele conterá os detalhes para que o Dev acesse o Controller Environment, que é 
 
 A Produção é considerada o "Controller" Environment, pois é onde o App Engine Management Center está instalado e orquestra as atividades.
 
-### Before Exercise
+### Antes do Exercício
 
 ``` mermaid
 graph LR
@@ -27,7 +27,7 @@ graph LR
 ```
 
 
-### After Exercise
+### Depois do Exercício
 
 ``` mermaid
 graph 

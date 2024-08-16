@@ -5,7 +5,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-# Exercício: Criar Apelido de Credencial
+# Exercício: Criar um Credencial Alias
 
 ##### Tempo Estimado para Conclusão: 5 minutos
 
@@ -54,7 +54,7 @@ Para este exercício, o Escopo da Aplicação específico não é crítico - Glo
     ![Navegue até Aliases](/img/lab-aemc/2023-07-11-15-10-23.png)
 
 
-3. Clique em **New** no canto superior direito para criar um novo registro de Apelido de Credencial. 
+3. Clique em **New** no canto superior direito para criar um novo registro de Credential Alias. 
     ![Criar Alias](/img/lab-aemc/2023-03-07-15-38-10.png)
 
 
@@ -90,7 +90,7 @@ A senha para esta conta de usuário remoto está pré-configurada.
 Ocorrerão erros se você não usar a senha especificada abaixo.
 :::
 
-9. No formulário **Credenciais de Autenticação Básica**, preencha os seguintes valores e clique em **Enviar**.
+9. No formulário **Credenciais de Autenticação Básica**, preencha os seguintes valores e clique em **Submit**.
 
     :::info
     Lembre-se de usar o botão de copiar para copiar o texto abaixo.

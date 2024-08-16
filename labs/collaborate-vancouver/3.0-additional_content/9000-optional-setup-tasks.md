@@ -109,7 +109,7 @@ Para mais informações sobre a criação ou edição de itens de catálogo, con
 
 ---
 
-## Configurar Instância de Verificação
+## Configurar Instância de Testes
 
 :::caution
 Esta etapa não é necessária como parte da configuração inicial do App Engine Studio.

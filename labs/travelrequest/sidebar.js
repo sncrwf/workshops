@@ -83,7 +83,7 @@ const sidebars = {
         {
             type: 'link',
             label: 'Workshop Feedback Survey', 
-            href: 'https://forms.office.com/Pages/ResponsePage.aspx?id=cPHPi3mZHkmGg9jO0IULrZ-A1RrOMdlKmc9TUcQSHjVUQ1ZWNVpDWFJIOUZKTDQ2SVBZQTZHNDhZUS4u',
+            href: 'https://forms.office.com/r/XJ78YLpyK2',
         },
 
         'lab-guide-pdf',

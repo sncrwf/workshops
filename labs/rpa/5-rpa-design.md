@@ -383,7 +383,7 @@ Depois, conecte a porta de saída de dados Password do componente Credentials à
 
 Remova o valor hardcoded no componente text/SetText que contém o valor "badgadmin" e também o texto criptografado no componente Password1, conforme mostrado:
 
-![Alt text](img/2023-10-03_12-44-12 (1)(1).gif)
+![Alt text](img/2023-10-03_12-44-12(1)(1).gif)
 
 Então, conecte a porta de saída de dados 'UserName' do componente Credentials à porta de entrada de dados do componente text/SetText, e conecte a porta de saída de dados do componente **Encryption** à porta de entrada de dados do componente Password1, conforme mostrado:
 

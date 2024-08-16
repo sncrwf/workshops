@@ -9,15 +9,16 @@ draft: false
 
 ##### Tempo Estimado de Conclusão: 10 minutos
 
-## Overview 
+## Visão Geral
 
-A **<a href="https://docs.servicenow.com/csh?topicname=create-pipeline-credentials.html&version=latest" target="_blank">Credential Alias ↗</a>** is a username and password used by ServiceNow to log into a remote system. 
+Um **<a href="https://docs.servicenow.com/csh?topicname=create-pipeline-credentials.html&version=latest" target="_blank">Credential Alias ↗</a>** é um nome de usuário e senha usados pelo ServiceNow para fazer login em um sistema remoto.
 
-In this case, it will be used by App Engine Studio to access the Controller Instance.
+Neste caso, ele será usado pelo App Engine Studio para acessar a Instância do Controller.
 
-You will create the Credential Alias with a user account that has already been created for you. 
+Você criará o Credential Alias com uma conta de usuário que já foi criada para você.
 
-### Before Exercise
+
+### Antes do Exercício
 ``` mermaid
 graph LR
     subgraph Dev[Development Instance]
@@ -25,7 +26,7 @@ graph LR
     style Dev fill:#D5F7FF,stroke:#B0BAD3,stroke-width:2px,color:#333
 ```
 
-### After Exercise
+### Depois do Exercício
 ``` mermaid
 graph LR
     subgraph Dev[Development Instance]

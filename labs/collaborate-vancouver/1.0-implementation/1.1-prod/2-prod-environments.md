@@ -58,8 +58,8 @@ graph TD
     |**Instance Type** | Development 
     |**Dev Instance URL** | ![](/img/lab-aemc/2023-08-10-12-53-04.png)
     |**Instance credential** | Pipeline_Credentials 
-    |**Is Controller?** | **UNCHECKED**
-    |**Instance Id** | This will auto populate after clicking Validate. 
+    |**Is Controller?** | **NÃO**
+    |**Instance Id** | Será automáticamente populado ao clicar em **"Validate"**
 
 5. Clique em **Validate**  
     ![relative](/img/lab-aemc/2023-07-11-15-38-49.png)
@@ -80,8 +80,8 @@ graph TD
     |**Instance Type** | Production 
     |**Prod Instance URL** | ![](/img/lab-aemc/2023-08-10-13-17-01.png)
     |**Instance credential** | Pipeline_Credentials 
-    |**Is Controller?** | **CHECK THE BOX**
-    |**Instance Id** | This will auto populate after clicking Validate. 
+    |**Is Controller?** | **SIM**
+    |**Instance Id** | Será automáticamente populado ao clicar em **"Validate"**
 
 
 9. Clique no botão "Validate".  
