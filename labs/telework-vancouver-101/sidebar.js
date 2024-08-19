@@ -78,6 +78,13 @@ const sidebars = {
                 '5.0-conclusion/appendix',
             ],
         },
+        {
+            type: 'category',
+            label: 'Bônus',
+            items: [
+                '6.0-Bonus/Create-People-Finder-Spoke',
+            ],
+        },
 
         'CHANGELOG',
         'lab-guide-pdf',

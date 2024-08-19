@@ -5,10 +5,6 @@ hide_table_of_contents: false
 ---
 # Create People Finder Spoke
 
-:::info  
-**PULE ESTA SESSÃO CASO VOCÊ JÁ TENHA REALIZADO A ATIVIDADE BÔNUS DO LAB CASOS DE TELETRABALHO NÍVEL 1.**
-:::
-
 Um *spoke* é um aplicativo escopado contendo conteúdo do Flow Designer dedicado a um aplicativo ou tipo de registro específico. Isso inclui integrações que conectam sistemas ou serviços externos com a plataforma ServiceNow. Ao utilizar *spokes*, as organizações podem estender as capacidades de sua instância ServiceNow e integrá-la com uma ampla gama de ferramentas e serviços externos, melhorando a automação, colaboração e eficiência em suas operações de TI e processos de negócios.
 
 [Clique aqui para saber mais sobre Spokes.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spokes.html)
