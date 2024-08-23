@@ -56,7 +56,10 @@ jobs:
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "IHub - Gerador de Spokes" --outputPDFFilename "spokegen.pdf"
 
       - name: Build RPA PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/rpa/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "RPA" --outputPDFFilename "rpa.pdf"
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/rpa/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "RPA Hub - Robotic Process Automation" --outputPDFFilename "rpa.pdf"
+
+      - name: Build DocIntell PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/docintel/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "DocIntel - Document Intelligence" --outputPDFFilename "docintel.pdf"
 
 
       # - name: Upload results
@@ -76,6 +79,7 @@ jobs:
             collaborate-vancouver.pdf
             spokegen.pdf
             rpa.pdf
+            docintel.pdf
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

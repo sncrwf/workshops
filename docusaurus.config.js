@@ -106,7 +106,7 @@ const config = {
     ],
 
     /*
-     * IHUB: SPOKE GENERATOR
+     * RPA
      */
 
         [
@@ -121,7 +121,22 @@ const config = {
             breadcrumbs: false,
           },
         ],
+    /*
+     * DOCINTEL
+     */
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/docintel",
+        id: "docintel",
+        routeBasePath: "labs/docintel",
+        sidebarPath: require.resolve("./labs/docintel/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
     /*
      * EWF+CrWF: Dept Svc
      */

@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight, faDiagramProject, faHouseLaptop, faHouseUser, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from '@fortawesome/free-solid-svg-icons';
@@ -99,10 +99,22 @@ const FeatureList = [
     icon: faRobot,
     description: (
       <>
-      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de RPA da ServiceNow.
+      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de Automação de Processos da ServiceNow.
       </>
     ),
     to: '/labs/rpa/introduction',
+    target: '_self',
+  },
+
+  {
+    title: 'DocIntel: Document Intelligence',
+    icon: faFileInvoice,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Automatize seus fluxos de trabalho baseados em documentos com o Document Intelligence.
+      </>
+    ),
+    to: '/labs/docintel/introduction',
     target: '_self',
   }
 
