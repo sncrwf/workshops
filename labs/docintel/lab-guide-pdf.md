@@ -4,4 +4,4 @@ title: Baixar Guia do Laboratório em PDF
 draft: false
 ---
 
-[Clique aqui para baixar o Guia do Laboratório em PDF](https://github.com/sncrwf/workshops/releases/download/latest/docintell.pdf)
+[Clique aqui para baixar o Guia do Laboratório em PDF](https://github.com/sncrwf/workshops/releases/download/latest/docintel.pdf)
