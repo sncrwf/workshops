@@ -32,7 +32,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '3. Bônus - Portal',
+            label: '3. [Bônus] Portal',
             items: [
                 'Portal/3.1 Branding',
                 'Portal/3.2 Add a Widget',
