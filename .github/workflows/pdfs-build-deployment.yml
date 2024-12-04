@@ -41,7 +41,7 @@ jobs:
           node-version: 20
 
       - name: Install
-        run: npm install docs-to-pdf
+        run: npm install docs-to-pdf fs-extra
 
       - name: Build Telework Lab 101 PDF
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "telework-vancouver-101.pdf"
