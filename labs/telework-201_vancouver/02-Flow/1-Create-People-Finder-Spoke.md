@@ -86,7 +86,7 @@ Vamos criar uma integração reutilizável com a Open API de People Finder do de
    | |Nome do Campo                | Valor do Campo
    |-|------------------------------| --------------
    |<span className="large-number">➊</span>|Connection Name | People Finder
-   |<span className="large-number">➋</span>|Connection URL | [API Key Template](https://low-code.guide/api)
+   |<span className="large-number">➋</span>|Connection URL | https://low-code.guide/api
    |<span className="large-number">➌</span>|API Key | appkey
    |<span className="large-number">➍</span>|Clique no botão <span className="button-purple">Submit</span>.  
 ![](../images/2024-12-03-23-22-09.png)
