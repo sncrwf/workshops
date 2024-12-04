@@ -39,43 +39,34 @@ Exemplo de um playbook em um espaço de trabalho:
 
   Agora você está na visualização de lista do Process Automation Designer mostrando todos os processos que foram concluídos.
 
-2. Clique em 'Create a new process'
+1. Clique em New > Playbook
 
-  ![](./Playbook%20Images/PAD%20click%20on%20new%20process.jpg)
+  ![](../images/2024-12-03-23-46-42.png)
 
-3. Dê um rótulo e uma descrição ao seu processo 
+2. Dê um rótulo e uma descrição ao seu processo e crie um novo playbook
   (**observação: o nome da sua aplicação deve ser o nome da sua aplicação de Gerenciamento de Casos de Teletrabalho, pode ser diferente do que está na captura de tela**)
 
     | **Etapas**   | 
     |-------------|---------------------------------|
-    | Label | Telework Case Playbook |
+    | Playbook name | Telework Case Playbook |
     | Description | used to ensure completeness of telework cases, triggered when case is created  |
-    | Clique | Select a Trigger |
+    | Application | Telework Case Management |
 
-  ![](./Playbook%20Images/name%20your%20process%20and%20select%20trigger.jpg)
 
-:::info
-Isso vai parecer muito com o flow designer – nos bastidores, fluxos estão sendo acionados e usados enquanto montamos nosso processo.
-:::  
+  ![](../images/2024-12-03-23-48-15.png)
 
-4. Selecione um gatilho  
+
+1. Selecione um gatilho clicando em <span className="button-purple">Trigger</span>
 
     | Etapas | 
     |-------------|---------------------------------|
     |<span className="large-number">➊</span>| "Define your own conditions for when your process runs" |
     |<span className="large-number">➋</span>| Choose "Record Create" |
-    |<span className="large-number">➌</span>| Clique em 'Set your trigger condition' |
+    |<span className="large-number">➌</span>| Choose Table "Telework Case" |
+    |<span className="large-number">➍</span>| Clique em 'Done' |
 
-  ![](./Playbook%20Images/select%20a%20trigger%201.jpg)![](./Playbook%20Images/select%20a%20trigger%202.jpg)
+  ![](../images/2024-12-03-23-52-39.png)
 
-1. Finalmente, escolha sua tabela e condições – não vamos ter condições sobre tipos de registros, mas isso é uma opção.
-
-    | **Etapas**   | 
-    |-------------|---------------------------------|
-    | Tabela | Telework Case |
-    | Clique | "Go to Designer" |
-    
-    ![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)
     
     Mude para 'Board View'
 
@@ -168,7 +159,7 @@ No lado direito, estão as propriedades da atividade. Aqui é onde fornecemos as
     |-------------|---------------------------------|
     | Label | Review Form |
     | Description | Check the requestor has a manager, the reason field is filled out and the priority is set to correct level. |
-    | Clique | `Automation` TAB (Não clique em 'Save and Close') |
+    | Clique | `UI Layout` TAB (Não clique em 'Save and Close') |
 
   ![](./Playbook%20Images/Telework%20Case%20Stage%203.png)
 
@@ -179,12 +170,12 @@ No lado direito, estão as propriedades da atividade. Aqui é onde fornecemos as
 
     | Escolha | 
     |-------------|---------------------------------|
-    | Table | Telework Case |
-    | Record | use the data pill picker to choose the trigger record, just like in flow designer |
-    | Form Fields | **must type in string field:** opened\_by,justification,priority |
+    | Associated table | Telework Case |
+    | Associated record | use o data pill picker para escolher o registro trigger |
+    | Form Fields | **Escolha os campos:** opened\_by,justification,priority |
     | Click | <span className="button-purple">Save and close</span> |
 
-  ![](./Playbook%20Images/Telework%20Case%20Stage%204.jpg)  
+  ![](../images/2024-12-04-00-00-56.png)
 
 Antes de prosseguir, vamos testar para que você possa ver como tudo ficará para o usuário do workspace.
 
@@ -245,14 +236,14 @@ Após o usuário do workspace revisar o formulário, gostaríamos que ele visse 
 
   |   |   
     |-------------|---------------------------------|
-    | Título da Lista | Requestors Case |
-    | Tabela | Telework Case |
-    | Colunas | Number,state,created,opened_by |
+    | List Title | Requestors Case |
+    | Table | Telework Case |
+    | Columns | Number,state,created,opened_by |
     | Clique  | 'Add Condition' ao lado de 'List Query' |
 
   Condição: opened_by  é  opened_by            
   <br/>
-  'Add Condition' deve parecer assim (então clique em <span className="button-purple">Modify</span> ):
+  'Add Condition' deve parecer assim (então clique em <span className="button-purple">Save / Modify</span> ):
   
   ![](./Playbook%20Images/2nd%20Activity%20is%20opened%20by.jpg)
   
@@ -301,11 +292,11 @@ A última atividade nesta coluna será mostrar ao usuário do workspace o artigo
 
   |   | 
     |-------------|---------------------------------|
-    | <span className="large-number">➊</span> Título | Telework Guidelines |
-    | <span className="large-number">➋</span> Artigo de Conhecimento | KB0050185 |
+    | <span className="large-number">➊</span> Título | Telework VPN Guidelines |
+    | <span className="large-number">➋</span> Artigo de Conhecimento | KB0000008 |
     | <span className="large-number">➌</span> Clique | <span className="button-purple">Save and Close</span> |
 
-  ![](./Playbook%20Images/Telework%20Case%20Stage%2012.jpg)  
+  ![](../images/2024-12-04-00-10-46.png)
 
 
 Ótimo – seu processo deve se parecer com isto agora:
@@ -449,11 +440,11 @@ Agora que você adicionou o playbook ao espaço de trabalho, observe como ele es
        >>>>- Clique em "Main Tab"
          ![](./Playbook%20Images/Step%201%20UIB.jpg)
 
-   - No painel direito do UI Builder, arraste a aba Telework Playbook para que fique acima da aba Details.
+   - No painel direito do UI Builder, arraste a aba Telework Playbook para que fique após a aba Details.
      ![](./Playbook%20Images/UIB%202.jpg)  
 
    - Deve parecer com isso. Então clique em <span className="button-purple">Save</span>:
-     ![](./Playbook%20Images/UIB%203.jpg)
+     ![](../images/2024-12-04-00-19-50.png)
 
    ### Você Concluiu!
 
@@ -463,8 +454,8 @@ Agora que você adicionou o playbook ao espaço de trabalho, observe como ele es
 
 1. **Criar um Novo Caso de Teletrabalho**
 
-   - Volte para a visualização da plataforma e, em espaços de trabalho, encontre 'Telework':
-     ![](./Playbook%20Images/find%20telework%20workspace%20for%20test.jpg)
+   - Volte para a visualização da plataforma e, em espaços de trabalho, encontre 'Telework Case Management':
+    ![](../images/2024-12-04-00-17-12.png)
 
    - O playbook é executado quando um novo caso de Teletrabalho é criado, então precisamos fazer isso para ver o playbook em ação.
 
@@ -480,7 +471,7 @@ Agora que você adicionou o playbook ao espaço de trabalho, observe como ele es
 
      |  | 
      |-------------|---------------------------------|
-     | Arrangement | Remote |
+     | Arrangement | Remote telework |
      | Justification | Dependent Care |
      | Clique | <span className="button-purple">Save</span> |
 
@@ -493,4 +484,4 @@ Agora que você adicionou o playbook ao espaço de trabalho, observe como ele es
      - O que mais seria útil?
 
    - Parabéns!
-     ![](./Playbook%20Images/Final%20Playbook%20in%20Workspace.jpg)
+    ![](../images/2024-12-04-00-22-34.png)

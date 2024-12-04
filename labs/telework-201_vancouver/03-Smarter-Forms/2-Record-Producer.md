@@ -151,7 +151,7 @@ Adicionaremos a pergunta do gerente a este formulário e a preencheremos com bas
 
    | Preencha o formulário  | 
      |-------------|---------------------------------|
-     | <span className="large-number">➊</span> Selecione a pergunta da qual depende | 'Quem é este arranjo? sys_user |
+     | <span className="large-number">➊</span> Select the question this depends on | 'Who is this arrangement for? sys_user |
      | <span className="large-number">➋</span> | Use o botão de seleção de dados à direita |
      | <span className="large-number">➌</span> | Role até 'Manager' |  
  

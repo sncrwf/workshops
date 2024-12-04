@@ -114,9 +114,14 @@ Neste exercício, aprenderemos como importar um aplicativo com escopo existente 
 >1. Clique no logotipo do ServiceNow para ir para a página inicial
 ![](./images/Step_11_Click_on_ServiceNow_logo.png)  
 
->2. Clique no botão **Click here to open App Engine Studio**
-![](./images/Step_12_Click_on_Open_Studio.png)  
+>2. Navegue até o AES em All > App Engine Studio
+![](../images/2024-12-03-13-23-01.png)
 
+>3. Busque a aplicação "Telework Case Management" em My Apps
+![](../images/2024-12-03-13-26-06.png)
+
+>4. Verifique a estrutura da aplicação.
+![](../images/2024-12-03-13-26-44.png)
 
 **Parabéns!**
 

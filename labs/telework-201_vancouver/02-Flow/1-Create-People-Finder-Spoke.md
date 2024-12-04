@@ -78,10 +78,20 @@ Vamos criar uma integração reutilizável com a Open API de People Finder do de
    |-|------------------------------| --------------
    |<span className="large-number">➊</span>|Connection & Credential alias name | People Finder
    |<span className="large-number">➋</span>|Configuration Template for authentication | API Key Template
-   |<span className="large-number">➌</span>|Clique no botão <span className="button-purple">Create</span>.  
-![](./images/04-9-create-new-connection-alias.png)
+   |<span className="large-number">➌</span>|Clique no botão <span className="button-purple">Create alias and continue</span>.  
+![](../images/2024-12-03-23-17-53.png)
 
-1.  Para continuar, clique no botão <span className="button-purple">Generate operations</span>  
+1. Preencha o formulário com os seguintes valores (💡 clique duas vezes para selecionar, copiar e colar no formulário).
+
+   | |Nome do Campo                | Valor do Campo
+   |-|------------------------------| --------------
+   |<span className="large-number">➊</span>|Connection Name | People Finder
+   |<span className="large-number">➋</span>|Connection URL | [API Key Template](https://low-code.guide/api)
+   |<span className="large-number">➌</span>|API Key | appkey
+   |<span className="large-number">➍</span>|Clique no botão <span className="button-purple">Submit</span>.  
+![](../images/2024-12-03-23-22-09.png)
+
+2.  Para continuar, clique no botão <span className="button-purple">Generate operations</span>  
 ![](./images/04-10-generate-operations.png)
 
 1.  Selecione as ações que deseja criar
@@ -99,22 +109,7 @@ Vamos criar uma integração reutilizável com a Open API de People Finder do de
    >Clique para expandir a etapa OpenAPI  
 ![](./images/04-13-expand-openapi-step.png)
 
-1.  Clique no sinal de mais ao lado do Alias de Conexão  
-![](./images/04-14-connection-alias.png)
-
-1.  Configure a Conexão HTTPs(s) (💡 clique duas vezes para selecionar, copiar e colar no formulário).
-
-   | |Nome do Campo                | Valor do Campo
-   |-|------------------------------| --------------
-   |<span className="large-number">➊</span>|Name | People Finder
-   |<span className="large-number">➋</span>|Connection alias | x_snc_people_finde.People_Finder
-   |<span className="large-number">➌</span>|Connection URL | https://low-code.guide/api
-   |<span className="large-number">➍</span>|Clique no botão <span className="button-white-purple-border-square">Submit</span>.  
-![](./images/04-15-https-connection.png)
-
-1.  A URL Base agora deve estar preenchida.
-
-   >Clique no botão <span className="button-white-black-border-black">Test</span>  
+1.  Clique no botão <span className="button-white-black-border-black">Test</span>  
 ![](./images/04-16-test-action.png)
 
 1.  Teste a ação com o e-mail de David Loo (💡 clique duas vezes para selecionar, copiar e colar no formulário).
@@ -151,21 +146,6 @@ Vamos criar uma integração reutilizável com a Open API de People Finder do de
 
 1.  Feche o modal de Teste da Ação clicando no botão <span className="button-white-purple-border">Cancel</span>  
 ![](./images/04-22-close-test-action.png)
-
-1.  Salve a ação GET /user do spoke
-
-   >Clique no botão <span className="button-purple">Save</span>  
-![](./images/04-23-save-action.png)
-
-1.  Agora, publicamos o spoke para que ele esteja disponível para ser chamado de nosso Fluxo Principal.
-
-   >Clique no botão <span className="button-white-purple-border">Publish</span>  
-![](./images/04-24-publish-action.png)
-
-1.  Confirme a publicação da ação
-
-   >Clique no botão <span className="button-purple">Publish</span>   
-![](./images/04-25-confirm-publish-action.png)
 
 ## Bônus: Explore Mais o Spoke Generator
 
