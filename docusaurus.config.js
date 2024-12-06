@@ -137,79 +137,25 @@ const config = {
         breadcrumbs: false,
       },
     ],
-    /*
-     * EWF+CrWF: Dept Svc
-     */
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/deptsvc",
-        id: "deptsvc",
-        routeBasePath: "labs/deptsvc",
-        sidebarPath: require.resolve("./labs/deptsvc/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
 
     /*
-     * TRAVEL REQUEST
+     * DOCINTEL
      */
 
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/travelrequest",
-        id: "travelrequest",
-        routeBasePath: "labs/travelrequest",
-        sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
-        breadcrumbs: false,
-      },
+      [
+        "@docusaurus/plugin-content-docs",
+        {
+          path: "labs/visitor-access-xanadu",
+          id: "visitor",
+          routeBasePath: "labs/visitor-access-xanadu",
+          sidebarPath: require.resolve("./labs/visitor-access-xanadu/sidebar.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          breadcrumbs: false,
+        },
+      ],
+  
     ],
-
-
-    /*
-     * THE FOLLOWING SECTIONS ARE NOT CURRENTLY IN USE.
-     * THEY ARE DEFINED HERE TO MAKE IT EASY TO MANUALLY GO THE URL AND TEST THEM.
-     */
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/complaint-vancouver",
-        id: "complaintvancouver",
-        routeBasePath: "labs/complaint-vancouver",
-        sidebarPath: require.resolve("./labs/complaint-vancouver/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/logistics",
-        id: "logistics",
-        routeBasePath: "labs/logistics",
-        sidebarPath: require.resolve("./labs/logistics/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/csm-va-utah",
-        id: "csmvautah",
-        routeBasePath: "labs/csm-va-utah",
-        sidebarPath: require.resolve("./labs/csm-va-utah/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-  ],
 
   presets: [
     [
@@ -319,10 +265,6 @@ const config = {
               {
                 label: "Developer Glossary",
                 href: "https://developer.servicenow.com/dev.do#!/guides/vancouver/now-platform/glossary/developer-glossary",
-              },
-              {
-                label: "CSM-VA-Utah",
-                href: "/labs/csm-va-utah/overview",
               },
               {
                 label: "Now Create",
