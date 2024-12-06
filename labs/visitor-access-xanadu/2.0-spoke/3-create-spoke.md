@@ -33,7 +33,7 @@ Neste exercício, você criará um Spoke personalizado no Integration Hub.
    * Selecione **OpenAPI Specification** (1) e clique em **Continue** (2)
    ![Alt text](../images/2023-09-21_07-34-48.png)
 
-6. Na próxima tela, **Visitor Access: Add operations**, você pode fornecer o arquivo YAML. Clique em **Import New** (1), e depois forneça a URL do arquivo YAML, copie a URL do link aqui [Swagger YAML File](./swagger.yaml).
+6. Na próxima tela, **Visitor Access: Add operations**, você pode fornecer o arquivo YAML. Clique em **Import New** (1), e depois forneça a URL do arquivo YAML, copie a URL do link aqui [Swagger YAML File](https://sncrwf.azurewebsites.net/swagger-ui/swagger.yaml).
    ![Alt text](../images/2023-09-21_07-39-25.png)
 
 7. Cole a URL copiada na etapa anterior no campo **OpenAPI URL** (1), e depois clique em **Import** (2)
