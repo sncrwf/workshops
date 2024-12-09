@@ -28,13 +28,11 @@ Abaixo está a estrutura principal da planilha, que iremos revisar para criar a 
 | Building Location    | Local do edifício onde o visitante será recebido             |
 | Guest Email          | E-mail do visitante                                          |
 | Guest Title          | Título ou classificação do visitante                         |
-| Host Email           | E-mail do host responsável                                   |
-| Host ID Number       | Número de identificação do host responsável                  |
 | Host Name            | Nome do host responsável                                     |
 | Guest Phone          | Telefone do visitante                                        |
 | Visitor Date of Birth| Data de nascimento do visitante                              |
-| Visitor First Name   | Primeiro nome do visitante                                   |
-| Visitor Last Name    | Último nome do visitante                                     |
+| Visitor Name         |  Nome do visitante                                           |
+
 
 Essa estrutura será transformada em uma tabela dentro da plataforma ServiceNow.
 
@@ -42,7 +40,7 @@ Essa estrutura será transformada em uma tabela dentro da plataforma ServiceNow.
 
 Vamos abrir a planilha para verificar sua estrutura e dados históricos. Acesse o conteúdo descompactado do laboratório e abra o arquivo `Visitors.xlsx`
 
-![](../images/2024-12-06-19-01-13.png)
+![](../images/2024-12-07-21-24-04.png)
 
 **Desafios da Planilha:**
 - **Manutenção Manual:** A inserção de dados é feita manualmente, o que consome tempo e aumenta o risco de inconsistências.

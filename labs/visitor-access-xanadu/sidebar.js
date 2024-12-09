@@ -19,17 +19,19 @@ const sidebars = {
             type: 'category',
             label: '2. Criando Aplicação de Controle de Acesso',
             items: [
-                'underconstruction',
-
+                '2.0-visitor-access/overview',
+                '2.0-visitor-access/create-app',
+                '2.0-visitor-access/import-data',
+                '2.0-visitor-access/table-builder-data',
+                '2.0-visitor-access/configure-form',
             ],
         },
         {
             type: 'category',
             label: '3. Gerando Spoke para Integração com API',
             items: [
-                '2.0-spoke/create-the-spoke',
-                '2.0-spoke/test-the-spoke',
-                '2.0-spoke/use-spoke-in-a-flow',
+                '3.0-spoke/create-the-spoke',
+                '3.0-spoke/test-the-spoke',
             ],
         },
         {
