@@ -50,7 +50,7 @@ Agora, vamos criar o fluxo que irá consultar a API para verificar se o usuário
    ![Alt text](../images///2023-09-21_12-43-19.png)
 
 
-8. Selecione a tabela **visitors** (1) da lista e clique em **Add Filters** (2). Defina a condição conforme mostrado abaixo
+8. Selecione a tabela **Visitantes** (1) da lista e clique em **Add Filters** (2). Defina a condição conforme mostrado abaixo
    ![Alt text](../images///2023-09-21_12-46-22.png)
 
 :::note
@@ -69,7 +69,7 @@ Você deve ver uma tela como a mostrada abaixo
 
 Precisamos passar os dados do registro para essa etapa de Ação.
 
-10. Expanda a seção Visitors Record nos data pills conforme mostrado abaixo: 
+10. Expanda a seção Visitantes Record nos data pills conforme mostrado abaixo: 
    ![Alt text](../images///2023-09-21_12-56-25.png)
 
 

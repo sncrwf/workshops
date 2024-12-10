@@ -31,8 +31,8 @@ Abaixo está a estrutura principal da planilha, que iremos revisar para criar a 
 | Host Name            | Nome do host responsável                                     |
 | Guest Phone          | Telefone do visitante                                        |
 | Visitor Date of Birth| Data de nascimento do visitante                              |
-| Visitor Name         |  Nome do visitante                                           |
-
+| Visitor First Name   | Primeiro nome do visitante                                   |
+| Visitor Last Name    | Último nome do visitante                                     |
 
 Essa estrutura será transformada em uma tabela dentro da plataforma ServiceNow.
 

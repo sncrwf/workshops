@@ -38,7 +38,11 @@ const sidebars = {
             type: 'category',
             label: '4. Criando Solução de Check-in com DocIntel',
             items: [
-                'underconstruction',
+                '4.0-docintel/1-use-case',
+                '4.0-docintel/2-flow',
+                '4.0-docintel/3-create-record-producer',
+                '4.0-docintel/4-test-in-portal',
+                '4.0-docintel/5-create-workflow',
             ],
         },
         {
