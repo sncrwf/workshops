@@ -53,6 +53,7 @@ const sidebars = {
                 '5.0-rpa/2-rpa-hub',
                 '5.0-rpa/3-rpa-design',
                 '5.0-rpa/4-integrate-flow',
+                '5.0-rpa/5-simulação-final',
             ],
         },
 
