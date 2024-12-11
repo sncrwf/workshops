@@ -33,23 +33,36 @@ Agora para integrarmos todo o processo de fim-a-fim vamos editar o fluxo `Check-
 8. No campo **Content** clique no ícone de scripting.
    ![](../images/2024-12-11-00-40-22.png)
 
-9. Copie e cole o código abaixo e clique em <span className="button-purple">Done</span>:
+9. Copie e cole o código abaixo:
 
     ```javascript
-    var output = {
-        "AccessExpirationDate": fd_data._2__check_if_a_user_exists.output.user.access_expiration,
-        "BuildingLocation": fd_data._2__check_if_a_user_exists.output.user.building_location,
-        "guestemail": fd_data._2__check_if_a_user_exists.output.user.guest_email,
-        "HostEmail": fd_data._2__check_if_a_user_exists.output.user.host_email,
-        "HostIdNumber": fd_data._2__check_if_a_user_exists.output.user.host_id_number,
-        "HostName": fd_data._2__check_if_a_user_exists.output.user.host_name,
-        "phone": fd_data._2__check_if_a_user_exists.output.user.phone,
-        "Guest Title": fd_data._2__check_if_a_user_exists.output.user.guest_title
-    };
-    return JSON.stringify(output);
+        /*
+        **Access Flow/Action data using the fd_data object. Script must return a value. 
+        **Order number is offset by +1 in Error Handling Section.
+        **Available options display upon pressing "." after fd_data
+        **example: var shortDesc = fd_data.trigger.current.short_description;
+        **return shortDesc;
+        */
+        var output = {
+            "AccessExpirationDate": fd_data._2__check_if_a_user_exists.output.user.access_expiration,
+            "BuildingLocation": fd_data._2__check_if_a_user_exists.output.user.building_location,
+            "guestemail": fd_data._2__check_if_a_user_exists.output.user.guest_email,
+            "HostEmail": fd_data._2__check_if_a_user_exists.output.user.host_email,
+            "HostIdNumber": fd_data._2__check_if_a_user_exists.output.user.host_id_number,
+            "HostName": fd_data._2__check_if_a_user_exists.output.user.host_name,
+            "phone": fd_data._2__check_if_a_user_exists.output.user.phone,
+            "Guest Title": fd_data._2__check_if_a_user_exists.output.user.guest_title
+        };
+        return JSON.stringify(output);
     ```
 
     ![](../images/2024-12-11-00-41-29.png)
+
+10. Clique no ícone para colapsar o campo de script.
+    ![](../images/2024-12-11-17-09-05.png)
+
+11. Clique em <span className="button-purple">Done</span>:
+    ![](../images/2024-12-11-17-09-29.png)
 
     :::info
     O uso de código neste caso facilita na preparação fo payload para o RPA que espera um array JSON para processar as informações.
