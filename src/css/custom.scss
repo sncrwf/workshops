@@ -157,6 +157,67 @@ p img {
   /* Add a smooth transition for the color change */
 }
 
+/* Button for Basic Level */
+.button-basic {
+  background-color: #A8D5BA; /* Soft green for basic */
+  border-radius: 22px;
+  color: #034732; /* Harmonious dark green for text */
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button for Intermediate Level */
+.button-intermediate {
+  background-color: #F7E3AF; /* Soft yellow for intermediate */
+  border-radius: 22px;
+  color: #6B5600; /* Harmonious dark yellow for text */
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button for Advanced Level */
+.button-advanced {
+  background-color: #F2B2B2; /* Soft red for advanced */
+  border-radius: 22px;
+  color: #5A0000; /* Harmonious dark red for text */
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effects for Buttons */
+.button-basic:hover {
+  background-color: var(--now-light-green);
+  color: var(--now-inf-dark-blue);
+}
+
+.button-intermediate:hover {
+  background-color: var(--now-light-yellow);
+  color: var(--now-dark-black);
+}
+
+.button-advanced:hover {
+  background-color: var(--now-dark-red);
+  color: var(--now-light-gray);
+}
+
 .button-purple {
   background-color: var(--now-purple);
   border-radius: 22px;

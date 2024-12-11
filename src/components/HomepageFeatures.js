@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from
 
 const HomepageFeatures = () => (
   <div className={clsx('container max-w-xl mx-auto px-4 md:px-6 md:py-7 lg:px-8 lg:py-9 lg:max-w-screen-xl pt-4 md:pt-6 lg:pt-8 ')}>
-      <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-50')}>
+      <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-q50')}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
         ))}
@@ -51,7 +51,7 @@ const FeatureList = [
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.
+      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.<br/><div class="button-basic">Básico</div>
       </>
     ),
     to: '/labs/telework-vancouver-101/0.0-introduction/app-engine-overview',
@@ -63,7 +63,7 @@ const FeatureList = [
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.
+      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/telework-201_vancouver/Introduction/Overview',
@@ -75,7 +75,7 @@ const FeatureList = [
     icon: faPeopleGroup,
     description: (
       <>
-      <div class="button-homepage-vancouver">📊 App Engine Management Center (AEMC)</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.
+      <div class="button-homepage-vancouver">📊 App Engine Management Center (AEMC)</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
@@ -87,7 +87,7 @@ const FeatureList = [
     icon: faDiagramProject,
     description: (
       <>
-      <div class="button-homepage-vancouver">🧩 Integration Hub</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.
+      <div class="button-homepage-utah">🧩 Integration Hub</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.<br/><div class="button-basic">Básico</div>
       </>
     ),
     to: '/labs/spokegen/overview',
@@ -99,7 +99,7 @@ const FeatureList = [
     icon: faRobot,
     description: (
       <>
-      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de Automação de Processos da ServiceNow.
+      <div class="button-homepage-utah">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de Automação de Processos da ServiceNow.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/rpa/introduction',
@@ -111,11 +111,24 @@ const FeatureList = [
     icon: faFileInvoice,
     description: (
       <>
-      <div class="button-homepage-vancouver">⚙️ Automation Engine</div><br/>Automatize seus fluxos de trabalho baseados em documentos com o Document Intelligence.
+      <div class="button-homepage-utah">⚙️ Automation Engine</div><br/>Automatize seus fluxos de trabalho baseados em documentos com o Document Intelligence.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/docintel/introduction',
     target: '_self',
+  },
+
+  {
+    title: 'Hiperautomação: Gestão de Acesso de Visitantes',
+    icon: faIdCardClip,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div>+<div class="button-homepage-utah">⚙️ Aut. Engine</div><br/>Hiperautomatize o acesso de visitantes com Low-Code, Ihub, DocIntel e RPA em um único lab.<br/><div class="button-intermediate">Intermediário</div>
+      </>
+    ),
+    to: '/labs/visitor-access-xanadu/1.0-introduction/overview',
+    target: '_self',
   }
+
 
 ];
