@@ -1,5 +1,5 @@
 ---
-id: vm-connect
+id: 1-vm-connect
 title: "Conectando à VM"
 pagination_label: "1. Conectando à VM"
 sidebar_label: "1. Conectando à VM"
