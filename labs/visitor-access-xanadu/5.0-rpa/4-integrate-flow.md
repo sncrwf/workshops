@@ -56,7 +56,12 @@ Agora para integrarmos todo o processo de fim-a-fim vamos editar o fluxo `Check-
         return JSON.stringify(output);
     ```
 
-    ![](../images/2024-12-11-00-41-29.png)
+    :::danger
+    Valide a ordem das actions está igual as imagens, especialmente se no painel lateral do data pill a action "2 - Check if a user exists" está na ordem 2. Caso não esteja o script acima não irá funcionar.
+        ![](../images/2024-12-11-17-14-52.png)
+    :::
+
+    ![](../images/2024-12-11-17-12-40.png)
 
 10. Clique no ícone para colapsar o campo de script.
     ![](../images/2024-12-11-17-09-05.png)
