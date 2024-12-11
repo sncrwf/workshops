@@ -38,7 +38,7 @@ Click em `Open UTL.RPA.HOST`
 
 ![](../images/2024-12-10-23-04-44.png)
 
-Antes de fechar o Google Chrome, digite 'chrome://extensions' na barra de URL e pressione Enter. Certifique-se de que a extensão ServiceNow RPA Chrome esteja habilitada; é necessária para que o Robô interaja com o Google Chrome
+Antes de fechar o Google Chrome, digite `chrome://extensions` na barra de URL e pressione Enter. Certifique-se de que a extensão ServiceNow RPA Chrome esteja habilitada; é necessária para que o Robô interaja com o Google Chrome
 
 ![Texto alternativo](../img/2023-10-02_11-43-52.png)
 
@@ -76,5 +76,31 @@ Clique no botão **Run** no Studio para testá-la!
 Se você se conectar ao espaço de trabalho RPA Hub e inspecionar o Work Item da fila, você deverá ver seu status como 'Success'. Seu desenvolvedor ServiceNow pode então aproveitar essa atualização como um gatilho no Flow Designer para acionar outras etapas do processo, mas a entrada de dados na aplicação de badging legada agora está automatizada com o RPA Hub!
 
 ![Alt text](../img/2023-10-03_13-26-22(1).gif)
+
+:::info
+Caso precise retestar o processo ou houve erro durante a execução no passo de `Queue` no RPA Design Studio. Não se preocupe, isso é por que nesse momento possuimos apenas um único item na fila e nosso critério é buscar por itens com status *Pending*.
+
+Para resolver isso, volte para a tela do RPA Hub na plataforma ServiceNow e clique na guia **Queue** do seu Bot Process, se você não a vê, clique no botão **More**.
+
+![Alt text](../img/2023-10-02_10-14-48.png)
+
+Clique no registro de Queue de Trabalho **Badge Printing** para abrir e inspecionar.
+
+![Alt text](../img/2023-10-02_10-21-07.png)
+
+Clique no registro de Item de Trabalho **VIS0001016** (2) para inspecionar.
+
+![Alt text](../img/2023-10-02_10-22-45.png)
+
+Clique selecione o item da lista e clique em **'Reassign (1)'**
+
+![](../images/2024-12-11-16-48-30.png)
+
+Inclua qualquer comentário e clique em Reassign
+![](../images/2024-12-11-16-49-36.png)
+
+Pronto, seu Work Item já voltou para status `Pending` e você pode testar novamente no RPA Design Studio.
+:::
+
 
 Você concluiu com sucesso o laboratório!

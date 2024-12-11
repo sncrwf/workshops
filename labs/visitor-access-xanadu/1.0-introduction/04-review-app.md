@@ -87,6 +87,9 @@ Ao fornecer as informações do usuário, a API retornará uma mensagem indicand
 ```
 
 **Testando a API:**
+
+Acesse a documentação da API Swagger **[clicando aqui](https://sncrwf.azurewebsites.net/swagger-ui/)**.
+
 1. Utilize a documentação OpenAPI Swagger: **User Checker API**.
 
     ![](../images/2024-12-06-18-35-03.png)
@@ -110,7 +113,7 @@ Ao fornecer as informações do usuário, a API retornará uma mensagem indicand
 A aplicação de impressão de crachá é um sistema legado baseado na web, que não possui APIs disponíveis. Por isso, o RPA será a solução ideal para automatizar esse processo sem a necessidade de alterações no sistema existente.
 
 **Acessando a Aplicação:**
-1. De um navegador da web, abra a aplicação **ACME Inc. - Badging & Authorization** para acessar o aplicativo de badging.
+1. De um navegador da web, abra a aplicação **ACME Inc. - Badging & Authorization** para acessar o aplicativo de badging **[clicando aqui](https://sncrwf.azurewebsites.net/badgingapp)**
 2. Você verá a tela de autenticação abaixo:
 
     ![Tela de Autenticação](../img/2023-10-02_08-23-29.png)

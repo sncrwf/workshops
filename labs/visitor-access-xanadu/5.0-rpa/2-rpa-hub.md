@@ -81,9 +81,18 @@ Preencha conforme as informações a seguir:
 | (1) Name | Badging App Credential Group |
 | (2) Robot Credential | Badging Robot Creds |
 
-Clique em **Save** e fecha a aba `Badging App Credential Group`
+Clique em **Save**.
 
-![](../images/2024-12-10-22-34-01.png)
+Antes de fechar, clique na aba **Application Credential**
+![](../images/2024-12-11-16-36-21.png)
+
+Clique em **Add**
+![](../images/2024-12-11-16-36-48.png)
+
+Selecione a credencial **Badging App Creds** e clique em **Add (1)**
+![](../images/2024-12-11-16-37-45.png)
+
+Fecha a aba `Badging App Credential Group`
 
 Agora, antes de criarmos o processo vamos atribuir o usuário admin ao grupo de usuários habilitado a usar o RPA Design Studio.
 
