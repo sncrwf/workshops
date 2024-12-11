@@ -60,6 +60,9 @@ jobs:
 
       - name: Build DocIntell PDF
         run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/docintel/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "DocIntel - Document Intelligence" --outputPDFFilename "docintel.pdf"
+ 
+      - name: Build VisitorAccess PDF
+        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/visitor-access-xanadu/1.0-introduction/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Hiperautomação - Gestão de Acesso de Visitantes" --outputPDFFilename "visitor-access.pdf"
 
 
       # - name: Upload results
@@ -80,6 +83,7 @@ jobs:
             spokegen.pdf
             rpa.pdf
             docintel.pdf
+            visitor-access.pdf
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
