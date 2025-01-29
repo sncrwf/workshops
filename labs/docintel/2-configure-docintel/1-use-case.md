@@ -20,10 +20,9 @@ draft: false
     |------------------------------|--------------------------------------------|
     | **Name**                     | Invoice                                    |
     | **Location for the extracted data** | `Invoice Task [x_snc_invoice_app_invoice_task]` |
+    | **Language Model** | Default |
 
-    ![](../images/2024-08-23-14-21-25.png)
-
-   - Por padrão, o "Recommendation mode" é selecionado como o modo de extração.
+    ![](../images/2025-01-29-09-45-13.png)
    - Clique em **Save**.
 
 3. Abra o Use Case na lista.
@@ -32,7 +31,10 @@ draft: false
 
     ![](../images/2024-08-23-14-22-02.png)
 
-1. Crie 4 campos (Date, Number, Customer, Total) conforme mostrado abaixo:
+    - Selecione **Single field**
+    ![](../images/2025-01-29-09-46-20.png)
+
+4. Crie 4 campos (Date, Number, Customer, Total) conforme mostrado abaixo:
     :::tip
     Selecione a opção “Define multiple fields” para manter a janela pop-up aberta após cada campo ser adicionado.
     :::
@@ -46,33 +48,39 @@ draft: false
 
     ![](../images/2024-08-23-14-22-51.png)
 
-2. Crie um Field Group clicando no sinal de “+” ao lado do campo de grupo de campos.
+    - Clique em **Back**.
+
+5. Retorne para a tela "New Field" e crie um campo do tipo "Table".
+
+    ![](../images/2025-01-28-12-13-23.png)
+
      - Preencha o formulário:
 
     | Campo              | Valor                                      |
     |--------------------|--------------------------------------------|
-    | **Field Group Name** | Line Item                                |
-    | **Field Group Type** | Table                                    |
+    | **Table name** | Line Item                                |
     | **Target Table**    | `Invoice Line Item [x_snc_invoice_app_invoice_line_item]`|
     | **Parent Mapping to Field** | Invoice Task                    |
 
-    ![](../images/2024-08-23-14-24-03.png)
+    ![](../images/2025-01-28-12-14-21.png)
 
-     - Clique em **Add Field Group**.
+     - Clique em **Add columns**.
 
-3. Crie 3 campos (Item Name, Quantity e Total), atribuídos ao Field Group **Line Items**, conforme mostrado abaixo:
-
-    :::tip
-    Selecione a opção “Define multiple fields” para manter a janela pop-up aberta após cada campo ser adicionado.
-    :::
+6. Crie 3 colunas (Item Name, Quantity e Total), atribuídos ao Field Group **Line Items**, conforme mostrado abaixo:
    
-    | Field Name  | Assign to a field group | Target Field |
+    | Column title  | Assign to a field group | Target Field |
     |-------------|-------------------------|--------------|
     | **Item Name** | Line Items            | `item_name`  |
     | **Quantity**  | Line Items            | `quantity`   |
     | **Line Total**| Line Items            | `total`      |
 
-    ![](../images/2024-08-23-14-26-14.png)
+    :::info
+    Para adicionar mais colunas clique no botão `+ New column` abaixo.
+    :::
+
+    ![](../images/2025-01-28-12-16-29.png)
+
+    - Clique em "Save"
 
 ## Verificação do Lab
 

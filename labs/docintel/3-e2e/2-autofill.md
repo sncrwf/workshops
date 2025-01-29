@@ -5,18 +5,33 @@ hide_table_of_contents: true
 draft: false
 ---
 
-1. Finalize o Impersonation .
-2. Em **Document Intelligence Admin**, navegue para a aba **Settings**.
-![](../images/2024-08-23-14-48-18.png)
+1. Em **Document Intelligence Admin**, navegue para a aba **Settings**.
+![](../images/2025-01-29-14-40-31.png)
 
-1. Altere o **Extraction Mode** para o caso de uso **Invoice [Processed]** para **Mode 2: Autofill**, adicione o valor para **Autofill Threshold = 70%** e **Warning Threshold = 60%**.
-![](../images/2024-08-23-14-48-32.png)
+2. Altere o **Extraction Mode** para **Auto-fill mode**, adicione o valor para **Auto-fill Threshold = 60%** e **Warning Threshold = 60%**.
+![](../images/2025-01-29-14-44-57.png)
 
-1. Atenda à solicitação:
-   - Impersonate AJ Jent.
-   - Navegue para **Document Intelligence > Document Tasks** e abra o registro com **Source Record** = `INVTASK0001013`.
+3. Habilite o **Fully Automated mode** e adicione o valor de **Fully-automated threshold = 80%**
+![](../images/2025-01-29-14-46-53.png)
+
+   - Clique em **Save**
+
+4. Atenda à solicitação:
+   - Navegue para **Invoice Lab > Submit an invoice** para acessar o Record Producer.
+   - Anexe um arquivo e envie. 
+   - Após ser redirecionado para o registro, observe que os campos da fatura estão vazios e não há itens de linha de fatura.
+   - Navegue para **Document Intelligence > Document Tasks** e abra o registro com **Source Record** = `INVTASK0001003`.
    - Selecione **Show In DocIntel**.
    - Observe que alguns campos são preenchidos automaticamente. Preencha os valores dos outros campos. Envie. Feche a aba do navegador.
+
+
+:::info
+Lembre-se, o Document Intelligence utiliza aprendizado de máquina (ML) para extrair informações de documentos de forma manual, autônoma ou semiautônoma, com base no nível de confiança atribuído a cada campo. Quanto mais extrações supervisionadas forem realizadas, mais preciso será o modelo e maior será seu grau de autonomia.
+
+Se os resultados não estiverem conforme o esperado, verifique se os limiares (thresholds) e a taxa de confiança estão ajustados corretamente. Se necessário, reforce o treinamento do modelo submetendo mais documentos.
+:::
+
+**📌 Importante: Documentos com layouts muito diferentes podem impactar negativamente a taxa de confiança do modelo.**
 
 ## Verificação do Lab
 

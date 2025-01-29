@@ -19,7 +19,8 @@ const sidebars = {
             items: [
                 'configure-docintel/1-use-case',
                 'configure-docintel/2-flow',
-                'configure-docintel/3-advanced',
+                'configure-docintel/3-spoke',
+                'configure-docintel/4-advanced',
             ],
         },
         {
@@ -28,7 +29,6 @@ const sidebars = {
             items: [
                 'e2e/1-submit',
                 'e2e/2-autofill',
-                'e2e/3-export',
             ],
         },
 

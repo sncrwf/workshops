@@ -9,7 +9,7 @@ import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from
 
 
 const HomepageFeatures = () => (
-  <div className={clsx('container max-w-xl mx-auto px-4 md:px-6 md:py-7 lg:px-8 lg:py-9 lg:max-w-screen-xl pt-4 md:pt-6 lg:pt-8 ')}>
+  <div className={clsx('container max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-16 py-6 md:py-10 lg:py-14')}>
       <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-q50')}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
@@ -47,11 +47,11 @@ export default HomepageFeatures;
 const FeatureList = [
 
   {
-    title: 'Gestão de Casos de Teletrabalho',
+    title: 'AES: Gestão de Casos de Teletrabalho',
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.<br/><div class="button-basic">Básico</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/><strong>Nível 1 - </strong>Ganhe experiência valiosa através de exercícios práticos com o App Engine Studio.<br/><div class="button-basic">Básico</div>
       </>
     ),
     to: '/labs/telework-vancouver-101/0.0-introduction/app-engine-overview',
@@ -59,11 +59,11 @@ const FeatureList = [
   },
 
   {
-    title: 'Gestão de Casos de Teletrabalho',
+    title: 'AES: Gestão de Casos de Teletrabalho',
     icon: faHouseUser,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine Studio (AES)</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/><strong>Nível 2 - </strong>Aprofunde-se no caso de uso explorando recursos mais avançados.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/telework-201_vancouver/Introduction/Overview',
@@ -71,11 +71,11 @@ const FeatureList = [
   },
 
   {
-    title: 'Colabore para Acelerar',
+    title: 'AEMC: Colabore para Acelerar',
     icon: faPeopleGroup,
     description: (
       <>
-      <div class="button-homepage-vancouver">📊 App Engine Management Center (AEMC)</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine.<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine Management Center<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
@@ -87,7 +87,7 @@ const FeatureList = [
     icon: faDiagramProject,
     description: (
       <>
-      <div class="button-homepage-utah">🧩 Integration Hub</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.<br/><div class="button-basic">Básico</div>
+      <div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Saiba mais sobre o mais novo recurso do Integration Hub: Gerador de Spokes.<br/><div class="button-basic">Básico</div>
       </>
     ),
     to: '/labs/spokegen/overview',
@@ -99,7 +99,7 @@ const FeatureList = [
     icon: faRobot,
     description: (
       <>
-      <div class="button-homepage-utah">⚙️ Automation Engine</div><br/>Saiba mais sobre o processo de Automação de Processos da ServiceNow.<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Saiba mais sobre o processo de Automação de Processos da ServiceNow.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/rpa/introduction',
@@ -107,11 +107,11 @@ const FeatureList = [
   },
 
   {
-    title: 'DocIntel: Document Intelligence',
+    title: 'DocIntel: Invoice Task Automation',
     icon: faFileInvoice,
     description: (
       <>
-      <div class="button-homepage-utah">⚙️ Automation Engine</div><br/>Automatize seus fluxos de trabalho baseados em documentos com o Document Intelligence.<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Automatize o processamento de invoices com Document Intelligence e Integration Hub, digitalizando e integrando dados via API.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/docintel/introduction',
@@ -123,7 +123,7 @@ const FeatureList = [
     icon: faIdCardClip,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine</div>+<div class="button-homepage-utah">⚙️ Aut. Engine</div><br/>Hiperautomatize o acesso de visitantes com Low-Code, Ihub, DocIntel e RPA em um único lab.<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Hiperautomatize o acesso de visitantes com Low-Code, Ihub, DocIntel e RPA em um único lab.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/visitor-access-xanadu/1.0-introduction/overview',
