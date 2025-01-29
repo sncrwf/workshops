@@ -5,6 +5,10 @@ hide_table_of_contents: true
 draft: false
 ---
 
+Os documentos que serão utilizados no laboratório foram disponibilizados no passo **1. Introdução**. 
+
+De qualquer forma eles também podem ser encontrados na instância.
+
 No menu de navegação, abra **Invoice Documents for Lab**:
 
 ![](../images/2024-08-23-14-15-12.png)

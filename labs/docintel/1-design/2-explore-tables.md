@@ -16,17 +16,6 @@ As tabelas já estão criadas na instância com fluxos básicos.
 - **Invoice Manager:** `x_snc_invoice_app.Invoice Manager` – acesso aos registros de fatura atribuídos (criar, ler, editar)
 - **Invoice Requester:** `x_snc_invoice_app.Invoice Requester` – acesso aos itens de catálogo e aos próprios registros de fatura (criar, ler)
 
-**Usuários:**
-
-- **Pros Ono:** Process Owner
-  - Roles: Invoice Admin, `sn_docintel.manager`
-- **Ed Min:** Admin
-  - Roles: admin, `sn_docintel.admin`
-- **AJ Jent:** Fulfiller/Agent/Domain Expert
-  - Roles: Invoice Manager, `sn_docintel.creation_agent`
-- **Rick Ester:** Requester
-  - Roles: Invoice Requester
-
 ## Verificação do Lab
 
 No menu de navegação, abra o menu **Invoice Tasks**.

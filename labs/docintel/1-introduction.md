@@ -27,20 +27,23 @@ Agora, os solicitantes podem enviar faturas para extração e os agentes utiliza
 
 Após processar várias faturas, a IA preenche automaticamente os valores para revisão pelo agente.
 
-## Personas
+## 🚀 Lista de Verificação para Decolagem 
 
-1. **👨‍💼 Pros Ono**  
-  *Process Owner*  
-  Responsável por gerenciar o processo e garantir que as operações sejam realizadas conforme planejado.
+Antes de iniciar os exercícios do laboratório, você deve ter o seguinte:
 
-2. **👨‍💻 Ed Min**  
-  *Admin*  
-  Administra o sistema e as integrações, garantindo que o **Document Intelligence** esteja configurado corretamente.
+1. Acesso (URL e credenciais) a uma instância de laboratório ServiceNow.  
+   :::info 
+   Caso não tenha recebido uma instância, peça a seu instrutor.
+   :::
+2. Baixe os arquivos do laboratório: **[Docintel.zip](../downloads/Docintel.zip)**
 
-3. **👨‍🔧 AJ Jent**  
-  *Fulfiller/Agent/Domain Expert*  
-  Especialista no domínio que processa as faturas e utiliza o **Document Intelligence** para extrair os dados.
+3. Extraia o arquivo do laboratório e verifique se você tem os seguintes arquivos:
+    1. 🖼️ `spoke_icon.png`
+    2. 📁 `Invoices`
+       1. 📄 `Invoice for Cyberlink.pdf`
+       2. 📄 `Invoice for Lexmark.pdf`
+       3. 📄 `Invoice for Visio.pdf`
 
-4. **🧑‍💼 Rick Ester**  
-  *Requester*  
-  Usuário que submete as faturas para processamento usando o **Document Intelligence**.
+   :::danger 
+   Não se esqueça de extrair o zip. O uso do arquivo compactado pode gerar problemas durante o lab.
+   :::
