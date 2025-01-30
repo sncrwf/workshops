@@ -35,7 +35,7 @@ Antes de iniciar os exercícios do laboratório, você deve ter o seguinte:
    :::info 
    Caso não tenha recebido uma instância, peça a seu instrutor.
    :::
-2. Baixe os arquivos do laboratório: **[Docintel.zip](../downloads/Docintel.zip)**
+2. Baixe os arquivos do laboratório: **[Docintel.zip](./downloads/Docintel.zip)**
 
 3. Extraia o arquivo do laboratório e verifique se você tem os seguintes arquivos:
     1. 🖼️ `spoke_icon.png`
