@@ -1,92 +1,123 @@
 ---
-# Build the PDFs after new deployment has been made to gh-pages
-# This is because PrinceXML can only scan public pages and not localserver
-
-name: PDFs Build and Deploy
-
-# Controls when the action will run.  
-on:
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-    - 'latest' # Push events to matching v*, i.e. v1.0, v20.15.10
-
-  # Allows you to run the workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  # Give the default GITHUB_TOKEN write permission to commit and push the
-  # added or changed files to the repository.
-  contents: write
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-# group: "pages"
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
-
-jobs:
-  pdfs-build-deployment:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    env:
-      PUPPETEER_EXECUTABLE_PATH: "/usr/bin/chromium-browser"
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
-      PUPPETEER_ARGS: "--no-sandbox --disable-setuid-sandbox"
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - uses: actions/setup-node@v3.8.1
-        with:
-          node-version: 20
-
-      - name: Install
-        run: npm install docs-to-pdf fs-extra
-
-      - name: Build Telework Lab 101 PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 1" --outputPDFFilename "telework-vancouver-101.pdf"
-
-      - name: Build Telework Lab 201 PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-201_vancouver/Introduction/Overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Gestão de Casos de Teletrabalho - Nível 2" --outputPDFFilename "telework-vancouver-201.pdf"
-
-      - name: Build Collaborate PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/collaborate-vancouver/0.0-get_started/intro" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Colabore para Acelerar" --outputPDFFilename "collaborate-vancouver.pdf"
-
-      - name: Build SpokeGen PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "IHub - Gerador de Spokes" --outputPDFFilename "spokegen.pdf"
-
-      - name: Build RPA PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/rpa/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "RPA Hub - Robotic Process Automation" --outputPDFFilename "rpa.pdf"
-
-      - name: Build DocIntell PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/docintel/introduction" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "DocIntel - Document Intelligence" --outputPDFFilename "docintel.pdf"
- 
-      - name: Build VisitorAccess PDF
-        run: npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/visitor-access-xanadu/1.0-introduction/overview" --contentSelector="article" --paginationSelector=".pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a" --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" --coverTitle="Workshop Creator Workflows" --coverSub "Hiperautomação - Gestão de Acesso de Visitantes" --outputPDFFilename "visitor-access.pdf"
-
-
-      # - name: Upload results
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: Lab-Guides-PDF
-      #     # The output filename can be specified with --output option
-      #     path: ./*.pdf
-      #     if-no-files-found: error
-
-      - name: Release with Notes
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            telework-vancouver-101.pdf
-            telework-vancouver-201.pdf
-            collaborate-vancouver.pdf
-            spokegen.pdf
-            rpa.pdf
-            docintel.pdf
-            visitor-access.pdf
-            
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  name: PDFs Build and Deploy
+  
+  on:
+    push:
+      tags:
+        - 'latest'
+    workflow_dispatch:
+  
+  permissions:
+    contents: write
+    pages: write
+    id-token: write
+  
+  concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: false
+  
+  jobs:
+    pdfs-build-deployment:
+      runs-on: ubuntu-latest
+      env:
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
+        PUPPETEER_EXECUTABLE_PATH: "/usr/bin/chromium-browser"
+        PUPPETEER_ARGS: "--no-sandbox --disable-setuid-sandbox --disable-gpu --disable-dev-shm-usage --single-process"
+  
+      steps:
+        - uses: actions/checkout@v3
+  
+        - name: Install Chromium and dependencies
+          run: |
+            sudo apt-get update
+            sudo apt-get install -y \
+              chromium-browser \
+              libnss3 \
+              libxss1 \
+              libasound2 \
+              libatk1.0-0 \
+              libpangocairo-1.0-0 \
+              fonts-liberation \
+              libappindicator3-1 \
+              libnspr4 \
+              xdg-utils
+  
+        - name: Install Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '20'
+  
+        - name: Install dependencies
+          run: npm install -g docs-to-pdf fs-extra
+  
+        - name: Build PDFs
+          run: |
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-vancouver-101/0.0-introduction/app-engine-overview" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Gestão de Casos de Teletrabalho - Nível 1" \
+              --outputPDFFilename "telework-vancouver-101.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-201_vancouver/Introduction/Overview" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Gestão de Casos de Teletrabalho - Nível 2" \
+              --outputPDFFilename "telework-vancouver-201.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/collaborate-vancouver/0.0-get_started/intro" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Colabore para Acelerar" \
+              --outputPDFFilename "collaborate-vancouver.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/spokegen/overview" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "IHub - Gerador de Spokes" \
+              --outputPDFFilename "spokegen.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/rpa/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "RPA Hub - Robotic Process Automation" \
+              --outputPDFFilename "rpa.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/docintel/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "DocIntel - Document Intelligence" \
+              --outputPDFFilename "docintel.pdf"
+  
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/visitor-access-xanadu/1.0-introduction/overview" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Hiperautomação - Gestão de Acesso de Visitantes" \
+              --outputPDFFilename "visitor-access.pdf"
+  
+        - name: Release with Notes
+          uses: softprops/action-gh-release@v1
+          with:
+            files: |
+              telework-vancouver-101.pdf
+              telework-vancouver-201.pdf
+              collaborate-vancouver.pdf
+              spokegen.pdf
+              rpa.pdf
+              docintel.pdf
+              visitor-access.pdf
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
