@@ -34,7 +34,6 @@
               chromium-browser \
               libnss3 \
               libxss1 \
-              libasound2 \
               libatk1.0-0 \
               libpangocairo-1.0-0 \
               fonts-liberation \
