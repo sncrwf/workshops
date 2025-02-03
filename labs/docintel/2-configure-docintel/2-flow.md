@@ -80,16 +80,14 @@ Abra a tarefa de documento e selecione **Open in Document Intelligence**.
 ## Verifique as Ações
 
 :::info
-- Caso o document intelligence apresente a mensagem: `We recommend you wait until the task is ready and DocIntel suggestions are available.` Quer dizer que o documento ainda está sendo processado.
+1 - Caso o document intelligence apresente a mensagem: `We recommend you wait until the task is ready and DocIntel suggestions are available.` Quer dizer que o documento ainda está sendo processado.
 
-- Clique em `No, I can wait` e aguarde o processamento finalizar. 
+2 - Clique em `No, I can wait` e aguarde o processamento finalizar. 
 
 ![](../images/2025-01-28-12-03-38.png)
 
-- Clique em `Refresh` para atualizar o processamento até que o processo seja concluído:
-
+3 - Clique em `Refresh` para atualizar o processamento até que o processo seja concluído:
 ![](../images/2025-01-28-12-05-18.png)
-
 :::
 
 Agora iremos verificar os campos. 

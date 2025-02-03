@@ -72,3 +72,4 @@ utilities/*
 pdf
 pdf/*
 *.swp
+.pdf

@@ -5,14 +5,14 @@ hide_table_of_contents: true
 draft: false
 ---
 
-1. Navegue para **Document Intelligence > Administration > Home**.
+1. Navegue para **Document Intelligence > Document Data Extraction Administration > Home**.
 
-    ![](../images/2024-08-23-14-19-42.png)
+    ![](../images/2025-02-03-09-26-33.png)
 
    - Nota: A página será aberta em uma nova aba do navegador. Se isso não acontecer, verifique se o seu navegador não está bloqueando a abertura.
-2. Vá para a aba **Use Cases** e selecione **New use case**.
+2. Vá para a aba **Use Cases** e selecione **Define your first use case**.
 
-    ![](../images/2024-08-23-14-20-56.png)   
+    ![](../images/2025-02-03-09-28-02.png)  
 
    - Preencha o formulário:
 
@@ -38,13 +38,17 @@ draft: false
     :::tip
     Selecione a opção “Define multiple fields” para manter a janela pop-up aberta após cada campo ser adicionado.
     :::
+
+    :::note
+    Apesar de existirem tipos de dados diferentes (como Date), utilizaremos Text para todos os campos.
+    :::
    
-    | Field Name  | Target Field  |
-    |-------------|---------------|
-    | **Date**    | `Invoice_date`|
-    | **Number**  | `Invoice_number`|
-    | **Total**   | `Invoice_total`|
-    | **Customer**| customer      |
+    | Field Name  | Field Type    | Target Field  |
+    |-------------|---------------|---------------|
+    | **Date**    | Text | `Invoice_date` |
+    | **Number**  | Text | `Invoice_number` |
+    | **Total**   | Text| `Invoice_total` |
+    | **Customer**| Text      | `customer` |
 
     ![](../images/2024-08-23-14-22-51.png)
 

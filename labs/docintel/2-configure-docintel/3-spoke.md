@@ -138,7 +138,7 @@ Este recurso inovador, o "Gerador de Spokes", reduz significativamente o tempo n
 
    | Campo         | Valor                                                        |
    |---------------|--------------------------------------------------------------|
-   | Número de Invoice | **`1786`**   |
+   | * number | **`1786`**   |
 
     ![](../images/2025-01-29-12-10-55.png)
 
