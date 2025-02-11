@@ -139,6 +139,23 @@ const config = {
     ],
 
     /*
+     * LOW CODE APP GOVERNANCE
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/low-code-app-governance",
+        id: "lowcodegovernance",
+        routeBasePath: "labs/low-code-app-governance",
+        sidebarPath: require.resolve("./labs/low-code-app-governance/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
      * DOCINTEL
      */
 
@@ -156,6 +173,8 @@ const config = {
       ],
   
     ],
+
+    
 
   presets: [
     [

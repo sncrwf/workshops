@@ -106,7 +106,15 @@
               --coverTitle="Workshop Creator Workflows" \
               --coverSub "Hiperautomação - Gestão de Acesso de Visitantes" \
               --outputPDFFilename "visitor-access.pdf"
-  
+ 
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/low-code-app-governance/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "AEMC: Low-Code Application Governance" \
+              --outputPDFFilename "low-code-app-governance.pdf"
+            
         - name: Release with Notes
           uses: softprops/action-gh-release@v1
           with:
@@ -118,5 +126,6 @@
               rpa.pdf
               docintel.pdf
               visitor-access.pdf
+              low-code-app-governance.pdf
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

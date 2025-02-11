@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import { faArrowRight, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset,faSliders } from '@fortawesome/free-solid-svg-icons';
 
 
 const HomepageFeatures = () => (
@@ -71,11 +71,23 @@ const FeatureList = [
   },
 
   {
-    title: 'AEMC: Colabore para Acelerar',
+    title: 'AEMC: Low-Code Application Governance',
     icon: faPeopleGroup,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Aprenda a gerenciar aplicativos low-code com o Centro de Gestão do App Engine Management Center<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Governança de aplicativos low-code na prática com App Engine Management Center<br/><div class="button-basic">Básico</div>
+      </>
+    ),
+    to: '/labs/low-code-app-governance/introduction',
+    target: '_self',
+  },
+
+  {
+    title: 'AEMC: Colabore para Acelerar',
+    icon: faSliders,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Aprenda ativar e configurar a solução de governança low-code - App Engine Management Center<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: '/labs/collaborate-vancouver/0.0-get_started/intro',
