@@ -13,7 +13,7 @@ O **App Engine Studio** é um pouco mais avançado que o **Creator Studio**, mas
 
 ## 🛠️ Tempo de Desenvolvimento!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev).**  
+<div class="dev-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev) ⚠️ </div>
 
 1. Clique em **Favorites**, depois clique em **App Engine Studio**.  
    ![](../images/2025-02-11-14-08-17.png)

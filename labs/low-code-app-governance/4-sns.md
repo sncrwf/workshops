@@ -13,7 +13,7 @@ O **ServiceNow Studio** oferece uma experiência unificada e eficiente para dese
 
 ## 🛠️ Tempo de Desenvolvimento!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev).**  
+<div class="dev-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev) ⚠️ </div>  
 
 1. Clique em **Favorites**, depois clique em **ServiceNow Studio**.  
 2. No canto superior direito, clique em **Create**, depois selecione **App**. 

@@ -15,7 +15,7 @@ Neste exercício, **Sydney** enviará uma **solicitação de colaboração** ao 
 
 ## 🛠️ Tempo de Desenvolvimento!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev).**  
+<div class="dev-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev) ⚠️ </div> 
 
 1. Certifique-se de que você ainda está no **ServiceNow Studio** como **Sydney**.  
 2. No canto superior direito, clique no botão **Manage collaborators**.  
@@ -37,7 +37,7 @@ Nos próximos passos, **Jayne** (a **Administradora do App Engine**) aprovará a
 
 ## 🛠️ Tempo de Produção!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Produção (Prod).**  
+<div class="prod-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Produção (Prod) ⚠️</div> 
 
 8. Alterne para a instância de **Produção (Prod)**.  
 9. Impersone **Jayne Nigel**.  
@@ -55,7 +55,7 @@ Nos próximos passos, **Jayne** (a **Administradora do App Engine**) aprovará a
 
 ## 🛠️ Tempo de Desenvolvimento!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev).**  
+<div class="dev-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev) ⚠️ </div> 
 
 15. Alterne para a instância de **Desenvolvimento (Dev)**.  
 16. No canto superior direito, clique no avatar e depois em **Impersonate another user**.

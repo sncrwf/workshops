@@ -15,10 +15,9 @@ O processo de **Solicitação de Desenvolvedor (Intake Request)** é uma etapa e
 ![](../images/2025-02-11-13-46-40.png)
 Esta seção descreve as etapas da jornada de **Sydney** para se tornar uma **Citizen Developer**.
 
-
 ## 🛠️ Tempo de Produção!  
+<div class="prod-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Produção (Prod) ⚠️</div>
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Produção (Prod).**  
 
 1. Impersone **Sydney Carter**.  
 2. Clique em **Favorites**, depois clique em **Employee Center**. Isso abrirá uma nova aba no navegador. 

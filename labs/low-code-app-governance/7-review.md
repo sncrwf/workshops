@@ -15,7 +15,7 @@ Nos próximos passos, revisaremos os resultados finais desse processo.
 
 ## 🛠️ Tempo de Produção!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Produção (Prod).**  
+<div class="prod-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Produção (Prod) ⚠️</div> 
 
 1. Faça login na instância de **Produção (Prod)**.  
 2. Impersone **Jayne**.  

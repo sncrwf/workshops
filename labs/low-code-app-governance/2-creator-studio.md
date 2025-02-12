@@ -13,7 +13,7 @@ A opção mais simples para começar é o **Creator Studio**.
 
 ## 🛠️ Tempo de Desenvolvimento!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev).**  
+<div class="dev-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Desenvolvimento (Dev) ⚠️ </div> 
 
 1. Acesse a instância de **Desenvolvimento (Dev)**.  
 2. Impersone **Sydney**.  

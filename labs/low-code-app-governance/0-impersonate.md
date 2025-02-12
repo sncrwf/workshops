@@ -17,7 +17,7 @@ Uma das habilidades concedidas pelo role **admin** é a capacidade de **imperson
 
 ## 🛠️ Tempo de Produção!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Produção (Prod).**  
+<div class="prod-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Produção (Prod) ⚠️</div>
 
 1. Faça login na instância de **Produção (Prod)**.  
 2. No canto superior direito do **ServiceNow**, clique no avatar do **System Administrator**, depois clique em **Impersonate user**. 
