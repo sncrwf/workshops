@@ -18,7 +18,7 @@
   --docusaurus-announcement-bar-height: auto;
   --docusaurus-collapse-button-bg: #0000;
   --docusaurus-collapse-button-bg-hover: #0000001a;
-  --docusaurus-highlighted-code-line-bg: #0000001a;
+  --docusaurus-highlighted-code-line-bg: #ba38311a;
   --docusaurus-progress-bar-color: var(--ifm-color-primary);
   --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
   --footer-gray: #242526;
@@ -648,12 +648,11 @@ p img {
 
 .markdown h3,
 [data-theme="dark"] .markdown h3 {
-  @apply bg-gray-600;
+  @apply bg-gray-700;
   @apply font-bold;
-  @apply ml-5;
   @apply mt-2;
   @apply p-1;
-  @apply pl-4;
+  @apply pl-10;
   @apply rounded-md;
   @apply text-white;
 }

@@ -156,6 +156,23 @@ const config = {
     ],
 
     /*
+     * LOW CODE APP GOVERNANCE
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/now-assist-creator",
+        id: "nowassistcreator",
+        routeBasePath: "labs/now-assist-creator",
+        sidebarPath: require.resolve("./labs/now-assist-creator/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
      * DOCINTEL
      */
 

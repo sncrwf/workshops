@@ -114,7 +114,15 @@
               --coverTitle="Workshop Creator Workflows" \
               --coverSub "AEMC: Low-Code Application Governance" \
               --outputPDFFilename "low-code-app-governance.pdf"
-            
+
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/now-assist-creator/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "GenAI: Now Assist for Creator" \
+              --outputPDFFilename "now-assist.pdf"
+              
         - name: Release with Notes
           uses: softprops/action-gh-release@v1
           with:
@@ -127,5 +135,6 @@
               docintel.pdf
               visitor-access.pdf
               low-code-app-governance.pdf
+              now-assist.pdf
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

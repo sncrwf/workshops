@@ -34,11 +34,11 @@ Esta seção descreve as etapas da jornada de **Sydney** para se tornar uma **Ci
    |-------|-------|
    | **Application Name** | Request Time Off |
    | **Describe your idea…** | Permitir que usuários de TI solicitem folgas com aprovações. |
-   | **Is your process repeatable?** | Sim |
-   | **Do you have an email or excel-based process?** | Sim |
+   | **Is your process repeatable?** | Yes |
+   | **Do you have an email or excel-based process?** | Yes |
    | **How many users are involved in this?** | >20 |
-   | **Does this involve any sensitive/PII data?** | Não |
-   | **Do you need data from other departments?** | Não |
+   | **Does this involve any sensitive/PII data?** | No |
+   | **Do you need data from other departments?** | No |
    | **Who are the users that will have access to the data in this application?** | Qualquer pessoa no departamento de TI. |
 
 7. Clique em **Submit**.  
@@ -60,7 +60,7 @@ Agora, **Jayne** (a Administradora do App Engine) irá aprovar a solicitação d
 
 ## 🛠️ Tempo de Produção!  
 
-⚠️ **Os próximos passos devem ser realizados apenas na instância de Produção (Prod).**  
+<div class="prod-badge">⚠️ Os próximos passos devem ser realizados apenas na instância de Produção (Prod) ⚠️</div>
 
 1. Impersone **Jayne Nigel**.  
 2. Clique no número **1** acima da palavra **Intake**. 

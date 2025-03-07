@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faBolt, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset,faSliders } from '@fortawesome/free-solid-svg-icons';
@@ -67,6 +67,18 @@ const FeatureList = [
       </>
     ),
     to: '/labs/telework-201_vancouver/Introduction/Overview',
+    target: '_self',
+  },
+
+  {
+    title: 'GenAI: Now Assist for Creator',
+    icon: faBolt,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
+      </>
+    ),
+    to: 'labs/now-assist-creator/introduction',
     target: '_self',
   },
 
