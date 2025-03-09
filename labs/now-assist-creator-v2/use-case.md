@@ -45,5 +45,3 @@ Usando **Now Assist for Creator**, criaremos um aplicativo que permitirá:
 ## 🚀 Próximo Passo  
 
 Agora que entendemos o cenário do laboratório, vamos para o **Exercício 0 - Impersonação de Usuários**, onde aprenderemos a testar o aplicativo simulando diferentes perfis dentro do ServiceNow.  
-
-➡️ **[Ir para Exercício 0 - Impersonação](./0-impersonate)**

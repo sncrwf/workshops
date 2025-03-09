@@ -87,17 +87,24 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
 ## 🛠️ Passo 1 – Criando a Skill  
 
 1. Navegue até **All > Skill Kit > Home**.  
+   ![](../images/2025-03-09-12-30-13.png)
 2. Acesse o link do **Skill Kit**
 3. Clique em **"Create Skill"**.  
+   ![](../images/2025-03-09-12-30-32.png)
 4. No formulário, preencha os seguintes campos:  
 
-   - **Skill name:** Validador de Tabelas  
+   - **Skill name:** ***[YOUR NAME]*** Validador de Tabelas  
+   :::danger
+   Substitua a tag **[YOUR NAME]** acima pela suas iniciais e 4 dígitos do seu aniversário DDMM, exemplo: RY2503
+   :::
    - **Description:** Essa skill permite que administradores ou desenvolvedores do ServiceNow validem rapidamente o esquema de tabelas contra padrões organizacionais pré-definidos.  
    - **Default provider:** Azure OpenAI  
    - **Provider API:** Chat Completions  
 
 5. Em **"How would you like to create a prompt for this skill?"**, selecione **"Write from scratch"**.  
 6. Clique em **"Next"**.  
+
+   ![](../images/2025-03-09-12-35-56.png)
 
 ---
 
@@ -108,35 +115,38 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
 3. Configure os seguintes parâmetros:  
 
    - **Datatype:** Record  
-   - **Table name:** Table [sys_db_object]  
+   - **Table name:** `sys_db_object`  
    - **Name:** Table  
    - **Mandatory:** ✅ (Habilitado)  
 
 4. Clique em **"Go to Summary"**.  
+   ![](../images/2025-03-09-12-37-39.png)
 5. Clique em **"Finish"**.  
-
----
+   ![](../images/2025-03-09-12-38-03.png)
 
 ## 🛠️ Passo 3 – Criando um Script Tool  
 
-1. Acesse a guia **Tool Editor**.  
-2. Clique no **símbolo de (+)** antes do **Skill Prompt**.  
+:::info
+Já carregamos na plataforma um script includes para retornar o schema da tabela selecionada, nesta etapa nós apenas iremos buscá-lo para executar dentro do nosso skill.
+:::
+
+1. Acesse a guia **Tool Editor**. 
+   ![](../images/2025-03-09-12-40-05.png) 
+2. Clique no **símbolo de (+)** antes do **Skill Prompt**. 
+   ![](../images/2025-03-09-12-40-25.png) 
 3. Selecione **Tool Node**.  
+   ![](../images/2025-03-09-12-40-40.png)
 4. Configure os seguintes parâmetros:  
 
-   - **Type:** Script  
-   - **Name:** TableSchemaUtils  
-   - **Choose existing script**  
-   - **Resource:** TableSchemaUtils  
-   - **Script function:** getTableSchema  
+   1. **Type:** Script  
+   2. **Name:** TableSchemaUtils  
+   3. **Choose existing script**  
+   4. **Resource:** TableSchemaUtils  
+   5. **Script function:** getTableSchema  
+   6. **tableName → Value:** `{{table.name}}`  
+   7. Clique em **"Add"**.  
 
-5. Configure os Inputs:  
-
-   - **tableName → Value:** `{{table.name}}`  
-
-6. Clique em **"Add"**.  
-
----
+   ![](../images/2025-03-09-12-42-31.png)
 
 ## 🛠️ Passo 4 – Criando o Prompt  
 
@@ -181,9 +191,12 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
     2. O output deve ser em formato Raw Text
     ```
 
+   ![](../images/2025-03-09-12-44-16.png)
+
 ## 🛠️ Passo 5 – Testando o Prompt  
 
 1. Clique em **"Run Test"**.  
+   ![](../images/2025-03-09-12-45-00.png)
 2. Selecione uma **tabela de teste**, como **Requisições**.  
 3. Aguarde a conclusão do teste e valide os resultados.  
 4. Realize ajustes no prompt, se necessário.  
