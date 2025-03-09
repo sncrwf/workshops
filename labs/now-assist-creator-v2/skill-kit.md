@@ -197,57 +197,93 @@ Já carregamos na plataforma um script includes para retornar o schema da tabela
 
 1. Clique em **"Run Test"**.  
    ![](../images/2025-03-09-12-45-00.png)
-2. Selecione uma **tabela de teste**, como **Requisições**.  
+2. Selecione uma **tabela de teste**, como **Tabela Dummy** e clique em **Run Test**.
+   ![](../images/2025-03-09-13-05-46.png)
 3. Aguarde a conclusão do teste e valide os resultados.  
+   ![](../images/2025-03-09-13-06-24.png)
 4. Realize ajustes no prompt, se necessário.  
-5. Quando estiver satisfeito, clique em **"Finalize Prompt"** e **confirme**.  
-
+   ![](../images/2025-03-09-13-07-02.png)
+5. Edite o nome do prompt clicando no ícone de lapis.
+   ![](../images/2025-03-09-13-08-30.png)
+6. Quando estiver satisfeito, clique em **"Finalize Prompt"** e **confirme**.  
+   ![](../images/2025-03-09-13-08-49.png)
 ---
 
 ## 🛠️ Passo 6 – Configurando a Skill  
 
 1. Abra a guia **Skill Settings**.  
-2. Acesse **Deployment Settings**.  
+2. Acesse **Deployment Settings**. 
+   ![](../images/2025-03-09-13-09-22.png) 
 3. Configure os seguintes campos:  
 
    - **Workflow:** Creator  
    - **Feature:** Create new feature  
-   - **Name:** Validador de Tabelas  
+   - **Name:** ***[YOUR NAME]*** Validador de Tabelas  
 
 4. Clique em **"Save"**.  
+   ![](../images/2025-03-09-13-13-04.png)
 5. Selecione as opções:  
 
    ✅ Now Assist Panel  
    ✅ Flow Action  
 
 6. Clique em **"Save"** novamente.  
+   ![](../images/2025-03-09-13-13-40.png)
 7. Clique em **"Publish"**, marque a opção **Default Prompt** e confirme.  
-
----
+   ![](../images/2025-03-09-13-13-59.png)
+   ![](../images/2025-03-09-13-14-22.png)
 
 ## 🛠️ Passo 7 – Ativando a Skill  
 
-1. Navegue até **All > Now Assist Admin**.  
-2. Acesse a guia **Now Assist Features**.  
-3. Selecione **Creator**.  
-4. Encontre a **skill recém-publicada** e clique em **View Details**.  
-5. Clique em **Activate Skill**.  
-6. Marque a opção **"Display in Flow Action"** e clique em **Save and Continue**.  
-7. Marque a opção **"Display in Now Assist Panel"** e clique em **Save and Continue**.  
-8. Clique em **Activate**.  
-9. Feche a janela de ativação.  
+1. Navegue até **All > Now Assist Admin > Features**. 
+   ![](../images/2025-03-09-13-15-26.png)  
+2. Selecione **Creator**.  
+3. Encontre a **skill recém-publicada** e clique em **View Details**.  
+   ![](../images/2025-03-09-13-16-09.png)
+4. Clique em **Activate Skill**.  
+   ![](../images/2025-03-09-13-16-27.png)
+5. Marque a opção **"Display in Flow Action"** e clique em **Save and Continue**.  
+   ![](../images/2025-03-09-13-16-52.png)
+6. Marque a opção **"Display in Now Assist Panel"** e clique em **Save and Continue**.  
+   ![](../images/2025-03-09-13-17-14.png)
+7. Clique em **Activate**.
+   ![](../images/2025-03-09-13-17-31.png)  
+8.  Feche a janela de ativação.  
+   ![](../images/2025-03-09-13-18-06.png)
 
----
+## Opcional – Fixar Skill ao Chat
+É possível fixar a skill para ser sugerida sempre que o chat do Now Assist for iniciado. Para fazer isso você deve adicionar a skill a tabela Promoted Skills
+
+1. Acesse All e Busque por Promoted Skills.
+   ![](../images/2025-03-09-14-42-32.png)
+2. Crie uma nova entrada clicando em New
+   ![](../images/2025-03-09-14-42-58.png)
+3. Preencha as informações:
+   - **Generative AI Skill:** ***[YOUR NAME]*** Validador de Tabelas  
+   - **Chat Experience:** Default Now Assist Panel - Platform
+   - Submit
+   ![](../images/2025-03-09-14-43-35.png)
 
 ## 🛠️ Passo 8 – Testando a Skill  
 
 1. Abra o painel **Now Assist** e fixe-o na tela.  
-2. Digite **"Validador de Tabelas"** e aguarde.  
-3. Selecione a tabela que deseja validar.  
+   ![](../images/2025-03-09-13-18-51.png)
+2. Selecione a sua skill **[YOUR NAME] Validador de Tabelas** (Ex: SN0125 Validador de Tabelas). 
+   ![](../images/2025-03-09-14-45-34.png)
+3. Selecione a tabela que deseja validar.
+   ![](../images/2025-03-09-14-46-18.png)
 4. Confirme a execução.  
+   ![](../images/2025-03-09-14-46-38.png)
 5. Verifique o resultado.  
+   ![](../images/2025-03-09-14-46-58.png)
 
----
+:::info
+### Recurso Adicional - Skill Flow Action
+Além do do **Now Assist Panel (Chat)** é possível também consumir as skills por meio de flows/subflows, após publicar uma skill e ativa-lá como **Flow Action** é possível chamá-la utilizando a action **Execute Skill**.
+
+![](../images/2025-03-09-14-50-01.png)
+:::
+
 
 ## 🎯 Conclusão  
 
