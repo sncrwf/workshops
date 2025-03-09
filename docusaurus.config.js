@@ -156,7 +156,7 @@ const config = {
     ],
 
     /*
-     * LOW CODE APP GOVERNANCE
+     * NOW ASSIST
      */
 
     [
@@ -166,6 +166,24 @@ const config = {
         id: "nowassistcreator",
         routeBasePath: "labs/now-assist-creator",
         sidebarPath: require.resolve("./labs/now-assist-creator/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+
+    /*
+     * NOW ASSIST
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/now-assist-creator-v2",
+        id: "nowassistcreatorv2",
+        routeBasePath: "labs/now-assist-creator-v2",
+        sidebarPath: require.resolve("./labs/now-assist-creator-v2/sidebar.js"),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
         breadcrumbs: false,

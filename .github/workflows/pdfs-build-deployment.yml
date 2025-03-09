@@ -122,6 +122,14 @@
               --coverTitle="Workshop Creator Workflows" \
               --coverSub "GenAI: Now Assist for Creator" \
               --outputPDFFilename "now-assist.pdf"
+
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/now-assist-creator-v2/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "GenAI: Now Assist for Creator" \
+              --outputPDFFilename "now-assist-v2.pdf"
               
         - name: Release with Notes
           uses: softprops/action-gh-release@v1
@@ -136,5 +144,6 @@
               visitor-access.pdf
               low-code-app-governance.pdf
               now-assist.pdf
+              now-assist-v2.pdf
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
