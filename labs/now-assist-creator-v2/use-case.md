@@ -5,43 +5,51 @@ hide_table_of_contents: true
 draft: false
 ---
 
-# Caso de Uso: Gestão de Cross-Training  
+# 📌 Caso de Uso: Gestão de Cross-Training  
 
 ## 🔍 Visão Geral  
 
-Neste laboratório, simularemos a criação de um **aplicativo para gestão de treinamentos internos** dentro da empresa **ACME**.  
+Neste laboratório, você criará um **aplicativo para gestão de treinamentos internos** na empresa **ACME**, utilizando **Now Assist for Creator** para acelerar o desenvolvimento e automação do processo.  
 
-A gerente de treinamentos, **Alexandra**, enfrenta desafios na **organização e aprovação de treinamentos** para diferentes departamentos. Atualmente, o processo é **manual**, baseado em **planilhas e trocas de e-mails**, tornando-o **lento e propenso a erros**.  
+A gerente de treinamentos, **Alexandra**, enfrenta dificuldades para gerenciar **inscrições, aprovações e agendamentos**. O processo atual é **manual**, baseado em **planilhas e trocas de e-mails**, resultando em **atrasos, falta de rastreabilidade e dificuldades na gestão das informações**.  
 
-O objetivo deste laboratório é demonstrar como o **Now Assist for Creator** pode acelerar a criação de um **sistema automatizado**, reduzindo esforços manuais e garantindo melhor controle sobre os treinamentos internos.  
+Nosso objetivo é demonstrar como a **IA generativa** pode facilitar a criação de um **sistema automatizado**, reduzindo esforços manuais e garantindo melhor controle sobre os treinamentos internos.  
 
 ![](../images/2025-03-06-18-59-49.png)
 
-## 🎯 Problema a Ser Resolvido  
+---
 
-- O processo atual **não possui rastreabilidade** – difícil saber quem se inscreveu e quais treinamentos foram aprovados.  
-- **Muitos atrasos** ocorrem devido à dependência de comunicação manual.  
-- **Aprovações descentralizadas** dificultam a gestão de permissões e agendamentos.  
-- Falta um **portal único** onde os funcionários possam visualizar e solicitar treinamentos.  
+## 🎯 Desafios a Serem Resolvidos  
+
+- **Processo descentralizado e sem rastreabilidade** – difícil acompanhar quais treinamentos foram solicitados, aprovados e concluídos.  
+- **Dependência de e-mails e planilhas** – atrasos frequentes devido à comunicação manual.  
+- **Aprovações burocráticas e demoradas** – falta um fluxo claro para validar e autorizar treinamentos.  
+- **Falta de integração** – ausência de um portal único para visualizar e solicitar treinamentos.  
+
+---
 
 ## 🛠️ Solução com Now Assist  
 
-Usando **Now Assist for Creator**, criaremos um aplicativo que permitirá:  
+A solução será dividida em **duas grandes frentes**:  
 
-✅ **Solicitação de treinamentos** por meio de um **catálogo de serviços gerado por IA**.  
-✅ **Automação de aprovações** para eliminar trocas de e-mails manuais.  
-✅ **Geração automática de workflows** para agendamento e notificações.  
-✅ **Controle de permissões** para que treinadores e gestores possam gerenciar os treinamentos.  
-✅ **Acompanhamento centralizado**, permitindo que Alexandra veja todas as solicitações em um só lugar.  
+### 🔹 **Skills de Criação**  
+- <div class="text-black-bold-lblue"><div class="button-purple">Record Producer</div> Voluntário para liderar sessão</div>
+- <div class="text-black-bold-lblue"><div class="button-purple">Record Producer</div> Registro de sessão de treinamento</div>
+- <div class="text-black-bold-lblue"><div class="button-purple">Record Producer</div> Feedback da sessão</div>
+- <div class="text-black-bold-lblue"><div class="button-purple">UI Generation</div> Workspace para Gestão de Treinamentos</div> 
+- <div class="text-black-bold-lblue"><div class="button-purple">Playbook Generation</div> Playbook de Atendimento para Treinamentos</div>  
+- <div class="text-black-bold-lblue"><div class="button-purple">Spoke Generation</div> Integração com API Externa</div>
+- <div class="text-black-bold-lblue"><div class="button-purple">Flow Generation</div> Notificações e Automações</div>  
 
-## 🏗️ Funcionalidades do Aplicativo  
+---
 
-🔹 **Catálogo de Treinamentos** – Funcionários poderão solicitar treinamentos via um formulário gerado por IA.  
-🔹 **Workflow de Aprovação** – IA criará um fluxo automático para aprovação de pedidos.  
-🔹 **Painel de Gestão** – Um espaço onde Alexandra poderá acompanhar solicitações pendentes e aprovadas.  
-🔹 **Gerenciamento de Usuários** – Diferentes permissões para funcionários, aprovadores e instrutores.  
-🔹 **Notificações e Alertas** – Confirmações automáticas de inscrição e lembretes antes do treinamento.  
+### 🔹 **Skills de Governança e Controle**  
+- <div class="text-black-bold-lblue"><div class="button-purple">App Insights</div> Sumarização de app</div> 
+- <div class="text-black-bold-lblue"><div class="button-purple">Test Generation</div> ATF (Automated Test Framework)</div>
+- <div class="text-black-bold-lblue"><div class="button-purple">Skill Kit</div> Validação de padrão de tabelas</div> 
+
+---
 
 ## 🚀 Próximo Passo  
 
-Agora que entendemos o cenário do laboratório, vamos para o **Exercício 0 - Impersonação de Usuários**, onde aprenderemos a testar o aplicativo simulando diferentes perfis dentro do ServiceNow.  
+Agora que entendemos o **cenário do laboratório**, vamos para o **Exercício 1 - Geração de Aplicação**, onde criaremos nosso primeiro aplicativo com **Now Assist for Creator**!  

@@ -9,40 +9,58 @@ draft: false
 
 ## 🚀 Visão Geral  
 
-Neste laboratório, você aprenderá a utilizar o **Now Assist for Creator**, a poderosa ferramenta de **Inteligência Artificial Generativa** do **ServiceNow**, que acelera o desenvolvimento de aplicativos low-code com base em comandos em linguagem natural.  
+Neste laboratório, você explorará o **Now Assist for Creator**, a ferramenta de **Inteligência Artificial Generativa** do **ServiceNow**, que acelera o desenvolvimento de aplicativos low-code utilizando **prompts em linguagem natural**.  
 
-O laboratório guiará você por um **ciclo completo de criação de um aplicativo**, desde a **geração inicial até a implantação**, permitindo explorar como a IA pode facilitar a criação de **formularios, fluxos de trabalho, automações e código**.  
+O laboratório cobre **todas as etapas de um ciclo completo de desenvolvimento**, incluindo a **criação de aplicativos, automação de fluxos, geração de código e integração com APIs externas**.  
+
+Além disso, você poderá testar e validar suas criações, garantindo que os aplicativos atendam às necessidades da empresa com eficiência.  
 
 ## 🎯 Objetivo  
 
 Ao final deste laboratório, você será capaz de:  
 
-✅ Criar um aplicativo do zero com **Now Assist for Creator**.  
-✅ Gerar **catálogos de serviço, fluxos de trabalho e playbooks** usando IA.  
-✅ **Automatizar processos** e **gerar código** com inteligência artificial.  
-✅ Simular e testar o aplicativo com diferentes perfis de usuário.  
+✅ Criar um **aplicativo completo** utilizando Now Assist for Creator.  
+✅ **Automatizar processos** com fluxos de trabalho gerados por IA.  
+✅ **Criar e testar integrações via Spoke Generation** para consumir APIs externas.  
+✅ **Gerar código automaticamente** para personalizar a lógica do aplicativo.  
+✅ **Criar interfaces de usuário (UI) otimizadas** usando IA.  
+✅ **Automatizar testes** com o Automated Test Framework (ATF).  
 
 ## 🔍 Caso de Uso: Gestão de Cross-Training  
 
-O laboratório irá simular a criação de um **aplicativo para gerenciar treinamentos internos** na empresa **ACME**, onde a gerente de treinamentos **Alexandra** deseja automatizar a **solicitação, aprovação e agendamento de treinamentos**, eliminando o uso de planilhas e e-mails manuais.  
+Você desenvolverá um **aplicativo para gerenciar treinamentos internos** na empresa **ACME**.  
+
+A gerente de treinamentos, **Alexandra**, quer **automatizar o processo de solicitação, aprovação e agendamento** de treinamentos internos, eliminando o uso de planilhas e e-mails manuais.  
+
+Neste laboratório, você ajudará Alexandra a:  
+✅ Criar um aplicativo **com IA**.  
+✅ Automatizar **fluxos de aprovação e notificações**.  
+✅ Gerar **interfaces personalizadas** com IA.  
+✅ Integrar a aplicação a **APIs externas** via Spoke Generation.  
+✅ Automatizar **testes e validações**.  
 
 ## 🏗️ Estrutura do Lab  
 
-O laboratório está dividido nos seguintes exercícios:  
+O laboratório está dividido nos seguintes módulos:  
+
+### 🔹 Laboratório Principal  
 
 | Exercício | Descrição |
 |-----------|------------|
-| **Exercício 0** | Impersonação de usuários no ServiceNow. |
 | **Exercício 1** | Geração de um aplicativo completo com IA. |
-| **Exercício 2** | Criação de um item de catálogo via IA. |
-| **Exercício 3** | Automação de processos com fluxos de trabalho gerados por IA. |
-| **Exercício 4** | Uso de IA para criação de um playbook de treinamento. |
-| **Exercício 5** | Gerenciamento de colaboração dentro do aplicativo. |
-| **Exercício 6** | Geração de código personalizado com Now Assist. |
-| **Exercício 7** | Teste e simulação do aplicativo como diferentes usuários. |
+| **Exercício 2** | Automação de processos com fluxos de trabalho gerados por IA. |
+| **Exercício 3** | Uso de IA para criação de um playbook de treinamento. |
+| **Exercício 4** | Geração de código personalizado com Now Assist. |
+| **Exercício 5** | Integração com API externa via Spoke Generation. |
+| **Exercício 6** | Geração de interfaces de usuário com IA. |
+| **Exercício 7** | Automação de testes com IA no ATF. |
+
+### 🔹 Módulo Bônus  
+
+| Bônus | Descrição |
+|-----------|------------|
+| **Skill Kit** | Criação de uma Skill personalizada com Now Assist Skill Kit. |
+
+---
 
 📌 **Dica:** Siga os exercícios na ordem indicada para garantir que o fluxo de desenvolvimento ocorra corretamente.  
-
-## 🚀 Vamos começar!  
-
-Agora, inicie o **Exercício 0 - Impersonação de Usuários** para aprender como alternar entre diferentes perfis dentro do **ServiceNow**.  
