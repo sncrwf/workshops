@@ -157,6 +157,21 @@ p img {
   /* Add a smooth transition for the color change */
 }
 
+.button-homepage-wash {
+  background-color: var(--now-purple-dark--hover) ;
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
 /* Button for Basic Level */
 .button-basic {
   background-color: #A8D5BA; /* Soft green for basic */

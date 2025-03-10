@@ -75,7 +75,7 @@ const FeatureList = [
     icon: faBolt,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><div class="button-homepage-wash">✨ Now Assist</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: 'labs/now-assist-creator-v2/introduction',
