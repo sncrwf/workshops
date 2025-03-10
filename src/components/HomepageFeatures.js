@@ -78,7 +78,7 @@ const FeatureList = [
       <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
-    to: 'labs/now-assist-creator/introduction',
+    to: 'labs/now-assist-creator-v2/introduction',
     target: '_self',
   },
 
