@@ -84,7 +84,7 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
 
 ---
 
-## 🛠️ Passo 1 – Criando a Skill  
+## 🛠️ Criando a Skill  
 
 1. Navegue até **All > Skill Kit > Home**.  
    ![](../images/2025-03-09-12-30-13.png)
@@ -108,7 +108,7 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
 
 ---
 
-## 🛠️ Passo 2 – Definindo Inputs  
+## 🛠️ Definindo Inputs  
 
 1. Vá para a guia **Skill Inputs**.  
 2. Clique em **+ Add** para adicionar um novo input.  
@@ -124,7 +124,7 @@ O objetivo desta skill será permitir que **administradores e desenvolvedores va
 5. Clique em **"Finish"**.  
    ![](../images/2025-03-09-12-38-03.png)
 
-## 🛠️ Passo 3 – Criando um Script Tool  
+## 🛠️ Criando um Script Tool  
 
 :::info
 Já carregamos na plataforma um script includes para retornar o schema da tabela selecionada, nesta etapa nós apenas iremos buscá-lo para executar dentro do nosso skill.
@@ -139,61 +139,61 @@ Já carregamos na plataforma um script includes para retornar o schema da tabela
 4. Configure os seguintes parâmetros:  
 
    1. **Type:** Script  
-   2. **Name:** TableSchemaUtils  
+   2. **Name:** TableSchemaUtil 
    3. **Choose existing script**  
-   4. **Resource:** TableSchemaUtils  
+   4. **Resource:** TableSchemaUtil  
    5. **Script function:** getTableSchema  
    6. **tableName → Value:** `{{table.name}}`  
    7. Clique em **"Add"**.  
 
    ![](../images/2025-03-09-12-42-31.png)
 
-## 🛠️ Passo 4 – Criando o Prompt  
+## 🛠️ Criando o Prompt  
 
 1. Volte para a guia **Prompt Editor**.  
 2. Insira o seguinte prompt:  
 
     ```
-    ## Função
+   ## Função
 
-    Você é um administrador ou desenvolvedor ServiceNow responsável por validar o esquema de uma tabela ServiceNow em relação aos padrões organizacionais. Seu foco principal é garantir convenções de nomenclatura adequadas, completude do esquema e correção dos dados.
+   Você é um administrador ou desenvolvedor ServiceNow responsável por validar o esquema de uma tabela ServiceNow em relação aos padrões organizacionais. Seu foco principal é garantir convenções de nomenclatura adequadas, completude do esquema e correção dos dados.
 
-    ---
+   ---
 
-    ## Contexto
+   ## Contexto
 
-    Tabela a validar:
-    {{TableSchemaUtils.output}} 
+   Tabela a validar:
+   {{TableSchemaUtils.output}} 
 
-    ## Padrões organizacionais:
-    1. Os rótulos das colunas (columnName) devem:
-    - Identificar casos em que uma letra foi subtraída por conversão a automática de caractere não permitido. Ex: servi_o deveria ser servico.
-    2. Os rótulos das colunas (columnLabel) devem:
-    - Evitar preposições como “do”, “de”, “da”. Ex.: Código Cliente em vez de Código do Cliente.
-    - Seguir o formato Title Case, com a primeira letra de cada palavra em maiúscula. Ex.: Nome Cliente, Data Nascimento.
-    - Não conter caracteres especiais como underline (_), traços (-), ou símbolos (@, #, $, %).
-    - Evitar abreviações excessivas. Ex.: Número Documento em vez de Nr. Doc.
-    - Utilizar termos padronizados para nomes comuns. Ex.: Código Cliente, Status Pedido, Data Cadastro.
-    - Incluir unidades quando necessário. Ex.: Peso Quilogramas, Valor Reais.
-    - Usar verbos no infinitivo para representar ações ou estados. Ex.: Status Aprovação, Data Criação.
-    3. Os tipos de dados (columnType) devem corresponder ao propósito pretendido:
-    Ex:
-    - string para campos de texto.
-    - boolean para verdadeiro/falso.
-    - integer para valores numéricos inteiros.
-    4. Limitação de tamanho máximo de caracteres:
-    - Garantir que colunas de texto, como **string**, estejam limitadas a um tamanho apropriado (ex.: 255 caracteres para campos de texto curto).
+   ## Padrões organizacionais:
+   1. Os rótulos das colunas (columnName) devem:
+   - Identificar casos em que uma letra foi subtraída por conversão a automática de caractere não permitido. Ex: servi_o deveria ser servico.
+   2. Os rótulos das colunas (columnLabel) devem:
+   - Evitar preposições como “do”, “de”, “da”. Ex.: Código Cliente em vez de Código do Cliente.
+   - Seguir o formato Title Case, com a primeira letra de cada palavra em maiúscula. Ex.: Nome Cliente, Data Nascimento.
+   - Não conter caracteres especiais como underline (_), traços (-), ou símbolos (@, #, $, %).
+   - Utilizar termos padronizados para nomes comuns. Ex.: Código Cliente, Status Pedido, Data Cadastro.
+   - Incluir unidades quando necessário. Ex.: Peso Quilogramas, Valor Reais.
+   - Usar verbos no infinitivo para representar ações ou estados. Ex.: Status Aprovação, Data Criação.
+   3. Os tipos de dados (columnType) devem corresponder ao propósito pretendido:
+   Ex:
+   - string para campos de texto.
+   - boolean para verdadeiro/falso.
+   - integer para valores numéricos inteiros.
+   4. Limitação de tamanho máximo de caracteres:
+   - Garantir que colunas de texto, como **string**, estejam limitadas a um tamanho apropriado (ex.: 255 caracteres para campos de texto curto).
 
-    ---
+   ---
 
-    ## Resultado
-    1. Indique o status da validação (Aprovado ou Reprovado) como "Status", Quantidade de Validações Aprovadas (Aprovadas/Total) como "Validações", Percentual e os detalhes dos findings como "Detalhes"
-    2. O output deve ser em formato Raw Text
+   ## Resultado
+   1. Indique o status da validação (Aprovado ou Reprovado) como "Status", Quantidade de Validações Aprovadas (Aprovadas/Total) como "Validações", Percentual e os detalhes dos findings como "Detalhes". 
+   2. Os detalhes devem conter referências / exemplos dos apontamentos.
+   2. O output deve ser em formato Raw Text.
     ```
 
    ![](../images/2025-03-09-12-44-16.png)
 
-## 🛠️ Passo 5 – Testando o Prompt  
+## 🛠️ Testando o Prompt  
 
 1. Clique em **"Run Test"**.  
    ![](../images/2025-03-09-12-45-00.png)
@@ -207,9 +207,86 @@ Já carregamos na plataforma um script includes para retornar o schema da tabela
    ![](../images/2025-03-09-13-08-30.png)
 6. Quando estiver satisfeito, clique em **"Finalize Prompt"** e **confirme**.  
    ![](../images/2025-03-09-13-08-49.png)
----
 
-## 🛠️ Passo 6 – Configurando a Skill  
+
+## 🛠️ Adicionando mais contexto (Glossário de Termos)
+
+Queremos dar mais contexto para a AI generativa fazer as validações, para isso vamos adicionar um glossário de termos para que ele valide frente aos padrões da organização.
+
+Carregamos uma tabela chamada **Glossário de Termos [u_glossario_de_termos]**. Iremos carrega-la no prompt por meio de um script.
+
+1. Acesse novamente a aba **Tool editor** e adicione um ferramenta antes do Prompt.
+   ![](../images/2025-03-10-17-00-47.png)
+2. Adicione um Tool node
+   ![](../images/2025-03-10-17-01-15.png)
+3. Configure os parâmetros:
+   1. **Type:** Script  
+   2. **Name:** getGlossario 
+   3. Script:
+
+   ```js
+   (function runScript(context) {
+      // Initialize the output object
+      var outputs = {};
+
+      try {
+         // Create a GlideRecord instance for the table
+         var glossaryGR = new GlideRecord('u_glossario_de_termos');
+         glossaryGR.query();
+
+         // Initialize an empty mapping object
+         var termMapping = {};
+
+         // Iterate through the records and populate the mapping
+         while (glossaryGR.next()) {
+               var abbreviation = glossaryGR.getValue('u_abraviacao');
+               var term = glossaryGR.getValue('u_termo');
+
+               if (abbreviation && term) {
+                  termMapping[abbreviation] = term;
+               }
+         }
+
+         // Return the JSON mapping
+         outputs.status = "success";
+         outputs.mapping = termMapping;
+      } catch (err) {
+         // Handle any errors
+         outputs.status = "error";
+         outputs.error = "An error occurred while retrieving the glossary: " + err.message;
+      }
+
+      return outputs;
+   })(context);
+   ```
+   4. Clique em **"Add"**.  
+   ![](../images/2025-03-10-17-05-41.png)
+
+4. Retorne a aba **Prompt editor** e clone o prompt atual.
+   ![](../images/2025-03-10-17-16-27.png)
+5. Dê um novo nome para o prompt.
+   ![](../images/2025-03-10-17-11-14.png)
+6. Agora vamos adicionar a saída do nosso script (payload com glossário de termos). Dentro da sessão "Contexto" o Glossário de Termos.
+   1. Escreva "Glossário de Termos:" e pule uma linha
+   2. Selecione o botão "Insert inputs"
+   3. Selecione `>` ao lado de `getGlossario`
+   4. Selecione `output`
+   5. Verifique se a tag foi adicionada.
+
+   ![](../images/2025-03-10-17-21-54.png)
+   ![](../images/2025-03-10-17-23-02.png)
+
+7. Adicione uma linha ao padrão organizacional de columnLabel:
+   ```
+   - Termos identificados devem seguir obrigatóriabmente abreviação definida no Glossário de Termos.
+   ```
+   ![](../images/2025-03-10-17-25-50.png)
+
+8. Execute mais um teste (Run test > Tabela Dummy). Verifique que agora o resultado se baseia no glossário de termos que utilizamos.
+   ![](../images/2025-03-10-17-33-46.png)
+   
+
+## 🛠️ Configurando a Skill  
 
 1. Abra a guia **Skill Settings**.  
 2. Acesse **Deployment Settings**. 
@@ -233,7 +310,7 @@ Já carregamos na plataforma um script includes para retornar o schema da tabela
    ![](../images/2025-03-09-13-13-59.png)
    ![](../images/2025-03-09-13-14-22.png)
 
-## 🛠️ Passo 7 – Ativando a Skill  
+## 🛠️ Ativando a Skill  
 
 1. Navegue até **All > Now Assist Admin > Features**. 
    ![](../images/2025-03-09-13-15-26.png)  
@@ -264,7 +341,7 @@ Já carregamos na plataforma um script includes para retornar o schema da tabela
    - Submit
    ![](../images/2025-03-09-14-43-35.png)
 
-## 🛠️ Passo 8 – Testando a Skill  
+## 🛠️ Testando a Skill  
 
 1. Abra o painel **Now Assist** e fixe-o na tela.  
    ![](../images/2025-03-09-13-18-51.png)
