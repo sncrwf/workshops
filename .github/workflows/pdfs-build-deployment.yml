@@ -130,6 +130,14 @@
               --coverTitle="Workshop Creator Workflows" \
               --coverSub "GenAI: Now Assist for Creator" \
               --outputPDFFilename "now-assist-v2.pdf"
+
+              npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/telework-xanadu-101-gov/0.0-introduction/app-engine-overview" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Low Code + App Governance: Gestão de Casos de Teletrabalho" \
+              --outputPDFFilename "telework-xanadu-101-gov.pdf"
               
         - name: Release with Notes
           uses: softprops/action-gh-release@v1
@@ -145,5 +153,6 @@
               low-code-app-governance.pdf
               now-assist.pdf
               now-assist-v2.pdf
+              telework-xanadu-101-gov.pdf
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

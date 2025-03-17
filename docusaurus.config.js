@@ -56,7 +56,21 @@ const config = {
         breadcrumbs: false,
       },
     ],
-
+    /*
+     * TELEWORK CASE MGMT 101 with gov
+     */
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-xanadu-101-gov",
+        id: "teleworkxanadu-101-gov",
+        routeBasePath: "labs/telework-xanadu-101-gov",
+        sidebarPath: require.resolve("./labs/telework-xanadu-101-gov/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
     /*
      * TELEWORK CASE MGMT 201
      */
