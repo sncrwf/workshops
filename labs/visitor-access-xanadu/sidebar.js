@@ -47,7 +47,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '5. Modernizando Impressão de Crachá com RPA',
+            label: 'Bônus: Modernizando Impressão de Crachá com RPA',
             items: [
                 '5.0-rpa/1-vm-connect',
                 '5.0-rpa/2-rpa-hub',

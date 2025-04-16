@@ -54,7 +54,7 @@ Se você **vir um erro indicando que a instância não pode se comunicar com o N
    [YOUR APP NAME]
    ```  
    :::danger
-   Substitua a tag **[YOUR APP NAME]** acima pela suas iniciais e 4 dígitos do seu aniversário DDMM, exemplo: RY2503
+   Substitua a tag **[YOUR APP NAME]** acima pela suas iniciais e 6 dígitos do seu aniversário DDMM, exemplo: RY2503
    :::
 
    ![](../images/2025-03-08-01-51-29.png)
