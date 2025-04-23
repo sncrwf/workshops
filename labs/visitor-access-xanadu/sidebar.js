@@ -43,6 +43,7 @@ const sidebars = {
                 '4.0-docintel/3-create-record-producer',
                 '4.0-docintel/4-test-in-portal',
                 '4.0-docintel/5-create-workflow',
+                '4.0-docintel/6-workspace',
             ],
         },
         {

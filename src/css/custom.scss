@@ -334,7 +334,6 @@ p img {
   vertical-align: middle;
   transition: color 0.3s;
   /* Add a smooth transition for the color change */
-  box-shadow: 0 2px 4px 0;
 }
 
 .button-white:hover {
@@ -521,7 +520,7 @@ p img {
  .button-white-black-border-black {
    background-color: white;
    border-color: black;
-   border-radius: 22px;
+   border-radius: 5px;
    border-width: 1px;
    color: black;
    cursor: pointer;
