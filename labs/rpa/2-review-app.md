@@ -7,29 +7,45 @@ hide_table_of_contents: true
 draft: false
 ---
 
-De um navegador da web, abra este [Link](https://automationengine.westus2.cloudapp.azure.com) para acessar o aplicativo de badging baseado na web. Depois disso, você deve ver a tela de autenticação abaixo.
+# Revisando o Aplicativo de Badging
 
-![Texto alternativo](img/2023-10-02_08-23-29.png)
+Neste passo, você irá explorar a interface do sistema que será automatizado com RPA. Trata-se de um **aplicativo web de emissão de crachás** utilizado pelo Agente de Segurança da ACME Inc.
 
-Você pode encontrar avisos de segurança, pois o aplicativo web usa um certificado raiz que não é confiável pelo navegador nesta VM. Clique em Avançado
+## Acesso ao Aplicativo
 
-![Texto alternativo](<img/2023-10-02_11-23-15(1).png>)
+1. Abra um navegador da web e acesse o seguinte link:  
+👉 [https://sncrwf.azurewebsites.net/badgingapp](https://sncrwf.azurewebsites.net/badgingapp)
 
-Em seguida, clique em **Prosseguir para automationengine.westus2.cloudapp.azure.com (não seguro)**
+2. Você verá uma tela de login como esta:
+    ![Tela de Autenticação](img/2023-10-02_08-23-29.png)
 
-![Texto alternativo](img/2023-10-02_11-23-49.png)
+3. Insira as credenciais abaixo e clique em **Enviar**:
 
-> Não se preocupe com esses avisos; desenvolvemos esse aplicativo de badging 'dummy' exclusivamente para fins de laboratório e não transmitimos dados sensíveis de forma alguma.
+    | Campo    | Valor        |
+    |----------|--------------|
+    | Username | `badgeadmin` |
+    | Password | `badgeadmin` |
 
-Digite essas credenciais para autenticar e clique em Enviar:
+---
 
-| Campo | Valor |
-|-------|-------|
-| Username | badgeadmin |
-| Password | badgeadmin |
+## Tela de Impressão de Crachá
 
-Você deve ver a página que o Agente de Segurança usa para imprimir crachás abaixo.
+Após o login, você será redirecionado para a tela principal utilizada pelo Agente de Segurança para **registrar os dados do visitante e imprimir o crachá**:
 
-![Texto alternativo](img/2023-10-02_08-28-54.png)
+![Tela de Impressão](img/2023-10-02_08-28-54.png)
 
-No nosso projeto de automação RPA, vamos automatizar todas essas etapas: abrir o navegador da web, autenticar, realizar a entrada de dados e enviar o formulário.
+---
+
+## O que será automatizado?
+
+No nosso projeto de automação com o **RPA Hub**, iremos automatizar todas as etapas abaixo:
+
+- Abrir o navegador;
+- Acessar a URL do sistema;
+- Autenticar com as credenciais fornecidas;
+- Preencher o formulário de badging com dados do visitante;
+- Submeter o formulário automaticamente.
+
+> 🧠 Essa abordagem elimina a necessidade de interação humana com um sistema que não possui APIs disponíveis, demonstrando o poder do RPA para automações em sistemas legados.
+
+Você está pronto para gravar sua primeira automação!

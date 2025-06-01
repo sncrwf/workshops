@@ -1,8 +1,8 @@
 ---
 id: vm-connect
 title: "Conectando à VM"
-pagination_label: "1. Conectando à VM"
-sidebar_label: "1. Conectando à VM"
+pagination_label: "2. Conectando à VM"
+sidebar_label: "2. Conectando à VM"
 hide_table_of_contents: true
 draft: false
 ---

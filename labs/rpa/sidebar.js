@@ -11,7 +11,7 @@ const sidebars = {
             items: [
                 'introduction',
                 'review-app',
-                'rpa-hub',
+
             ],
         },
 
@@ -19,6 +19,7 @@ const sidebars = {
             type: 'category',
             label: 'Laboratório',
             items: [
+                'rpa-hub',
                 'vm-connect',
                 'rpa-design',
                 'finish',
