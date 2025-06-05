@@ -138,6 +138,14 @@
               --coverTitle="Workshop Creator Workflows" \
               --coverSub "Low Code + App Governance: Gestão de Casos de Teletrabalho" \
               --outputPDFFilename "telework-xanadu-101-gov.pdf"
+
+              npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/process-mining/introduction" \
+              --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
+              --excludeSelectors=".margin-vert--xl a" \
+              --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
+              --coverTitle="Workshop Creator Workflows" \
+              --coverSub "Process Mining" \
+              --outputPDFFilename "process-mining.pdf"
               
         - name: Release with Notes
           uses: softprops/action-gh-release@v1
@@ -154,5 +162,6 @@
               now-assist.pdf
               now-assist-v2.pdf
               telework-xanadu-101-gov.pdf
+              process-mining.pdf
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

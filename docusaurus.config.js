@@ -135,6 +135,24 @@ const config = {
             breadcrumbs: false,
           },
         ],
+
+            /*
+     * RPA
+     */
+
+        [
+          "@docusaurus/plugin-content-docs",
+          {
+            path: "labs/process-mining",
+            id: "pm",
+            routeBasePath: "labs/process-mining",
+            sidebarPath: require.resolve("./labs/process-mining/sidebar.js"),
+            showLastUpdateAuthor: false,
+            showLastUpdateTime: false,
+            breadcrumbs: false,
+          },
+        ],
+
     /*
      * DOCINTEL
      */

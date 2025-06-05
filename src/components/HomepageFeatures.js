@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight, faBolt, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faBolt, faChartDiagram, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset,faSliders } from '@fortawesome/free-solid-svg-icons';
@@ -70,7 +70,7 @@ const FeatureList = [
     target: '_self',
   },
 
-  {
+/*   {
     title: 'GenAI: Now Assist for Creator',
     icon: faBolt,
     description: (
@@ -80,7 +80,7 @@ const FeatureList = [
     ),
     to: 'labs/now-assist-creator-v2/introduction',
     target: '_self',
-  },
+  }, */
 
   {
     title: 'AEMC: Low-Code Application Governance',
@@ -152,7 +152,18 @@ const FeatureList = [
     ),
     to: '/labs/visitor-access-xanadu/1.0-introduction/overview',
     target: '_self',
-  }
+  },
 
+  {
+    title: 'Process Mining: Identificando Oportunidades de Melhoria',
+    icon: faChartDiagram,
+    description: (
+      <>
+      <div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Utilize o Process Mining para visualizar, analisar e identificar oportunidades de melhoria em processos.<br/><div class="button-basic">Básico</div>
+      </>
+    ),
+    to: '/labs/process-mining/0-introduction',
+    target: '_self',
+  }
 
 ];
