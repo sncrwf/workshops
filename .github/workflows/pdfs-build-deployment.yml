@@ -139,7 +139,7 @@
               --coverSub "Low Code + App Governance: Gestão de Casos de Teletrabalho" \
               --outputPDFFilename "telework-xanadu-101-gov.pdf"
 
-              npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/process-mining/introduction" \
+              npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/process-mining/0-introduction" \
               --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
               --excludeSelectors=".margin-vert--xl a" \
               --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
