@@ -153,6 +153,23 @@ const config = {
           },
         ],
 
+            /*
+     * CREATOR
+     */
+
+        [
+          "@docusaurus/plugin-content-docs",
+          {
+            path: "labs/creator-studio",
+            id: "cs",
+            routeBasePath: "labs/creator-studio",
+            sidebarPath: require.resolve("./labs/creator-studio/sidebar.js"),
+            showLastUpdateAuthor: false,
+            showLastUpdateTime: false,
+            breadcrumbs: false,
+          },
+        ],
+
     /*
      * DOCINTEL
      */
@@ -226,13 +243,27 @@ const config = {
      * DOCINTEL
      */
 
-      [
+/*       [
         "@docusaurus/plugin-content-docs",
         {
           path: "labs/visitor-access-xanadu",
           id: "visitor",
           routeBasePath: "labs/visitor-access-xanadu",
           sidebarPath: require.resolve("./labs/visitor-access-xanadu/sidebar.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          breadcrumbs: false,
+        },
+      ], */
+  
+
+    [
+        "@docusaurus/plugin-content-docs",
+        {
+          path: "labs/visitor-access-yokohama",
+          id: "visitor",
+          routeBasePath: "labs/visitor-access-yokohama",
+          sidebarPath: require.resolve("./labs/visitor-access-yokohama/sidebar.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           breadcrumbs: false,

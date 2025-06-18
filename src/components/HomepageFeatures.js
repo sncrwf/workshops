@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { faArrowRight, faBolt, faChartDiagram, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faBolt, faChartDiagram, faDiagramProject, faFileInvoice, faHouseLaptop, faHouseUser, faIdCardClip, faPeopleGroup, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset,faSliders } from '@fortawesome/free-solid-svg-icons';
@@ -47,6 +47,18 @@ export default HomepageFeatures;
 const FeatureList = [
 
   {
+    title: 'Creator Studio: Crie sua Primeira Aplicação No-Code',
+    icon: faWandMagicSparkles,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div><br/>Transforme um processo em uma aplicação, de forma rápida, visual e sem código.<br/><div class="button-basic">Básico</div>
+      </>
+    ),
+    to: '/labs/creator-studio/introduction',
+    target: '_self',
+  },
+
+  {
     title: 'AES: Gestão de Casos de Teletrabalho',
     icon: faHouseUser,
     description: (
@@ -70,7 +82,7 @@ const FeatureList = [
     target: '_self',
   },
 
-/*   {
+   {
     title: 'GenAI: Now Assist for Creator',
     icon: faBolt,
     description: (
@@ -80,7 +92,7 @@ const FeatureList = [
     ),
     to: 'labs/now-assist-creator-v2/introduction',
     target: '_self',
-  }, */
+  }, 
 
   {
     title: 'AEMC: Low-Code Application Governance',
@@ -150,7 +162,7 @@ const FeatureList = [
       <div class="button-homepage-vancouver">🛠️ App Engine</div><div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Hiperautomatize o acesso de visitantes com Low-Code, Ihub, DocIntel e RPA em um único lab.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
-    to: '/labs/visitor-access-xanadu/1.0-introduction/overview',
+    to: '/labs/visitor-access-yokohama/1.0-introduction/overview',
     target: '_self',
   },
 

@@ -5,7 +5,12 @@ pagination_label: "Lab 2.3 - Entendendo o impacto de uma mudança de processo"
 sidebar_label: "2.3 - Entendendo o impacto de uma mudança de processo"
 hide_table_of_contents: true
 draft: false
+description: "Este laboratório explora como identificar o impacto de mudanças de processo usando Process Mining, com foco na comparação entre períodos antes e depois da mudança."
 ---
+
+
+Neste laboratório, você analisará uma mudança implementada em um processo de gestão de incidentes. Antes da mudança, os chamados passavam pelas etapas tradicionais (New → Assigned → In Progress → Resolved → Closed), com grande variabilidade e rotas diferentes. Após a mudança, a etapa de atribuição manual foi removida, e os chamados passaram a ser automaticamente direcionados para as equipes, resultando em um fluxo mais direto.  
+Utilizaremos o Process Mining para entender o impacto real dessa alteração nas métricas e no comportamento do processo.
 
 O **Process Mining** foi desenvolvido para proporcionar visibilidade sobre oportunidades de melhoria nos processos.  
 Mas, após implementar melhorias, como saber se elas tiveram o impacto esperado? Mudanças de processo podem afetar outras áreas?  
@@ -66,6 +71,63 @@ Para obter um resumo do impacto e diferenças entre as métricas, abra o painel 
 12. Use o **X** para fechar a janela de **Comparison Statistics**.
 Acabamos de usar essa funcionalidade para comparar dois períodos distintos de dados, mas ela também pode ser utilizada para comparar diferentes regiões, categorias, variantes de rotas ou versões de um projeto (ex: este mês vs. mês anterior).  
 É um recurso poderoso do **Analyst Workbench**.
+
+
+## 📝 EXERCÍCIO: Análise de Processos – Cenário Antes e Depois
+
+Imagine que você trabalha na **área de operações** de uma empresa que utiliza o **ServiceNow** para gerenciar incidentes de TI.
+
+Nos últimos meses, foram observadas reclamações recorrentes relacionadas a:
+
+- ⏱️ **Lentidão na resolução** de chamados  
+- 😩 **Sobrecarga da equipe de atendimento**  
+- 🔁 **Alta variabilidade** nos caminhos seguidos por cada incidente
+
+Para lidar com esses desafios, foi implementado um **conjunto de melhorias no processo**, com o objetivo de promover:
+
+- 📏 **Padronização**
+- 🤖 **Automação**
+- ⚙️ **Eficiência operacional**
+
+---
+
+### 🔧 As principais mudanças implementadas foram:
+:::tip
+- Eliminação da etapa de **atribuição manual**, substituída por um sistema de **direcionamento automático** de chamados por meio do [AWA (Advanced Work Assignment)](https://www.servicenow.com/docs/bundle/yokohama-servicenow-platform/page/administer/advanced-work-assignment/concept/awa-overview.html).
+
+- Expansão das opções de **autoatendimento**, com destaque para a utilização de **Virtual Agent** e articulação com a **base de conhecimento (KB)**.
+
+- Redesenho da jornada de entrada, com adoção de **interfaces mais estruturadas**, integração com o Virtual Agent e estratégias de redirecionamento orientadas à **resolução autônoma**.
+
+- Ajuste nos critérios de análise, excluindo chamados de **baixa complexidade** que não exigem ação humana, como aqueles resolvidos automaticamente ou via autoatendimento.
+:::
+
+Agora, com base nessas mudanças, vamos investigar como o comportamento do processo foi alterado — e o que isso pode nos revelar.
+
+---
+
+### 📈 Atividade de Observação
+
+Abaixo estão os fluxos de processo e as métricas dos modelos **Model A (antes)** e **Model B (depois)**.  
+Com base nas informações visuais e nos dados apresentados, **quais conclusões você consegue tirar sobre as mudanças realizadas no processo?**
+
+---
+
+### ✏️ Suas observações:
+
+- 
+- 
+- 
+
+---
+
+import RevealAnswer from '@site/src/components/RevealAnswer';
+
+## 📌 Hipóteses e Discussão (revelar após análise)
+
+<RevealAnswer />
+
+---
 
 Avance para o caso de uso final (e um dos nossos favoritos) deste laboratório: **Multihop Analysis**.
 
