@@ -243,7 +243,7 @@ const config = {
      * DOCINTEL
      */
 
-/*       [
+       [
         "@docusaurus/plugin-content-docs",
         {
           path: "labs/visitor-access-xanadu",
@@ -254,10 +254,10 @@ const config = {
           showLastUpdateTime: false,
           breadcrumbs: false,
         },
-      ], */
+      ], 
   
 
-    [
+    /* [
         "@docusaurus/plugin-content-docs",
         {
           path: "labs/visitor-access-yokohama",
@@ -269,8 +269,8 @@ const config = {
           breadcrumbs: false,
         },
       ],
-  
-    ],
+  */
+    ], 
 
     
 
