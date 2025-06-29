@@ -34,14 +34,14 @@ Como a instância que você está usando é nova, aparecerão vários pop-ups de
 
 Vamos começar a construir uma aplicação!
 
-4. Clique em **Create app** e insira as seguintes informações:
+4. Clique em **Create app**
+![](../images/2025-06-28-23-28-25.png)
 
-5. Nome: **Gift card request**
-
-6. Descrição: **Request for both internal and external gift cards for employee recognition**
-
-7. Clique em **Create app**
-    ![](./images/image004.png)
+5. Insira as seguintes informações:
+   1. Nome: **Solicitar de Gift Card**
+   2. Descrição: **Solicitação de cartões-presente internos e externos para reconhecimento de funcionários.**
+   3. Clique em **Create app**
+    ![](../images/2025-06-28-23-30-41.png)
 
 > Nota: Isso criará um “scope” no ServiceNow que abrigará todos os artefatos da sua aplicação. Isso também permite fácil implantação do Desenvolvimento para Teste e depois para Produção quando for o momento.
 
@@ -72,43 +72,14 @@ Cada app no Creator Studio pode ter múltiplos forms.
 
 Vamos começar dando um Nome e uma Descrição para o form. Essas informações serão usadas para corresponder ao que o usuário busca no Service Portal.
 
-11. Clique em **Form name** e altere para **Gift card request**
+1.  Clique em **Form name** e altere para **Solicitação de Gift card**
 
-12. Altere o Short description para **Request gift cards for employee recognition**
+2.  Altere o Short description para **Solicitar cartões-presente para reconhecimento de funcionários**
 
-13. Agora clique na descrição à direita do espaço reservado da imagem, você verá um editor de texto rico. Altere o conteúdo para:  
-**Looking for a great way to recognize your colleagues? Use this form to request a gift card to our internal company store or to a third-party store of your choice! Internal gift cards under $50 will be automatically approved, all others will go through finance approval.**
+3.  Agora clique na descrição à direita do espaço reservado da imagem, você verá um editor de texto rico. Altere o conteúdo para:  
+**Procurando uma ótima maneira de reconhecer seus colegas? Use este formulário para solicitar um cartão-presente para nossa loja interna da empresa ou para uma loja externa de sua escolha! Cartões-presente internos de até $50 serão aprovados automaticamente, os demais passarão por aprovação do financeiro.**
+![](../images/2025-06-28-23-32-07.png)
 
-Você precisará nomear seu form e pode querer dar uma Short e Long description.
-
-14. Clique e
-
-15. Clique em **Apply template and continue**
-
-## Adicione sua aplicação de request a um Service Catalog
-
-Você pode adicionar a aplicação, ou melhor, os Catalog Items do seu processo de request, a um ou mais Service Catalogs e Categorias.
-
-1. Por enquanto, usaremos “Service Catalog” e a categoria “Departmental services”
-  ![](./images/image007.png)
-
-16. Clique na seta ao lado de **Service Catalog** para revelar suas categorias
-
-17. Marque **Departmental Services**
-
-18. Clique em **Save and continue**
-
-  ![](./images/image008.png)
-
-## Visualize em várias experiências
-
-O ServiceNow oferece diversas formas de consumir suas experiências. Nesta visualização, você poderá ver como seu request ficará em diferentes interfaces de usuário.
-
-1. Você poderá retornar a essa visualização a qualquer momento para ver suas alterações.
-  ![](./images/image009.png)
-> Sinta-se à vontade para explorar essas visualizações – você pode voltar aqui depois.
-
-2. Clique em **Edit** para continuar
 
 ## Seção Completa
 

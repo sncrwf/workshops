@@ -4,26 +4,17 @@ hide_table_of_contents: true
 draft: false
 ---
 
+Vamos revisar a sua solução enviando uma solicitação de teste dentro do **Creator Studio**
 
-Revise a seção “Form submissions”
+1. Clique em **Try it**
+![](../images/2025-06-29-00-10-51.png)
 
-Para aplicações criadas no Creator Studio, existe um workspace comum chamado “Request app workspace.” Usuários do processo, fulfilledores, utilizam este workspace para trabalhar nas tarefas criadas nas diversas aplicações feitas no Creator Studio. O acesso a um determinado processo é fornecido por roles criadas pelo Creator Studio.
+2. Preencha informações para testarmos o nosso formulário.
+![](../images/2025-06-29-00-12-09.png)
 
-A última parte a revisar e configurar é a seção do seu processo no workspace comum Request app workspace.  
-  
-
-1.  Clique em **Form submissions** no topo central do Creator Studio.  
-  
-
-Esta visualização permite configurar a visão que seus usuários do processo usarão para trabalhar em registros individuais.
-
-A coluna à esquerda fornece alguns filtros de lista pré-configurados para os registros e a tabela criada para seu processo. Clicando em “Add filtered list” você pode adicionar mais opções para seus usuários.
-
-O centro exibe uma prévia da lista e, no lado direito, você configura tanto a lista selecionada da coluna esquerda quanto as colunas da tabela mostradas na prévia do centro.
-
-  ![](./images/image024.png)
-
-Não faremos nenhuma alteração nesta visualização neste laboratório.
+3. Você será redirecionado para a visão de recebimento das solicitações.
+![](../images/2025-06-29-00-13-31.png) 
+   
 
 ## Seção Completa
 

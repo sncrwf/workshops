@@ -10,23 +10,25 @@ Nesta seção, vamos criar um playbook para automação e desenhar o processo de
 Vamos criar um playbook que será executado quando o usuário solicitar um gift card de uma loja externa (quando o usuário selecionar NÃO para a pergunta “Company store gift card?” que você criou anteriormente).  
   
 
-1.  Clique em **Automations** na seção da aba superior.
+1.  Clique em **+ Add Automations** abaixo do seu form.
+![](../images/2025-06-28-23-45-49.png)
 
-2.  Clique em **Create** **a new playbook** e nomeie como **Approve internal gift cards**
+2.  Nomeie como **Aprovar solicitações gift card** e clique em **Create**
+![](../images/2025-06-28-23-56-53.png)
 
-**30.**  No popup Create playbook, role para baixo até **Filter conditions** e clique em **\+ Add conditions**.  
-No popup **Select field** para as condições de filtro, clique e role até o final em **Questions**.  
-**Você pode digitar, ao lado da lupa, o que está procurando (Dica: gift card) ou rolar até encontrar no lado direito.**  
-  ![](./images/image015.png)  
-Selecione **Company store gift card**
+3. Role para baixo até **Filter conditions** e clique em **+ Add conditions**. 
+![](../images/2025-06-28-23-59-27.png)
 
-31. Em seguida, selecione **is** como seletor no popup do meio e **Yes** no último _(Enter value)_.  
+4. No popup selecione **field** para as condições de filtro, clique e role até o final em **Questions**.  
+![](../images/2025-06-29-00-00-11.png)
+
+5. Selecione **Gift card na loja coportativa**
+![](../images/2025-06-29-00-01-45.png)
+
+6. Mantenha o campo **Operator** = **is** e selecione abaixo o valor **Yes**
   ![](./images/image016.png)  
-Nota: Devido a um problema de UI nas instâncias do Lab, você não verá que selecionou “Yes” no último popup – ele mostrará “Enter value” independentemente da sua escolha. Não se preocupe, sua seleção foi feita.  
-  ![](./images/image017.png)  
-  
 
-32. Clique em **Create**!
+7.  Clique em **Create**!
 
 Você criou um Playbook que será acionado quando necessário. O próximo passo é definir as ações que queremos. Os **Fulfillment steps**.
 
@@ -40,23 +42,21 @@ Como o Creator Studio preza pela simplicidade, o usuário está limitado a um pa
 
   ![](./images/image018.png)
 
-33.   ![](./images/image019.png)  ![](./images/image020.png)Clique no **+ azul** para adicionar um novo passo.  
+8.  Clique no **+ azul** para adicionar um novo passo.  
 Você verá duas opções.  
-O símbolo **Diamond** no topo cria uma **Decision activity** (if/then)  
-O símbolo **square** embaixo adiciona uma atividade. Clique no **Square** embaixo para adicionar uma atividade.  
-  
+O símbolo **Diamante** no topo cria uma **Decisão** (if/then)  
+O símbolo **Quadrado** embaixo adiciona uma atividade. Clique no **Quadrado** embaixo para adicionar uma atividade.  
+![](./images/image019.png)  ![](./images/image020.png)  
 
-34. No popup exibido, escolha adicionar uma atividade **Request approval**.  
+9.  No popup exibido, escolha adicionar uma atividade **Request approval**.  
   ![](./images/image021.png)
 
-  
 
-35.   ![](./images/image022.png)Nas propriedades da atividade **Request approval**, atualize o Nome para **Request manager approval** e selecione a checkbox para **Requestor’s manager**.  
-Clique em **Save and close.  
+10. Nas propriedades da atividade **Request approval**, atualize o Nome para **Solicitar aprovação do gestor** e selecione a checkbox para **Requestor’s manager**.  
+Clique em **Save and close**. 
+![](../images/2025-06-29-00-08-22.png)
   
-**
-
-36. No canto superior direito da tela, clique em **Activate** para tornar o novo Playbook ativo para todas as novas solicitações.  
+11.  No canto superior direito da tela, clique em **Activate** para tornar o novo Playbook ativo para todas as novas solicitações.  
   ![](./images/image023.png)
 
 ## Section Complete

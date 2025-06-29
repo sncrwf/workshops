@@ -9,81 +9,102 @@ Nesta seção, você irá criar o formulário de requisição.
 
 ## Creator Studio – Tela de Edição
 
-Esta é a tela de edição do Creator Studio.
+Esta é a tela de edição do Creator Studio. Na tela, você verá:
+![](../images/2025-06-28-23-36-16.png)
 
-- **Forms, Automations and Submissions**  
-Você pode configurar três áreas principais no Creator Studio:
+1. **Form Elements**
+     - Estes são os elementos que você pode arrastar e soltar na Área de Edição. Cada elemento possui diferentes funcionalidades.
 
-1. **Forms** – Estes serão seus itens de catálogo, seus record producers. É o que o usuário final usará para iniciar o processo, para enviar a requisição.
+2. **Editing Area**
+     - Você arrasta e solta os Form Elements nesta área para configurar os elementos que usará para capturar informações do usuário.
+     - Você também nomeia o formulário (“Untitled” abaixo), dá uma descrição e, potencialmente, uma imagem.
 
-2. **Automations** – Aqui você pode criar um Playbook para guiar o usuário do processo, o fulfiller, sobre como atender à requisição do usuário.
+3. **Element Configuration**
+     - Cada elemento possui diferentes opções de configuração, é aqui que você define o Label, Instruções, Tipo, etc., dos elementos.
 
-3. **Form submissions** – Aqui você pode editar e configurar a visualização que o usuário do processo terá ao trabalhar em uma requisição no “Request App Workspace.”
 
-Na tela, você também verá:
-
-- **Form Elements**
-
-  - Estes são os elementos que você pode arrastar e soltar na Área de Edição. Cada elemento possui diferentes funcionalidades.
-
-- **Editing Area**
-
-  - Você arrasta e solta os Form Elements nesta área para configurar os elementos que usará para capturar informações do usuário.
-
-  - Você também nomeia o formulário (“Untitled” abaixo), dá uma descrição e, potencialmente, uma imagem.
-
-- **Element Configuration**
-
-  - Cada elemento possui diferentes opções de configuração, é aqui que você define o Label, Instruções, Tipo, etc., dos elementos.
 
 ## Edite seu formulário de requisição
 
 Vamos começar dando um Nome e uma Descrição para o formulário. Essas informações serão usadas para corresponder ao que o usuário pesquisar no Service Portal.
 
-1. Clique em **Untitled** e altere para **Gift card request**
+**Opcional:** Você pode clicar no espaço reservado para a imagem e fazer upload de uma imagem, se tiver uma.  
+  ![](../images/2025-06-28-23-37-49.png)
 
-2. Clique na linha abaixo e altere para **Request gift cards for employee recognition**.
 
-3. Agora clique na descrição à direita do espaço reservado para a imagem, note que você terá um editor de texto enriquecido aqui. Altere o conteúdo para:  
-**Looking for a great way to recognize your colleagues? Use this form to request a gift card to our internal company store or to a third-party store of your choice! Internal gift cards under $50 will be automatically approved, all others will go through finance approval.**
+## Edite o formulário
 
-4. **Opcional:** Você pode clicar no espaço reservado para a imagem e fazer upload de uma imagem, se tiver uma.  
-  ![](./images/image011.png)
-
-5. O próximo passo será definir as opções para o usuário e substituir as perguntas de placeholder na metade inferior.
-  ![](./images/image012.png)
-
-### Edite o formulário
-
-24. Clique para editar **Question 1** e, no lado direito, altere os seguintes detalhes:  
-Question label: **Company store gift card?**  
+1. Clique para editar **Question 1** e, no lado direito, altere os seguintes detalhes:  
+Question label: **Gift card da loja da corporativa?**  
 Content type: **Yes or no**  
 Clique em **Save and close**
+![](../images/2025-06-29-00-02-52.png)
 
-25. Clique para editar **Question 2** e, assim como acima, altere os seguintes detalhes:  
-Question label: **Amount**  
+1. Clique para editar **Question 2** e, assim como acima, altere os seguintes detalhes:  
+Question label: **Valor**  
+Text validation: **Number**
 Clique em **Save and close**
+![](../images/2025-06-28-23-40-57.png)
 
-26.   ![](./images/image013.png)Clique para editar **Question 3**  
-Question label: **Recipient**  
+1. Clique para editar **Question 3**  
+Question label: **Recebedor**  
 Content type: **Record Choices**  
 Source table: **User** \[sys_user\]  
+![](./images/image013.png)
 Clique em **Save and close**
+![](../images/2025-06-28-23-41-50.png)
 
-**Nota:** para esta _(__20__)_ questão, escolhemos referenciar uma tabela do ServiceNow.
+  **Nota:** para esta questão, escolhemos referenciar uma tabela do ServiceNow.
 
-Isso nos dá a opção de popular dinamicamente um popup com dados disponíveis  
-na plataforma.
+  Isso nos dá a opção de popular dinamicamente um popup com dados disponíveis  
+  na plataforma.
 
-27. Adicione outro form element para capturar a **Justification**.  
+4.  Adicione outro form element para capturar a **Justificativa**.  
   ![](./images/image014.png)
-Com o form element inferior _Recipient_ selecionado – clique no **Plus +** que aparece abaixo do form element e escolha adicionar um  
-**Multi-line text** element.  
-  
-Alternativamente, arraste e solte um elemento **Multi-line text** da seção Form elements à esquerda para a Editing Area.  
-  
-Dê ao elemento o label: **Justification**.  
-Clique em **Save and close**  
+    - Com o form element inferior _Recipient_ selecionado – clique no **Plus +** que aparece abaixo do form element e escolha adicionar um  
+    **Multi-line text** element.  
+    - Clique na **Question 4** e edite o campo Question label para **Justificativa**.
+  ![](../images/2025-06-28-23-44-22.png)
+  Clique em **Save and close**  
+
+5. Clique em **Mark as ready**
+![](../images/2025-06-28-23-46-58.png)
+
+6. Vamos definir o local em que o nosso formulário estará acessível em nosso portal. Clique em **Edit location setting**
+![](../images/2025-06-28-23-47-40.png)
+
+## Adicione sua aplicação de request a um Service Catalog
+
+Você pode adicionar a aplicação, ou melhor, os Catalog Items do seu processo de request, a um ou mais Service Catalogs e Categorias.
+
+
+
+1. Clique em **edit** para selecione o catálogo.
+![](../images/2025-06-28-23-49-29.png)
+
+2. Por enquanto, usaremos “Service Catalog” e a categoria “Departmental services”
+![](../images/2025-06-28-23-51-08.png)
+
+3.  Clique em **Save all settings**
+![](../images/2025-06-28-23-51-49.png)
+
+4. Clique novamente em **Mark as ready** e uma mensagem de sucesso deve ser exibida no topo da página.
+![](../images/2025-06-28-23-52-33.png)
+![](../images/2025-06-28-23-52-50.png)
+
+## Visualize em várias experiências
+
+O ServiceNow oferece diversas formas de consumir suas experiências. Nesta visualização, você poderá ver como seu request ficará em diferentes interfaces de usuário.
+
+1. Você poderá retornar a essa visualização a qualquer momento para ver suas alterações.
+2. Clique em **Preview**
+![](../images/2025-06-28-23-54-01.png)
+![](../images/2025-06-28-23-54-29.png)
+
+  > Sinta-se à vontade para explorar essas visualizações – você pode voltar aqui depois.
+
+3. Clique em **Fechar** para continuar
+![](../images/2025-06-28-23-55-00.png)
 
 ## Seção Concluída
 
