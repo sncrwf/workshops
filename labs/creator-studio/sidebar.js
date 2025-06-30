@@ -9,6 +9,7 @@ const sidebars = {
         'playbook',
         'form-submission',
         'test',
+        'portal',
         'conclusion',
         'lab-guide-pdf',
         'survey',

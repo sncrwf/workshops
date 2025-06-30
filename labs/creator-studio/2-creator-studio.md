@@ -1,5 +1,5 @@
 ---
-title: "2. Creator Studio - Criando sua primeira aplicação"
+title: "2. Criando sua primeira aplicação"
 hide_table_of_contents: true
 draft: false
 ---
