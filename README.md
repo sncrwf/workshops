@@ -36,7 +36,7 @@
   <h3 align="center">Creator Workshops Lab Guides</h3>
 
   <p align="center">
-    An awesome repository of Lab Guides for ServiceNow Creator Workflows!
+    An awesome repository of Lab Guides for ServiceNow Creator Workflows
     <br />
     <a href="https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io"><strong>Explore the docs »</strong></a>
     <br />
