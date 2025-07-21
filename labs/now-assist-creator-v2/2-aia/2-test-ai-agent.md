@@ -1,0 +1,46 @@
+---
+id: 2-test-ai-agent
+title: "2. Testando o Agente de IA"
+hide_table_of_contents: true
+draft: false
+---
+
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 5 min
+</div>
+
+Agora é hora de testar nosso agente de IA para garantir que tudo esteja funcionando como esperado.
+
+---
+
+### 📌 Passos
+
+1. Abra a aba **Testing** dentro do **AI Agent Studio**  
+   ![](./../img/image117.png)
+
+2. Selecione **AI Agent** e digite:  
+   ```text
+   Session Feedback Analyst
+   ```  
+   ![](./../img/image118.png)
+
+3. No campo **Task**, digite:  
+   ```text
+   Help me analyze the session feedback for session Number: SES0001101
+   ```  
+   _![](./../img/image119.png)_
+
+4. Clique em **Start Test**  
+   _![](./../img/image120.png)_
+
+5. Verifique os resultados. Se algo der errado, clique em **Try again** para repetir o teste.  
+   _![](./../img/image121.png)_
+
+6. Acesse o registro **SES0001101** referente à sessão **Cloud Computing @ 2024-11-05 09:00:00** utilizando o **Workspace**  
+   _![](./../img/image122.png)_
+
+7. Abra o registro da sessão  
+   _![](./../img/image123.png)_
+
+8. Observe que o campo **Session Notes** foi preenchido automaticamente com o feedback da sessão, gerado pelo AI Agent.  
+   _![](./../img/image124.png)_
