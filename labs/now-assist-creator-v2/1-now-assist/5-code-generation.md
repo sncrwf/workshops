@@ -73,8 +73,7 @@ O aplicativo **Cross-Training** precisa implementar duas regras de validação:
 5.  Ele irá nos detalhar sobre o trecho do código específico
     ![](../../images/2025-03-08-02-53-37.png)
 
-6.  Clique em Submit, e selecione a role `snc_internal` e clique em OK
-   ![](../../images/2025-03-08-02-55-03.png)
+6.  Clique em Submit
 
    :::danger
    ⚠️ **Ignore qualquer mensagem sobre salvar o trabalho.** Não é necessário salvar.  

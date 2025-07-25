@@ -48,43 +48,45 @@ Essa definição garante consistência e efetividade para resolver a necessidade
 
    _![](./../img/image099.png)_
 
-- Em **Name**, digite:
-  ```text
-  Session Feedback Analyst
-  ```
+6. Preencha os campos:  
 
-- Em **Description**, digite:
-  ```text
-  Analyzes attendee feedback from cross-training sessions and provides a clear summary of strengths, areas for improvement, and suggestions to enhance future training.
-  ```
+   - Em **Name**, digite:
+     ```text
+     Session Feedback Analyst
+     ```
 
-- Em **AI agent role**, digite:
-  ```text
-  The AI agent serves as a session feedback analyst for training coordinators. It reviews all participant feedback from a given session and synthesizes it into actionable insights. The AI should highlight what went well, what could be improved, and propose suggestions based on the recurring patterns in feedback.
-  ```
+   - Em **Description**, digite:
+     ```text
+     Analyzes attendee feedback from cross-training sessions and provides a clear summary of strengths, areas for improvement, and suggestions to enhance future training.
+     ```
 
-- Em **Instructions**, digite:
-  ```text
-  1. Retrieve the training session and all related feedback records, including user information, using the Knowledge Graph Tool.
-  2. Analyze the feedback content to identify recurring strengths and positive experiences mentioned by attendees.
-  3. Detect and extract criticisms or suggestions for improvement from the feedback data.
-  4. Synthesize the findings into a structured summary with the following sections:
-     - Strengths
-     - Areas for Improvement
-     - Recommendations
-  5. Update the Notes field of the session record with the synthesized summary using the Record Operation Tool. The text should:
-     - Be in raw text format (no markdown)
-     - Include the tag [__✨ AI Agent ✨__] at the beginning
-     - Use a professional and easy-to-read tone, with bullet points and clear line breaks
-  ```
+   - Em **AI agent role**, digite:
+     ```text
+     The AI agent serves as a session feedback analyst for training coordinators. It reviews all participant feedback from a given session and synthesizes it into actionable insights. The AI should highlight what went well, what could be improved, and propose suggestions based on the recurring patterns in feedback.
+     ```
 
-6. Em **Specify categories for long-term memory**, clique em **Identify Categories**  
+   - Em **Instructions**, digite:
+     ```text
+     1. Retrieve the training session and all related feedback records, including user information, using the Knowledge Graph Tool.
+     2. Analyze the feedback content to identify recurring strengths and positive experiences mentioned by attendees.
+     3. Detect and extract criticisms or suggestions for improvement from the feedback data.
+     4. Synthesize the findings into a structured summary with the following sections:
+        - Strengths
+        - Areas for Improvement
+        - Recommendations
+     5. Update the Notes field of the session record with the synthesized summary using the Record Operation Tool. The text should:
+        - Be in raw text format (no markdown)
+        - Include the tag [__✨ AI Agent ✨__] at the beginning
+        - Use a professional and easy-to-read tone, with bullet points and clear line breaks
+     ```
+
+7. Em **Specify categories for long-term memory**, clique em **Identify Categories**  
    _![](./../img/image100.png)_
 
-7. Aceite a sugestão “Meeting and Events” e clique em **Save**  
+8. Aceite a sugestão “Meeting and Events” e clique em **Save**  
    _![](./../img/image101.png)_
 
-8. Clique em **Save and Continue**  
+9. Clique em **Save and Continue**  
    _![](./../img/image102.png)_
 
 ---
@@ -95,71 +97,72 @@ Agora vamos conectar o agente às fontes de dados e ferramentas para que ele con
 
    _![](./../img/image103.png)_
 
-9. Clique em **Add tool** e selecione **Knowledge Graph**  
+10. Antes de adicionar a ferramenta, vamos explorar um pouco do Knowledge Graph. 
+11. Abra um nova aba e navegue **All > Knowledge Graph > Knowledge Graph Designer** e selecione o grafo **ACME Cross-Training Graph**  
+    _![](./../img/image105.png)_
+    Nós utilizaremos este Knowledge Graph para permitir que o nosso Agente de IA navegue nos dados de treinamento.
+
+12. Retorne ao **AI Agent Studio** e Clique em **Add tool** e selecione **Knowledge Graph**  
    _![](./../img/image104.png)_
 
-10. Abra **All > Knowledge Graph > Knowledge Graph Designer** e selecione o grafo **ACME Cross-Training Graph**  
-    _![](./../img/image105.png)_
-
-11. Retorne ao assistente e preencha os seguintes campos:  
+13. Retorne ao assistente e preencha os seguintes campos:  
     _![](./../img/image106.png)_
-
-   - **Name**:
+    - **Name**:
      ```text
      KG ACME Cross-Training
      ```
-   - **Description**:
+    - **Description**:
      ```text
      Search feedback and user information using Knowledge Graph
      ```
-   - **Select knowledge graph**:  
+    - **Select knowledge graph**:  
      _ACME Cross-Training Graph_
-   - **Execution mode**: _Autonomous_  
-   - **Display output**: _Yes_  
-   - **Processing message**: 
+    - **Execution mode**: _Autonomous_  
+    - **Display output**: _Yes_  
+    - **Processing message**: 
      ```text
      Searching feedback
      ```
-   - **Output transformation strategy**: _Paraphrase_
+    - **Output transformation strategy**: _Paraphrase_
 
-12. Clique em **Add**  
+14. Clique em **Add**  
     _![](./../img/image107.png)_
 
-13. Agora adicione a ferramenta **Record Operation** para atualizar o campo de notas da sessão  
+15. Agora adicione a ferramenta **Record Operation** para atualizar o campo de notas da sessão  
     _![](./../img/image108.png)_
 
-14. Preencha os campos:  
+16. Preencha os campos:  
     _![](./../img/image109.png)_
 
-   - **Name**:
+    - **Name**:
      ```text
      Update the Session Notes field
      ```
-   - **Description**:
+    - **Description**:
      ```text
      This tool needs to be used to update the Session Notes field in the session record with the result of the AI Agent analysis.
      ```
-   - **Inputs** (Input name = Description):
+    - **Inputs** (Input name = Description):
      - `number` = Number of the Session record that triggered the AI Agent  
      - `result` = The final result of AI Agent analysis of the feedback
-   - **Table**: _Session [x_snc_acme_cross_0_session]_  
-   - **Select operation**: _Update records_  
-   - **Conditions**:  
+    - **Table**: _Session [x_snc_acme_cross_0_session]_  
+    - **Select operation**: _Update records_  
+    - **Conditions**:  
      - `Number | is | {{number}}`
-   - **Field value**:  
+    - **Field value**:  
      - `Session Notes | {{result}}`
-   - **Execution mode**: _Autonomous_  
-   - **Display output**: _No_  
-   - **Processing message**:
+    - **Execution mode**: _Autonomous_  
+    - **Display output**: _No_  
+    - **Processing message**:
      ```text
      Updating session notes
      ```
-   - **Output transformation strategy**: _Paraphrase_
+    - **Output transformation strategy**: _Paraphrase_
 
-15. Clique em **Add**  
+17. Clique em **Add**  
     _![](./../img/image107.png)_
 
-16. Clique em **Save and continue**  
+18. Clique em **Save and continue**  
     _![](./../img/image110.png)_
 
 ---
@@ -176,23 +179,23 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
 18. Preencha os seguintes campos:  
     _![](./../img/image113.png)_
 
-   - **Select trigger**: _Updated_  
-   - **Name**:
+    - **Select trigger**: _Updated_  
+    - **Name**:
      ```text
      Session complete
      ```
-   - **Active**: _true_  
-   - **Table**: _Session [x_snc_acme_cross_0_session]_  
-   - **Conditions**:
+    - **Table**: _Session [x_snc_acme_cross_0_session]_  
+    - **Active**: _true_  
+    - **Conditions**:
      - `State | is | Complete`
-   - **Method of defining sys_user**: _Use an existing table_  
+    - **Method of defining sys_user**: _Use an existing table_  
      - _Session Coordinator [x_snc_acme_cross_0_session]_
-   - **Objective template**:
+    - **Objective template**:
      ```text
      Help me analyze the session feedback for session Number: ${number}
      ```
-   - **Channel**: _Now Assist panel_  
-   - Marque **Show Notification**
+    - **Channel**: _Now Assist panel_  
+    - Marque **Show Notification**
 
 19. Clique em **Add**  
     _![](./../img/image107.png)_
@@ -208,9 +211,9 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
     _![](./../img/image114.png)_
 
 22. Em **Processing message**, digite:
-```text
-Analyzing session feedback
-```
+  ```text
+  Analyzing session feedback
+  ```
 
    _![](./../img/image115.png)_
 
