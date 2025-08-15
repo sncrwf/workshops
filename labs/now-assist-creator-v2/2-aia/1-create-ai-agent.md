@@ -132,7 +132,7 @@ Agora vamos conectar o agente às fontes de dados e ferramentas para que ele con
     _![](./../img/image108.png)_
 
 16. Preencha os campos:  
-    _![](./../img/image109.png)_
+    ![](../images/2025-08-01-13-31-54.png)
 
     - **Name**:
      ```text
@@ -187,7 +187,7 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
     - **Table**: _Session [x_snc_acme_cross_0_session]_  
     - **Active**: _true_  
     - **Conditions**:
-     - `State | is | Complete`
+     - `State | is | Complete` `AND` `Session Notes | is empty`
     - **Method of defining sys_user**: _Use an existing table_  
      - _Session Coordinator [x_snc_acme_cross_0_session]_
     - **Objective template**:
@@ -197,10 +197,10 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
     - **Channel**: _Now Assist panel_  
     - Marque **Show Notification**
 
-19. Clique em **Add**  
+1.  Clique em **Add**  
     _![](./../img/image107.png)_
 
-20. Clique em **Save and continue**  
+2.  Clique em **Save and continue**  
     _![](./../img/image110.png)_
 
 ---
