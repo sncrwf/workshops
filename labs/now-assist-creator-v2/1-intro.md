@@ -20,7 +20,6 @@ Neste lab, você vai:
 - 🔄 Automatizar processos com **Flow e Playbook Generation**
 - 🧠 Gerar código e interfaces com IA
 - 🤖 Construir e testar **AI Agents** inteligentes
-- 🧪 Automatizar testes com ATF
 
 ---
 

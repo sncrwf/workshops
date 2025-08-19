@@ -29,7 +29,7 @@ O aplicativo **Cross-Training** precisa implementar duas regras de validação:
    ![](../../images/2025-03-08-02-31-36.png)
 2. Selecione o botão <span className="button-purple-square">Create</span>.
    ![](../../images/2025-03-08-02-23-54.png)
-3. Selecione a opção Server Development > Script Include e <span className="button-purple-square">Continue</span>.
+3. Selecione a opção [More] > Server Development > Script Include e <span className="button-purple-square">Continue</span>.
    ![](../../images/2025-03-08-02-45-23.png)
 4. No campo **Name**, digite:  
    ```txt title="Code Generation - Name"

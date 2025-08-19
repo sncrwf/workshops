@@ -32,7 +32,7 @@ A funcionalidade de **Catalog Generation** permite que **Alexandra** descreva su
 5. Selecione o botão <span className="button-purple-square">Create</span>.
    ![](../../images/2025-03-08-02-23-54.png)
 
-6. Selecione a opção User Interface > Catalog Item e <span className="button-purple-square">Continue</span>.
+6. Selecione a opção [More] > User Interface > Catalog Item e <span className="button-purple-square">Continue</span>.
    ![](../../images/2025-07-21-15-14-20.png)
 
 7. Selecione **AES Standard items in Service Catalog**.

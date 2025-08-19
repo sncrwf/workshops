@@ -94,31 +94,36 @@ Por favor, copie e cole os prompts exatamente como fornecidos, na ordem apresent
    ```
    ![](../../images/2025-03-06-19-11-17.png)
 
+13. Aguarde até que o now assist retorne com uma mensagem de conclusão. 
 
-12. Clique em **Save files and open app**.  
+   :::info
+   O Now Assist pode fazer perguntas adicionais neste ponto — isso é esperado devido à natureza não determinística da GenAI. Responda normalmente à solicitação apresentada. **Caso encontre alguma dificuldade, acione um instrutor para ajudar**.
+   :::
+
+14. Clique em **Save files and open app**.  
    ![](../../images/2025-07-21-14-51-28.png)
 
-13. Aguarde alguns momentos para que a aplicação seja gerada.  
+15. Aguarde alguns momentos para que a aplicação seja gerada.  
    ![](./../img/image010.png)
 
-14. Clique no ícone de alfinete novamente para desafixar o **Now Assist Panel**.  
+16. Clique no ícone de alfinete novamente para desafixar o **Now Assist Panel**.  
    ![](./../img/image011.png)
 
-15. Clique no ícone de brilho para ocultar o **Now Assist Panel**.  
+17. Clique no ícone de brilho para ocultar o **Now Assist Panel**.  
    ![](./../img/image012.png)
 
-16. No menu lateral esquerdo, clique no ícone de **atualizar** para atualizar a lista de Apps.  
+18. No menu lateral esquerdo, clique no ícone de **atualizar** para atualizar a lista de Apps.  
    ![](./../img/image013.png)
 
-17. Localize o nome da sua aplicação na navegação lateral e clique nele para abrir.  
+19. Localize o nome da sua aplicação na navegação lateral e clique nele para abrir.  
    ![](./../img/image014.png)
 
-18. Expanda a seção **Tables** e clique em qualquer tabela para abri-la no **Table Builder**.  
+20. Expanda a seção **Tables** e clique em qualquer tabela para abri-la no **Table Builder**.  
    _O Table Builder é uma interface amigável para explorar campos, formulários e fluxos associados a uma tabela._  
    _Note que o **App Generation** criou todas as tabelas automaticamente._  
    ![](./../img/image015.png)
 
-19. **💡 Dica:** Clique no ícone de menu (hambúrguer) no canto superior esquerdo para alternar a exibição do menu lateral.  
+21. **💡 Dica:** Clique no ícone de menu (hambúrguer) no canto superior esquerdo para alternar a exibição do menu lateral.  
    _Isso pode ajudar em telas com resolução menor._  
    ![](./../img/image016.png)
 

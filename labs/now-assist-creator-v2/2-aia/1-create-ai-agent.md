@@ -40,7 +40,7 @@ Vamos começar a construir o agente juntos!
 
 ---
 
-### 🧠 Descrevendo e instruindo o Agente
+### Descrevendo e instruindo o Agente
 
 Nessa etapa, vamos definir o propósito do agente e dar instruções claras sobre como ele deve se comportar e qual resultado gerar.
 
@@ -48,7 +48,7 @@ Essa definição garante consistência e efetividade para resolver a necessidade
 
    _![](./../img/image099.png)_
 
-6. Preencha os campos:  
+1. Preencha os campos:  
 
    - Em **Name**, digite:
      ```text
@@ -91,111 +91,117 @@ Essa definição garante consistência e efetividade para resolver a necessidade
 
 ---
 
-### 🧰 Adicionando ferramentas ao agente
+### Adicionando ferramentas ao agente
 
 Agora vamos conectar o agente às fontes de dados e ferramentas para que ele consiga interagir com a aplicação.
 
    _![](./../img/image103.png)_
 
-10. Antes de adicionar a ferramenta, vamos explorar um pouco do Knowledge Graph. 
-11. Abra um nova aba e navegue **All > Knowledge Graph > Knowledge Graph Designer** e selecione o grafo **ACME Cross-Training Graph**  
-    _![](./../img/image105.png)_
-    Nós utilizaremos este Knowledge Graph para permitir que o nosso Agente de IA navegue nos dados de treinamento.
-
-12. Retorne ao **AI Agent Studio** e Clique em **Add tool** e selecione **Knowledge Graph**  
-   _![](./../img/image104.png)_
+1. Retorne ao **AI Agent Studio** e Clique em **Add tool** e selecione **Knowledge Graph**  
 
 13. Retorne ao assistente e preencha os seguintes campos:  
-    _![](./../img/image106.png)_
-    - **Name**:
+
+    1. **Name**:
      ```text
      KG ACME Cross-Training
      ```
-    - **Description**:
+    2. **Description**:
      ```text
      Search feedback and user information using Knowledge Graph
      ```
-    - **Select knowledge graph**:  
+    3. **Select knowledge graph**:  
      _ACME Cross-Training Graph_
-    - **Execution mode**: _Autonomous_  
-    - **Display output**: _Yes_  
-    - **Processing message**: 
+    4. **Execution mode**: _Autonomous_  
+    5. **Display output**: _Yes_  
+    6. **Processing message**: 
      ```text
      Searching feedback
      ```
-    - **Output transformation strategy**: _Paraphrase_
+    7. **Output transformation strategy**: _Paraphrase_
 
-14. Clique em **Add**  
-    _![](./../img/image107.png)_
+14. Antes de adicionar a ferramenta, vamos explorar um pouco do Knowledge Graph. 
+15. Clique no ícone ao lado de **ACME Cross-Training Graph**  
+    ![](../images/2025-08-19-19-39-43.png)
+    Nós utilizaremos este Knowledge Graph para permitir que o nosso Agente de IA navegue nos dados de treinamento.
+   ![](../images/2025-08-19-19-40-30.png)
 
-15. Agora adicione a ferramenta **Record Operation** para atualizar o campo de notas da sessão  
-    _![](./../img/image108.png)_
-
-16. Preencha os campos:  
-    ![](../images/2025-08-01-13-31-54.png)
-
-    - **Name**:
-     ```text
-     Update the Session Notes field
-     ```
-    - **Description**:
-     ```text
-     This tool needs to be used to update the Session Notes field in the session record with the result of the AI Agent analysis.
-     ```
-    - **Inputs** (Input name = Description):
-     - `number` = Number of the Session record that triggered the AI Agent  
-     - `result` = The final result of AI Agent analysis of the feedback
-    - **Table**: _Session [x_snc_acme_cross_0_session]_  
-    - **Select operation**: _Update records_  
-    - **Conditions**:  
-     - `Number | is | {{number}}`
-    - **Field value**:  
-     - `Session Notes | {{result}}`
-    - **Execution mode**: _Autonomous_  
-    - **Display output**: _No_  
-    - **Processing message**:
-     ```text
-     Updating session notes
-     ```
-    - **Output transformation strategy**: _Paraphrase_
+16. Feche a aba do **Knowledge Graph** e retone para a tool no **AI Agent Studio**
+    ![](../images/2025-08-19-19-41-59.png)
 
 17. Clique em **Add**  
     _![](./../img/image107.png)_
 
-18. Clique em **Save and continue**  
+18. Agora adicione a ferramenta **Record Operation** para atualizar o campo de notas da sessão  
+    _![](./../img/image108.png)_
+
+19. Preencha os campos:  
+
+    1. **Name**:
+     ```text
+     Update the Session Notes field
+     ```
+    2. **Description**:
+     ```text
+     This tool needs to be used to update the Session Notes field in the session record with the result of the AI Agent analysis.
+     ```
+    3. **Inputs**:
+     - `number` = `Number of the Session record that triggered the AI Agent`  
+     - `result` = `The final result of AI Agent analysis of the feedback`
+    4. **Table**: _Session [x_snc_acme_cross_0_session]_  
+    5. **Select operation**: _Update records_  
+    6. **Conditions**:  
+     - `Number` | `is` | `{{number}}`
+    7. **Field value**:  
+     - `Session Notes` | `{{result}}`
+    8. **Execution mode**: _Autonomous_  
+    9. **Display output**: _No_  
+    10. **Processing message**:
+     ```text
+     Updating session notes
+     ```
+    - **Output transformation strategy**: _None_
+  
+  ![](../images/2025-08-01-13-31-54.png)
+
+1.  Clique em **Add**  
+    _![](./../img/image107.png)_
+
+2.  Clique em **Save and continue**  
     _![](./../img/image110.png)_
 
 ---
 
-### ⏱️ Definindo o gatilho (trigger)
+### Definindo o gatilho (trigger)
 
 Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marcar a sessão como concluída.
 
    _![](./../img/image111.png)_
 
-17. Clique em **Add trigger** e selecione **Updated**  
+1. Clique em **Add trigger** e selecione **Updated**  
     _![](./../img/image112.png)_
 
 18. Preencha os seguintes campos:  
-    _![](./../img/image113.png)_
 
-    - **Select trigger**: _Updated_  
-    - **Name**:
+    1. **Select trigger**: _Updated_  
+    2. **Name**:
      ```text
      Session complete
      ```
-    - **Table**: _Session [x_snc_acme_cross_0_session]_  
-    - **Active**: _true_  
-    - **Conditions**:
-     - `State | is | Complete` `AND` `Session Notes | is empty`
-    - **Method of defining sys_user**: _Use an existing table_  
+    3. **Table**: _Session [x_snc_acme_cross_0_session]_  
+    4. **Active**: _true_  
+    5. **Conditions**:
+     - `State` | `is` | `Complete` 
+     - **`AND`** 
+     - `Session Notes` | `is empty`
+    6. **Method of defining sys_user**: _Use an existing table_  
      - _Session Coordinator [x_snc_acme_cross_0_session]_
-    - **Objective template**:
+    7. **Objective template**:
      ```text
      Help me analyze the session feedback for session Number: ${number}
      ```
-    - **Channel**: _Now Assist panel_  
-    - Marque **Show Notification**
+    8. **Channel**: _Now Assist panel_  
+    9. Marque ✅ **Show Notification**
+    _![](./../img/image113.png)_
 
 1.  Clique em **Add**  
     _![](./../img/image107.png)_
