@@ -14,14 +14,22 @@ const sidebars = {
                 'now-assist/1-app-generation',
                 'now-assist/2-catalog-generation',
                 'now-assist/3-flow-generation',
-                'now-assist/4-playbook-generation',
-                'now-assist/5-code-generation',
-                'now-assist/6-ui-generation',
+                'now-assist/4-code-generation',
+                'now-assist/5-ui-generation',
             ],
         },
         {
             type: 'category',
-            label: '2. AI Agents',
+            label: '2. Skill Kit',
+            items: [
+                'skill-kit/1-intro-skill-kit',
+                'skill-kit/2-create-skill',
+                'skill-kit/3-activating-skill',              
+            ],
+        },
+        {
+            type: 'category',
+            label: '3. AI Agents',
             items: [
                 'aia/1-create-ai-agent',
                 'aia/2-test-ai-agent',
