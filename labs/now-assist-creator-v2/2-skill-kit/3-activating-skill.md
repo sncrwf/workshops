@@ -5,6 +5,10 @@ hide_table_of_contents: true
 draft: false
 ---
 
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 10 min
+</div>
+
 ## 🛠️ Ativando a Skill  
 
 1. Clique no ícone de brilho (✨) e selecione **Now Assist Admin**  
@@ -28,9 +32,9 @@ draft: false
 
 ## Testando via Now Assist Panel
 
-Agora iremos testar chamar essa custom skill via o painel do Now Assist na plataforma.
+Agora vamos testar a chamada dessa custom skill pelo Now Assist Panel na plataforma.
 
-1. Clique no icone de faíscas na barra superior.
+1. Clique no ícone de faíscas na barra superior.
    ![](../images/2025-09-04-11-41-07.png)
 2. Fixe o painel.
    ![](../images/2025-09-04-11-43-42.png)

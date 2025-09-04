@@ -5,29 +5,34 @@ hide_table_of_contents: true
 draft: false
 ---
 
-# Bem-vindo
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 5 min
+</div>
 
-Seja bem-vindo ao **ServiceNow Summit 2025 Lab**!  
-Neste laboratório prático, você explorará como a **IA Generativa** da ServiceNow pode transformar a maneira como desenvolvemos e automatizamos aplicações low-code.
+## Bem-vindo
 
----
+Seja bem‑vindo ao **ServiceNow Summit 2025 Lab**!  
+Neste laboratório prático, você explorará como a **IA Generativa** da ServiceNow acelera o desenvolvimento e a automação de aplicações low‑code.
+
 
 ## 🚀 O que você vai aprender
 
 Neste lab, você vai:
 
-- 🛠️ Criar aplicações completas usando **Now Assist for Creator**
-- 🔄 Automatizar processos com **Flow e Playbook Generation**
-- 🧠 Gerar código e interfaces com IA
-- 🤖 Construir e testar **AI Agents** inteligentes
+- 🛠️ Criar um app com **App Generation** e acelerar a configuração de tabelas, formulários e dados.
+- 🧾 Gerar itens de catálogo com **Catalog Generation** e conectar ações.
+- 🔄 Criar automações com **Flow Generation**.
+- 🧠 Acelerar desenvolvimento com **Code Generation** e **UI Generation**.
+- 🎯 Construir uma **Custom Skill** no Skill Kit para sugerir tópicos de treinamento (Training Topic Suggestions).
+- 🤖 Criar, testar e acionar **AI Agents** em Workspaces.
 
 ---
 
-## 🎯 Caso de Uso: Cross-Training App
+## 🎯 Caso de Uso: Cross‑Training App
 
 Você atuará como desenvolvedor da empresa fictícia **ACME**, encarregado de digitalizar o programa de **treinamento cruzado** liderado por **Alexandra**, gerente de treinamentos.
 
-Hoje o processo depende de e-mails e planilhas manuais — sua missão é transformá-lo em uma solução inteligente e escalável usando IA.
+Hoje o processo depende de e‑mails e planilhas manuais — sua missão é transformá‑lo em uma solução inteligente e escalável usando IA.
 
 ---
 
@@ -40,26 +45,33 @@ Configuração inicial e verificação do ambiente.
 
 ### ⚙️ **1. Now Assist for Creator**
 
-| Etapa | Tópico                                  |
-|-------|-----------------------------------------|
-| 1     | Impersonação e início                   |
-| 2     | Geração de Aplicativo                   |
-| 3     | Geração de Catálogo                     |
-| 4     | Geração de Fluxo                        |
-| 5     | Geração de Playbook                     |
-| 6     | Geração de Código                       |
-| 7     | Geração de Interface de Usuário         |
+| Etapa | Tópico                        |
+|------:|-------------------------------|
+| 0     | Impersonação e início         |
+| 1     | Geração de Aplicativo         |
+| 2     | Geração de Catálogo           |
+| 3     | Geração de Fluxo              |
+| 4     | Geração de Código             |
+| 5     | Geração de Interface de Usuário |
 
-### 🤖 **2. AI Agents**
+### 🧠 **2. Skill Kit**
 
-| Etapa | Tópico                                  |
-|-------|-----------------------------------------|
-| 1     | Criação do AI Agent                     |
-| 2     | Testes com perguntas simuladas          |
-| 3     | Uso prático em Workspaces               |
+| Etapa | Tópico                                   |
+|------:|------------------------------------------|
+| 1     | Introdução ao Skill Kit                  |
+| 2     | Criando uma Custom Skill                 |
+| 3     | Ativando sua Custom Skill                |
+
+### 🤖 **3. AI Agents**
+
+| Etapa | Tópico                         |
+|------:|--------------------------------|
+| 1     | Criação do AI Agent            |
+| 2     | Testes com perguntas simuladas |
+| 3     | Uso prático em Workspaces      |
 
 
 ## ✅ Dica Final
 
 > Para a melhor experiência, siga os módulos na ordem proposta.  
-> Aproveite a jornada e descubra como a IA pode acelerar o seu desenvolvimento com ServiceNow!
+> No fim, consulte “Baixar Guia em PDF” e responda a “Pesquisa”.

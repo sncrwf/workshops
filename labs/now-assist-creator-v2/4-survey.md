@@ -3,18 +3,21 @@ title: Valorizamos Seu Feedback!
 sidebar_label: "Pesquisa"
 hide_table_of_contents: true
 ---
-# Valorizamos Seu Feedback!
+
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 5 min
+</div>
 
 ## Ajude-nos a Melhorar Sua Experiência de Aprendizado
 
-Enquanto encerramos nosso workshop, agradeceríamos muito o seu retorno. Seu feedback é vital para moldar futuros workshops de forma a atender melhor às suas necessidades e expectativas. Convidamos você a dedicar alguns minutos para completar nossa pesquisa pós-workshop.
+Enquanto encerramos nosso workshop, seu retorno é muito importante. Seu feedback nos ajuda a moldar futuros workshops para atender melhor às suas necessidades. Dedique alguns minutos para completar nossa pesquisa pós‑workshop.
 
-### **Por que Seu Feedback é Importante:**
-- **Melhorar a Qualidade do Workshop**: Seus insights nos ajudam a entender o que funciona bem e o que pode ser aprimorado, garantindo que futuros workshops sejam ainda mais envolventes e eficazes.
-- **Adaptar o Conteúdo às Suas Necessidades**: Suas sugestões desempenham um papel crucial em nos ajudar a ajustar nosso conteúdo para atender melhor às suas preferências de aprendizado e requisitos profissionais.
-- **Fomentar uma Comunidade de Aprendizado**: Ao compartilhar seus pensamentos, você contribui para uma comunidade que valoriza o crescimento, a inovação e o aprendizado colaborativo.
+### **Por que seu feedback é importante**
+- **Melhorar a qualidade do workshop**: entender o que funciona bem e o que pode ser aprimorado.
+- **Adaptar o conteúdo às suas necessidades**: ajustar materiais e formato às preferências de aprendizado.
+- **Fomentar a comunidade de aprendizado**: valorizar crescimento, inovação e colaboração.
 
-Clique no link abaixo para acessar a pesquisa. Não deve levar mais do que **5 minutos** para completar.
+Clique no link abaixo para acessar a pesquisa. Leva cerca de **5 minutos**.
 
 <div style={{
  marginLeft: '20px', width: '200px', 
@@ -29,4 +32,4 @@ Iniciar a Pesquisa
 </a>
  </div>
 <br/>
-Obrigado por dedicar seu tempo para ajudar a aprimorar a experiência do nosso workshop.
+Obrigado por dedicar seu tempo para aprimorar a experiência dos próximos workshops!

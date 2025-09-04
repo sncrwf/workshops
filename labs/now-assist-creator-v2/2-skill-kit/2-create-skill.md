@@ -5,6 +5,10 @@ hide_table_of_contents: true
 draft: false
 ---
 
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 20 min
+</div>
+
 ## 🔍 Visão Geral  
 
 Neste workshop, você aprenderá a criar uma **Custom Skill** utilizando o **Skill Kit do ServiceNow**.  
@@ -31,7 +35,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
    ![](../images/2025-09-04-10-37-49.png)
 
-6. Vamos pular as seguintes etapa e finalizar no **Prompt Editor**.
+6. Vamos pular as próximas etapas e finalizar no **Prompt Editor**.
 7. Clique em **Skip To Prompt editor**.
    ![](../images/2025-09-04-10-39-58.png)
 8. Nosso skill foi salvo como **Draft** e poderemos seguir daqui.
@@ -39,7 +43,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
 ## 🛠️ Definindo Inputs  
 
-1. Localize menu lateral **Skill contents**.  
+1. Localize o menu lateral **Skill contents**.  
 2. Clique em **+** ao lado de **Skill inputs** para adicionar os inputs abaixo.  
    ![](../images/2025-09-04-10-42-44.png)
 3. Configure os seguintes parâmetros:  
@@ -73,7 +77,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 3. Insira o seguinte prompt:  
 
    :::info
-   O uso de formatação do Markdown é muito utilizando com LLMs e facilita na leitura humano e da IA
+   O uso de formatação Markdown é muito utilizado com LLMs e facilita a leitura humana e pela IA.
    :::
 
     ```
@@ -101,11 +105,11 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
    ![](../images/2025-09-04-11-00-51.png)
 
-4. Agora, precisamos adicionar os inputs dinâmicos ao nosso prompt, isso possibilita passarmos variáveis ao nosso prompt antes de enviar a LLM.
+4. Agora, precisamos adicionar os inputs dinâmicos ao prompt. Isso possibilita passar variáveis ao prompt antes de enviar à LLM.
 5. Vamos adicionar os inputs que criamos dentro dos locais correspondentes no prompt.
 6. Posicione o cursor após o texto `Area of expertise: `
    ![](../images/2025-09-04-11-04-45.png)
-7. Clique em **Insert inpust** no canto superior direito.
+7. Clique em **Insert inputs** no canto superior direito.
    ![](../images/2025-09-04-11-05-16.png)
 8. Clique em `area`.
    ![](../images/2025-09-04-11-05-46.png)
@@ -128,7 +132,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 4. Execute o teste e valide se:  
    - As sugestões são relevantes para a área, ferramentas e habilidades.  
    - Nenhum tópico existente foi repetido.  
-5. Vamos dar um nome para o nosso prompt. Edite o campo clicando no lápis ao lado de **Promot name**.
+5. Vamos dar um nome ao prompt. Edite o campo clicando no lápis ao lado de **Prompt name**.
 6. Renomeie para **Training Topic Prompt** e **Salve**.
    ![](../images/2025-09-04-11-19-32.png)
 7. Ajuste o prompt se necessário e **Finalize Prompt** quando estiver satisfeito.  

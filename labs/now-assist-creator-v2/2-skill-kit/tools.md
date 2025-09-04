@@ -1,4 +1,8 @@
-## 🛠️ Criando uma tools
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 10 min
+</div>
+
+## 🛠️ Criando uma Tool
 
 :::info
 Já carregamos na plataforma um Script Include que retorna os **tópicos de treinamento existentes** via GlideRecord. Nesta etapa, vamos apenas referenciá‑lo para uso dentro da skill.
@@ -23,7 +27,7 @@ Já carregamos na plataforma um Script Include que retorna os **tópicos de trei
    Observação: o node se chamará `ExistingTrainingTopics`. Usaremos sua saída como `{{ExistingTrainingTopics.output}}` no prompt.
 
 
-## 🛠️ Adding more context (Glossary of Terms)
+## 🛠️ Adicionando mais contexto (Glossário de Termos)
 
 Se desejar enriquecer o contexto para a IA, adicione um glossário de termos para orientar consistência de nomenclatura e padronização.
 
@@ -102,8 +106,8 @@ Foi carregada uma tabela chamada **Glossary of Terms [u_glossario_de_termos]**. 
 
 
 
-## Opcional – Fixar Skill ao Chat
-É possível fixar a skill para ser sugerida sempre que o chat do Now Assist for iniciado. Para fazer isso você deve adicionar a skill a tabela Promoted Skills
+## Opcional – Fixar a Skill no Chat
+É possível fixar a skill para ser sugerida sempre que o Now Assist Panel for iniciado. Para isso, adicione a skill à tabela Promoted Skills.
 
 1. Acesse All e Busque por Promoted Skills.
    ![](../../images/2025-03-09-14-42-32.png)
@@ -127,8 +131,8 @@ Foi carregada uma tabela chamada **Glossary of Terms [u_glossario_de_termos]**. 
    ![](../../images/2025-03-09-14-46-58.png)
 
 :::info
-### Recurso Adicional - Skill Flow Action
-Além do do **Now Assist Panel (Chat)** é possível também consumir as skills por meio de flows/subflows, após publicar uma skill e ativa-lá como **Flow Action** é possível chamá-la utilizando a action **Execute Skill**.
+### Recurso Adicional – Skill Flow Action
+Além do **Now Assist Panel (Chat)**, também é possível consumir as skills por meio de flows/subflows. Após publicar uma skill e ativá‑la como **Flow Action**, chame‑a utilizando a action **Execute Skill**.
 
 ![](../../images/2025-03-09-14-50-01.png)
 :::

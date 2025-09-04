@@ -4,13 +4,15 @@ title: "1. Introdução ao Skill Kit"
 hide_table_of_contents: true
 draft: false
 ---
-# Introdução ao Skill Kit do Now Assist  
+<div class="button-homepage-vancouver">
+🕒 Duração Estimada: 5 min
+</div>
 
 ## 🔍 Visão Geral  
 
 O **Now Assist Skill Kit (NASK)** permite a criação de **habilidades personalizadas de IA** dentro do ecossistema ServiceNow. Com ele, desenvolvedores podem estender as funcionalidades do **Now Assist**, integrando inteligência artificial em fluxos de trabalho, automatizando tarefas e criando **interações avançadas**.  
 
-Neste laboratório, você aprenderá a criar uma **Custom Skill** para validar o esquema de tabelas no ServiceNow, garantindo conformidade com padrões organizacionais.  
+Neste laboratório, você aprenderá a criar uma **Custom Skill** que sugere tópicos de treinamento personalizados para o programa de cross‑training, usando informações do colaborador e os tópicos já existentes no sistema.  
 
 ---
 
