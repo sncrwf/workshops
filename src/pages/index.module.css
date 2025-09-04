@@ -93,8 +93,8 @@
 
 /* New hero text styling */
 .heroKicker {
-    color: var(--now-green-hover);
-
+    color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
   letter-spacing: 2.4px;
   font-size: 20px;
 
