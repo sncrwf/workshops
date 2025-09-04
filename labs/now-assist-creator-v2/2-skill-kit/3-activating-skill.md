@@ -30,6 +30,7 @@ draft: false
    ![](../images/2025-09-04-11-36-48.png)
 9.  Clique em **Return to Creator**
 
+
 ## Testando via Now Assist Panel
 
 Agora vamos testar a chamada dessa custom skill pelo Now Assist Panel na plataforma.

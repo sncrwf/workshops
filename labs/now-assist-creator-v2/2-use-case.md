@@ -42,3 +42,33 @@ Essa solução usa o poder da **IA generativa** para acelerar a criação de apl
 O termo **Citizen Development** pode ter significados diferentes dependendo da audiência.
 
 No contexto da ServiceNow, pense nele como uma questão de **permissões de usuário** e **governança**, e não apenas de **nível de experiência técnica**.
+
+---
+
+## 🧩 Como o lab resolve este caso
+
+O laboratório guia você por três frentes complementares, alinhadas ao cenário da Alexandra:
+
+- **Now Assist for Creator**: usar a IA para acelerar a criação do app de cross‑training
+  - **App Generation** para iniciar o aplicativo com tabelas e formulários.
+  - **Catalog Generation** para expor ações como itens de catálogo.
+  - **Flow Generation** para automatizar tarefas recorrentes.
+  - **Code Generation** e **UI Generation** para completar regras e interfaces.
+
+- **Skill Kit**: criar a custom skill de sugestões
+  - Skill “**Training Topic Suggestions**” sugere novos tópicos com base em `area`, `tools`, `skills` e evita duplicar tópicos existentes retornados por uma Tool (GlideRecord).
+
+- **AI Agents**: transformar feedback em melhoria contínua
+  - Agente “**Session Feedback Analyst**” analisa feedbacks de sessões e atualiza o campo “Session Notes” com recomendações.
+
+:::note Observação
+Nomes de recursos do sistema (ex.: “App Generation”, “Training Topic Suggestions”, “Session Feedback Analyst”) aparecem em inglês por refletirem a interface do produto.
+:::
+
+---
+
+## ✅ Resultados esperados
+
+- Um aplicativo de cross‑training funcional com dados, formulários e automações.
+- Uma **Custom Skill** que sugere tópicos de treinamento personalizados, sem duplicatas.
+- Um **AI Agent** que sintetiza feedbacks e registra recomendações diretamente na sessão.

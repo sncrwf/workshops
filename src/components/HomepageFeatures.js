@@ -29,33 +29,39 @@ const Feature = ({ title, description, to, icon, target }) => (
       'shadow-[0_1px_8px_rgba(3,45,66,0.08)] dark:shadow-[0_1px_12px_rgba(0,0,0,0.35)]'
     )}>
       <div className={clsx(
-        'flex h-full rounded-2xl p-4',
-        // Slightly darker on hover to improve contrast with green text
-        'bg-white/95 group-hover:bg-gray-50/95 dark:bg-gray-900/75 dark:group-hover:bg-gray-900/85 backdrop-blur-[2px]',
+        'flex h-full rounded-2xl p-4 items-start gap-3',
+        // Darken more on hover for stronger contrast in both themes
+        'bg-white group-hover:bg-gray-100 dark:bg-gray-900 dark:group-hover:bg-gray-800 backdrop-blur-[2px]',
         // Neutral ring that shifts to brand accent on hover
         'ring-1 ring-gray-200/60 dark:ring-gray-700/50 group-hover:ring-nowwasabi/50 transition-colors',
         'shadow-sm hover:shadow-md transition-transform duration-150 ease-out hover:-translate-y-0.5',
         'min-h-[180px] md:min-h-[200px]'
       )}>
-        <div className={clsx('flex-shrink-0')}>
+        <div className={clsx('flex-shrink-0 mt-1')}> 
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
             <div className={clsx(
-              'flex items-center justify-center h-10 w-10 rounded-md',
-              'bg-gradient-to-br from-nowinfblue-100 to-nowinfblue-200',
-              'group-hover:from-nowinfblue-200 group-hover:to-nowinfblue-100',
-              'text-nowwasabi dark:from-nowwasabi dark:to-nowwasabi/80 dark:text-white',
+              'relative p-[1.5px] rounded-full',
+              // Softer light-mode gradient for better contrast with white cards
+              'bg-gradient-to-br from-nowinfblue-100/60 via-now-blue-light/60 to-nowwasabi/80',
+              'dark:from-nowwasabi/70 dark:via-nowwasabi/60 dark:to-nowinfblue-100/70',
               'transition-colors duration-150'
-            )}> 
-            <FontAwesomeIcon className={clsx('')} icon={icon} alt={title} />
+            )}>
+              <div className={clsx(
+                'flex items-center justify-center h-10 w-10 rounded-full',
+                'bg-white dark:bg-gray-900 backdrop-blur-[1px]',
+                'ring-1 ring-gray-200 dark:ring-gray-700 group-hover:ring-nowwasabi/60 transition-colors'
+              )}>
+                <FontAwesomeIcon className={clsx('text-nowinfblue-100 dark:text-white text-[16px]')} icon={icon} />
+              </div>
             </div>
           </Link>
         </div>
-        <div className={clsx('ml-4 mr-2 flex-1')}> 
+        <div className={clsx('ml-4 mr-2 flex-1 flex flex-col justify-start')}> 
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
-            <h4 className={clsx('text-lg md:text-xl leading-6 font-extrabold text-nowinfblue-100 group-hover:text-nowwasabi dark:text-white dark:group-hover:text-white/80 transition-colors duration-150')}>
+            <h4 className={clsx('text-lg md:text-xl leading-6 font-extrabold text-nowinfblue-100 dark:text-white transition-colors duration-150')}>
               {title}
             </h4>
-            <p className={clsx('text-sm md:text-md mt-2 leading-6 text-nowinfblue-100 group-hover:text-nowwasabi dark:text-nowwasabi dark:group-hover:text-nowwasabi/80 transition-colors duration-150')}>
+            <p className={clsx('text-sm md:text-md mt-2 leading-6 text-nowinfblue-100 dark:text-gray-200 dark:group-hover:text-white transition-colors duration-150')}>
               {description}
             </p>
           </Link>

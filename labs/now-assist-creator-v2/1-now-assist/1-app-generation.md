@@ -43,6 +43,10 @@ Por favor, copie e cole os prompts exatamente como fornecidos, na ordem apresent
 3. Clique no ícone de **alfinete** para fixar o painel à direita.  
    ![](./../img/image006.png)
 
+:::tip Navegação mais rápida
+Fixar o **Now Assist Panel** ajuda a acompanhar o histórico de prompts e respostas enquanto você avança nos passos do lab.
+:::
+
 4. Clique em **Create an App**.  
    ![](../../images/2025-07-21-14-46-33.png)
 

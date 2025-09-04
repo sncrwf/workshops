@@ -14,9 +14,9 @@ function HomepageHeader() {
         <div className={clsx(styles.heroInner)}>
           <div className={clsx(styles.heroText)}>
             <div className={clsx(styles.heroKicker)}>Workshops Creator Workflows </div>
-            <h1 className={clsx('hero__title', styles.heroHeadline)}>IA + DADOS + WORKFLOWS EM AÇÃO</h1>
+            <h1 className={clsx('hero__title', styles.heroHeadline, styles.heroTitleGradient)}>IA + DADOS + WORKFLOWS EM AÇÃO</h1>
             <p className={clsx('hero__subtitle', styles.heroSubheadline)}>
-              Guias de laboratório práticos aplicados a cenários reais.
+              Guias de laboratório hands-on aplicados a cenários reais.
             </p>
           </div>
           <div className={clsx(styles.heroArt)}>

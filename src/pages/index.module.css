@@ -94,10 +94,10 @@
 /* New hero text styling */
 .heroKicker {
     color: var(--now-green-hover);
-  font-weight: 600;
+
   letter-spacing: 2.4px;
   font-size: 20px;
-  margin-bottom: 0.25rem;
+
 }
 
 .heroHeadline {
@@ -119,15 +119,7 @@
   /* Fallback color if background-clip is unsupported */
   color: var(--now-green-hover);
   /* Lighter brand gradient for stronger contrast */
-  background: linear-gradient(90deg,
-    var(--now-light-green) 10%,
-    var(--now-blue-light) 45%,
-    var(--now-purple-light) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* Subtle depth to separate from dark background */
+  font-size: 50px;
   text-shadow:
     0 1px 1px rgba(0, 0, 0, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.18);

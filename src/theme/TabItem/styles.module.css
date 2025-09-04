@@ -8,3 +8,8 @@
 .tabItem > *:last-child {
   margin-bottom: 0;
 }
+
+/* Add comfortable spacing inside tab panels, respecting theme spacing */
+.tabItem {
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+}

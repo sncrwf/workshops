@@ -21,6 +21,12 @@ Vamos começar a construir o agente juntos!
 
 ---
 
+:::info Ferramentas do AI Agent
+Este lab usa duas ferramentas nativas:
+- **Knowledge Graph**: consulta dados relacionados em grafos configurados (ex.: sessões e feedbacks).
+- **Record Operation**: atualiza registros com o resultado da análise do agente.
+:::
+
 ### 📌 Passos
 
 1. Faça o impersonate de **Alexandra Arias**.
@@ -129,10 +135,13 @@ Agora vamos conectar o agente às fontes de dados e ferramentas para que ele con
     ![](../images/2025-08-19-19-41-59.png)
 
 17. Clique em **Add**  
-    _![](./../img/image107.png)_
+   _![](./../img/image107.png)_
 
 18. Agora adicione a ferramenta **Record Operation** para atualizar o campo de notas da sessão  
-    _![](./../img/image108.png)_
+   _![](./../img/image108.png)_
+:::tip Boas práticas de saída
+Defina mensagens de processamento claras (Processing message) e, quando possível, ative **Display output** para facilitar a depuração durante testes.
+:::
 
 19. Preencha os campos:  
 

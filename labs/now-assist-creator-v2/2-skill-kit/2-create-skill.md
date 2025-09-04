@@ -30,6 +30,10 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    - **Default provider:** Now LLM Generic
    - **Provider API:** Now LLM Generic
 
+   :::note Sobre provedores
+   Caso sua instância tenha múltiplos provedores configurados (Now LLM, Azure OpenAI, etc.), selecione o provider/API padrão recomendado pelo admin. Para este lab, usamos **Now LLM Generic** por simplicidade.
+   :::
+
 4. Em **"How would you like to create a prompt for this skill?"**, selecione **"Write from scratch"**.  
 5. Clique em **"Next"**.  
 
@@ -68,6 +72,12 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
   
   ![](../images/2025-09-04-10-53-58.png)
 
+:::tip Boas práticas de inputs
+- Prefira textos curtos e objetivos.
+- Para `tools` e `skills`, use vírgulas para separar itens (ex.: “Excel, Power BI, ServiceNow”).
+- Evite duplicar termos; o prompt fará normalização, mas entradas limpas ajudam na qualidade.
+:::
+
 ## 🛠️ Criando o Prompt  
 
 1. Agora iremos adicionar um prompt base (template) no **Prompt Editor**. O skill já vem com um prompt de exemplo, nós iremos substituí-lo por um prompt mais aderente a nossa necessidade
@@ -76,8 +86,8 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    ![](../images/2025-09-04-10-58-39.png)
 3. Insira o seguinte prompt:  
 
-   :::info
-   O uso de formatação Markdown é muito utilizado com LLMs e facilita a leitura humana e pela IA.
+   :::info Por que usar Markdown no prompt?
+   A estrutura em seções (Role, Context, Rules, Output) melhora a interpretação pelo LLM e facilita a manutenção do prompt.
    :::
 
     ```
@@ -118,6 +128,10 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 10. Faça o mesmo para os demais `tools` e `skills` respectivamente.
     ![](../images/2025-09-04-11-07-42.png)
     
+    :::note Sobre tags `{{...}}`
+    As tags `{{area}}`, `{{tools}}` e `{{skills}}` serão substituídas pelos valores fornecidos na execução do skill. Elas não são variáveis JavaScript, e sim placeholders do Skill Kit.
+    :::
+    
 
 ## 🛠️ Testando o Prompt  
 
@@ -137,6 +151,10 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    ![](../images/2025-09-04-11-19-32.png)
 7. Ajuste o prompt se necessário e **Finalize Prompt** quando estiver satisfeito.  
    ![](../images/2025-09-04-11-20-03.png)
+
+:::caution Resultados variam
+Como toda geração com LLMs, pequenas variações de saída são normais entre execuções. Concentre-se em validar relevância e ausência de duplicatas; refine o texto do prompt se necessário.
+:::
 
 
 ## 🛠️ Configurando a Skill  

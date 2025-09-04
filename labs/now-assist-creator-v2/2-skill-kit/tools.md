@@ -24,7 +24,11 @@ Já carregamos na plataforma um Script Include que retorna os **tópicos de trei
    6. (Opcional) **area → Value:** `{{area}}`  
    7. Clique em **"Add"**.  
 
-   Observação: o node se chamará `ExistingTrainingTopics`. Usaremos sua saída como `{{ExistingTrainingTopics.output}}` no prompt.
+Observação: o node se chamará `ExistingTrainingTopics`. Usaremos sua saída como `{{ExistingTrainingTopics.output}}` no prompt.
+
+:::note Estrutura esperada do output
+Garanta que o Script Include retorne JSON válido com os tópicos existentes (ex.: lista de títulos). O prompt fará a comparação para evitar duplicatas.
+:::
 
 
 ## 🛠️ Adicionando mais contexto (Glossário de Termos)
@@ -32,6 +36,10 @@ Já carregamos na plataforma um Script Include que retorna os **tópicos de trei
 Se desejar enriquecer o contexto para a IA, adicione um glossário de termos para orientar consistência de nomenclatura e padronização.
 
 Foi carregada uma tabela chamada **Glossary of Terms [u_glossario_de_termos]**. Vamos carregá‑la no prompt por meio de um script.
+
+:::caution Permissões e desempenho
+Consultas GlideRecord dependem de permissões e volume de dados. Em ambientes com muitas linhas, considere filtros (ex.: por `area`) para reduzir o payload.
+:::
 
 1. Acesse novamente a aba **Tool Editor** e adicione uma ferramenta antes do Prompt.
    ![](../../images/2025-03-10-17-00-47.png)

@@ -305,9 +305,9 @@ const config = {
       navbar: {
         title: "",
         logo: {
-          alt: "Workshop Creator Workflows",
-          src: "img/servicenow-logo.png",
-          srcDark: "img/servicenow-logo_dark.png",
+          alt: "ServiceNow",
+          src: "https://www.servicenow.com/content/dam/servicenow-assets/images/naas/servicenow-header-logo-white.svg",
+          srcDark: "https://www.servicenow.com/content/dam/servicenow-assets/images/naas/servicenow-header-logo-white.svg",
           href: "/",
           target: "_self",
         },
@@ -330,13 +330,7 @@ const config = {
             position: 'left',
             target: '_blank',
           },
-          {
-            href: "https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io",
-            position: "right",
-            target: "_blank",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
-          },
+          // Removed GitHub header link for a cleaner navbar
         ].filter(Boolean),
       },
 
