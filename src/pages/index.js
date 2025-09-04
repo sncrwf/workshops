@@ -11,10 +11,21 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <div className="headerContent">
-          <div className="headerText">
-            <h1 className="hero__title customHeader">{siteConfig.title}</h1>
-            <p className="hero__subtitle customSubtitle">{siteConfig.tagline}</p>
+        <div className={clsx(styles.heroInner)}>
+          <div className={clsx(styles.heroText)}>
+            <div className={clsx(styles.heroKicker)}>Workshops Creator Workflows </div>
+            <h1 className={clsx('hero__title', styles.heroHeadline)}>IA + DADOS + WORKFLOWS EM AÇÃO</h1>
+            <p className={clsx('hero__subtitle', styles.heroSubheadline)}>
+              Guias de laboratório práticos aplicados a cenários reais.
+            </p>
+          </div>
+          <div className={clsx(styles.heroArt)}>
+            <img
+              src="https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/images/ds-screenshots/any-ai.sm.png"
+              alt="ServiceNow Any AI sparkles"
+              loading="eager"
+              decoding="async"
+            />
           </div>
         </div>
       </div>

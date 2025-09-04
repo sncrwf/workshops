@@ -8,6 +8,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(102, 216, 78, 0.15), transparent 60%),
+              radial-gradient(1000px 500px at 0% 0%, rgba(36, 194, 206, 0.18), transparent 60%),
+              linear-gradient(135deg, rgba(3,45,66,1) 0%, rgba(3,45,66,0.92) 60%, rgba(3,45,66,0.85) 100%);
 }
 
 @media screen and (max-width: 966px) {
@@ -20,4 +23,113 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.customHeader {
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  font-weight: 800;
+}
+
+.customSubtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.125rem;
+}
+
+/* Layout inside the hero banner */
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 996px) {
+  .heroInner {
+    grid-template-columns: 1fr; /* Keep single column; art is absolutely positioned */
+    text-align: left;
+  }
+}
+
+.heroText {
+  position: relative;
+  z-index: 1; /* ensure text stays above the decorative art */
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 996px) {
+  .heroText {
+    margin: 0;
+    max-width: 960px; /* give the title more line length on desktop */
+  }
+}
+
+.heroArt {
+  position: absolute;
+  top: 50%;
+  right: 0px; /* push out to the right to free space for the title */
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.heroArt img {
+  width: clamp(60px, 40vw, 300px);
+  height: auto;
+}
+
+@media screen and (max-width: 996px) {
+  .heroArt {
+    right: -60px;
+    top: 55%;
+  }
+  .heroArt img {
+    width: clamp(220px, 60vw, 380px);
+
+  }
+}
+
+/* New hero text styling */
+.heroKicker {
+    color: var(--now-green-hover);
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+}
+
+.heroHeadline {
+    color: var(--now-green-hover);
+
+  letter-spacing: 0.3px;
+  font-weight: 800;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.heroSubheadline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Gradient text for the hero title using brand colors */
+.heroTitleGradient {
+  /* Fallback color if background-clip is unsupported */
+  color: var(--now-green-hover);
+  /* Lighter brand gradient for stronger contrast */
+  background: linear-gradient(90deg,
+    var(--now-light-green) 10%,
+    var(--now-blue-light) 45%,
+    var(--now-purple-light) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Subtle depth to separate from dark background */
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.18);
+  -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.18);
 }

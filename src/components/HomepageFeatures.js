@@ -10,7 +10,7 @@ import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset,faSlid
 
 const HomepageFeatures = () => (
   <div className={clsx('container max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-16 py-6 md:py-10 lg:py-14')}>
-      <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-q50')}>
+      <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-q50 items-stretch')}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
         ))}
@@ -19,25 +19,48 @@ const HomepageFeatures = () => (
 );
 
 const Feature = ({ title, description, to, icon, target }) => (
-  <li className={clsx('p-6 md:mt-6 lg:mt-8 pb-2 md:pb-2 lg:pb-2')}>
-    <div className={clsx('flex')}>
+  <li className={clsx('p-4 md:p-5 md:mt-6 lg:mt-8 pb-2 md:pb-2 lg:pb-2 h-full')}> 
+    <div className={clsx(
+      'group relative h-full rounded-2xl p-[1px]',
+      // Brand gradient border with a touch more presence
+      'bg-gradient-to-br from-nowwasabi/35 via-nowinfblue-100/25 to-polarispurple/30',
+      'dark:from-nowwasabi/40 dark:via-nowinfblue-100/30 dark:to-polarispurple/40',
+      // Subtle branded glow for harmony
+      'shadow-[0_1px_8px_rgba(3,45,66,0.08)] dark:shadow-[0_1px_12px_rgba(0,0,0,0.35)]'
+    )}>
+      <div className={clsx(
+        'flex h-full rounded-2xl p-4',
+        // Slightly darker on hover to improve contrast with green text
+        'bg-white/95 group-hover:bg-gray-50/95 dark:bg-gray-900/75 dark:group-hover:bg-gray-900/85 backdrop-blur-[2px]',
+        // Neutral ring that shifts to brand accent on hover
+        'ring-1 ring-gray-200/60 dark:ring-gray-700/50 group-hover:ring-nowwasabi/50 transition-colors',
+        'shadow-sm hover:shadow-md transition-transform duration-150 ease-out hover:-translate-y-0.5',
+        'min-h-[180px] md:min-h-[200px]'
+      )}>
         <div className={clsx('flex-shrink-0')}>
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
-            <div className={clsx('flex items-center justify-center h-10 w-10 rounded-md bg-nowinfblue-100 hover:bg-nowinfblue-200 text-nowwasabi hover:text-nowwasabi/70 dark:bg-nowwasabi dark:hover:bg-nowwasabi/70 dark:text-white dark:hover:text-white')}>
+            <div className={clsx(
+              'flex items-center justify-center h-10 w-10 rounded-md',
+              'bg-gradient-to-br from-nowinfblue-100 to-nowinfblue-200',
+              'group-hover:from-nowinfblue-200 group-hover:to-nowinfblue-100',
+              'text-nowwasabi dark:from-nowwasabi dark:to-nowwasabi/80 dark:text-white',
+              'transition-colors duration-150'
+            )}> 
             <FontAwesomeIcon className={clsx('')} icon={icon} alt={title} />
             </div>
           </Link>
         </div>
-        <div className={clsx('ml-4 mr-4')}>
+        <div className={clsx('ml-4 mr-2 flex-1')}> 
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
-            <h4 className={clsx('text-xl leading-6 font-extrabold text-nowinfblue-100 hover:text-nowwasabi dark:text-white dark:hover:text-white/70')}>
+            <h4 className={clsx('text-lg md:text-xl leading-6 font-extrabold text-nowinfblue-100 group-hover:text-nowwasabi dark:text-white dark:group-hover:text-white/80 transition-colors duration-150')}>
               {title}
             </h4>
-            <p className={clsx('text-md mt-2 leading-6 text-nowinfblue-100 hover:text-nowwasabi dark:text-nowwasabi dark:hover:text-nowwasabi/70')}>
+            <p className={clsx('text-sm md:text-md mt-2 leading-6 text-nowinfblue-100 group-hover:text-nowwasabi dark:text-nowwasabi dark:group-hover:text-nowwasabi/80 transition-colors duration-150')}>
               {description}
             </p>
           </Link>
         </div>
+      </div>
     </div>
   </li>
 );
@@ -87,7 +110,7 @@ const FeatureList = [
     icon: faBolt,
     description: (
       <>
-      <div class="button-homepage-vancouver">🛠️ App Engine</div><div class="button-homepage-wash">✨ Now Assist</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
+      <div class="button-homepage-vancouver">🛠️ App Engine</div> <div class="button-homepage-wash">✨ Now Assist</div><br/>Crie sua primeira aplicação em ServiceNow utilizando AI Generativa<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
     to: 'labs/now-assist-creator-v2/introduction',

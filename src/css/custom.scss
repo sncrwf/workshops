@@ -39,7 +39,7 @@
   --ifm-footer-link-hover-color: var(--ifm-link-color);
   --ifm-footer-title-color: var(--ifm-color-emphasis-100);
   --ifm-heading-color: var(--now-green-hover);
-  --ifm-heading-font-family: "Gilroy-Regular";
+  --ifm-heading-font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ifm-link-color: var(--now-green-hover);
 
   --ifm-navbar-item-padding-horizontal: 1rem;
@@ -53,6 +53,8 @@
 
   --now-blue: rgb(36,194,206);
   --now-inf-blue: rgb(3, 45, 66);
+  /* Light tints for brighter gradients */
+  --now-blue-light: #9be7ef;
 
   --now-little-button-blue: rgb(40, 65, 145);
 
@@ -63,12 +65,20 @@
   --now-pink:  rgb(252,119,134);
   --now-purple:  rgb(58, 87, 233);
   --now-purple--hover: rgb(31, 66, 150);
+  --now-purple-light: #a5b1ff;
 
   --now-purple-dark: rgb(79,82,189);
   --now-purple-dark--hover: rgb(56,62,150);
 
   --now-green: rgb(134, 237, 120);
   --now-green-hover: rgb(98, 216, 78);
+  /* Complementary tokens used in hover states */
+  --now-light-green: #cff5c9;
+  --now-inf-dark-blue: #022b3a;
+  --now-light-yellow: #fbebc7;
+  --now-dark-black: #111827;
+  --now-dark-red: #e28c8c;
+  --now-light-gray: #f9fafb;
 
   --ol-border-top: rgb(219, 221, 225);
 
@@ -79,21 +89,22 @@
 /*--- Very global stuff ---*/
 html body {
   color: #333333;
-  font-family: "Gilroy-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
   @apply text-4xl;
   @apply leading-snug;
-  @apply font-normal;
-  @apply leading-normal;
   @apply text-nowinfblue-100;
 }
 
@@ -114,62 +125,58 @@ p img {
 /*--- ---*/
 .button-homepage-vancouver {
   background-color: var(--now-green);
-  border-radius: 22px;
+  border-radius: 18px;
   color: var(--now-inf-blue);
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.25;
-  padding: 5px 12px;
+  padding: 4px 10px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-homepage-utah {
   background-color: var(--now-purple);
-  border-radius: 22px;
+  border-radius: 18px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.25;
-  padding: 5px 12px;
+  padding: 4px 10px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-homepage-tokyo {
   background-color: var(--now-pink);
-  border-radius: 22px;
+  border-radius: 18px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.25;
-  padding: 5px 12px;
+  padding: 4px 10px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-homepage-wash {
   background-color: var(--now-purple-dark--hover) ;
-  border-radius: 22px;
+  border-radius: 18px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.25;
-  padding: 5px 12px;
+  padding: 4px 10px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 /* Button for Basic Level */
@@ -184,7 +191,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 /* Button for Intermediate Level */
@@ -199,7 +206,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 /* Button for Advanced Level */
@@ -214,7 +221,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .prod-badge {
@@ -255,6 +262,63 @@ p img {
 .button-advanced:hover {
   background-color: var(--now-dark-red);
   color: var(--now-light-gray);
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+}
+
+/* Subtle hover for homepage badges */
+[class^="button-homepage-"]:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+}
+
+/* Accessible focus styles */
+.button-basic:focus-visible,
+.button-intermediate:focus-visible,
+.button-advanced:focus-visible,
+[class^="button-homepage-"]:focus-visible,
+.button-purple:focus-visible,
+.button-purple-square:focus-visible,
+.button-purple-mini:focus-visible,
+.button-white:focus-visible,
+.button-tan-blue:focus-visible,
+.button-tan-black:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Details/Summary polish */
+details {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: .5rem .75rem;
+  margin: 1rem 0;
+}
+/* Improve contrast in dark mode */
+[data-theme="dark"] details {
+  border-color: var(--ifm-color-emphasis-300);
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: "\25BE"; /* ▼ */
+  float: right;
+  transition: transform .2s ease;
+}
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 .button-purple {
@@ -268,8 +332,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-purple:hover {
@@ -288,8 +351,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-purple-square:hover {
@@ -314,8 +376,7 @@ p img {
   line-height: 13.75px;
   padding: 4px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 
@@ -332,8 +393,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-white:hover {
@@ -353,7 +413,7 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   text-align: center;
-  transition: color 0.3s;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
   vertical-align: middle;
   /* Add a smooth transition for the color change */
 }
@@ -361,6 +421,7 @@ p img {
 .button-tan-blue:hover {
   background-color: var(--now-tan-hover-purple);
   box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
+  transform: translateY(-1px);
 }
 
 .button-tan-black {
@@ -377,13 +438,19 @@ p img {
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
-  transition: color 0.3s;
-  /* Add a smooth transition for the color change */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 
 .button-tan-black:hover {
   background-color: var(--now-tan-hover-tan);
   box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
+  transform: translateY(-1px);
+}
+
+/* Consistent subtle hover for utility buttons */
+.button-white:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transform: translateY(-1px);
 }
 
 .button-tanbg-purple-border {
@@ -955,17 +1022,58 @@ p img {
   */
 
 .navbar {
-  @apply bg-white;
+  background-color: var(--now-inf-blue) !important; /* Brand dark blue */
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 [data-theme="dark"] .navbar {
-  @apply bg-gray-900;
+  background-color: var(--now-inf-blue) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Navbar links and toggle in white with subtle brand hover */
+.navbar .navbar__link,
+.navbar .navbar__brand,
+.navbar .navbar__title,
+.navbar .navbar__toggle,
+.navbar .menu__link {
+  color: #ffffff !important;
+}
+
+.navbar .navbar__link:hover,
+.navbar .menu__link:hover,
+.navbar .navbar__link--active {
+  color: var(--now-green-hover) !important;
 }
 
 /* no hover background under top left logo */
 .navbar__brand {
-  position: static;
-  /* Reset the relative positioning */
+  position: static; /* Reset the relative positioning */
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Control logo size and keep aspect ratio (covers various theme structures) */
+.navbar__logo,
+.navbar__brand img,
+.navbar__brand .themedImage,
+.navbar__brand .themedImage img {
+  height: 28px !important;
+  width: auto !important;
+  display: block;
+}
+
+@media (min-width: 997px) {
+  .navbar__logo,
+  .navbar__brand img,
+  .navbar__brand .themedImage,
+  .navbar__brand .themedImage img {
+    // height: 32px !important;
+    padding-bottom: 5px !important;
+    padding-left: 3px !important;
+  }
 }
 
 .navbar__item, .footer__link-item {
