@@ -37,8 +37,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Home of Creator Workshop Lab Guides">
+      title="ServiceNow"
+      description="Guias de laboratório hands-on aplicados a cenários reais.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

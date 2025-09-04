@@ -7,7 +7,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Workshop Creator Workflows",
+  title: "Workshops Creator Workflows",
   tagline: "Pronto para aprender algo novo?",
   url: "https://sncrwf.github.io",
   trailingSlash: false,
