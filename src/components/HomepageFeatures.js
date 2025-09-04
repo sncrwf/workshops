@@ -41,17 +41,17 @@ const Feature = ({ title, description, to, icon, target }) => (
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
             <div className={clsx(
               'relative p-[1.5px] rounded-full',
-              // Softer light-mode gradient for better contrast with white cards
+              // Softer light-mode gradient for better contrast with cards
               'bg-gradient-to-br from-nowinfblue-100/60 via-now-blue-light/60 to-nowwasabi/80',
               'dark:from-nowwasabi/70 dark:via-nowwasabi/60 dark:to-nowinfblue-100/70',
               'transition-colors duration-150'
             )}>
               <div className={clsx(
                 'flex items-center justify-center h-10 w-10 rounded-full',
-                'bg-white dark:bg-gray-900 backdrop-blur-[1px]',
-                'ring-1 ring-gray-200 dark:ring-gray-700 group-hover:ring-nowwasabi/60 transition-colors'
+                'bg-nowwasabi dark:bg-nowwasabi backdrop-blur-[1px]',
+                'ring-1 ring-nowwasabi/30 dark:ring-nowwasabi/50 group-hover:ring-nowwasabi/70 transition-colors'
               )}>
-                <FontAwesomeIcon className={clsx('text-nowinfblue-100 dark:text-white text-[16px]')} icon={icon} />
+                <FontAwesomeIcon className={clsx('text-nowinfblue-100 dark:text-nowinfblue-100 text-[16px]')} icon={icon} />
               </div>
             </div>
           </Link>
