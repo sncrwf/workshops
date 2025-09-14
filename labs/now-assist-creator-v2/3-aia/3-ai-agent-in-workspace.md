@@ -16,11 +16,11 @@ draft: false
 1. No registro de **Session**, precisamos antes limpar o campo **Session Notes** para que nossa trigger seja disparada.
    ![](../images/2025-08-19-19-59-35.png)
 
-2.  Em seguida, altere o campo **State** de **Scheduled** para **Complete**
+2. Em seguida, altere o campo **State** de **Scheduled** para **Complete**.
 
    ![](./../img/image125.png)
 
-3. Clique em **Save**
+3. Clique em **Save**.
 
    ![](./../img/image126.png)
 
@@ -31,6 +31,10 @@ draft: false
 5. Observe a **execução** acontecendo.
 
    _![](./../img/image128.png)_
+:::tip Dica
+Caso não abra automaticamente a execução do Agente de IA, clique no ícone de histórico e clique no chat **SES0001101 - Session Feedback Analyst**
+![](../images/2025-09-14-14-12-50.png)
+:::
 
 6. Verifique o campo **Session Notes**, que agora estará atualizado com uma nova análise gerada pelo AI Agent em nome de **Alexandra Arias**.
 

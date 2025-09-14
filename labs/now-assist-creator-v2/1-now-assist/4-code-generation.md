@@ -25,7 +25,7 @@ O aplicativo **Cross-Training** precisa implementar duas regras de validação:
 
 ### **Criando um Script Include**  
 
-1. Volte a aba da sua aplicação.
+1. Volte à aba da sua aplicação.
    ![](../../images/2025-03-08-02-31-36.png)
 2. Selecione o botão <span className="button-purple-square">Create</span>.
    ![](../../images/2025-03-08-02-23-54.png)
@@ -56,44 +56,29 @@ O aplicativo **Cross-Training** precisa implementar duas regras de validação:
    Query Training topics table for the current topic and store attendees limit in attendeesLimit variable. Then aggregate training attendees table for current topic and check if the total no. of records exceeds attendeesLimit. Return true or false.
    ```
 
-8.   Aguarde até que o Now Assist Code Generation gere a resposta. O código gerado aparecerá em **Verde**. 
-  ![](../../images/2025-03-08-02-49-07.png)  
-1.   Clique em **Accept** para aceitar o código gerado.   
-     - A **barra roxa ao lado** indicará que o código foi gerado pelo **Now Assist**.
+8. Aguarde até que o Now Assist Code Generation gere a resposta. O código gerado aparecerá em **verde**.  
+   ![](../../images/2025-03-08-02-49-07.png)  
+9. Clique em **Accept** para aceitar o código gerado.   
+   - A **barra roxa ao lado** indicará que o código foi gerado pelo **Now Assist**.
    ![](../../images/2025-03-08-02-50-13.png)
-2.   Clique no botão **"Format Code"** no topo do editor para organizar e melhorar a legibilidade do código.
+10. Clique no botão **"Format Code"** no topo do editor para organizar e melhorar a legibilidade do código.
     ![](../../images/2025-03-06-20-21-36.png)  
 
-3.  Agora, selecione parte do código gerado e perceba que o ícone do Now Assist aparece ao lado.
+11. Selecione parte do código gerado e perceba que o ícone do Now Assist aparece ao lado.
     ![](../../images/2025-03-08-02-51-52.png)
 
-4.  Clique o ícone do Now Assist e selecione a opção "Explain code in detail"
+12. Clique no ícone do Now Assist e selecione a opção "Explain code in detail".
     ![](../../images/2025-03-08-02-53-00.png)
 
-5.  Ele irá nos detalhar sobre o trecho do código específico
+13. O Now Assist detalhará o trecho de código selecionado.
     ![](../../images/2025-03-08-02-53-37.png)
 
-6.  Clique em Submit
+14. Clique em **Submit**.
 
    :::danger
    ⚠️ **Ignore qualquer mensagem sobre salvar o trabalho.** Não é necessário salvar.  
    :::
 
----
-:::danger
-**Caso Não Consiga Salvar**  
-
-⚠️ **Se não conseguir salvar o Script Include, não há problema.**  
-
-O objetivo deste exercício é apenas demonstrar **como e onde utilizar o Now Assist Code Generation**.  
-
-Se precisar sair sem salvar:  
-
-- Clique no **logo do ServiceNow** no canto superior esquerdo.
-   ![](../../images/2025-03-06-20-22-28.png)
-- **Confirme a saída sem salvar** quando solicitado.
-   ![](../../images/2025-03-06-20-22-35.png)
-:::
 ---
 
 ## 🎯 Recapitulação  
@@ -101,4 +86,3 @@ Se precisar sair sem salvar:
 **Parabéns!** 🎉  
 
 **Você** utilizou a **Code Generation do Now Assist** para **criar rapidamente a lógica de validação** que Alexandra precisava no aplicativo **Cross-Training**.  
-

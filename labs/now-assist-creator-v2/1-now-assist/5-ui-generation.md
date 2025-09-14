@@ -31,14 +31,14 @@ Com essa funcionalidade, você pode:
 2. No menu **🚀**, pesquise por **UI Builder** e clique para abrir.  
    ![](../../images/2025-07-21-15-54-26.png)
 
-3. Clique no botão **Create** e Selecione a opção **Experience**.  
+3. Clique no botão **Create** e selecione a opção **Experience**.  
 
   ![](../../images/2025-03-08-15-31-16.png)
 
-1. Escolha a opção **AI-Generated Experience**. 
+4. Escolha a opção **AI-Generated Experience**. 
     ![](../../images/2025-03-08-15-32-09.png)
 
-2. Na caixa de texto, **Now Assist directions**, cole o exemplo a seguir:  
+5. Na caixa de texto **Now Assist directions**, cole o exemplo a seguir:  
 
    ```txt title="UI Generation - Prompt"
    Create a Breadcrumb-style experience titled “Cross-Training Management” that provides a structured and intuitive navigation experience. The interface should include:
@@ -48,19 +48,19 @@ Com essa funcionalidade, você pode:
     Ensure a clean, user-friendly layout with clear navigation, emphasizing ease of access to training session details.
    ```   
 
-3. Clique em **Generate Preview** e visualize o resultado gerado.  
+6. Clique em **Generate Preview** e visualize o resultado gerado.  
 
    ![](../../images/2025-03-08-15-43-24.png)
 
-4. Valide a interface gerada e clique em **Save and Edit Experience**.  
+7. Valide a interface gerada e clique em **Save and Edit Experience**.  
 
    ![](../../images/2025-03-08-15-43-52.png)
 
-5.  Acesse o link disponibilizado no campo **"URL Path"** para visualizar a UI gerada.  
+8. Acesse o link disponibilizado no campo **"URL Path"** para visualizar a UI gerada.  
 
     ![](../../images/2025-03-08-15-44-13.png)
 
-6. Navegue pela interface criada
+9. Navegue pela interface criada.
 
     ![](../../images/2025-03-08-15-45-06.png)
 

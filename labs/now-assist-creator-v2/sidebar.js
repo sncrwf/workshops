@@ -6,11 +6,11 @@ const sidebars = {
         'yokohama',
         'introduction',
         'use-case',
+        '0-impersonate',
         {
             type: 'category',
             label: '1. Now Assist for Creator',
             items: [
-                'now-assist/0-impersonate',
                 'now-assist/1-app-generation',
                 'now-assist/2-catalog-generation',
                 'now-assist/3-flow-generation',
@@ -24,7 +24,8 @@ const sidebars = {
             items: [
                 'skill-kit/1-intro-skill-kit',
                 'skill-kit/2-create-skill',
-                'skill-kit/3-activating-skill',              
+                'skill-kit/3-activating-skill',    
+                'skill-kit/4-promoting-skill',            
             ],
         },
         {

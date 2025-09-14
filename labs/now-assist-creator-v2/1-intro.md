@@ -47,7 +47,6 @@ Configuração inicial e verificação do ambiente.
 
 | Etapa | Tópico                        |
 |------:|-------------------------------|
-| 0     | Impersonação e início         |
 | 1     | Geração de Aplicativo         |
 | 2     | Geração de Catálogo           |
 | 3     | Geração de Fluxo              |

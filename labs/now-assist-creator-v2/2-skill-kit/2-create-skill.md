@@ -17,32 +17,37 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
 ---
 
-## 🛠️ Criando a Skill  
+## 🛠️ Criando a Skill 
 
-1. Clique no ícone de brilho (✨) e selecione **Now Assist Skill Kit**  
-   ![](../images/2025-09-04-10-34-25.png)
-2. Clique em **"Create Skill"**.  
+1. Verifique se ainda está impersonando **Alexandra Arias**. Se não estiver, impersone-a novamente.
+
+2. Altere o escopo para **ACME Cross-Training - Pre-built Version 2024.09.27**
+
+   ![](./../img/image095.png)
+
+3. Clique em **All** e pesquise **Now Assist Skill Kit**. 
+   ![](../images/2025-09-10-11-19-36.png)
+4. Clique em **"Create Skill"**.  
    ![](../images/2025-09-04-10-36-00.png)
-3. No formulário, preencha os seguintes campos:  
+5. Vamos criar a nossa skill.
+   1. No formulário, preencha os seguintes campos:  
+   
+      **Skill name:** Training Topic Suggestions  
+      **Description:** Suggests personalized training topics based on the collaborator's area, tools, and skills, avoiding duplicates of existing topics in the system.  
+      **Default provider:** Now LLM Generic
+      
+      **Provider API:** Now LLM Generic
 
-   - **Skill name:** Training Topic Suggestions  
-   - **Description:** Suggests personalized training topics based on the collaborator's area, tools, and skills, avoiding duplicates of existing topics in the system.  
-   - **Default provider:** Now LLM Generic
-   - **Provider API:** Now LLM Generic
+      :::note Sobre provedores
+      Caso sua instância tenha múltiplos provedores configurados (Now LLM, Azure OpenAI, etc.), selecione o provider/API padrão recomendado pelo admin. Para este lab, usamos **Now LLM Generic** por simplicidade.
+      :::
 
-   :::note Sobre provedores
-   Caso sua instância tenha múltiplos provedores configurados (Now LLM, Azure OpenAI, etc.), selecione o provider/API padrão recomendado pelo admin. Para este lab, usamos **Now LLM Generic** por simplicidade.
-   :::
+   2. Em **"How would you like to create a prompt for this skill?"**, selecione **"Write from scratch"**.  
+   3. Clique em **"Create skill and go to prompt editor"**.  
 
-4. Em **"How would you like to create a prompt for this skill?"**, selecione **"Write from scratch"**.  
-5. Clique em **"Next"**.  
+      ![](../images/2025-09-10-11-23-54.png)
 
-   ![](../images/2025-09-04-10-37-49.png)
-
-6. Vamos pular as próximas etapas e finalizar no **Prompt Editor**.
-7. Clique em **Skip To Prompt editor**.
-   ![](../images/2025-09-04-10-39-58.png)
-8. Nosso skill foi salvo como **Draft** e poderemos seguir daqui.
+6. Nossa skill foi salva como **Draft** e poderemos seguir daqui.
    ![](../images/2025-09-04-10-40-54.png)
 
 ## 🛠️ Definindo Inputs  
@@ -80,7 +85,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
 ## 🛠️ Criando o Prompt  
 
-1. Agora iremos adicionar um prompt base (template) no **Prompt Editor**. O skill já vem com um prompt de exemplo, nós iremos substituí-lo por um prompt mais aderente a nossa necessidade
+1. Agora iremos adicionar um prompt base (template) no **Prompt Editor**. A skill já vem com um prompt de exemplo; vamos substituí-lo por um prompt mais aderente à nossa necessidade.
    ![](../images/2025-09-04-10-58-15.png)
 2. Limpe o prompt de exemplo:
    ![](../images/2025-09-04-10-58-39.png)
@@ -137,19 +142,29 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 
 1. Clique em **"Run Test"**.  
    ![](../images/2025-09-04-11-08-05.png)
-2. Preencha os inputs de teste:  
-   - `area`: ex: Customer Service  
-   - `tools`: ex: Excel, Power BI, ServiceNow  
-   - `skills`: ex: Reporting, Automation, Documentation 
-3. Clique em `Run test` 
+2. Preencha os inputs de teste: 
+    
+   | Field  | Value                                      |
+   |--------|--------------------------------------------|
+   | **area**   | Customer Service                           |
+   | **tools** | Excel, Power BI, ServiceNow                |
+   | **skills** | Reporting, Automation, Documentation       |
+   
+   Clique em `Run test` 
+
+   :::danger Observe com atenção!
+      Cuidado! A **ordem dos inputs** pode ter mudado. 
+   :::
+
    ![](../images/2025-09-04-11-10-59.png)
-4. Execute o teste e valide se:  
-   - As sugestões são relevantes para a área, ferramentas e habilidades.  
-   - Nenhum tópico existente foi repetido.  
-5. Vamos dar um nome ao prompt. Edite o campo clicando no lápis ao lado de **Prompt name**.
-6. Renomeie para **Training Topic Prompt** e **Salve**.
+   
+3. Execute o teste e valide se:  
+   - As sugestões são **relevantes** para a área, ferramentas e habilidades.  
+   - Nenhum tópico existente foi **repetido**.  
+4. Vamos dar um nome ao prompt. Edite o campo clicando no lápis ao lado de **Prompt name**.
+5. **Renomeie** para `Training Topic Prompt` e **Salve**.
    ![](../images/2025-09-04-11-19-32.png)
-7. Ajuste o prompt se necessário e **Finalize Prompt** quando estiver satisfeito.  
+6. Ajuste o prompt se necessário e **Finalize Prompt** quando estiver satisfeito.  
    ![](../images/2025-09-04-11-20-03.png)
 
 :::caution Resultados variam

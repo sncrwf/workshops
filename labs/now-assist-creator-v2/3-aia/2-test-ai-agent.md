@@ -36,14 +36,14 @@ Agora é hora de testar nosso agente de IA para garantir que tudo esteja funcion
 5. Verifique os resultados. Se algo der errado, clique em **Try again** para repetir o teste.  
    _![](./../img/image121.png)_
 
-6. Acesse o workspace pré-construído em **Workspaces > Cross-Training Management**
+6. Acesse o workspace pré-construído em **Workspaces > Cross-Training Management**.
    ![](../images/2025-08-19-19-55-16.png)
 
-6. Acesse o registro **SES0001101** referente à sessão **Cloud Computing @ 2024-11-05 09:00:00** utilizando o **Workspace**  
+7. Acesse o registro **SES0001101** referente à sessão **Cloud Computing @ 2024-11-05 09:00:00** utilizando o **Workspace**.  
    ![](../images/2025-08-19-19-57-00.png)
 
-7. Clique em **Details** para abrir o registro da sessão  
+8. Clique em **Details** para abrir o registro da sessão.  
    ![](../images/2025-08-19-19-57-57.png)
 
-8. Observe que o campo **Session Notes** foi preenchido automaticamente com o feedback da sessão, gerado pelo AI Agent.  
+9. Observe que o campo **Session Notes** foi preenchido automaticamente com o feedback da sessão, gerado pelo AI Agent.  
    _![](./../img/image124.png)_

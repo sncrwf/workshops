@@ -1,11 +1,11 @@
 ---
 id: 0-impersonate
-title: "0. Impersonação de Usuários"
+title: "Impersonação de Usuários"
 hide_table_of_contents: true
 draft: false
 ---
 <div class="button-homepage-vancouver">
-🕒 Duração Estimada: 5 min
+🕒 Duração Estimada: 10 min
 </div>
 
 ## 🔍 Visão Geral  
@@ -28,15 +28,15 @@ Uma das habilidades concedidas pelo role **admin** é a capacidade de **imperson
 
 1. No canto superior direito do **ServiceNow**, clique no **avatar do usuário** (System Administrator).  
 2. Clique em **Impersonate user**.  
-   ![](../../images/2025-03-06-19-00-11.png)
+   ![](../images/2025-03-06-19-00-11.png)
 3. Na barra de pesquisa, digite **Alexandra Arias** e selecione o nome dela na lista suspensa.  
-   ![](../../images/2025-03-06-19-00-50.png)
+   ![](../images/2025-03-06-19-00-50.png)
 4. Clique em **Impersonate user**.  
-   ![](../../images/2025-03-06-19-00-57.png)
+   ![](../images/2025-03-06-19-00-57.png)
 5. A página será recarregada enquanto você impersona **Alexandra**. Feche a caixa de diálogo se ela aparecer.  
-   ![](../../images/2025-03-06-19-01-13.png)
+   ![](../images/2025-03-06-19-01-13.png)
 6. Clique no **avatar do usuário** no canto superior direito.  
-   ![](../../images/2025-03-06-19-02-07.png)
+   ![](../images/2025-03-06-19-02-07.png)
    > Agora, você verá as opções **End impersonation** e **Impersonate another user**. 
     
 7. Clique em **End impersonation** para encerrar a sessão de impersonação.  
