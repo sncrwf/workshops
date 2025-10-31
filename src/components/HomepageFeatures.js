@@ -191,7 +191,7 @@ const FeatureList = [
       <div class="button-homepage-vancouver">🛠️ App Engine</div><div class="button-homepage-utah">⚙️ Workflow Data Fabric</div><br/>Hiperautomatize o acesso de visitantes com Low-Code, Ihub, DocIntel e RPA em um único lab.<br/><div class="button-intermediate">Intermediário</div>
       </>
     ),
-    to: '/labs/visitor-access-xanadu/1.0-introduction/overview',
+    to: '/labs/visitor-access/1.0-introduction/overview',
     target: '_self',
   },
 

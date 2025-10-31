@@ -246,10 +246,10 @@ const config = {
        [
         "@docusaurus/plugin-content-docs",
         {
-          path: "labs/visitor-access-xanadu",
+          path: "labs/visitor-access",
           id: "visitor",
-          routeBasePath: "labs/visitor-access-xanadu",
-          sidebarPath: require.resolve("./labs/visitor-access-xanadu/sidebar.js"),
+          routeBasePath: "labs/visitor-access",
+          sidebarPath: require.resolve("./labs/visitor-access/sidebar.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           breadcrumbs: false,
