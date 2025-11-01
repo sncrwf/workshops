@@ -99,7 +99,7 @@
               --coverSub "DocIntel - Document Intelligence" \
               --outputPDFFilename "docintel.pdf"
   
-            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/visitor-access-xanadu/1.0-introduction/overview" \
+            npx docs-to-pdf --initialDocURLs="https://sncrwf.github.io/workshops/labs/visitor-access/1.0-introduction/overview" \
               --contentSelector="article" --paginationSelector=".pagination-nav__link--next" \
               --excludeSelectors=".margin-vert--xl a" \
               --coverImage="https://sncrwf.github.io/workshops/img/servicenow-logo.png" \
