@@ -33,6 +33,8 @@ Neste exercício, você criará um Spoke personalizado no Integration Hub.
    ![](../images/2024-12-09-10-09-52.png)
 
 5. Na próxima tela, **Visitor Access: Add operations**, você pode fornecer o arquivo YAML. Clique em **Import New** (1), e depois **Import from JSON OR YAML manually**, copie e cole o conteúdo do swagger abaixo:
+     ![](../images/2025-10-31-10-08-11.png)
+  
   ```yaml
   openapi: 3.0.3
   info:
@@ -162,8 +164,6 @@ Neste exercício, você criará um Spoke personalizado no Integration Hub.
           - message
   ```
    
-   ![](../images/2025-10-31-10-08-11.png)
-
 1. Após a importação, você deve ver algo semelhante a isto:
    ![](../images/2025-10-31-10-08-49.png)
 
@@ -173,7 +173,13 @@ Neste exercício, você criará um Spoke personalizado no Integration Hub.
    No ServiceNow, um Connection Alias é uma configuração usada para estabelecer e gerenciar conexões com sistemas externos. Funciona como uma camada de abstração para conectar a sistemas externos e simplifica o processo de integração dentro dos fluxos de trabalho e outros componentes do ServiceNow. Normalmente, ao conectar o ServiceNow a um sistema externo, você deve configurar a URL do endpoint (o sistema de terceiros) e especificar como autenticar com ele. Isso é feito através das configurações de Conexão e Credenciais no ServiceNow. Na prática, é essencial discutir com o administrador do sistema remoto e coordenar com a equipe de segurança antes de iniciar essa configuração.
    :::
 
-3.  No campo **Connection alias name** (1) digite **VisitorAppConnection** e mantenha o **Authentication Configuration Template** com o valor padrão **Api Key Template** (2), depois clique em **Create** (3)
+3. Preencha os campos a seguir e depois clique em **Create** (3)
+   
+   | Campo         | Valor                                                        |
+   |---------------|--------------------------------------------------------------|
+   | **(1) Connection alias name** | `VisitorAppConnection`                       |
+   | **(2) Authentication Configuration Template** | `Api Key Template`           |
+
     ![](../images/2024-12-09-10-13-40.png)
 
 4.  Preencha as informações a seguir e clique em **Submit**
