@@ -58,32 +58,34 @@ Essa definição garante consistência e efetividade para resolver a necessidade
 
    - Em **Name**, digite:
      ```text
-     Session Feedback Analyst
+     Analista de Feedback de Sessões
      ```
 
    - Em **Description**, digite:
      ```text
-     Analyzes attendee feedback from cross-training sessions and provides a clear summary of strengths, areas for improvement, and suggestions to enhance future training.
+     Analisa o feedback dos participantes das sessões de cross-training e fornece um resumo claro dos pontos fortes, áreas de melhoria e sugestões para aprimorar os treinamentos futuros.
      ```
 
    - Em **AI agent role**, digite:
      ```text
-     The AI agent serves as a session feedback analyst for training coordinators. It reviews all participant feedback from a given session and synthesizes it into actionable insights. The AI should highlight what went well, what could be improved, and propose suggestions based on the recurring patterns in feedback.
+   O agente de IA atua como analista de feedback de sessões para os coordenadores de treinamento.  
+   Ele revisa todos os feedbacks dos participantes de uma determinada sessão e os sintetiza em insights acionáveis.  
+   A IA deve destacar o que funcionou bem, o que pode ser melhorado e propor sugestões com base em padrões recorrentes identificados nos feedbacks.
      ```
 
    - Em **Instructions**, digite:
      ```text
-     1. Retrieve the training session and all related feedback records, including user information, using the Knowledge Graph Tool.
-     2. Analyze the feedback content to identify recurring strengths and positive experiences mentioned by attendees.
-     3. Detect and extract criticisms or suggestions for improvement from the feedback data.
-     4. Synthesize the findings into a structured summary with the following sections:
-        - Strengths
-        - Areas for Improvement
-        - Recommendations
-     5. Update the Notes field of the session record with the synthesized summary using the Record Operation Tool. The text should:
-        - Be in raw text format (no markdown)
-        - Include the tag [✨ AI Agent ✨] at the beginning
-        - Use a professional and easy-to-read tone, with bullet points and clear line breaks
+   1. Recupere a sessão de treinamento e todos os registros de feedback relacionados, incluindo informações dos usuários, utilizando a Ferramenta de Knowledge Graph.  
+   2. Analise o conteúdo dos feedbacks para identificar pontos fortes recorrentes e experiências positivas mencionadas pelos participantes.  
+   3. Detecte e extraia críticas ou sugestões de melhoria a partir dos dados de feedback.  
+   4. Sintetize as conclusões em um resumo estruturado com as seguintes seções:  
+      - Pontos Fortes  
+      - Áreas de Melhoria  
+      - Recomendações  
+   5. Atualize o campo Notas do registro da sessão com o resumo sintetizado utilizando a Ferramenta de Operação de Registros. O texto deve:  
+      - Estar em formato de texto simples (sem markdown)  
+      - Incluir a tag [✨ AI Agent ✨] no início  
+      - Utilizar um tom profissional e de fácil leitura, com marcadores e quebras de linha claras
      ```
 
 2. Em **Specify categories for long-term memory**, clique em **Identify Categories**.  
@@ -113,7 +115,7 @@ Agora vamos conectar o agente às fontes de dados e ferramentas para que ele con
      ```
     2. **Description**:
      ```text
-     Search feedback and user information using Knowledge Graph
+     Pesquise feedbacks e informações de usuários utilizando o Knowledge Graph.
      ```
     3. **Select knowledge graph**:  
      _ACME Cross-Training Graph_
@@ -121,7 +123,7 @@ Agora vamos conectar o agente às fontes de dados e ferramentas para que ele con
     5. **Display output**: _Yes_  
     6. **Processing message**: 
      ```text
-     Searching feedback
+     Buscando feedbacks
      ```
     7. **Output transformation strategy**: _Paraphrase_
 
@@ -147,17 +149,17 @@ Defina mensagens de processamento claras (Processing message) e, quando possíve
 
     1. **Name**:
      ```text
-     Update the Session Notes field
+     Atualizar o campo Session Notes
      ```
     2. **Description**:
      ```text
-     This tool needs to be used to update the Session Notes field in the session record with the result of the AI Agent analysis.
+     Esta ferramenta deve ser utilizada para atualizar o campo Notas da Sessão no registro da sessão com o resultado da análise do Agente de IA.
      ```
     3. **Inputs:** 
     
     *(Input Name = Description)*
-     - `number` = `Number of the Session record that triggered the AI Agent`  
-     - `result` = `The final result of AI Agent analysis of the feedback`
+     - `number` = `Número do registro da Sessão que acionou o Agente de IA`  
+     - `result` = `O resultado final da análise dos feedbacks realizada pelo Agente de IA`
     4. **Table**: _Session [x_snc_acme_cross_0_session]_  
     5. **Select operation**: _Update records_  
     6. **Conditions**:  
@@ -168,7 +170,7 @@ Defina mensagens de processamento claras (Processing message) e, quando possíve
     9.  **Display output**: _No_  
     10. **Processing message**:
      ```text
-     Updating session notes
+     Atualizando notas da sessão
      ```
     - **Output transformation strategy**: _None_
   
@@ -196,7 +198,7 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
     1. **Select trigger**: _Updated_  
     2. **Name**:
      ```text
-     Session complete
+     Sessão completa
      ```
     3. **Table**: _Session [x_snc_acme_cross_0_session]_  
     4. **Active**: _true_  
@@ -208,7 +210,7 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
      - _Session Coordinator [x_snc_acme_cross_0_session]_
     7. **Objective template**:
      ```text
-     Help me analyze the session feedback for session Number: ${number}
+     Me ajude a analisar o feedback da sessão de número: ${number}
      ```
     8. **Channel**: _Now Assist panel_  
     9. Marque ✅ **Show Notification**
@@ -229,7 +231,7 @@ Agora vamos configurar o evento que dispara o agente — no nosso caso, ao marca
 
 2. Em **Processing message**, digite:
   ```text
-  Analyzing session feedback
+  Analisando feedback da sessão
   ```
 
    _![](./../img/image115.png)_

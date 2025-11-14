@@ -15,10 +15,10 @@ draft: false
    ![](../images/2025-09-10-11-28-50.png) 
 2. Feche a janela de Welcome.
    ![](../images/2025-09-04-11-32-34.png)
-3. Selecione a aba **Now Assist Skills** e em seguida selecione **Creator**.
-   ![](../images/2025-09-04-11-33-38.png)  
-4. Encontre a **skill recém-publicada** e clique em **Activate skill**.  
-   ![](../images/2025-09-04-11-34-18.png)
+3. Selecione a aba **Now Assist Skills** e em seguida selecione **Other**. Encontre a **skill recém-publicada** e clique em **Activate skill**.  
+   ![](../images/2025-11-13-12-46-20.png) 
+4. Clique em **Save and continue**.
+   ![](../images/2025-11-13-12-47-38.png)
 5. Expanda a caixa **Conversational experiences**
    ![](../images/2025-09-04-11-35-27.png)
 6. Marque a opção **"Now Assist Panel"** e clique em **Save and Continue**.  
@@ -39,34 +39,34 @@ Agora vamos testar a chamada dessa custom skill pelo Now Assist Panel na platafo
    ![](../images/2025-09-04-11-43-42.png)
 3. Cole o nome da sua skill no chat e envie.
    ```
-   Training Topic Suggestions
+   Ideias de Treinamento
    ```
    ![](../images/2025-09-04-11-43-22.png)
-4. Ele irá sugerir algumas opções, selecione a opção `(Topic) Training Topic Suggestions`. Selecione-o.
+4. Ele irá sugerir algumas opções, selecione a opção `(Topic) Sugestões de Tópicos de Treinamento`. Selecione-o.
    ![](../images/2025-09-04-11-45-05.png)
-5. Responda à pergunta **What area do you work in?**.
+5. Responda à pergunta **Em que área você trabalha??**.
    :::danger Observe com atenção!
       Cuidado! A **ordem dos inputs** e as **frases** pode ter mudado. 
    :::
    ![](../images/2025-09-04-11-46-52.png)
    ```
-   I'm a ServiceNow Developer
+   Eu sou um desenvolvedor ServiceNow
    ```
-6. Responda à pergunta **What skills do your colleagues often ask you help with?**.
+6. Responda à pergunta **Com quais habilidades seus colegas costumam pedir sua ajuda?**.
    :::danger Observe com atenção!
       Cuidado! A **ordem dos inputs** e as **frases** pode ter mudado. 
    :::
    ![](../images/2025-09-04-11-48-51.png)
    ```
-   Creating scripts, AI Skills and AI Agents using ServiceNow :)
+   Criar scripts, Skills de IA Generativa e Agentes de IA usando ServiceNow :)
    ```
-7. Responda à pergunta **What tools or technologies do you often use?**.
+7. Responda à pergunta **Quais ferramentas ou tecnologias você usa com frequência?**.
    :::danger Observe com atenção!
       Cuidado! A **ordem dos inputs** e as **frases** pode ter mudado. 
    :::
    ![](../images/2025-09-04-11-50-47.png)
    ```
-   ServiceNow Studio, Skill Kit and AI Agent Studio.
+   ServiceNow Studio, Skill Kit e AI Agent Studio.
    ```
 8. Selecione a opção `Looks good`.
    ![](../images/2025-09-04-11-53-30.png)

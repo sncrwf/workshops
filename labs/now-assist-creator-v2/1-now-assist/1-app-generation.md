@@ -49,54 +49,76 @@ Você não precisa salvar seu trabalho em nenhum momento durante este exercício
 
 5. Copie e cole ou digite o seguinte texto no campo de entrada e pressione **Enter**:  
    ```txt title="App Generation - Prompt 1"
-   I want to create an App for Cross-training in my organization. The app name should be 
+   Quero criar um aplicativo para treinamento na minha empresa. O nome do aplicativo deve ser 
    // highlight-next-line
-   [YOUR APP NAME]
+   [NOME DO SEU APP]
    ```  
    :::danger
-   Substitua a tag **[YOUR APP NAME]** acima pela suas iniciais e 4 dígitos do seu aniversário MMDD, exemplo: RY0824
+   Substitua a tag **[NOME DO SEU APP]** acima pela suas iniciais e 4 dígitos do seu aniversário DDMM, exemplo: LA3011
    :::
 
    ![](../../images/2025-03-06-19-09-16.png)
 
 6. Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 2"
-   The app will have a general table listing various training topics, managed by Training Coordinators. The data in this table can be modified only by training coordinators.  
+   O aplicativo terá uma tabela geral listando vários tópicos de treinamento, gerenciada pelos Coordenadores de Treinamento.
+   Os dados nesta tabela só poderão ser modificados pelos coordenadores de treinamento.
+
+   Espero que tenha ficado claro, para que eu possa agora detalhar os campos dessa tabela.
    ```
    ![](../../images/2025-03-06-19-10-12.png)
 
 7. Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 3"
-   This table would have Topic Name and Date/time on which training session for the associated topic can be held. Training coordinators manage the data in this table. There should be another integer field named Attendees limit.  
+   Esta tabela terá o Nome do Tópico e a Data/Hora em que a sessão de treinamento poderá ser realizada.
+   Os coordenadores de treinamento gerenciam os dados nesta tabela.
+   Deve haver também um campo inteiro chamado Limite de Participantes.
+
+   Se isso estiver claro, prossigo explicando como os formulários de inscrição funcionarão.  
    ```
    ![](../../images/2025-03-06-19-10-27.png)
 
 8.  Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 4"
-   The app will have two forms - one is for trainers to volunteer for a topic and this submitted data should be stored in one table. Another form is for attendees to register for a training session, and this submitted data should be stored in another table. Once the forms are submitted, all the data should be read-only and no one can modify the data.  
+   O aplicativo terá dois formulários — um para que os instrutores se voluntariem para um tópico, e os dados enviados devem ser armazenados em uma tabela. 
+   O outro formulário é para que os participantes se inscrevam em uma sessão de treinamento, e os dados enviados devem ser armazenados em outra tabela. 
+   Após o envio dos formulários, todos os dados deverão ser somente leitura.
+
+   Se estiver tudo entendido, posso agora detalhar como funcionará o formulário dos instrutores.
    ```
    ![](../../images/2025-03-06-19-10-45.png)
 
 9.  Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 5"
-   Trainers should select a topic from the list of available topics. On selection of topic, date/time should be auto-populated. Along with that, trainers should choose whether the session would be Virtual or In-person. I hope you got it, so that I will then proceed with attendees form.
+   Os instrutores devem selecionar um tópico da lista de tópicos disponíveis.
+   Ao selecionar o tópico, a data/hora deve ser preenchida automaticamente.
+   Além disso, os instrutores devem escolher se a sessão será Virtual ou Presencial.
+
+   Espero que tenha entendido, para que eu possa então prosseguir com o formulário de participantes.
    ```
    ![](../../images/2025-03-06-19-10-57.png) 
 
 10. Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 6"
-   Attendees would just see the list of topics available, and a date/time field which should be auto-populated based on the selected topic. I would want another form where attendees can provide feedback after the conclusion of each training session. The submitted feedback should be stored in another table.  
+   Os participantes verão apenas a lista de tópicos disponíveis e um campo de data/hora, que deve ser preenchido automaticamente com base no tópico selecionado.
+   Eu gostaria também de ter outro formulário onde os participantes possam fornecer feedback após a conclusão de cada sessão de treinamento.
+   O feedback enviado deve ser armazenado em outra tabela.
+
+   Se estiver claro até aqui, posso agora explicar os campos do formulário de feedback.
    ```
    ![](../../images/2025-03-06-19-11-07.png)
 
 11. Copie e cole o prompt abaixo no campo de entrada:  
    ```txt title="App Generation - Prompt 7"
-   Attendees should select a concluded training topic from the data list and provide their feedback using below fields: Training session rating (on a scale of 1-5) and Suggestions for improvement.  
+   Os participantes devem selecionar um tópico de treinamento concluído na lista e fornecer seu feedback usando os seguintes campos:
+      - Avaliação da sessão de treinamento (escala de 1 a 5)
+      - Sugestões de melhoria
+
+   Com tudo isso definido, pode prosseguir com a criação do aplicativo.
    ```
    ![](../../images/2025-03-06-19-11-17.png)
 
 12. Aguarde até que o Now Assist retorne com uma mensagem indicando que irá gerar uma prévia da aplicação. 
-
    ![](../images/2025-09-10-09-34-58.png)
 
    :::note

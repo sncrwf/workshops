@@ -37,7 +37,7 @@ A funcionalidade de **Catalog Generation** permite que **Você** descreva suas i
 6.  No campo **Now Assist directions**, copie e cole o seguinte texto:
 
    ```text
-   Create a new Self Service form to allow employees to request the addition of a new training program to the company’s training portfolio
+    Crie um novo formulário de Autoatendimento para permitir que os funcionários solicitem a adição de um novo programa de treinamento ao portfólio de treinamentos da empresa.
    ```
 
    ![](./../img/image028.png)
@@ -60,25 +60,25 @@ A funcionalidade de **Catalog Generation** permite que **Você** descreva suas i
 12. Como agora queremos fornecer uma entrada mais detalhada, substitua o conteúdo do campo **Now Assist directions** pelo seguinte texto:
 
    ```text
-   Form Name: "New Training Request Form"
+    Nome do Formulário: "Formulário de Solicitação de Novo Treinamento"
 
-   Short Description: "This form allows employees to request the addition of a new training program to the company’s training portfolio. Please provide the necessary details to help us evaluate and implement your suggestion."
+    Descrição Curta: "Este formulário permite que os funcionários solicitem a adição de um novo programa de treinamento ao portfólio de treinamentos da empresa. Forneça os detalhes necessários para nos ajudar a avaliar e implementar sua sugestão."
 
-   Instructions: "Fill out the form below with all relevant details about the proposed training. Ensure that the training aligns with company goals and addresses specific skill gaps or development areas. Once submitted, the request will be reviewed by the training and development team."
+    Instruções: "Preencha o formulário abaixo com todos os detalhes relevantes sobre o treinamento proposto. Certifique-se de que o treinamento esteja alinhado aos objetivos da empresa e aborde lacunas específicas de habilidades ou áreas de desenvolvimento. Após o envio, a solicitação será revisada pela equipe de treinamento e desenvolvimento."
 
-   Questions:
+    Perguntas:
 
-   Training Title
-   Training Category: Technical, Leadership, Compliance, Soft Skills
-   Training Description
-   Target Audience
-   Skills or Knowledge Gaps Addressed
-   Training Format: Online, In-Person, Hybrid
-   Estimated Duration
-   Proposed Trainer or Training Provider
-   Expected Benefits
-   Estimated Costs (Optional)
-   Additional Comments
+    Título do Treinamento  
+    Categoria do Treinamento: Técnico, Liderança, Conformidade, Habilidades Interpessoais  
+    Descrição do Treinamento  
+    Público-Alvo  
+    Habilidades ou Lacunas de Conhecimento Abordadas  
+    Formato do Treinamento: Online, Presencial, Híbrido  
+    Duração Estimada  
+    Instrutor ou Fornecedor de Treinamento Proposto  
+    Benefícios Esperados  
+    Custos Estimados (Opcional)  
+    Comentários Adicionais
    ```
 
    ![](./../img/image033.png)

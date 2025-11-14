@@ -32,8 +32,8 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
 5. Vamos criar a nossa skill.
    1. No formulário, preencha os seguintes campos:  
    
-      **Skill name:** Training Topic Suggestions  
-      **Description:** Suggests personalized training topics based on the collaborator's area, tools, and skills, avoiding duplicates of existing topics in the system.  
+      **Skill name:** Ideias de Treinamento  
+      **Description:** Sugere tópicos de treinamento personalizados com base na área, ferramentas e habilidades do colaborador, evitando duplicações de tópicos já existentes no sistema.  
       **Default provider:** Now LLM Generic
       
       **Provider API:** Now LLM Generic
@@ -60,19 +60,19 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    1. **Área de Atuação / Cargo do Usuário:**
       - **Datatype:** String  
       - **Name:** area  
-      - **Description:** What area do you work in  
+      - **Description:** Qual seu setor de trabalho  
       - **Mandatory:** ✅ `true`  
 
    2. **Habilidades que as Pessoas Costumam Pedir Ajuda:**
       - **Datatype:** String  
       - **Name:** skills  
-      - **Description:** What skills do your colleagues often ask you help with  
+      - **Description:** Com quais habilidades seus colegas costumam pedir sua ajuda  
       - **Mandatory:** ❌ `false`  
 
    3. **Ferramentas e Tecnologias Utilizadas:**
       - **Datatype:** String  
       - **Name:** tools  
-      - **Description:** What tools or technologies do you often use  
+      - **Description:** Quais ferramentas ou tecnologias fazem parte do seu dia a dia  
       - **Mandatory:** ❌ `false`  
   
   ![](../images/2025-09-04-10-53-58.png)
@@ -96,33 +96,33 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    :::
 
     ```
-    ## Role
-    You are a cross‑training assistant that suggests relevant, personalized training topics for employees.
+   ## Papel
+   Você é um assistente de cross-training que sugere tópicos de treinamento relevantes e personalizados para os colaboradores.
 
-    ## Context
-    - Area of expertise: 
-    - Tools used (comma‑separated text): 
-    - Skills colleagues ask help for (comma‑separated text): 
+   ## Contexto
+   - Área de atuação:
+   - Ferramentas utilizadas (texto separado por vírgulas):
+   - Habilidades pelas quais os colegas pedem ajuda (texto separado por vírgulas):
 
-    ## Rules
-    1) Do not repeat existing topics (exact and fuzzy match; ignore case and accents).
-    2) Prioritize suggestions that combine the provided area, tools, and skills.
-    3) Each suggestion must be specific, practical, and useful to colleagues.
-    4) Generate 4–6 suggestions.
+   ## Regras
+   1) Não repetir tópicos existentes (correspondência exata ou aproximada; ignorar maiúsculas, minúsculas e acentos).
+   2) Priorizar sugestões que combinem área, ferramentas e habilidades informadas.
+   3) Cada sugestão deve ser específica, prática e útil para os colegas.
+   4) Gerar entre 4 e 6 sugestões.
 
-    ## Output Format (Raw Text)
-    For each suggestion, output one line in the format:
-    - Title — brief explanation (1 sentence) — why it’s relevant (1 sentence)
+   ## Formato de Saída (Texto Puro)
+   Para cada sugestão, apresentar uma linha no formato:
+   - Título — breve explicação (1 frase) — por que é relevante (1 frase)
 
-    Example:
-    - Automating Routine Tasks in ServiceNow — How to create simple flows for repetitive tasks — Relevant because many colleagues ask for basic automation help.
+   Exemplo:
+   - Automatizando Tarefas Rotineiras no ServiceNow — Como criar fluxos simples para tarefas repetitivas — Relevante porque muitos colegas pedem ajuda com automação básica.
     ```
 
    ![](../images/2025-09-04-11-00-51.png)
 
 4. Agora, precisamos adicionar os inputs dinâmicos ao prompt. Isso possibilita passar variáveis ao prompt antes de enviar à LLM.
 5. Vamos adicionar os inputs que criamos dentro dos locais correspondentes no prompt.
-6. Posicione o cursor após o texto `Area of expertise: `
+6. Posicione o cursor após o texto `Área de atuação: `
    ![](../images/2025-09-04-11-04-45.png)
 7. Clique em **Insert inputs** no canto superior direito.
    ![](../images/2025-09-04-11-05-16.png)
@@ -146,9 +146,9 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
     
    | Field  | Value                                      |
    |--------|--------------------------------------------|
-   | **area**   | Customer Service                           |
+   | **area**   | Atendimento a Clientes                           |
    | **tools** | Excel, Power BI, ServiceNow                |
-   | **skills** | Reporting, Automation, Documentation       |
+   | **skills** | Relatórios, Automação, Documentação       |
    
    Clique em `Run test` 
 
@@ -162,7 +162,7 @@ O objetivo desta skill é **sugerir tópicos de treinamento relevantes** que o c
    - As sugestões são **relevantes** para a área, ferramentas e habilidades.  
    - Nenhum tópico existente foi **repetido**.  
 4. Vamos dar um nome ao prompt. Edite o campo clicando no lápis ao lado de **Prompt name**.
-5. **Renomeie** para `Training Topic Prompt` e **Salve**.
+5. **Renomeie** para `Prompt de Tópicos de Treinamento` e **Salve**.
    ![](../images/2025-09-04-11-19-32.png)
 6. Ajuste o prompt se necessário e **Finalize Prompt** quando estiver satisfeito.  
    ![](../images/2025-09-04-11-20-03.png)
@@ -177,15 +177,8 @@ Como toda geração com LLMs, pequenas variações de saída são normais entre 
 1. Abra a guia **Skill Settings**.  
 2. Acesse **Deployment Settings**. 
    ![](../images/2025-09-04-11-21-51.png)
-3. Configure os seguintes campos:  
 
-   - **Workflow:** Creator  
-   - **Feature:** Create new feature  
-   - **Name:** Training Topic Suggestions  
-   - **Description:** Suggests personalized training topics.
-  ![](../images/2025-09-04-11-24-02.png)
-
-5. Selecione a opção:  ✅ Now Assist Panel 
+3. Selecione a opção:  ✅ Now Assist Panel 
    ![](../images/2025-09-04-11-25-38.png)
 
 4. Clique em **"Save"**.  

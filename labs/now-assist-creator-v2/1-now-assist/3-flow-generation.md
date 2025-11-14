@@ -39,13 +39,13 @@ Ela deseja criar **dois fluxos de trabalho**:
 5. No campo **Flow Name**, digite:  
    
    ```txt title="Flow Generation - Title 1"
-   Reminder email for attendees and trainers
+   E-mail de lembrete para participantes e instrutores
    ```  
 
 6. No campo **Now Assist Directions**, digite:  
 
    ```txt title="Flow Generation - Prompt 1"
-   Create a scheduled job that triggers every day at 2 AM. It should look up training sessions whose date is 2 days from now. Then look up attendees and trainers for each training session, and send mail.
+   Crie um job agendado que seja acionado todos os dias às 2h. Ele deve buscar as sessões de treinamento cuja data seja daqui a 2 dias. Em seguida, procure os participantes e os instrutores de cada sessão de treinamento e envie o e-mail.
    ```  
 7.  Clique em <span className="button-purple-square">Generate flow preview</span>. 
    ![](../../images/2025-03-08-02-27-37.png)
@@ -75,13 +75,13 @@ Quando você conversa com o Now Assist para criar o aplicativo, ele fará a maio
 4. No campo **Flow Name**, digite:  
    
    ```txt title="Flow Generation - Title 2"
-   Gather Feedback from Attendees
+   Coletar feedback dos participantes
    ```  
 
 5. No campo **Now Assist Directions**, digite:  
 
    ```txt title="Flow Generation - Prompt 2"
-   Create a scheduled job that runs every day at 3 AM. It should look up training sessions that ended the day before, and look up attendees of each training session, and send mail.
+   Crie um job agendado que execute todos os dias às 3h. Ele deve buscar as sessões de treinamento que terminaram no dia anterior, localizar os participantes de cada sessão de treinamento e enviar o e-mail.
    ``` 
 6. Clique em <span className="button-purple-square">Generate flow preview</span>. 
    ![](../../images/2025-03-06-19-59-54.png)

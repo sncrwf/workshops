@@ -1,6 +1,6 @@
 ---
-id: 4-code-generation
-title: "4. Geração de Código"
+id: 6-code-generation
+title: "6. Geração de Código"
 hide_table_of_contents: true
 draft: false
 ---
@@ -52,8 +52,8 @@ O aplicativo **Cross-Training** precisa implementar duas regras de validação:
 7. Na linha **4**, pressione **Cmd + Enter (Mac) ou Ctrl + Enter (Windows)** para ativar a funcionalidade **"Generate code with Now Assist"**, que converterá o prompt em código JavaScript.
 
    ![](../../images/2025-03-06-20-19-28.png)  
-   ```js title="Code Generation - Function"
-   Query Training topics table for the current topic and store attendees limit in attendeesLimit variable. Then aggregate training attendees table for current topic and check if the total no. of records exceeds attendeesLimit. Return true or false.
+   ```txt title="Code Generation - Function"
+   Consulte a tabela de tópicos de treinamento para o tópico atual e armazene o limite de participantes na variável attendeesLimit. Em seguida, agregue a tabela de participantes do treinamento para o tópico atual e verifique se o número total de registros excede attendeesLimit. Retorne true ou false.
    ```
 
 8. Aguarde até que o Now Assist Code Generation gere a resposta. O código gerado aparecerá em **verde**.  

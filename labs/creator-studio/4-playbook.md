@@ -14,21 +14,9 @@ Vamos criar um playbook que será executado quando o usuário solicitar um gift 
 ![](../images/2025-06-28-23-45-49.png)
 
 2.  Nomeie como **Aprovar solicitações gift card** e clique em **Create**
-![](../images/2025-06-28-23-56-53.png)
+![](../images/2025-06-28-23-56-53.png) 
 
-3. Role para baixo até **Filter conditions** e clique em **+ Add conditions**. 
-![](../images/2025-06-28-23-59-27.png)
-
-4. No popup selecione **field** para as condições de filtro, clique e role até o final em **Questions**.  
-![](../images/2025-06-29-00-00-11.png)
-
-5. Selecione **Gift card na loja coportativa**
-![](../images/2025-06-29-00-01-45.png)
-
-6. Mantenha o campo **Operator** = **is** e selecione abaixo o valor **Yes**
-  ![](./images/image016.png)  
-
-7.  Clique em **Create**!
+1.  Clique em **Create**!
 
 Você criou um Playbook que será acionado quando necessário. O próximo passo é definir as ações que queremos. Os **Fulfillment steps**.
 

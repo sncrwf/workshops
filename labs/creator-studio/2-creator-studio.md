@@ -72,7 +72,16 @@ Cada app no Creator Studio pode ter múltiplos forms.
 
 Vamos começar dando um Nome e uma Descrição para o form. Essas informações serão usadas para corresponder ao que o usuário busca no Service Portal.
 
-1.  Clique em **Form name** e altere para **Solicitação de Gift card**
+:::tip Instância com Now Assist
+Caso sua instância possua o **Now Assist** (Módulo de AI Generativa da ServiceNow) instalado você também poderá criar seu formulário usando prompts. 
+Vá em frente e teste essa opção pedindo o que você precisa. Experimente usar o prompt a seguir para criar seu próprio formulário: 
+
+`Criar um formulário para solicitação de gift cards internos ou externos para reconhecimento de funcionários.`
+
+![](../images/2025-11-11-09-22-01.png)
+
+:::
+1. Para criar manualmente, na guia **Build on your own**.Clique em **Form name** e altere para **Solicitação de Gift card**
 
 2.  Altere o Short description para **Solicitar cartões-presente para reconhecimento de funcionários**
 

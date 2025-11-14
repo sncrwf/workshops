@@ -20,13 +20,13 @@ Agora é hora de testar nosso agente de IA para garantir que tudo esteja funcion
 
 2. Selecione **AI Agent** e digite:  
    ```text
-   Session Feedback Analyst
+   Analista de Feedback de Sessões
    ```  
    ![](./../img/image118.png)
 
 3. No campo **Task**, digite:  
    ```text
-   Help me analyze the session feedback for session Number: SES0001101
+   Me ajude a analisar o feedback da sessão de número: SES0001101
    ```  
    _![](./../img/image119.png)_
 

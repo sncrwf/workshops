@@ -82,11 +82,11 @@ Você pode adicionar a aplicação, ou melhor, os Catalog Items do seu processo 
 1. Clique em **edit** para selecione o catálogo.
 ![](../images/2025-06-28-23-49-29.png)
 
-2. Por enquanto, usaremos “Service Catalog” e a categoria “Departmental services”
-![](../images/2025-06-28-23-51-08.png)
+2. Por enquanto, usaremos “Service Catalog” e a categoria “Can We Help You?”
+![](../images/2025-11-11-09-30-11.png)
 
 3.  Clique em **Save all settings**
-![](../images/2025-06-28-23-51-49.png)
+![](../images/2025-11-11-09-31-06.png)
 
 4. Clique novamente em **Mark as ready** e uma mensagem de sucesso deve ser exibida no topo da página.
 ![](../images/2025-06-28-23-52-33.png)

@@ -39,10 +39,10 @@ Com o **Now Assist for Test Generation**, você pode:
 4. No campo de entrada, **digite seu prompt**, descrevendo o que deseja testar.  
 
    ```txt title="Code Generation - Name"
-    Write an ATF test called Training Topic Form Test
-    1. Open a form for "Training Topic".
-    2. Fill the required fields 
-    3. Submit form. 
+    Escreva um teste ATF chamado Teste do Formulário de Tópico de Treinamento
+        1.	Abrir um formulário de Training Topic.
+        2.	Preencher os campos obrigatórios.
+        3.	Enviar o formulário.
    ```  
 
 5. Clique em **Generate Test Preview**.  

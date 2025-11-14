@@ -36,7 +36,7 @@ Este exercício é opcional; caso esteja atrasado no laboratório, fique à vont
 7. Na guia **Define your chat experience**, clique em **Promoted assets** e, em seguida, **Virtual Agent Designer**.
    ![](../images/2025-09-14-13-49-58.png)
 
-8. Selecione as opções do Tópico **Training Topic Suggestions** e selecione **Promoted**.
+8. Selecione as opções do Tópico **Sugestões de Tópicos de Treinamento** e selecione **Promoted**.
    ![](../images/2025-09-14-13-51-18.png)
 
 9. Feche a janela do **Virtual Agent Designer**, retorne à tela do **Painel** e clique em **Refresh**.

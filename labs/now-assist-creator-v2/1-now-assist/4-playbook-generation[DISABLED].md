@@ -1,6 +1,6 @@
 ---
-id: 6-playbook-generation
-title: "6. Geração de Playbooks"
+id: 4-playbook-generation
+title: "4. Geração de Playbooks"
 hide_table_of_contents: true
 draft: false
 ---
@@ -45,12 +45,12 @@ Com o **Playbook Generation**, Você pode descrever o processo em **linguagem na
    ```
 5. No campo **Now Assist Directions**, copie e cole o seguinte texto:  
    ```txt title="Playbook Generation - Prompt"
-   I want to create a playbook to standardize Training sessions. 
-   Stage1: Review Session Information - This stage involves training coordinators updating session related information and make it available for trainers and attendees to select it.
-   Stage 2: Verify Trainer details and prepare them by sending email - This stage involves looking up trainer details and be able to send email detailing the process of conducting sessions or any presentation templates they should be using.
-   Stage 3: Manage attendee registrations and prepare them by sending email. The email could include links to relevant materials, pre-requisite knowledge, or any software needed to be downloaded beforehand.
-   Stage 4: Start the session and thus make it unavailable for attendees to register it further.
-   Stage 5: Review Attendees feedback.
+   Quero criar um playbook para padronizar as sessões de treinamento.
+   Etapa 1: Revisar Informações da Sessão – Esta etapa envolve os coordenadores de treinamento atualizando as informações relacionadas à sessão e tornando-as disponíveis para que instrutores e participantes possam selecioná-las.
+   Etapa 2: Verificar detalhes do instrutor e prepará-lo enviando um e-mail – Esta etapa envolve consultar os detalhes do instrutor e enviar um e-mail com orientações sobre como conduzir as sessões ou com modelos de apresentação que devem ser utilizados.
+   Etapa 3: Gerenciar as inscrições dos participantes e prepará-los enviando um e-mail – O e-mail pode incluir links para materiais relevantes, conhecimento prévio necessário ou qualquer software que precise ser baixado antecipadamente.
+   Etapa 4: Iniciar a sessão e torná-la indisponível para novas inscrições.
+   Etapa 5: Revisar o feedback dos participantes.
    ```
 6.  Clique em <span className="button-purple-square">Generate playbook preview</span>. 
    ![](../../images/2025-03-08-02-37-33.png)

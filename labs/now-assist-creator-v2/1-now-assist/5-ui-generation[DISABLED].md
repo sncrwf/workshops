@@ -41,11 +41,12 @@ Com essa funcionalidade, você pode:
 5. Na caixa de texto **Now Assist directions**, cole o exemplo a seguir:  
 
    ```txt title="UI Generation - Prompt"
-   Create a Breadcrumb-style experience titled “Cross-Training Management” that provides a structured and intuitive navigation experience. The interface should include:
-	1.	Upcoming Training Sessions – A visually distinct section displaying the next scheduled training sessions.
-	2.	Trainer Distribution Pie Chart – A pie chart summarizing the sessions grouped by "Training Volunteers"
-	3.	Comprehensive Session List – A detailed list of all training sessions, sourced from the “Session” table, ensuring easy access to session details.
-    Ensure a clean, user-friendly layout with clear navigation, emphasizing ease of access to training session details.
+   Crie uma experiência no estilo “Breadcrumb” intitulada “Gestão de Cross-Training” que forneça uma navegação estruturada e intuitiva.  
+   A interface deve incluir:
+
+   1. Próximas Sessões de Treinamento – Uma seção visualmente distinta exibindo as próximas sessões de treinamento agendadas.  
+   2. Gráfico de Pizza de Distribuição de Instrutores – Um gráfico de pizza que resume as sessões agrupadas por "Voluntários de Treinamento".  
+   3. Lista Abrangente de Sessões – Uma lista detalhada de todas as sessões de treinamento, obtida a partir da tabela “Session”, garantindo fácil acesso aos detalhes de cada sessão.
    ```   
 
 6. Clique em **Generate Preview** e visualize o resultado gerado.  
