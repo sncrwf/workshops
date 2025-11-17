@@ -48,15 +48,6 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '5. Criando Concierge com AI Agent Studio',
-            items: [
-                '5.0-aia/1-visitor-concierge-lite',
-                '5.0-aia/2-test-visitor-concierge-lite',
-                '5.0-aia/3-final-portal-test',
-            ],
-        },
-        {
-            type: 'category',
             label: 'Bônus: Modernizando Impressão de Crachá com RPA',
             items: [
                 '5.0-rpa/1-vm-connect',
