@@ -74,7 +74,7 @@ Essa definição garante consistência e efetividade para resolver a necessidade
      ```
 
    - Em **Instructions**, digite:
-     ```text
+   ```text
    1. Recupere a sessão de treinamento e todos os registros de feedback relacionados, incluindo informações dos usuários, utilizando a Ferramenta de Knowledge Graph.  
    2. Analise o conteúdo dos feedbacks para identificar pontos fortes recorrentes e experiências positivas mencionadas pelos participantes.  
    3. Detecte e extraia críticas ou sugestões de melhoria a partir dos dados de feedback.  
@@ -86,7 +86,7 @@ Essa definição garante consistência e efetividade para resolver a necessidade
       - Estar em formato de texto simples (sem markdown)  
       - Incluir a tag [✨ AI Agent ✨] no início  
       - Utilizar um tom profissional e de fácil leitura, com marcadores e quebras de linha claras
-     ```
+   ```
 
 2. Em **Specify categories for long-term memory**, clique em **Identify Categories**.  
    _![](./../img/image100.png)_

@@ -19,6 +19,16 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: '2. Skill Kit',
+            items: [
+                'skill-kit/1-intro-skill-kit',
+                'skill-kit/2-create-skill',            
+                'skill-kit/3-activating-skill',    
+                'skill-kit/4-promoting-skill',  
+            ],
+        },
+        {
+            type: 'category',
             label: '3. AI Agents',
             items: [
                 'aia/1-create-ai-agent',
